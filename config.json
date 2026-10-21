@@ -6,11 +6,11 @@
   "expenses": [
     {
       "name": "Gastos varios",
-      "pct": 0
+      "pct": 3.42
     },
     {
       "name": "Materiales Damians bolsa",
-      "pct": 0
+      "pct": 2.89
     }
   ]
 }
