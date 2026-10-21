@@ -1,0 +1,16 @@
+{
+  "params": {
+    "iva_pct": 21.0,
+    "ups_pct_of_sales": 8.0
+  },
+  "expenses": [
+    {
+      "name": "Gastos varios",
+      "pct": 0
+    },
+    {
+      "name": "Materiales Damians bolsa",
+      "pct": 0
+    }
+  ]
+}
