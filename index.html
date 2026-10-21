@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nahia Home · P&amp;L</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+  :root{--bg:#faf8f5;--card:#fff;--ink:#2b2622;--mute:#8a8178;--line:#ece6df;--pos:#2f7d55;--neg:#b8473a;--acc:#b08968}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Inter",sans-serif;background:var(--bg);color:var(--ink)}
+  .wrap{max-width:1100px;margin:0 auto;padding:28px 20px 60px}
+  header{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;margin-bottom:22px}
+  h1{font-size:22px;margin:0;font-weight:600;letter-spacing:.2px}
+  .sub{color:var(--mute);font-size:12px;margin-top:3px}
+  .controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  button,input{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:7px 11px;border-radius:8px}
+  button{cursor:pointer} button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+  .kpi .l{font-size:12px;color:var(--mute)} .kpi .v{font-size:24px;font-weight:600;margin-top:4px} .kpi .s{font-size:12px;color:var(--mute);margin-top:2px}
+  .pos{color:var(--pos)} .neg{color:var(--neg)}
+  .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:14px} @media(max-width:860px){.grid{grid-template-columns:1fr}}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  td,th{padding:7px 4px;border-bottom:1px solid var(--line);text-align:right} td:first-child,th:first-child{text-align:left}
+  th{font-size:11px;color:var(--mute);font-weight:500;text-transform:uppercase;letter-spacing:.5px}
+  tr.sec td{font-weight:600;border-bottom:1px solid var(--ink)} tr.sub td:first-child{padding-left:16px;color:#4a433c}
+  tr.tot td{font-weight:700;font-size:15px;border-bottom:2px solid var(--ink)} .pct{color:var(--mute);font-size:12px;width:60px}
+  .est{color:var(--acc);font-size:10px;margin-left:4px}
+  h3{margin:0 0 10px;font-size:14px;font-weight:600}
+  .exp input{width:100%} .exp td{padding:4px 3px;border:none}
+  .note{font-size:12px;color:var(--mute);margin-top:10px;line-height:1.5}
+  .full{margin-top:14px}
+  .tabs{display:flex;gap:6px;margin-bottom:16px;border-bottom:1px solid var(--line)}
+  .tab{border:none;background:none;border-bottom:2px solid transparent;border-radius:0;padding:9px 14px;color:var(--mute)}
+  .tab.on{background:none;color:var(--ink);border-bottom-color:var(--ink);font-weight:600}
+  .view{display:none}.view.on{display:block}
+  table.dt th{cursor:pointer;user-select:none} table.dt td:first-child{max-width:340px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .bar{display:inline-block;height:6px;background:var(--acc);border-radius:3px;vertical-align:middle;margin-left:6px}
+
+  #loginOverlay{position:fixed;inset:0;background:var(--bg);display:flex;align-items:center;justify-content:center;z-index:9999}
+  .loginBox{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:36px;width:100%;max-width:380px;box-shadow:0 12px 32px rgba(0,0,0,0.06);text-align:center}
+  .loginBox h2{margin:0 0 6px;font-size:20px;font-weight:600}
+  .loginBox p{margin:0 0 20px;font-size:13px;color:var(--mute)}
+  .loginBox input{width:100%;margin-bottom:12px;padding:10px 14px;border:1px solid var(--line);border-radius:8px;font-size:14px;outline:none}
+  .loginBox button{width:100%;padding:10px;background:var(--ink);color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer}
+  .loginBox .err{color:var(--neg);font-size:12px;margin-top:10px;display:none}
+
+</style>
+</head>
+<body>
+
+<div id="loginOverlay">
+  <div class="loginBox">
+    <h2>Nahia Home</h2>
+    <p>Dashboard Financiero P&amp;L</p>
+    <form id="loginForm" onsubmit="handleLogin(event)">
+      <input type="password" id="pwdInput" placeholder="Introduce la contraseña" autocomplete="current-password" autofocus required>
+      <button type="submit">Entrar</button>
+      <div id="loginErr" class="err">Contraseña incorrecta</div>
+    </form>
+  </div>
+</div>
+
+<div class="wrap">
+  <header>
+    <div><h1>Nahia Home · P&amp;L</h1><div class="sub" id="gen"></div></div>
+    <div class="controls">
+      <button data-p="mtd">Mes actual</button><button data-p="lm">Mes pasado</button>
+      <button data-p="30">30 días</button><button data-p="all">Todo</button>
+      <input type="date" id="from"><span class="sub">→</span><input type="date" id="to">
+    </div>
+  </header>
+  <div class="tabs"><button class="tab on" data-t="resumen">Resumen</button><button class="tab" data-t="roas">ROAS</button><button class="tab" data-t="paises">Países</button><button class="tab" data-t="productos">Productos</button></div>
+  <div class="view on" id="v-resumen">
+  <div class="kpis" id="kpis"></div>
+  <div class="kpis" id="kpis2"></div>
+  <div class="grid">
+    <div class="card"><h3>Cuenta de resultados</h3><table id="pnl"></table></div>
+    <div class="card"><h3>Ingresos, gasto publicitario y beneficio por día</h3><canvas id="chart" height="230"></canvas></div>
+  </div>
+  <div class="grid full">
+    <div class="card exp"><h3>Gastos varios (% sobre ventas netas)</h3>
+      <table id="exp"></table>
+      <div style="margin-top:8px"><button id="addExp">+ Añadir gasto</button> <button id="dl">Descargar config.json</button> <button id="reset">Restablecer</button></div>
+      <div class="note">Se guarda en este navegador. Para que lo vea todo el mundo, descarga el config.json y sustituye <code>dashboard/config.json</code>.</div>
+    </div>
+    <div class="card exp"><h3>Parámetros de estimación</h3>
+      <table id="params"></table>
+      <div class="note">UPS: mientras no haya API, se estima como % de las ventas netas. PayPal y publicidad son datos reales.</div>
+    </div>
+  </div>
+  </div>
+  <div class="view" id="v-roas">
+    <div class="kpis" id="roasK"></div>
+    <div class="card"><div style="display:flex;justify-content:space-between;align-items:center"><h3>Evolución del ROAS</h3>
+      <div><button class="rw on" data-w="7">Media 7 días</button> <button class="rw" data-w="1">Diario</button></div></div>
+      <canvas id="chRoas" height="110"></canvas></div>
+    <div class="grid full"><div class="card"><h3>ROAS por canal</h3><canvas id="chCh" height="200"></canvas></div>
+      <div class="card"><h3>Gasto por canal</h3><canvas id="chSp" height="200"></canvas></div></div>
+    <div class="card full"><h3>Desglose por canal</h3><table id="roasT"></table>
+      <div class="note">ROAS total = ventas netas de Shopify (sin IVA) / gasto publicitario total. ROAS por canal = valor de compras atribuido por cada plataforma (sin IVA) / gasto del canal. Las plataformas pueden atribuirse la misma venta, por eso la suma de canales puede superar al total. El ROAS de equilibrio es el mínimo para no perder dinero tras producto, comisiones y UPS.</div></div>
+  </div>
+  <div class="view" id="v-paises"><div class="card"><h3>Por país de envío</h3><table class="dt" id="tpaises"></table>
+    <div class="note">Ventas netas con el IVA de los parámetros aplicado a todos los países. UPS estimado con el % de los parámetros. La publicidad no se puede repartir por país, así que la contribución es antes de publicidad.</div></div></div>
+  <div class="view" id="v-productos"><div class="card"><h3>Por producto</h3><table class="dt" id="tprod"></table>
+    <div class="note">Ventas netas = importe tras descuentos sin IVA. Margen = ventas netas − coste de producto. Ordena pulsando en la cabecera.</div></div></div>
+</div>
+<script>
+const DATA = {"generated": "2026-10-21 21:34", "start": "2026-08-23", "orders": [{"d": "2026-08-23", "c": "ES", "g": 58.5, "s": 0.0, "k": 28.0, "u": "33a85df3", "r": 0, "i": [["Quitapelusas El\u00e9ctrico Pilo 2 Steamery", 1, 65.0, 28.0]]}, {"d": "2026-08-24", "c": "GR", "g": 187.0, "s": 0.0, "k": 84.0, "u": "451ed199", "r": 0, "i": [["Manguera de Jard\u00edn Gentle Greige 20M, LIVLIG", 1, 65.0, 30.0], ["Soporte de Manguera Sand, LIVLIG.", 1, 38.0, 17.0], ["Grifo de jard\u00edn con roseta Sand, Livlig", 1, 34.0, 14.0], ["Rociador de Flores LIVLIG", 1, 50.0, 23.0]]}, {"d": "2026-08-26", "c": "GB", "g": 55.75, "s": 0.0, "k": 28.0, "u": "7450c188", "r": 0, "i": [["Taza de t\u00e9 c/plato, ROYAL ALBERT x Miranda Kerr, Rose Confetti", 1, 61.95, 28.0]]}, {"d": "2026-08-26", "c": "NL", "g": 25.2, "s": 0.0, "k": 12.4, "u": "34b294ae", "r": 1, "i": [["Vaso agua \"Abeille\", 260 ml", 4, 28.0, 12.4]]}, {"d": "2026-08-26", "c": "GB", "g": 31.5, "s": 0.0, "k": 14.0, "u": "814cddc1", "r": 0, "i": [["Grifo de jard\u00edn con roseta Sand, Livlig", 1, 35.0, 14.0]]}, {"d": "2026-08-26", "c": "ES", "g": 28.0, "s": 0.0, "k": 10.8, "u": "a431bf3d", "r": 1, "i": [["Mini Bol \"Abeille\" 27 cl.", 4, 28.0, 10.8]]}, {"d": "2026-08-27", "c": "GR", "g": 34.0, "s": 0.0, "k": 14.0, "u": "b9023131", "r": 0, "i": [["Grifo de jard\u00edn con roseta Sand, Livlig", 1, 34.0, 14.0]]}, {"d": "2026-08-27", "c": "IT", "g": 36.0, "s": 0.0, "k": 17.12, "u": "c4222b7f", "r": 1, "i": [["COPA  ANTILLAISE 29 CL", 4, 36.0, 17.12]]}, {"d": "2026-08-28", "c": "GR", "g": 68.0, "s": 0.0, "k": 28.0, "u": "c7b6634d", "r": 0, "i": [["Grifo de jard\u00edn con roseta Gentle Greige, Livlig", 2, 68.0, 28.0]]}, {"d": "2026-08-28", "c": "GR", "g": 431.0, "s": 0.0, "k": 188.5, "u": "bc56b932", "r": 0, "i": [["Manguera de Jard\u00edn,Green 20M, LIVLIG.", 1, 65.0, 30.0], ["Plato Hondo Costa Nova, Pearl 24cm", 6, 78.0, 34.5], ["Soporte de Manguera Gold, LIVLIG.", 1, 38.0, 17.0], ["Grifo de jard\u00edn con roseta Sand, Livlig", 1, 34.0, 14.0], ["Grifo de jard\u00edn con roseta Green, Livlig", 3, 102.0, 42.0], ["Soporte de Manguera Graceful Green LIVLIG.", 3, 114.0, 51.0]]}, {"d": "2026-08-30", "c": "ES", "g": 25.0, "s": 0.0, "k": 11.65, "u": "a431bf3d", "r": 1, "i": [["Jarra de cristal Abeille 1L.", 1, 25.0, 11.65]]}, {"d": "2026-08-31", "c": "GR", "g": 30.6, "s": 0.0, "k": 14.0, "u": "dce20aa9", "r": 0, "i": [["Grifo de jard\u00edn con roseta Green, Livlig", 1, 34.0, 14.0]]}, {"d": "2026-09-01", "c": "IT", "g": 27.0, "s": 0.0, "k": 12.86, "u": "9d550c54", "r": 0, "i": [["Vaso agua \"Abeille\", 260 ml", 2, 14.0, 6.2], ["Copa de vino \"ABEILLE\" 240 ML", 2, 16.0, 6.66]]}, {"d": "2026-09-02", "c": "ES", "g": 30.6, "s": 0.0, "k": 14.0, "u": "7b31702e", "r": 0, "i": [["Grifo de jard\u00edn con roseta Green, Livlig", 1, 34.0, 14.0]]}, {"d": "2026-09-02", "c": "BE", "g": 110.0, "s": 0.0, "k": 48.28, "u": "8796deee", "r": 0, "i": [["Vaso agua \"Abeille\", 260 ml", 6, 42.0, 18.6], ["Copa de vino \"ABEILLE\" 240 ML", 6, 48.0, 19.98], ["Ensaladera Perloa 21 cm, C\u00f4t\u00e9 Table.", 1, 20.0, 9.7]]}, {"d": "2026-09-02", "c": "NL", "g": 57.6, "s": 0.0, "k": 26.64, "u": "3aad3309", "r": 0, "i": [["Copa de vino \"ABEILLE\" 240 ML", 8, 64.0, 26.64]]}, {"d": "2026-09-02", "c": "IT", "g": 64.0, "s": 0.0, "k": 26.64, "u": "4afc6c2f", "r": 0, "i": [["Copa de vino \"ABEILLE\" 240 ML", 8, 64.0, 26.64]]}, {"d": "2026-09-02", "c": "IT", "g": 75.0, "s": 0.0, "k": 32.5, "u": "4155f9f1", "r": 0, "i": [["Abanico de Lino Do\u00f1ana, The Viana Fan", 1, 75.0, 32.5]]}, {"d": "2026-09-02", "c": "SE", "g": 83.82, "s": 0.0, "k": 35.25, "u": "5d0c68d3", "r": 0, "i": [["Vaso agua \"Abeille\", 260 ml", 6, 43.02, 18.6], ["Copa de vino \"ABEILLE\" 240 ML", 5, 40.8, 16.65]]}, {"d": "2026-09-03", "c": "FR", "g": 42.0, "s": 0.0, "k": 19.03, "u": "6c3a2767", "r": 0, "i": [["Jarra Costa Nova, Pearl 2.9L", 1, 42.0, 19.03]]}, {"d": "2026-09-03", "c": "SE", "g": 14.29, "s": 0.0, "k": 7.0, "u": "2c52dc00", "r": 0, "i": [["Esmalte de u\u00f1as Old Rose, MANUCURIST 15ML.", 1, 14.29, 7.0]]}, {"d": "2026-09-03", "c": "GR", "g": 34.0, "s": 0.0, "k": 14.0, "u": "cd65585e", "r": 0, "i": [["Grifo de jard\u00edn con roseta Green, Livlig", 1, 34.0, 14.0]]}, {"d": "2026-09-04", "c": "FR", "g": 0.0, "s": 0.0, "k": 0.0, "u": "3b07a557", "r": 0, "i": [["Alfombra de Ba\u00f1o Bee Waffle 50X80cm GRACCIOZA", 0, 0.0, 0.0]]}, {"d": "2026-09-05", "c": "BE", "g": 36.0, "s": 0.0, "k": 16.42, "u": "03c4e0e3", "r": 0, "i": [["Copa de vino \"ABEILLE\" 240 ML", 4, 32.0, 13.32], ["Bol de vidrio C\u00f4t\u00e9 Table, Perloa, 13 cm.", 1, 8.0, 3.1]]}, {"d": "2026-09-05", "c": "BE", "g": 16.0, "s": 0.0, "k": 6.98, "u": "be5f76c5", "r": 0, "i": [["Copa de Vino \"Abeille\"240ml", 2, 16.0, 6.98]]}, {"d": "2026-09-07", "c": "NL", "g": 14.0, "s": 0.0, "k": 6.2, "u": "509eb463", "r": 0, "i": [["Vaso agua \"Abeille\", 260 ml", 2, 14.0, 6.2]]}, {"d": "2026-09-07", "c": "IT", "g": 20.0, "s": 0.0, "k": 8.6, "u": "51e0b1d2", "r": 0, "i": [["Cuchillo de mantequilla, Pop Ivoire, Sabr\u00ea-Paris", 1, 20.0, 8.6]]}, {"d": "2026-09-08", "c": "IT", "g": 72.0, "s": 0.0, "k": 33.3, "u": "81934871", "r": 0, "i": [["Copa de vino \"ABEILLE\" 240 ML", 10, 80.0, 33.3]]}, {"d": "2026-09-08", "c": "NL", "g": 35.5, "s": 0.0, "k": 15.1, "u": "628ae564", "r": 0, "i": [["Servidor de tartas, Pop Ivoire, Sabr\u00ea-Paris", 1, 35.5, 15.1]]}, {"d": "2026-09-09", "c": "IT", "g": 15.0, "s": 0.0, "k": 7.28, "u": "9cab26ae", "r": 0, "i": [["Fuente C\u00f4t\u00e9 Table, Chou Sea Green, 22 cm.", 1, 15.0, 7.28]]}, {"d": "2026-09-09", "c": "IT", "g": 67.5, "s": 0.0, "k": 32.5, "u": "6da6d950", "r": 0, "i": [["Abanico de Lino Marrakech, The Viana Fan", 1, 75.0, 32.5]]}, {"d": "2026-09-11", "c": "FI", "g": 100.8, "s": 0.0, "k": 52.48, "u": "4021929c", "r": 0, "i": [["Vaso agua \"Abeille\", 260 ml", 16, 112.0, 52.48]]}, {"d": "2026-09-13", "c": "BE", "g": 50.4, "s": 0.0, "k": 25.2, "u": "766d8282", "r": 0, "i": [["Plato Llano Costa Nova, Pearl 28cm", 4, 56.0, 25.2]]}, {"d": "2026-09-14", "c": "IT", "g": 84.0, "s": 0.0, "k": 39.36, "u": "3be25028", "r": 0, "i": [["Vaso agua \"Abeille\", 260 ml", 12, 84.0, 39.36]]}, {"d": "2026-09-14", "c": "SE", "g": 88.24, "s": 0.0, "k": 41.88, "u": "621eb789", "r": 0, "i": [["Copa de Vino \"Abeille\"240ml", 12, 98.04, 41.88]]}, {"d": "2026-09-16", "c": "ES", "g": 14.4, "s": 0.0, "k": 7.5, "u": "2030771c", "r": 0, "i": [["ACTIVE BLUR, MANUCURIST 15ML.", 1, 16.0, 7.5]]}, {"d": "2026-09-19", "c": "ES", "g": 42.0, "s": 0.0, "k": 16.2, "u": "748d84aa", "r": 1, "i": [["Mini Bol \"Abeille\" 27 cl.", 6, 42.0, 16.2]]}, {"d": "2026-09-20", "c": "ES", "g": 39.0, "s": 0.0, "k": 23.59, "u": "c0fd097d", "r": 0, "i": [["Fuente Oval Costa Nova, Pearl 50cm.", 1, 39.0, 23.59]]}, {"d": "2026-10-01", "c": "ES", "g": 50.4, "s": 0.0, "k": 24.8, "u": "1c604201", "r": 0, "i": [["Vaso agua \"Abeille\", 260 ml", 8, 56.0, 24.8]]}, {"d": "2026-10-01", "c": "GB", "g": 39.83, "s": 0.0, "k": 19.15, "u": "9bf3023f", "r": 0, "i": [["Jarra Bordemer, c\u00f4t\u00e9 Table 4L", 1, 39.83, 19.15]]}, {"d": "2026-10-01", "c": "ES", "g": 67.5, "s": 0.0, "k": 32.5, "u": "c2afa14d", "r": 0, "i": [["Abanico de Lino Marrakech, The Viana Fan", 1, 75.0, 32.5]]}, {"d": "2026-10-01", "c": "DE", "g": 60.0, "s": 0.0, "k": 20.1, "u": "90ed1afa", "r": 0, "i": [["Botella Poisson, C\u00f4t\u00e9 Table, 1,1 L", 3, 60.0, 20.1]]}, {"d": "2026-10-01", "c": "BE", "g": 168.0, "s": 0.0, "k": 75.6, "u": "7822d452", "r": 1, "i": [["Taza de cer\u00e1mica \"Abeille\" 52 cl.", 8, 168.0, 75.6]]}, {"d": "2026-10-02", "c": "GR", "g": 50.0, "s": 0.0, "k": 23.0, "u": "f2ea2fd2", "r": 0, "i": [["Rociador de Flores LIVLIG", 1, 50.0, 23.0]]}, {"d": "2026-10-02", "c": "DE", "g": 49.0, "s": 0.0, "k": 22.96, "u": "2e4b7363", "r": 0, "i": [["Vaso agua \"Abeille\", 260 ml", 7, 49.0, 22.96]]}, {"d": "2026-10-02", "c": "IT", "g": 43.2, "s": 0.0, "k": 19.98, "u": "d0fa63a7", "r": 0, "i": [["Copa de vino \"ABEILLE\" 240 ML", 6, 48.0, 19.98]]}, {"d": "2026-10-02", "c": "PT", "g": 38.0, "s": 0.0, "k": 14.19, "u": "1c41f7f6", "r": 0, "i": [["Ensaladera Perloa 21 cm, C\u00f4t\u00e9 Table.", 1, 20.0, 9.7], ["Bol de vidrio C\u00f4t\u00e9 Table, Classic 22,5 cm.", 1, 18.0, 4.49]]}, {"d": "2026-10-03", "c": "PT", "g": 34.0, "s": 0.0, "k": 14.0, "u": "6911fbb9", "r": 0, "i": [["Grifo de jard\u00edn con roseta Green, Livlig", 1, 34.0, 14.0]]}, {"d": "2026-10-03", "c": "GR", "g": 243.0, "s": 0.0, "k": 106.0, "u": "c7b6634d", "r": 1, "i": [["Soporte de Manguera Graceful Green LIVLIG.", 1, 38.0, 17.0], ["Soporte de Manguera Gentle Greige, LIVLIG", 1, 38.0, 17.0], ["Manguera de Jard\u00edn,Green 20M, LIVLIG.", 1, 65.0, 30.0], ["Grifo de jard\u00edn con roseta Gentle Greige, Livlig", 3, 102.0, 42.0]]}, {"d": "2026-10-03", "c": "ES", "g": 44.0, "s": 0.0, "k": 27.22, "u": "aedfd2c4", "r": 0, "i": [["Taza de t\u00e9 con plato Costa Nova, Pearl.", 2, 24.0, 14.98], ["Taza de caf\u00e9 con plato Costa Nova, Pearl.", 2, 20.0, 12.24]]}, {"d": "2026-10-03", "c": "ES", "g": 34.0, "s": 0.0, "k": 14.0, "u": "90859696", "r": 0, "i": [["Grifo de jard\u00edn con roseta Sand, Livlig", 1, 34.0, 14.0]]}, {"d": "2026-10-03", "c": "GB", "g": 67.07, "s": 0.0, "k": 27.1, "u": "45ae8298", "r": 0, "i": [["Ajedrez Cl\u00e1sico, Printworks.", 1, 67.07, 27.1]]}, {"d": "2026-10-03", "c": "GR", "g": 159.0, "s": 0.0, "k": 75.36, "u": "10cf9c78", "r": 1, "i": [["Cuenco Sopa/Cereales Costa Nova, ROSA 16cm.", 2, 24.0, 11.18], ["Vaso agua \"Abeille\", 260 ml", 5, 35.0, 16.4], ["Copa de Vino \"Abeille\"240ml", 4, 32.0, 13.96], ["Plato llano, c\u00f4t\u00e9 table, Jade. 28 cm.", 2, 24.0, 11.98], ["Plato de postre, c\u00f4t\u00e9 table, Jade. 21,5 cm.", 4, 44.0, 21.84]]}, {"d": "2026-10-03", "c": "GR", "g": 34.0, "s": 0.0, "k": 14.0, "u": "d0e60af6", "r": 0, "i": [["Grifo de jard\u00edn con roseta Green, Livlig", 1, 34.0, 14.0]]}, {"d": "2026-10-04", "c": "PT", "g": 75.6, "s": 0.0, "k": 39.36, "u": "85b76cb2", "r": 0, "i": [["Vaso agua \"Abeille\", 260 ml", 12, 84.0, 39.36]]}, {"d": "2026-10-04", "c": "ES", "g": 198.0, "s": 0.0, "k": 88.5, "u": "3d7fbcff", "r": 0, "i": [["Conjunto de conexi\u00f3n de manguera de lat\u00f3n, LIVLIG.", 1, 45.0, 20.0], ["Manguera de Jard\u00edn,Green 20M, LIVLIG.", 1, 65.0, 30.0], ["Grifo de jard\u00edn con roseta Green, Livlig", 1, 34.0, 14.0], ["Soporte de Manguera Gold, LIVLIG.", 1, 38.0, 17.0], ["ACTIVE BLUR, MANUCURIST 15ML.", 1, 16.0, 7.5]]}, {"d": "2026-10-04", "c": "BE", "g": 102.0, "s": 0.0, "k": 42.0, "u": "fdd1d137", "r": 0, "i": [["Grifo de jard\u00edn con roseta Green, Livlig", 3, 102.0, 42.0]]}, {"d": "2026-10-06", "c": "GR", "g": 34.0, "s": 0.0, "k": 14.0, "u": "cd65585e", "r": 1, "i": [["Grifo de jard\u00edn con roseta Green, Livlig", 1, 34.0, 14.0]]}, {"d": "2026-10-06", "c": "GR", "g": 106.0, "s": 0.0, "k": 45.0, "u": "70057d92", "r": 0, "i": [["Soporte de Manguera Gold, LIVLIG.", 1, 38.0, 17.0], ["Grifo de jard\u00edn con roseta Gentle Greige, Livlig", 2, 68.0, 28.0]]}, {"d": "2026-10-06", "c": "IT", "g": 34.0, "s": 0.0, "k": 14.0, "u": "b80f24e1", "r": 0, "i": [["Grifo de jard\u00edn con roseta Green, Livlig", 1, 34.0, 14.0]]}, {"d": "2026-10-06", "c": "GB", "g": 19.1, "s": 0.0, "k": 6.7, "u": "2a69fd07", "r": 0, "i": [["Botella Poisson, C\u00f4t\u00e9 Table, 1,1 L", 1, 21.22, 6.7]]}, {"d": "2026-10-08", "c": "ES", "g": 90.0, "s": 0.0, "k": 38.58, "u": "1fc6abca", "r": 0, "i": [["Copa de vino \"ABEILLE\" 240 ML", 6, 48.0, 19.98], ["Vaso agua \"Abeille\", 260 ml", 6, 42.0, 18.6]]}, {"d": "2026-10-08", "c": "US", "g": 0.0, "s": 0.0, "k": 0.0, "u": "274b31a6", "r": 0, "i": [["Cuenco Sopa / Cereales Costa Nova, PEARL 16cm", 0, 0.0, 0.0], ["Plato Llano Costa Nova, Pearl 28cm", 0, 0.0, 0.0]]}, {"d": "2026-10-09", "c": "GB", "g": 14.86, "s": 0.0, "k": 6.43, "u": "7fd4042b", "r": 0, "i": [["Vaso agua \"Abeille\", 260 ml", 1, 8.26, 3.1], ["Copa de vino \"ABEILLE\" 240 ML", 1, 8.26, 3.33]]}, {"d": "2026-10-09", "c": "PT", "g": 16.0, "s": 0.0, "k": 8.0, "u": "14914b9c", "r": 0, "i": [["Active Glow Blueberry, MANUCURIST 15ml.", 1, 16.0, 8.0]]}, {"d": "2026-10-09", "c": "GB", "g": 43.66, "s": 0.0, "k": 19.03, "u": "2d1f2ae4", "r": 0, "i": [["Jarra Costa Nova, Pearl 2.9L", 1, 43.66, 19.03]]}, {"d": "2026-10-09", "c": "GB", "g": 16.54, "s": 0.0, "k": 6.66, "u": "42c53538", "r": 0, "i": [["Copa de vino \"ABEILLE\" 240 ML", 2, 16.54, 6.66]]}, {"d": "2026-10-10", "c": "GB", "g": 10.63, "s": 0.0, "k": 5.59, "u": "1c8edb38", "r": 0, "i": [["Cuenco Sopa / Cereales Costa Nova, PEARL 16cm", 1, 10.63, 5.59]]}, {"d": "2026-10-10", "c": "US", "g": 0.0, "s": 0.0, "k": 0.0, "u": "679ae012", "r": 0, "i": [["Botella Poisson, C\u00f4t\u00e9 Table, 1,1 L", 0, 0.0, 0.0]]}, {"d": "2026-10-11", "c": "GR", "g": 137.0, "s": 0.0, "k": 61.0, "u": "8e3cee5a", "r": 0, "i": [["Grifo de jard\u00edn con roseta Green, Livlig", 1, 34.0, 14.0], ["Soporte de Manguera Graceful Green LIVLIG.", 1, 38.0, 17.0], ["Manguera de Jard\u00edn,Green 20M, LIVLIG.", 1, 65.0, 30.0]]}, {"d": "2026-10-11", "c": "GB", "g": 0.0, "s": 21.25, "k": 0.0, "u": "d41b14fb", "r": 0, "i": [["Desmaquillante Para U\u00f1as, 100ml.", 0, 0.0, 0.0]]}, {"d": "2026-10-12", "c": "PT", "g": 42.0, "s": 0.0, "k": 18.6, "u": "8f9d3d2e", "r": 0, "i": [["Vaso agua \"Abeille\", 260 ml", 6, 42.0, 18.6]]}, {"d": "2026-10-13", "c": "NL", "g": 10.8, "s": 0.0, "k": 5.4, "u": "faef0999", "r": 0, "i": [["Lechera Pearl 10cl , Costa Nova.", 1, 12.0, 5.4]]}, {"d": "2026-10-14", "c": "US", "g": 173.24, "s": 133.95, "k": 17.0, "u": "903e4fcd", "r": 0, "i": [["Soporte de Manguera Graceful Green LIVLIG.", 1, 39.29, 17.0]]}, {"d": "2026-10-15", "c": "GB", "g": 133.58, "s": 0.0, "k": 66.2, "u": "08d61dbf", "r": 0, "i": [["Toalla De Linen Waffle 550 GSM GRACCIOZA", 1, 88.66, 40.0], ["Toalla De Linen Waffle 550 GSM GRACCIOZA", 1, 9.46, 4.1], ["Jab\u00f3n de lavander\u00eda para seda, lana y plum\u00f3n N\u00ba13, Botella 1L,HOME HEALTHY HOME.", 1, 35.46, 22.1]]}, {"d": "2026-10-16", "c": "GR", "g": 53.9, "s": 5.9, "k": 22.5, "u": "d0796953", "r": 0, "i": [["BASE COAT BASE S.O.S., MANUCURIST 15ML.", 3, 48.0, 22.5]]}, {"d": "2026-10-17", "c": "ES", "g": 20.3, "s": 5.9, "k": 7.5, "u": "b5f0acf9", "r": 0, "i": [["ACTIVE BLUR, MANUCURIST 15ML.", 1, 16.0, 7.5]]}, {"d": "2026-10-18", "c": "GR", "g": 95.9, "s": 5.9, "k": 60.14, "u": "2ffbb026", "r": 1, "i": [["Cabana \u2014 Cabana Anthology", 1, 90.0, 60.14]]}, {"d": "2026-10-18", "c": "NL", "g": 68.0, "s": 5.9, "k": 30.19, "u": "d4ea31e2", "r": 0, "i": [["Plato de pan Pearl, Costa Nova", 4, 26.0, 11.52], ["Fuente horno rectangular grande, Pearl.", 1, 43.0, 18.67]]}, {"d": "2026-10-18", "c": "NL", "g": 25.9, "s": 5.9, "k": 6.7, "u": "338fe690", "r": 0, "i": [["Botella Poisson, C\u00f4t\u00e9 Table, 1,1 L", 1, 20.0, 6.7]]}, {"d": "2026-10-18", "c": "SE", "g": 46.91, "s": 6.03, "k": 13.4, "u": "1239103e", "r": 0, "i": [["Botella Poisson, C\u00f4t\u00e9 Table, 1,1 L", 2, 40.88, 13.4]]}, {"d": "2026-10-18", "c": "GB", "g": 118.79, "s": 0.0, "k": 55.94, "u": "37f6b1be", "r": 0, "i": [["Ensaladera Costa Nova, Pearl 27cm.", 1, 38.05, 15.52], ["Cuenco Sopa / Cereales Costa Nova, PEARL 16cm", 2, 21.4, 11.18], ["Plato de postre Costa Nova, Pearl 22cm.", 2, 26.16, 10.34], ["Plato Llano Costa Nova, Pearl 28cm", 3, 46.38, 18.9]]}, {"d": "2026-10-19", "c": "GB", "g": 35.06, "s": 20.08, "k": 6.98, "u": "06d5539b", "r": 0, "i": [["Copa de Vino \"Abeille\"240ml", 2, 16.64, 6.98]]}, {"d": "2026-10-19", "c": "ES", "g": 36.5, "s": 5.9, "k": 14.0, "u": "e19f8a94", "r": 0, "i": [["Grifo de jard\u00edn con roseta Green, Livlig", 1, 34.0, 14.0]]}, {"d": "2026-10-20", "c": "GB", "g": 89.78, "s": 20.12, "k": 32.5, "u": "f96daccc", "r": 0, "i": [["Abanico de Lino Marrakech, The Viana Fan", 1, 77.4, 32.5]]}, {"d": "2026-10-21", "c": "ES", "g": 158.0, "s": 0.0, "k": 63.0, "u": "c3cbbd40", "r": 0, "i": [["Bandeja Lacada Lux Straw, Mojoo", 1, 39.0, 15.5], ["Bandeja Lacada Lux, Mojoo", 1, 80.0, 32.0], ["Bandeja Lacada Lux indigo, Mojoo", 1, 39.0, 15.5]]}], "days": {"2026-08-23": {"orders": 1.0, "gross": 58.5, "tax": 0.0, "shipping_charged": 0.0, "discounts": 6.5, "refunds": 0.0, "cogs": 28.0, "repeat_orders": 0.0, "shopify_payments_amount": 58.5, "shopify_payments_orders": 1.0, "sp_fees": 1.53, "meta_spend": 26.11, "meta_clicks": 267.0, "meta_impr": 5287.0}, "2026-08-24": {"orders": 1.0, "gross": 187.0, "tax": 0.0, "shipping_charged": 0.0, "discounts": 0.0, "refunds": 0.0, "cogs": 84.0, "repeat_orders": 0.0, "shopify_payments_amount": 187.0, "shopify_payments_orders": 1.0, "sp_fees": 4.23, "meta_spend": 9.01, "meta_clicks": 90.0, "meta_impr": 1961.0, "meta_value": 187.0}, "2026-08-25": {"meta_spend": 15.81, "meta_clicks": 170.0, "meta_impr": 4577.0}, "2026-08-26": {"orders": 4.0, "gross": 140.45, "tax": 0.0, "shipping_charged": 0.0, "discounts": 12.5, "refunds": 0.0, "cogs": 65.2, "repeat_orders": 2.0, "shopify_payments_amount": 87.25, "shopify_payments_orders": 2.0, "paypal_amount": 53.2, "paypal_orders": 2.0, "sp_fees": 5.12, "paypal_fees": 2.24, "meta_spend": 19.95, "meta_clicks": 220.0, "meta_impr": 6003.0}, "2026-08-27": {"orders": 2.0, "gross": 70.0, "tax": 0.0, "shipping_charged": 0.0, "discounts": 0.0, "refunds": 0.0, "cogs": 31.12, "repeat_orders": 1.0, "shopify_payments_amount": 34.0, "shopify_payments_orders": 1.0, "paypal_amount": 36.0, "paypal_orders": 1.0, "sp_fees": 1.01, "paypal_fees": 1.86, "meta_spend": 23.4, "meta_clicks": 210.0, "meta_impr": 5308.0}, "2026-08-28": {"orders": 2.0, "gross": 499.0, "tax": 0.0, "shipping_charged": 0.0, "discounts": 0.0, "refunds": 0.0, "cogs": 216.5, "repeat_orders": 0.0, "shopify_payments_amount": 499.0, "shopify_payments_orders": 2.0, "sp_fees": 11.08, "meta_spend": 23.27, "meta_clicks": 162.0, "meta_impr": 5083.0, "meta_value": 586.15}, "2026-08-29": {"meta_spend": 22.39, "meta_clicks": 345.0, "meta_impr": 7102.0}, "2026-08-30": {"orders": 1.0, "gross": 25.0, "tax": 0.0, "shipping_charged": 0.0, "discounts": 0.0, "refunds": 0.0, "cogs": 11.65, "repeat_orders": 1.0, "paypal_amount": 25.0, "paypal_orders": 1.0, "paypal_fees": 1.08, "meta_spend": 17.53, "meta_clicks": 174.0, "meta_impr": 4110.0}, "2026-08-31": {"orders": 1.0, "gross": 30.6, "tax": 0.0, "shipping_charged": 0.0, "discounts": 3.4, "refunds": 0.0, "cogs": 14.0, "repeat_orders": 0.0, "paypal_amount": 30.6, "paypal_orders": 1.0, "paypal_fees": 1.24, "meta_spend": 20.32, "meta_clicks": 156.0, "meta_impr": 5052.0, "meta_value": 30.6}, "2026-09-01": {"orders": 1.0, "gross": 27.0, "tax": 0.0, "shipping_charged": 0.0, "discounts": 3.0, "refunds": 0.0, "cogs": 12.86, "repeat_orders": 0.0, "shopify_payments_amount": 27.0, "shopify_payments_orders": 1.0, "sp_fees": 1.16, "meta_spend": 55.02, "meta_clicks": 374.0, "meta_impr": 9070.0, "meta_value": 27.0}, "2026-09-02": {"orders": 6.0, "gross": 421.02, "tax": 0.0, "shipping_charged": 0.0, "discounts": 9.8, "refunds": 0.0, "cogs": 183.31, "repeat_orders": 0.0, "paypal_amount": 94.6, "paypal_orders": 2.0, "shopify_payments_amount": 326.42, "shopify_payments_orders": 4.0, "sp_fees": 12.62, "paypal_fees": 3.45, "meta_spend": 99.79, "meta_clicks": 583.0, "meta_impr": 15208.0, "meta_value": 337.2}, "2026-09-03": {"orders": 3.0, "gross": 90.29, "tax": 0.0, "shipping_charged": 0.0, "discounts": 0.0, "refunds": 0.0, "cogs": 40.03, "repeat_orders": 0.0, "shopify_payments_amount": 90.29, "shopify_payments_orders": 3.0, "sp_fees": 4.34, "meta_spend": 63.37, "meta_clicks": 298.0, "meta_impr": 8761.0, "meta_value": 90.24}, "2026-09-04": {"orders": 1.0, "gross": 0.0, "tax": 0.0, "shipping_charged": 0.0, "discounts": 13.6, "refunds": 122.4, "cogs": 0.0, "repeat_orders": 0.0, "shopify_payments_amount": 0.0, "shopify_payments_orders": 1.0, "sp_fees": 4.22, "meta_spend": 29.33, "meta_clicks": 148.0, "meta_impr": 4965.0}, "2026-09-05": {"orders": 2.0, "gross": 52.0, "tax": 0.0, "shipping_charged": 0.0, "discounts": 4.0, "refunds": 0.0, "cogs": 23.4, "repeat_orders": 0.0, "shopify_payments_amount": 52.0, "shopify_payments_orders": 2.0, "sp_fees": 2.79, "meta_spend": 29.81, "meta_clicks": 162.0, "meta_impr": 4097.0, "meta_value": 52.0}, "2026-09-06": {"meta_spend": 35.13, "meta_clicks": 156.0, "meta_impr": 5263.0}, "2026-09-07": {"orders": 2.0, "gross": 34.0, "tax": 0.0, "shipping_charged": 0.0, "discounts": 0.0, "refunds": 0.0, "cogs": 14.8, "repeat_orders": 0.0, "shopify_payments_amount": 34.0, "shopify_payments_orders": 2.0, "sp_fees": 1.31, "meta_spend": 71.08, "meta_clicks": 377.0, "meta_impr": 12215.0, "meta_value": 14.0}, "2026-09-08": {"orders": 2.0, "gross": 107.5, "tax": 0.0, "shipping_charged": 0.0, "discounts": 8.0, "refunds": 0.0, "cogs": 48.4, "repeat_orders": 0.0, "paypal_amount": 72.0, "paypal_orders": 1.0, "shopify_payments_amount": 35.5, "shopify_payments_orders": 1.0, "sp_fees": 2.12, "paypal_fees": 2.44, "meta_spend": 91.41, "meta_clicks": 532.0, "meta_impr": 13078.0, "meta_value": 72.0}, "2026-09-09": {"orders": 2.0, "gross": 82.5, "tax": 0.0, "shipping_charged": 0.0, "discounts": 7.5, "refunds": 0.0, "cogs": 39.78, "repeat_orders": 0.0, "paypal_amount": 15.0, "paypal_orders": 1.0, "shopify_payments_amount": 67.5, "shopify_payments_orders": 1.0, "sp_fees": 1.72, "paypal_fees": 0.79, "meta_spend": 73.29, "meta_clicks": 361.0, "meta_impr": 9812.0, "meta_value": 67.5}, "2026-09-10": {"meta_spend": 62.05, "meta_clicks": 193.0, "meta_impr": 5778.0}, "2026-09-11": {"orders": 1.0, "gross": 100.8, "tax": 0.0, "shipping_charged": 0.0, "discounts": 11.2, "refunds": 0.0, "cogs": 52.48, "repeat_orders": 0.0, "shopify_payments_amount": 100.8, "shopify_payments_orders": 1.0, "sp_fees": 2.42, "meta_spend": 25.46, "meta_clicks": 96.0, "meta_impr": 2383.0, "meta_value": 100.8}, "2026-09-12": {"meta_spend": 21.14, "meta_clicks": 74.0, "meta_impr": 1417.0, "google_spend": 25.2023, "google_clicks": 54.0, "google_conv": 0.0, "google_value": 0.0, "google_impr": 342.0}, "2026-09-13": {"orders": 1.0, "gross": 50.4, "tax": 0.0, "shipping_charged": 0.0, "discounts": 5.6, "refunds": 0.0, "cogs": 25.2, "repeat_orders": 0.0, "shopify_payments_amount": 50.4, "shopify_payments_orders": 1.0, "sp_fees": 1.36, "meta_spend": 3.83, "meta_clicks": 6.0, "meta_impr": 142.0, "google_spend": 17.8196, "google_clicks": 57.0, "google_conv": 1.0, "google_value": 50.4, "google_impr": 1746.0}, "2026-09-14": {"orders": 2.0, "gross": 172.24, "tax": 0.0, "shipping_charged": 0.0, "discounts": 9.8, "refunds": 0.0, "cogs": 81.24, "repeat_orders": 0.0, "paypal_amount": 84.0, "paypal_orders": 1.0, "shopify_payments_amount": 88.24, "shopify_payments_orders": 1.0, "sp_fees": 6.48, "paypal_fees": 2.79, "meta_spend": 0.0, "meta_clicks": 0.0, "meta_impr": 0.0, "meta_value": 84.0, "google_spend": 33.5411, "google_clicks": 156.0, "google_conv": 1.0, "google_value": 88.3433, "google_impr": 2029.0}, "2026-09-15": {"meta_spend": 0.0, "meta_clicks": 0.0, "meta_impr": 0.0, "google_spend": 11.2005, "google_clicks": 45.0, "google_conv": 0.0, "google_value": 0.0, "google_impr": 2709.0}, "2026-09-16": {"orders": 1.0, "gross": 14.4, "tax": 0.0, "shipping_charged": 0.0, "discounts": 1.6, "refunds": 0.0, "cogs": 7.5, "repeat_orders": 0.0, "shopify_payments_amount": 14.4, "shopify_payments_orders": 1.0, "sp_fees": 0.6, "meta_spend": 0.0, "meta_clicks": 0.0, "meta_impr": 0.0, "google_spend": 21.8546, "google_clicks": 37.0, "google_conv": 0.0, "google_value": 0.0, "google_impr": 4111.0}, "2026-09-17": {"meta_spend": 0.0, "meta_clicks": 0.0, "meta_impr": 0.0}, "2026-09-19": {"orders": 1.0, "gross": 42.0, "tax": 0.0, "shipping_charged": 0.0, "discounts": 0.0, "refunds": 0.0, "cogs": 16.2, "repeat_orders": 1.0, "paypal_amount": 42.0, "paypal_orders": 1.0, "paypal_fees": 1.57}, "2026-09-20": {"orders": 1.0, "gross": 39.0, "tax": 0.0, "shipping_charged": 0.0, "discounts": 0.0, "refunds": 0.0, "cogs": 23.59, "repeat_orders": 0.0, "shopify_payments_amount": 39.0, "shopify_payments_orders": 1.0, "sp_fees": 1.12}, "2026-10-01": {"orders": 5.0, "gross": 385.73, "tax": 0.0, "shipping_charged": 0.0, "discounts": 13.1, "refunds": 0.0, "cogs": 172.15, "repeat_orders": 1.0, "shopify_payments_amount": 325.73, "shopify_payments_orders": 4.0, "paypal_amount": 60.0, "paypal_orders": 1.0, "sp_fees": 9.28, "paypal_fees": 2.09, "meta_spend": 153.37, "meta_clicks": 550.0, "meta_impr": 16170.0, "meta_value": 117.9}, "2026-10-02": {"orders": 4.0, "gross": 180.2, "tax": 0.0, "shipping_charged": 0.0, "discounts": 4.8, "refunds": 0.0, "cogs": 80.13, "repeat_orders": 0.0, "shopify_payments_amount": 88.0, "shopify_payments_orders": 2.0, "paypal_amount": 92.2, "paypal_orders": 2.0, "sp_fees": 2.45, "paypal_fees": 3.37, "meta_spend": 176.23, "meta_clicks": 700.0, "meta_impr": 19951.0, "meta_value": 180.2}, "2026-10-03": {"orders": 7.0, "gross": 615.07, "tax": 0.0, "shipping_charged": 0.0, "discounts": 0.0, "refunds": 0.0, "cogs": 277.68, "repeat_orders": 2.0, "paypal_amount": 68.0, "paypal_orders": 2.0, "shopify_payments_amount": 547.07, "shopify_payments_orders": 5.0, "sp_fees": 14.29, "paypal_fees": 2.68, "meta_spend": 58.79, "meta_clicks": 281.0, "meta_impr": 6885.0, "meta_value": 470.0}, "2026-10-04": {"orders": 3.0, "gross": 375.6, "tax": 0.0, "shipping_charged": 0.0, "discounts": 8.4, "refunds": 0.0, "cogs": 169.86, "repeat_orders": 0.0, "shopify_payments_amount": 375.6, "shopify_payments_orders": 3.0, "sp_fees": 9.62, "meta_spend": 85.16, "meta_clicks": 614.0, "meta_impr": 9982.0, "meta_value": 300.0}, "2026-10-05": {"meta_spend": 38.97, "meta_clicks": 357.0, "meta_impr": 6528.0}, "2026-10-06": {"orders": 4.0, "gross": 193.1, "tax": 0.0, "shipping_charged": 0.0, "discounts": 2.12, "refunds": 0.0, "cogs": 79.7, "repeat_orders": 1.0, "shopify_payments_amount": 159.1, "shopify_payments_orders": 3.0, "paypal_amount": 34.0, "paypal_orders": 1.0, "sp_fees": 4.83, "paypal_fees": 1.34, "meta_spend": 33.89, "meta_clicks": 291.0, "meta_impr": 5884.0, "meta_value": 174.0, "google_spend": 21.55, "google_clicks": 19.0, "google_conv": 1.0, "google_value": 19.1031, "google_impr": 1958.0}, "2026-10-07": {"meta_spend": 19.27, "meta_clicks": 179.0, "meta_impr": 4917.0, "google_spend": 21.83, "google_clicks": 31.0, "google_conv": 0.0, "google_value": 0.0, "google_impr": 3124.0}, "2026-10-08": {"orders": 2.0, "gross": 90.0, "tax": 0.0, "shipping_charged": 0.0, "discounts": 16.35, "refunds": 147.84, "cogs": 38.58, "repeat_orders": 0.0, "shopify_payments_amount": 90.0, "shopify_payments_orders": 1.0, "paypal_amount": 0.0, "paypal_orders": 1.0, "sp_fees": 4.84, "paypal_fees": 8.4, "meta_spend": 18.26, "meta_clicks": 157.0, "meta_impr": 4377.0, "google_spend": 20.14, "google_clicks": 32.0, "google_conv": 0.0, "google_value": 0.0, "google_impr": 4375.0}, "2026-10-09": {"orders": 4.0, "gross": 91.06, "tax": 0.0, "shipping_charged": 0.0, "discounts": 1.66, "refunds": 0.0, "cogs": 40.12, "repeat_orders": 0.0, "shopify_payments_amount": 91.06, "shopify_payments_orders": 4.0, "sp_fees": 5.57, "meta_spend": 19.07, "meta_clicks": 143.0, "meta_impr": 4230.0, "google_spend": 19.75, "google_clicks": 43.0, "google_conv": 4.0, "google_value": 91.0426, "google_impr": 3309.0}, "2026-10-10": {"orders": 2.0, "gross": 10.63, "tax": 0.0, "shipping_charged": 0.0, "discounts": 2.05, "refunds": 18.52, "cogs": 5.59, "repeat_orders": 0.0, "shopify_payments_amount": 10.63, "shopify_payments_orders": 2.0, "sp_fees": 2.11, "meta_spend": 21.99, "meta_clicks": 175.0, "meta_impr": 4711.0, "google_spend": 21.15, "google_clicks": 33.0, "google_conv": 2.0, "google_value": 50.0174, "google_impr": 1393.0}, "2026-10-11": {"orders": 2.0, "gross": 137.0, "tax": 0.0, "shipping_charged": 21.25, "discounts": 1.53, "refunds": 35.09, "cogs": 61.0, "repeat_orders": 0.0, "shopify_payments_amount": 137.0, "shopify_payments_orders": 1.0, "paypal_amount": 0.0, "paypal_orders": 1.0, "sp_fees": 3.18, "paypal_fees": 2.78, "meta_spend": 22.1, "meta_clicks": 226.0, "meta_impr": 5278.0, "meta_value": 137.0, "google_spend": 22.44, "google_clicks": 42.0, "google_conv": 1.0, "google_value": 13.8235, "google_impr": 3805.0}, "2026-10-12": {"orders": 1.0, "gross": 42.0, "tax": 0.0, "shipping_charged": 0.0, "discounts": 0.0, "refunds": 0.0, "cogs": 18.6, "repeat_orders": 0.0, "shopify_payments_amount": 42.0, "shopify_payments_orders": 1.0, "sp_fees": 1.64, "paypal_fees": 8.1, "meta_spend": 22.18, "meta_clicks": 196.0, "meta_impr": 4115.0, "google_spend": 18.64, "google_clicks": 32.0, "google_conv": 1.0, "google_value": 42.0, "google_impr": 2946.0}, "2026-10-13": {"orders": 1.0, "gross": 10.8, "tax": 0.0, "shipping_charged": 0.0, "discounts": 1.2, "refunds": 0.0, "cogs": 5.4, "repeat_orders": 0.0, "shopify_payments_amount": 10.8, "shopify_payments_orders": 1.0, "sp_fees": 0.51, "meta_spend": 0.0, "meta_clicks": 0.0, "meta_impr": 0.0, "google_spend": 19.82, "google_clicks": 36.0, "google_conv": 1.0, "google_value": 10.8, "google_impr": 3084.0}, "2026-10-14": {"orders": 1.0, "gross": 173.24, "tax": 0.0, "shipping_charged": 133.95, "discounts": 0.0, "refunds": 0.0, "cogs": 17.0, "repeat_orders": 0.0, "shopify_payments_amount": 173.24, "shopify_payments_orders": 1.0, "sp_fees": 9.24, "google_spend": 21.54, "google_clicks": 43.0, "google_conv": 0.0, "google_value": 0.0, "google_impr": 3520.0}, "2026-10-15": {"orders": 1.0, "gross": 133.58, "tax": 0.0, "shipping_charged": 0.0, "discounts": 0.0, "refunds": 0.0, "cogs": 66.2, "repeat_orders": 0.0, "shopify_payments_amount": 133.58, "shopify_payments_orders": 1.0, "sp_fees": 7.2, "meta_spend": 0.0, "meta_clicks": 0.0, "meta_impr": 0.0, "google_spend": 20.02, "google_clicks": 49.0, "google_conv": 1.0, "google_value": 133.6908, "google_impr": 3824.0}, "2026-10-16": {"orders": 1.0, "gross": 53.9, "tax": 0.0, "shipping_charged": 5.9, "discounts": 0.0, "refunds": 0.0, "cogs": 22.5, "repeat_orders": 0.0, "shopify_payments_amount": 53.9, "shopify_payments_orders": 1.0, "sp_fees": 1.43, "meta_spend": 0.0, "meta_clicks": 0.0, "meta_impr": 0.0, "google_spend": 19.14, "google_clicks": 34.0, "google_conv": 1.0, "google_value": 48.0, "google_impr": 3023.0}, "2026-10-17": {"orders": 1.0, "gross": 20.3, "tax": 0.0, "shipping_charged": 5.9, "discounts": 1.6, "refunds": 0.0, "cogs": 7.5, "repeat_orders": 0.0, "paypal_amount": 20.3, "paypal_orders": 1.0, "paypal_fees": 0.94, "meta_spend": 0.0, "meta_clicks": 0.0, "meta_impr": 0.0, "google_spend": 23.0, "google_clicks": 39.0, "google_conv": 2.0, "google_value": 34.4, "google_impr": 3850.0}, "2026-10-18": {"orders": 5.0, "gross": 355.5, "tax": 0.0, "shipping_charged": 23.73, "discounts": 20.1, "refunds": 0.0, "cogs": 166.37, "repeat_orders": 1.0, "shopify_payments_amount": 355.5, "shopify_payments_orders": 5.0, "sp_fees": 15.1, "google_spend": 22.7, "google_clicks": 44.0, "google_conv": 4.0, "google_value": 251.9003, "google_impr": 2275.0}, "2026-10-19": {"orders": 2.0, "gross": 71.56, "tax": 0.0, "shipping_charged": 25.98, "discounts": 5.06, "refunds": 0.0, "cogs": 20.98, "repeat_orders": 0.0, "paypal_amount": 35.06, "paypal_orders": 1.0, "shopify_payments_amount": 36.5, "shopify_payments_orders": 1.0, "sp_fees": 1.07, "paypal_fees": 1.54, "google_spend": 18.64, "google_clicks": 29.0, "google_conv": 2.0, "google_value": 172.954, "google_impr": 2718.0}, "2026-10-20": {"orders": 1.0, "gross": 89.78, "tax": 0.0, "shipping_charged": 20.12, "discounts": 7.74, "refunds": 0.0, "cogs": 32.5, "repeat_orders": 0.0, "shopify_payments_amount": 89.78, "shopify_payments_orders": 1.0, "sp_fees": 6.59, "google_spend": 22.2, "google_clicks": 19.0, "google_conv": 0.0, "google_value": 0.0, "google_impr": 1973.0}, "2026-10-21": {"orders": 1.0, "gross": 158.0, "tax": 0.0, "shipping_charged": 0.0, "discounts": 0.0, "refunds": 0.0, "cogs": 63.0, "repeat_orders": 0.0, "shopify_payments_amount": 158.0, "shopify_payments_orders": 1.0, "sp_fees": 3.62, "google_spend": 41.22, "google_clicks": 51.0, "google_conv": 0.0, "google_value": 0.0, "google_impr": 5757.0}}, "config": {"params": {"iva_pct": 21.0, "ups_pct_of_sales": 8.0}, "expenses": [{"name": "Gastos varios", "pct": 0}, {"name": "Materiales Damians bolsa", "pct": 0}]}};
+const days = DATA.days, keys = Object.keys(days).sort();
+const eur = n => (n<0?"-":"")+Math.abs(n).toLocaleString("es-ES",{minimumFractionDigits:2,maximumFractionDigits:2})+" €";
+const LS="nahia_cfg_v4"; let cfg = JSON.parse(localStorage.getItem(LS)||"null") || JSON.parse(JSON.stringify(DATA.config));
+const ORD=DATA.orders;
+const g=(d,k)=>(days[d]&&days[d][k])||0;
+const tx=d=>g(d,"gross")*cfg.params.iva_pct/(100+cfg.params.iva_pct);
+const dim=(y,m)=>new Date(y,m,0).getDate();
+const iso=d=>d.toISOString().slice(0,10);
+const addD=(s,n)=>{const d=new Date(s+"T12:00:00Z");d.setUTCDate(d.getUTCDate()+n);return iso(d)};
+function range(a,b){const r=[];for(let d=a;d<=b;d=addD(d,1))r.push(d);return r}
+function pnl(list){
+  const o={orders:0,gross:0,ship:0,tax:0,refunds:0,cogs:0,pp_fee:0,sp_fee:0,ups:0,meta:0,google:0,varios:0,exp:{}};
+  const P=cfg.params;
+  for(const d of list){
+    const net=g(d,"gross")-tx(d);
+    o.orders+=g(d,"orders"); o.gross+=g(d,"gross"); o.ship+=g(d,"shipping_charged"); o.tax+=tx(d); o.refunds+=g(d,"refunds"); o.cogs+=g(d,"cogs");
+    o.pp_fee+=g(d,"paypal_fees"); o.sp_fee+=g(d,"sp_fees");
+    o.ups+=net*P.ups_pct_of_sales/100;
+    o.meta+=g(d,"meta_spend"); o.google+=g(d,"google_spend");
+    for(const e of cfg.expenses){const v=net*(+e.pct||0)/100;o.varios+=v;o.exp[e.name]=(o.exp[e.name]||0)+v}
+  }
+  o.rev=o.gross-o.tax; o.gm=o.rev-o.cogs; o.fees=o.pp_fee+o.sp_fee; o.ads=o.meta+o.google;
+  o.net=o.gm-o.fees-o.ups-o.ads-o.varios; return o;
+}
+let from=keys[0], to=iso(new Date());
+function setRange(a,b){from=a;to=b;document.getElementById("from").value=a;document.getElementById("to").value=b;render()}
+function preset(p){
+  const t=new Date(),y=t.getFullYear(),m=t.getMonth();const today=iso(t);
+  if(p==="mtd")setRange(iso(new Date(Date.UTC(y,m,1))),today);
+  if(p==="lm")setRange(iso(new Date(Date.UTC(y,m-1,1))),iso(new Date(Date.UTC(y,m,0))));
+  if(p==="30")setRange(addD(today,-29),today);
+  if(p==="all")setRange(keys[0],today);
+}
+let chart;
+function render(){
+  const list=range(from,to), o=pnl(list), pc=(v)=>o.rev?(v/o.rev*100).toFixed(1)+"%":"–";
+  document.getElementById("gen").textContent="Actualizado "+DATA.generated+" · "+list.length+" días · "+o.orders+" pedidos";
+  const k=[["Ventas netas (sin IVA)",eur(o.rev),o.orders+" pedidos"],["Margen bruto",eur(o.gm),pc(o.gm)+" s/ventas"],
+    ["Gasto publicitario",eur(o.ads),o.ads?(o.ads/o.rev*100).toFixed(1)+"% s/ventas netas":"–"],
+    ["Beneficio neto",eur(o.net),pc(o.net)+" s/ventas",o.net>=0?"pos":"neg"]];
+  const lo=ORD.filter(x=>x.d>=from&&x.d<=to), rep=lo.filter(x=>x.r), uniq=new Set(lo.filter(x=>x.u).map(x=>x.u)), ret=new Set(rep.filter(x=>x.u).map(x=>x.u));
+  const k2=[["Pedidos de clientes recurrentes",rep.length+" de "+lo.length,(lo.length?(rep.length/lo.length*100).toFixed(1):"0")+"% de los pedidos"],
+    ["Clientes únicos / que repiten",uniq.size+" / "+ret.size,(uniq.size?(ret.size/uniq.size*100).toFixed(1):"0")+"% repiten"]];
+  document.getElementById("kpis2").innerHTML=k2.map(x=>`<div class="card kpi"><div class="l">${x[0]}</div><div class="v ${x[3]||""}">${x[1]}</div><div class="s">${x[2]}</div></div>`).join("");
+  renderRoas(list,o);
+  renderTables(lo);
+  document.getElementById("kpis").innerHTML=k.map(x=>`<div class="card kpi"><div class="l">${x[0]}</div><div class="v ${x[3]||""}">${x[1]}</div><div class="s">${x[2]}</div></div>`).join("");
+  const row=(l,v,c="",e="")=>`<tr class="${c}"><td>${l}${e?'<span class="est">estimado</span>':""}</td><td>${eur(v)}</td><td class="pct">${pc(v)}</td></tr>`;
+  document.getElementById("pnl").innerHTML=`<tr><th></th><th>Importe</th><th>% ventas</th></tr>`+
+    row("Ventas de producto (con IVA)",o.gross-o.ship,"sub")+row("Portes de envío cobrados (con IVA)",o.ship,"sub")+row("Ventas brutas (con IVA)",o.gross,"sec")+row("IVA",-o.tax,"sub")+row("Ventas netas",o.rev,"sec")+
+    row("Coste de producto",-o.cogs,"sub")+row("Margen bruto",o.gm,"sec")+
+    row("Comisiones PayPal",-o.pp_fee,"sub")+row("Comisiones Shopify Payments",-o.sp_fee,"sub")+row("Envíos UPS",-o.ups,"sub",1)+
+    row("Meta Ads",-o.meta,"sub")+row("Google Ads",-o.google,"sub")+cfg.expenses.map(e=>row(e.name,-(o.exp[e.name]||0),"sub")).join("")+
+    row("Beneficio neto",o.net,"tot");
+  const labels=list, rev=list.map(d=>g(d,"gross")-tx(d)), ads=list.map(d=>g(d,"meta_spend")+g(d,"google_spend")), prof=list.map(d=>pnl([d]).net);
+  if(chart)chart.destroy();
+  chart=new Chart(document.getElementById("chart"),{type:"bar",data:{labels:labels.map(d=>d.slice(5)),datasets:[
+    {label:"Ventas netas",data:rev,backgroundColor:"#d9c7b3"},{label:"Publicidad",data:ads,backgroundColor:"#2b2622"},
+    {type:"line",label:"Beneficio",data:prof,borderColor:"#2f7d55",backgroundColor:"#2f7d55",tension:.3,pointRadius:0}]},
+    options:{plugins:{legend:{position:"bottom"}},scales:{x:{ticks:{maxTicksLimit:10}},y:{ticks:{callback:v=>v+" €"}}}}});
+}
+let rw=7,chs={};
+function mkChart(id,cfgc){if(chs[id])chs[id].destroy();chs[id]=new Chart(document.getElementById(id),cfgc)}
+function renderRoas(list,o){
+  const v=1+cfg.params.iva_pct/100, ver=n=>n.toFixed(2);
+  const D=list.map(d=>({d,rev:g(d,"gross")/v,ads:g(d,"meta_spend")+g(d,"google_spend"),ms:g(d,"meta_spend"),mv:g(d,"meta_value")/v,gs:g(d,"google_spend"),gv:g(d,"google_value")/v}));
+  const roll=(num,den)=>D.map((_,i)=>{let a=0,b=0;for(let j=Math.max(0,i-rw+1);j<=i;j++){a+=num(D[j]);b+=den(D[j])}return b?+(a/b).toFixed(2):null});
+  const tot=roll(x=>x.rev,x=>x.ads), me=roll(x=>x.mv,x=>x.ms), go=roll(x=>x.gv,x=>x.gs);
+  const cm=o.rev?(o.rev-o.cogs-o.fees-o.ups)/o.rev:0, be=cm>0?1/cm:0;
+  const sum=f=>D.reduce((a,x)=>a+f(x),0), ms=sum(x=>x.ms),mv=sum(x=>x.mv),gs=sum(x=>x.gs),gv=sum(x=>x.gv),ads=ms+gs,rev=sum(x=>x.rev);
+  const R=(a,b)=>b?a/b:0, tr=R(rev,ads);
+  const card=(l,val,s,c)=>`<div class="card kpi"><div class="l">${l}</div><div class="v ${c||""}">${val}</div><div class="s">${s}</div></div>`;
+  document.getElementById("roasK").innerHTML=card("ROAS total",ads?ver(tr):"–","Equilibrio: "+(be?ver(be):"–"),be&&tr>=be?"pos":"neg")+
+    card("ROAS Meta",ms?ver(R(mv,ms)):"–",eur(ms)+" gastados",be&&R(mv,ms)>=be?"pos":"neg")+card("ROAS Google",gs?ver(R(gv,gs)):"–",eur(gs)+" gastados",be&&R(gv,gs)>=be?"pos":"neg")+
+    card("Gasto publicitario",eur(ads),rev?(ads/rev*100).toFixed(1)+"% s/ventas netas":"–");
+  const lab=list.map(d=>d.slice(5)), grid={x:{ticks:{maxTicksLimit:10}}};
+  const ln=(l,data,c)=>({label:l,data,borderColor:c,backgroundColor:c,tension:.3,pointRadius:0,spanGaps:true});
+  const beL=ln("Equilibrio",D.map(()=>+be.toFixed(2)),"#b8473a");beL.borderDash=[5,5];
+  mkChart("chRoas",{type:"line",data:{labels:lab,datasets:[ln("ROAS total",tot,"#2b2622"),beL]},options:{plugins:{legend:{position:"bottom"}},scales:grid}});
+  mkChart("chCh",{type:"line",data:{labels:lab,datasets:[ln("Meta",me,"#4a6fa5"),ln("Google",go,"#c9a227"),beL]},options:{plugins:{legend:{position:"bottom"}},scales:grid}});
+  mkChart("chSp",{type:"bar",data:{labels:lab,datasets:[{label:"Meta",data:D.map(x=>x.ms),backgroundColor:"#4a6fa5"},{label:"Google",data:D.map(x=>x.gs),backgroundColor:"#c9a227"}]},options:{plugins:{legend:{position:"bottom"}},scales:{x:{stacked:true,ticks:{maxTicksLimit:10}},y:{stacked:true,ticks:{callback:q=>q+" €"}}}}});
+  const cl=sum(x=>0), mc=list.reduce((a,d)=>a+g(d,"meta_clicks"),0), gc=list.reduce((a,d)=>a+g(d,"google_clicks"),0), gcv=list.reduce((a,d)=>a+g(d,"google_conv"),0);
+  const row=(n,sp,val,cl,extra)=>`<tr><td>${n}</td><td>${eur(sp)}</td><td>${eur(val)}</td><td>${sp?ver(val/sp):"–"}</td><td>${cl?eur(sp/cl):"–"}</td><td>${extra}</td></tr>`;
+  document.getElementById("roasT").innerHTML="<tr><th>Canal</th><th>Gasto</th><th>Valor atribuido (sin IVA)</th><th>ROAS</th><th>CPC</th><th>Clics</th></tr>"+
+    row("Meta",ms,mv,mc,mc.toLocaleString("es-ES"))+row("Google",gs,gv,gc,gc.toLocaleString("es-ES"))+
+    `<tr class="sec"><td>Total (Shopify)</td><td>${eur(ads)}</td><td>${eur(rev)}</td><td>${ads?ver(tr):"–"}</td><td>${(mc+gc)?eur(ads/(mc+gc)):"–"}</td><td>${(mc+gc).toLocaleString("es-ES")}</td></tr>`;
+}
+const sortState={};
+function dtable(el,cols,rows,key){
+  const st=sortState[key]||(sortState[key]={c:cols.findIndex(c=>c.def),d:-1});
+  rows.sort((a,b)=>{const x=a[st.c],y=b[st.c];return (typeof x==="string"?x.localeCompare(y):x-y)*st.d});
+  const tot=cols.map((c,i)=>c.sum?rows.reduce((s,r)=>s+r[i],0):null);
+  document.getElementById(el).innerHTML="<tr>"+cols.map((c,i)=>`<th data-k="${key}" data-c="${i}">${c.n}${st.c===i?(st.d<0?" ↓":" ↑"):""}</th>`).join("")+"</tr>"+
+    rows.map(r=>"<tr>"+cols.map((c,i)=>`<td>${c.f?c.f(r[i],r,tot):r[i]}</td>`).join("")+"</tr>").join("")+
+    `<tr class="sec"><td>Total</td>${cols.slice(1).map((c,i)=>`<td>${c.sum?(c.f?c.f(tot[i+1],null,tot):tot[i+1]):""}</td>`).join("")}</tr>`;
+}
+function renderTables(lo){
+  const P=cfg.params, v=1+P.iva_pct/100, names=new Intl.DisplayNames(["es"],{type:"region"});
+  const cn=c=>{try{return names.of(c)}catch(e){return c}};
+  const by=(keyf,add)=>{const m={};for(const o of lo)add(m,keyf(o),o);return m};
+  const c=by(o=>o.c,(m,k,o)=>{const r=m[k]||(m[k]=[k,0,0,0,0,0]);r[1]++;r[2]+=o.g/v;r[3]+=o.k;r[4]+=o.s;});
+  const cr=Object.values(c).map(r=>[cn(r[0]),r[1],r[2],r[2]-r[3],r[4],r[2]*P.ups_pct_of_sales/100]).map(r=>[r[0],r[1],r[2],r[3],r[3]/r[2]*100,r[4],r[5],r[3]-r[5]]);
+  const pc=(x,r,t)=>(t&&t[2]?(x/t[2]*100).toFixed(1):"0")+"%";
+  dtable("tpaises",[{n:"País"},{n:"Pedidos",sum:1,def:0},{n:"Ventas netas",sum:1,f:eur,def:1},{n:"Margen bruto",sum:1,f:eur},
+    {n:"Margen %",f:x=>x.toFixed(1)+"%"},{n:"Portes cobrados (c/IVA)",sum:1,f:eur},{n:"UPS estimado",sum:1,f:eur},{n:"Contribución antes de publicidad",sum:1,f:eur}],
+    cr.map(r=>r),"paises");
+  const pr=by(o=>0,()=>{}); const m={};
+  for(const o of lo)for(const [t,q,rev,cost] of o.i){const r=m[t]||(m[t]=[t,0,0,0]);r[1]+=q;r[2]+=rev/v;r[3]+=cost}
+  const prr=Object.values(m).map(r=>[r[0],r[1],r[2],r[3],r[2]-r[3],r[2]?(r[2]-r[3])/r[2]*100:0]);
+  dtable("tprod",[{n:"Producto"},{n:"Uds",sum:1},{n:"Ventas netas",sum:1,f:eur,def:1},{n:"Coste",sum:1,f:eur},{n:"Margen",sum:1,f:eur},{n:"Margen %",f:x=>x.toFixed(1)+"%"}],prr,"prod");
+}
+function renderCfg(){
+  document.getElementById("exp").innerHTML=`<tr><th>Concepto</th><th>% ventas netas</th><th></th></tr>`+cfg.expenses.map((e,i)=>
+    `<tr><td><input data-i="${i}" data-f="name" value="${e.name}"></td><td><input type="number" step="0.01" data-i="${i}" data-f="pct" value="${e.pct}"></td><td><button data-del="${i}">✕</button></td></tr>`).join("");
+  const L={iva_pct:"IVA (%, incluido en precios)",ups_pct_of_sales:"UPS (% ventas netas)"};
+  document.getElementById("params").innerHTML=Object.keys(cfg.params).map(k=>`<tr><td>${L[k]||k}</td><td><input type="number" step="0.01" data-p="${k}" value="${cfg.params[k]}"></td></tr>`).join("");
+}
+function save(){localStorage.setItem(LS,JSON.stringify(cfg));render()}
+document.addEventListener("input",e=>{
+  const t=e.target;
+  if(t.dataset.f){cfg.expenses[t.dataset.i][t.dataset.f]=t.type==="number"?+t.value:t.value;save()}
+  if(t.dataset.p){cfg.params[t.dataset.p]=+t.value;save()}
+});
+document.addEventListener("click",e=>{
+  const t=e.target;
+  if(t.classList&&t.classList.contains("rw")){rw=+t.dataset.w;document.querySelectorAll(".rw").forEach(b=>b.classList.toggle("on",b===t));render()}
+  if(t.classList&&t.classList.contains("tab")){document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("on",b===t));document.querySelectorAll(".view").forEach(v=>v.classList.toggle("on",v.id==="v-"+t.dataset.t));render()}
+  if(t.tagName==="TH"&&t.dataset.k){const st=sortState[t.dataset.k],c=+t.dataset.c;st.d=st.c===c?-st.d:-1;st.c=c;render()}
+  if(t.dataset.del){cfg.expenses.splice(t.dataset.del,1);save();renderCfg()}
+  if(t.dataset.p&&t.tagName==="BUTTON"&&!t.classList.contains("tab")){preset(t.dataset.p);document.querySelectorAll("button[data-p]").forEach(b=>b.classList.toggle("on",b===t))}
+});
+document.getElementById("addExp").onclick=()=>{cfg.expenses.push({name:"Nuevo gasto",pct:0});save();renderCfg()};
+document.getElementById("reset").onclick=()=>{localStorage.removeItem(LS);cfg=JSON.parse(JSON.stringify(DATA.config));renderCfg();render()};
+document.getElementById("dl").onclick=()=>{const a=document.createElement("a");a.href="data:application/json,"+encodeURIComponent(JSON.stringify(cfg,null,2));a.download="config.json";a.click()};
+document.getElementById("from").onchange=e=>setRange(e.target.value,to);
+document.getElementById("to").onchange=e=>setRange(from,e.target.value);
+
+async function sha256(str){
+  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(str));
+  return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+}
+const AUTH_HASH = "3f9fe0cf8466ed9e8e396636892f82d9e7e26b86c974f012efa21dd85d87296d"; // nahia2026
+async function checkAuth(){
+  const saved = localStorage.getItem("nahia_auth");
+  if(saved === AUTH_HASH){
+    document.getElementById("loginOverlay").style.display = "none";
+  } else {
+    document.getElementById("loginOverlay").style.display = "flex";
+  }
+}
+async function handleLogin(e){
+  e.preventDefault();
+  const val = document.getElementById("pwdInput").value;
+  const hash = await sha256(val);
+  if(hash === AUTH_HASH){
+    localStorage.setItem("nahia_auth", hash);
+    document.getElementById("loginOverlay").style.display = "none";
+  } else {
+    document.getElementById("loginErr").style.display = "block";
+  }
+}
+checkAuth();
+
+renderCfg(); preset("mtd");
+document.querySelector('button[data-p="mtd"]').classList.add("on");
+</script>
+</body>
+</html>

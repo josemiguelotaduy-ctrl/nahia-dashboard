@@ -37,9 +37,31 @@
   .view{display:none}.view.on{display:block}
   table.dt th{cursor:pointer;user-select:none} table.dt td:first-child{max-width:340px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .bar{display:inline-block;height:6px;background:var(--acc);border-radius:3px;vertical-align:middle;margin-left:6px}
+
+  #loginOverlay{position:fixed;inset:0;background:var(--bg);display:flex;align-items:center;justify-content:center;z-index:9999}
+  .loginBox{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:36px;width:100%;max-width:380px;box-shadow:0 12px 32px rgba(0,0,0,0.06);text-align:center}
+  .loginBox h2{margin:0 0 6px;font-size:20px;font-weight:600}
+  .loginBox p{margin:0 0 20px;font-size:13px;color:var(--mute)}
+  .loginBox input{width:100%;margin-bottom:12px;padding:10px 14px;border:1px solid var(--line);border-radius:8px;font-size:14px;outline:none}
+  .loginBox button{width:100%;padding:10px;background:var(--ink);color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer}
+  .loginBox .err{color:var(--neg);font-size:12px;margin-top:10px;display:none}
+
 </style>
 </head>
 <body>
+
+<div id="loginOverlay">
+  <div class="loginBox">
+    <h2>Nahia Home</h2>
+    <p>Dashboard Financiero P&amp;L</p>
+    <form id="loginForm" onsubmit="handleLogin(event)">
+      <input type="password" id="pwdInput" placeholder="Introduce la contraseña" autocomplete="current-password" autofocus required>
+      <button type="submit">Entrar</button>
+      <div id="loginErr" class="err">Contraseña incorrecta</div>
+    </form>
+  </div>
+</div>
+
 <div class="wrap">
   <header>
     <div><h1>Nahia Home · P&amp;L</h1><div class="sub" id="gen"></div></div>
@@ -222,6 +244,33 @@ document.getElementById("reset").onclick=()=>{localStorage.removeItem(LS);cfg=JS
 document.getElementById("dl").onclick=()=>{const a=document.createElement("a");a.href="data:application/json,"+encodeURIComponent(JSON.stringify(cfg,null,2));a.download="config.json";a.click()};
 document.getElementById("from").onchange=e=>setRange(e.target.value,to);
 document.getElementById("to").onchange=e=>setRange(from,e.target.value);
+
+async function sha256(str){
+  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(str));
+  return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+}
+const AUTH_HASH = "3f9fe0cf8466ed9e8e396636892f82d9e7e26b86c974f012efa21dd85d87296d"; // nahia2026
+async function checkAuth(){
+  const saved = localStorage.getItem("nahia_auth");
+  if(saved === AUTH_HASH){
+    document.getElementById("loginOverlay").style.display = "none";
+  } else {
+    document.getElementById("loginOverlay").style.display = "flex";
+  }
+}
+async function handleLogin(e){
+  e.preventDefault();
+  const val = document.getElementById("pwdInput").value;
+  const hash = await sha256(val);
+  if(hash === AUTH_HASH){
+    localStorage.setItem("nahia_auth", hash);
+    document.getElementById("loginOverlay").style.display = "none";
+  } else {
+    document.getElementById("loginErr").style.display = "block";
+  }
+}
+checkAuth();
+
 renderCfg(); preset("mtd");
 document.querySelector('button[data-p="mtd"]').classList.add("on");
 </script>

@@ -221,7 +221,8 @@ def main():
     html = open(os.path.join(ROOT, "template.html")).read().replace("__DATA__", json.dumps(payload))
     os.makedirs(os.path.join(ROOT, "public"), exist_ok=True)
     open(os.path.join(ROOT, "public", "index.html"), "w").write(html)
-    print("OK -> dashboard/public/index.html")
+    open(os.path.join(ROOT, "index.html"), "w").write(html)
+    print("OK -> dashboard/index.html & public/index.html")
 
 
 if __name__ == "__main__":
