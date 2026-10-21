@@ -1,7 +1,7 @@
 {
   "params": {
     "iva_pct": 21.0,
-    "ups_pct_of_sales": 8.0
+    "ups_pct_of_sales": 25.0
   },
   "expenses": [
     {

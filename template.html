@@ -110,7 +110,7 @@
 const DATA = __DATA__;
 const days = DATA.days, keys = Object.keys(days).sort();
 const eur = n => (n<0?"-":"")+Math.abs(n).toLocaleString("es-ES",{minimumFractionDigits:2,maximumFractionDigits:2})+" €";
-const LS="nahia_cfg_v5"; let cfg = JSON.parse(localStorage.getItem(LS)||"null") || JSON.parse(JSON.stringify(DATA.config));
+const LS="nahia_cfg_v6"; let cfg = JSON.parse(localStorage.getItem(LS)||"null") || JSON.parse(JSON.stringify(DATA.config));
 const ORD=DATA.orders;
 const g=(d,k)=>(days[d]&&days[d][k])||0;
 const tx=d=>g(d,"gross")*cfg.params.iva_pct/(100+cfg.params.iva_pct);

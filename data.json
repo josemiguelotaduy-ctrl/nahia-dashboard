@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21 21:52",
+ "generated": "2026-10-21 21:54",
  "start": "2026-08-23",
  "orders": [
   {
@@ -2537,7 +2537,7 @@
  "config": {
   "params": {
    "iva_pct": 21.0,
-   "ups_pct_of_sales": 8.0
+   "ups_pct_of_sales": 25.0
   },
   "expenses": [
    {
