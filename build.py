@@ -28,20 +28,7 @@ def load_env():
 
 
 ENV = load_env()
-def load_cached_days():
-    c = defaultdict(lambda: defaultdict(float))
-    dp = os.path.join(ROOT, "data.json")
-    if os.path.exists(dp):
-        try:
-            prev = json.load(open(dp)).get("days", {})
-            for d, row in prev.items():
-                for k, v in row.items():
-                    c[d][k] = v
-        except Exception as e:
-            print("Note: data.json cache load:", e)
-    return c
-
-days = load_cached_days()
+days = defaultdict(lambda: defaultdict(float))
 orders_out = []
 
 
@@ -103,6 +90,7 @@ def shopify():
             gw = ",".join(o["paymentGatewayNames"]).lower()
             hist[o["id"]] = {
                 "id": o["id"], "created": o["createdAt"], "d": local_date(o["createdAt"]),
+                "cancelled": bool(o.get("cancelledAt")),
                 "c": (o.get("shippingAddress") or {}).get("countryCodeV2") or "??",
                 "g": round(m("currentTotalPriceSet"), 2), "tax": round(m("currentTotalTaxSet"), 2),
                 "s": round(m("totalShippingPriceSet"), 2), "disc": round(m("totalDiscountsSet"), 2),
@@ -120,6 +108,8 @@ def shopify():
     seen = set()
     for o in allo:
         if o["d"] < START:
+            continue
+        if o.get("cancelled"):
             continue
         rep = 1 if (o["u"] and o["u"] in seen) or o["idx"] >= 2 else 0
         if o["u"]:
@@ -216,11 +206,33 @@ def google():
 
 
 def main():
+    # Cache previous meta spend in case Meta API hits a temporary checkpoint
+    prev_meta = {}
+    dp = os.path.join(ROOT, "data.json")
+    if os.path.exists(dp):
+        try:
+            prev_days = json.load(open(dp)).get("days", {})
+            for d, row in prev_days.items():
+                prev_meta[d] = {
+                    "meta_spend": row.get("meta_spend", 0),
+                    "meta_clicks": row.get("meta_clicks", 0),
+                    "meta_impr": row.get("meta_impr", 0),
+                    "meta_value": row.get("meta_value", 0),
+                }
+        except Exception:
+            pass
+
     for fn in (shopify, paypal, meta, google):
         try:
             fn()
-        except Exception as e:  # keep dashboard alive if one source fails
+        except Exception as e:
             print(f"WARNING {fn.__name__} failed: {e}", file=sys.stderr)
+            if fn == meta and prev_meta:
+                print("Restoring cached Meta numbers from previous run")
+                for d, m_dict in prev_meta.items():
+                    for mk, mv in m_dict.items():
+                        if mv:
+                            days[d][mk] = mv
     cfg_path = os.path.join(ROOT, "config.json")
     cfg = json.load(open(cfg_path))
     payload = {
