@@ -12,7 +12,7 @@ from zoneinfo import ZoneInfo
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 TZ = ZoneInfo("Europe/Madrid")
-START = os.environ.get("DASH_START", "2026-08-23")
+START = os.environ.get("DASH_START", "2022-08-01")
 
 
 def load_env():
@@ -173,7 +173,9 @@ def paypal():
 
 # ------------------------------------------------------------------- Meta
 def meta():
-    rng = json.dumps({"since": START, "until": dt.date.today().isoformat()})
+    # Meta only serves the last 37 months of insights
+    since = max(START, (dt.date.today() - dt.timedelta(days=1090)).isoformat())
+    rng = json.dumps({"since": since, "until": dt.date.today().isoformat()})
     qs = urllib.parse.urlencode({"fields": "spend,impressions,clicks,action_values", "time_increment": 1, "time_range": rng,
                                  "limit": 500, "access_token": ENV["META_ACCESS_TOKEN"]})
     d = http_json(f"https://graph.facebook.com/v21.0/{ENV['META_AD_ACCOUNT_ID']}/insights?" + qs)
