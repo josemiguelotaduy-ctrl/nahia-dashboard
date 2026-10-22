@@ -148,7 +148,8 @@ def shopify():
 def paypal():
     cid, sec = ENV["PAYPAL_CLIENT_ID"], ENV["PAYPAL_CLIENT_SECRET"]
     tok = http_json("https://api-m.paypal.com/v1/oauth2/token", b"grant_type=client_credentials", auth=f"{cid}:{sec}")["access_token"]
-    start = dt.datetime.fromisoformat(START).replace(tzinfo=dt.timezone.utc)
+    start = max(dt.datetime.fromisoformat(START).replace(tzinfo=dt.timezone.utc),
+                dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=1090))
     end, n = dt.datetime.now(dt.timezone.utc), 0
     fmt = lambda d: d.strftime("%Y-%m-%dT%H:%M:%S-0000")
     while start < end:
@@ -178,8 +179,13 @@ def meta():
     rng = json.dumps({"since": since, "until": dt.date.today().isoformat()})
     qs = urllib.parse.urlencode({"fields": "spend,impressions,clicks,action_values", "time_increment": 1, "time_range": rng,
                                  "limit": 500, "access_token": ENV["META_ACCESS_TOKEN"]})
-    d = http_json(f"https://graph.facebook.com/v21.0/{ENV['META_AD_ACCOUNT_ID']}/insights?" + qs)
-    for r in d["data"]:
+    url = f"https://graph.facebook.com/v21.0/{ENV['META_AD_ACCOUNT_ID']}/insights?" + qs
+    rows = []
+    while url:
+        d = http_json(url)
+        rows += d["data"]
+        url = d.get("paging", {}).get("next")
+    for r in rows:
         day = days[r["date_start"]]
         day["meta_spend"] += float(r["spend"])
         day["meta_clicks"] += float(r["clicks"])
@@ -187,7 +193,7 @@ def meta():
         for av in r.get("action_values", []):
             if av["action_type"] == "omni_purchase":
                 day["meta_value"] += float(av["value"])
-    print(f"Meta: {len(d['data'])} days")
+    print(f"Meta: {len(rows)} days")
 
 
 # ----------------------------------------------------------------- Google

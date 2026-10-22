@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22 19:29",
+ "generated": "2026-10-22 19:30",
  "start": "2022-08-01",
  "orders": [
   {
@@ -19367,6 +19367,7 @@
    "paypal_amount": 0.0,
    "paypal_orders": 2.0,
    "sp_fees": 4.22,
+   "paypal_fees": 2.82,
    "meta_spend": 203.31,
    "meta_clicks": 1037.0,
    "meta_impr": 38416.0,
@@ -19506,6 +19507,7 @@
    "paypal_amount": 71.5,
    "paypal_orders": 1.0,
    "sp_fees": 1.12,
+   "paypal_fees": 2.42,
    "meta_spend": 42.5,
    "meta_clicks": 388.0,
    "meta_impr": 8924.0,
@@ -19561,6 +19563,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 81.8,
    "paypal_orders": 2.0,
+   "paypal_fees": 3.07,
    "meta_spend": 31.86,
    "meta_clicks": 225.0,
    "meta_impr": 7197.0,
@@ -19609,6 +19612,7 @@
    "repeat_orders": 1.0,
    "paypal_amount": 54.9,
    "paypal_orders": 1.0,
+   "paypal_fees": 1.94,
    "meta_spend": 49.77,
    "meta_clicks": 387.0,
    "meta_impr": 9320.0
@@ -19700,6 +19704,7 @@
    "paypal_amount": 61.3,
    "paypal_orders": 1.0,
    "sp_fees": 2.52,
+   "paypal_fees": 3.35,
    "meta_spend": 41.77,
    "meta_clicks": 284.0,
    "meta_impr": 7076.0,
@@ -19721,6 +19726,7 @@
    "repeat_orders": 1.0,
    "paypal_amount": 121.6,
    "paypal_orders": 2.0,
+   "paypal_fees": 4.23,
    "meta_spend": 32.14,
    "meta_clicks": 237.0,
    "meta_impr": 7106.0,
@@ -19858,6 +19864,7 @@
    "repeat_orders": 1.0,
    "paypal_amount": 85.9,
    "paypal_orders": 1.0,
+   "paypal_fees": 4.55,
    "meta_spend": 60.95,
    "meta_clicks": 288.0,
    "meta_impr": 6383.0,
@@ -19938,6 +19945,7 @@
    "shopify_payments_amount": 47.7,
    "shopify_payments_orders": 1.0,
    "sp_fees": 1.3,
+   "paypal_fees": 2.15,
    "meta_spend": 41.45,
    "meta_clicks": 244.0,
    "meta_impr": 5183.0,
@@ -20023,6 +20031,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 76.9,
    "paypal_orders": 1.0,
+   "paypal_fees": 2.58,
    "meta_spend": 67.96,
    "meta_clicks": 389.0,
    "meta_impr": 10181.0,
@@ -20157,6 +20166,7 @@
    "paypal_amount": 270.0,
    "paypal_orders": 1.0,
    "sp_fees": 1.04,
+   "paypal_fees": 8.18,
    "meta_spend": 32.96,
    "meta_clicks": 170.0,
    "meta_impr": 5229.0,
@@ -20307,6 +20317,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 84.0,
    "paypal_orders": 1.0,
+   "paypal_fees": 2.79,
    "meta_spend": 14.22,
    "meta_clicks": 69.0,
    "meta_impr": 1865.0,
@@ -20323,6 +20334,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 32.3,
    "paypal_orders": 1.0,
+   "paypal_fees": 1.29,
    "meta_spend": 57.15,
    "meta_clicks": 278.0,
    "meta_impr": 6983.0
@@ -20459,6 +20471,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 40.35,
    "paypal_orders": 2.0,
+   "paypal_fees": 1.87,
    "meta_spend": 44.01,
    "meta_clicks": 228.0,
    "meta_impr": 6469.0,
@@ -20535,6 +20548,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 248.94,
    "paypal_orders": 1.0,
+   "paypal_fees": 7.57,
    "meta_spend": 32.84,
    "meta_clicks": 108.0,
    "meta_impr": 3095.0,
@@ -20593,6 +20607,7 @@
    "paypal_amount": 64.6,
    "paypal_orders": 1.0,
    "sp_fees": 7.85,
+   "paypal_fees": 2.22,
    "meta_spend": 35.73,
    "meta_clicks": 80.0,
    "meta_impr": 3827.0,
@@ -20622,6 +20637,7 @@
    "paypal_amount": 24.65,
    "paypal_orders": 1.0,
    "sp_fees": 0.82,
+   "paypal_fees": 1.06,
    "meta_spend": 34.04,
    "meta_clicks": 65.0,
    "meta_impr": 2547.0,
@@ -20664,6 +20680,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 68.0,
    "paypal_orders": 1.0,
+   "paypal_fees": 3.2,
    "meta_spend": 37.98,
    "meta_clicks": 90.0,
    "meta_impr": 3801.0,
@@ -20702,6 +20719,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 95.0,
    "paypal_orders": 1.0,
+   "paypal_fees": 3.11,
    "meta_spend": 35.48,
    "meta_clicks": 49.0,
    "meta_impr": 2276.0
@@ -20823,6 +20841,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 12.75,
    "paypal_orders": 1.0,
+   "paypal_fees": 0.72,
    "meta_spend": 40.83,
    "meta_clicks": 91.0,
    "meta_impr": 3202.0,
@@ -20856,6 +20875,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 18.7,
    "paypal_orders": 1.0,
+   "paypal_fees": 0.89,
    "meta_spend": 28.72,
    "meta_clicks": 59.0,
    "meta_impr": 2046.0,
@@ -20885,6 +20905,7 @@
    "paypal_amount": 13.6,
    "paypal_orders": 1.0,
    "sp_fees": 8.33,
+   "paypal_fees": 0.74,
    "meta_spend": 31.42,
    "meta_clicks": 58.0,
    "meta_impr": 2367.0,
@@ -20909,6 +20930,7 @@
    "shopify_payments_amount": 87.0,
    "shopify_payments_orders": 2.0,
    "sp_fees": 2.43,
+   "paypal_fees": 2.44,
    "meta_spend": 45.75,
    "meta_clicks": 107.0,
    "meta_impr": 3327.0,
@@ -20928,6 +20950,7 @@
    "shopify_payments_amount": 42.0,
    "shopify_payments_orders": 1.0,
    "sp_fees": 1.18,
+   "paypal_fees": 3.31,
    "meta_spend": 33.12,
    "meta_clicks": 72.0,
    "meta_impr": 2954.0,
@@ -20944,6 +20967,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 13.6,
    "paypal_orders": 1.0,
+   "paypal_fees": 0.74,
    "meta_spend": 30.67,
    "meta_clicks": 65.0,
    "meta_impr": 2587.0,
@@ -20960,6 +20984,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 16.0,
    "paypal_orders": 1.0,
+   "paypal_fees": 0.81,
    "meta_spend": 33.31,
    "meta_clicks": 60.0,
    "meta_impr": 2642.0,
@@ -21022,6 +21047,7 @@
    "paypal_amount": 19.55,
    "paypal_orders": 1.0,
    "sp_fees": 4.14,
+   "paypal_fees": 0.92,
    "meta_spend": 34.17,
    "meta_clicks": 70.0,
    "meta_impr": 3033.0,
@@ -21038,6 +21064,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 15.3,
    "paypal_orders": 1.0,
+   "paypal_fees": 0.79,
    "meta_spend": 34.28,
    "meta_clicks": 69.0,
    "meta_impr": 3104.0
@@ -21091,6 +21118,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 33.91,
    "paypal_orders": 1.0,
+   "paypal_fees": 1.33,
    "meta_spend": 34.2,
    "meta_clicks": 69.0,
    "meta_impr": 2589.0
@@ -21285,6 +21313,7 @@
    "paypal_amount": 17.85,
    "paypal_orders": 1.0,
    "sp_fees": 1.73,
+   "paypal_fees": 0.87,
    "meta_spend": 35.49,
    "meta_clicks": 83.0,
    "meta_impr": 3149.0,
@@ -21349,6 +21378,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 76.5,
    "paypal_orders": 1.0,
+   "paypal_fees": 2.57,
    "meta_spend": 30.86,
    "meta_clicks": 71.0,
    "meta_impr": 2060.0,
@@ -21368,6 +21398,7 @@
    "paypal_amount": 9.0,
    "paypal_orders": 1.0,
    "sp_fees": 1.05,
+   "paypal_fees": 0.73,
    "meta_spend": 33.78,
    "meta_clicks": 116.0,
    "meta_impr": 2808.0,
@@ -21387,6 +21418,7 @@
    "shopify_payments_amount": 81.5,
    "shopify_payments_orders": 1.0,
    "sp_fees": 3.57,
+   "paypal_fees": 2.26,
    "meta_spend": 39.87,
    "meta_clicks": 96.0,
    "meta_impr": 3139.0,
@@ -21422,6 +21454,7 @@
    "paypal_amount": 30.0,
    "paypal_orders": 1.0,
    "sp_fees": 6.78,
+   "paypal_fees": 1.22,
    "meta_spend": 33.9,
    "meta_clicks": 69.0,
    "meta_impr": 2178.0,
@@ -21475,6 +21508,7 @@
    "shopify_payments_amount": 24.0,
    "shopify_payments_orders": 1.0,
    "sp_fees": 1.55,
+   "paypal_fees": 38.25,
    "meta_spend": 34.67,
    "meta_clicks": 75.0,
    "meta_impr": 2578.0,
@@ -21515,6 +21549,7 @@
    "paypal_amount": 32.0,
    "paypal_orders": 1.0,
    "sp_fees": 1.58,
+   "paypal_fees": 1.69,
    "meta_spend": 31.73,
    "meta_clicks": 64.0,
    "meta_impr": 2182.0,
@@ -21625,6 +21660,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 320.0,
    "paypal_orders": 1.0,
+   "paypal_fees": 9.63,
    "meta_spend": 34.48,
    "meta_clicks": 100.0,
    "meta_impr": 3408.0,
@@ -21747,6 +21783,7 @@
    "paypal_amount": 165.75,
    "paypal_orders": 1.0,
    "sp_fees": 15.28,
+   "paypal_fees": 5.16,
    "meta_spend": 36.42,
    "meta_clicks": 121.0,
    "meta_impr": 3176.0,
@@ -21768,6 +21805,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 35.7,
    "paypal_orders": 1.0,
+   "paypal_fees": 2.1,
    "meta_spend": 34.02,
    "meta_clicks": 81.0,
    "meta_impr": 3004.0,
@@ -21784,6 +21822,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 51.0,
    "paypal_orders": 1.0,
+   "paypal_fees": 1.83,
    "meta_spend": 42.4,
    "meta_clicks": 131.0,
    "meta_impr": 3582.0,
@@ -21803,6 +21842,7 @@
    "paypal_amount": 285.0,
    "paypal_orders": 4.0,
    "sp_fees": 3.85,
+   "paypal_fees": 10.62,
    "meta_spend": 300.38,
    "meta_clicks": 849.0,
    "meta_impr": 45653.0,
@@ -21822,6 +21862,7 @@
    "shopify_payments_amount": 65.8,
    "shopify_payments_orders": 2.0,
    "sp_fees": 2.06,
+   "paypal_fees": 12.26,
    "meta_spend": 73.23,
    "meta_clicks": 228.0,
    "meta_impr": 8092.0,
@@ -21855,6 +21896,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 77.6,
    "paypal_orders": 2.0,
+   "paypal_fees": 3.25,
    "meta_spend": 36.37,
    "meta_clicks": 126.0,
    "meta_impr": 5236.0,
@@ -21887,6 +21929,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 0.0,
    "paypal_orders": 1.0,
+   "paypal_fees": 4.79,
    "meta_spend": 33.09,
    "meta_clicks": 102.0,
    "meta_impr": 4602.0,
@@ -21920,6 +21963,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 23.8,
    "paypal_orders": 1.0,
+   "paypal_fees": 1.04,
    "meta_spend": 33.6,
    "meta_clicks": 141.0,
    "meta_impr": 6097.0,
@@ -21994,6 +22038,7 @@
    "paypal_amount": 105.0,
    "paypal_orders": 1.0,
    "sp_fees": 3.77,
+   "paypal_fees": 3.4,
    "meta_spend": 47.8,
    "meta_clicks": 99.0,
    "meta_impr": 3927.0,
@@ -22015,6 +22060,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 160.0,
    "paypal_orders": 1.0,
+   "paypal_fees": 4.99,
    "meta_spend": 35.5,
    "meta_clicks": 136.0,
    "meta_impr": 7196.0,
@@ -22066,6 +22112,7 @@
    "shopify_payments_amount": 48.0,
    "shopify_payments_orders": 1.0,
    "sp_fees": 1.31,
+   "paypal_fees": 5.02,
    "meta_spend": 47.93,
    "meta_clicks": 141.0,
    "meta_impr": 4352.0,
@@ -22126,6 +22173,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 31.45,
    "paypal_orders": 2.0,
+   "paypal_fees": 1.61,
    "meta_spend": 64.56,
    "meta_clicks": 168.0,
    "meta_impr": 5587.0,
@@ -22142,6 +22190,7 @@
    "repeat_orders": 1.0,
    "paypal_amount": 39.0,
    "paypal_orders": 1.0,
+   "paypal_fees": 1.48,
    "meta_spend": 62.16,
    "meta_clicks": 130.0,
    "meta_impr": 4498.0,
@@ -22161,6 +22210,7 @@
    "shopify_payments_amount": 102.0,
    "shopify_payments_orders": 1.0,
    "sp_fees": 2.44,
+   "paypal_fees": 1.39,
    "meta_spend": 84.96,
    "meta_clicks": 268.0,
    "meta_impr": 10406.0,
@@ -22177,6 +22227,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 102.65,
    "paypal_orders": 2.0,
+   "paypal_fees": 3.67,
    "meta_spend": 73.14,
    "meta_clicks": 212.0,
    "meta_impr": 7293.0,
@@ -22242,6 +22293,7 @@
    "repeat_orders": 1.0,
    "paypal_amount": 116.7,
    "paypal_orders": 2.0,
+   "paypal_fees": 4.09,
    "meta_spend": 34.52,
    "meta_clicks": 118.0,
    "meta_impr": 5099.0
@@ -22336,6 +22388,7 @@
    "paypal_amount": 127.6,
    "paypal_orders": 4.0,
    "sp_fees": 11.02,
+   "paypal_fees": 5.6,
    "meta_spend": 502.18,
    "meta_clicks": 1443.0,
    "meta_impr": 44246.0,
@@ -22419,6 +22472,7 @@
    "paypal_amount": 35.7,
    "paypal_orders": 1.0,
    "sp_fees": 1.47,
+   "paypal_fees": 1.39,
    "meta_spend": 59.93,
    "meta_clicks": 161.0,
    "meta_impr": 4423.0,
@@ -22510,6 +22564,7 @@
    "meta_value": 40.0
   },
   "2025-10-14": {
+   "paypal_fees": 4.44,
    "meta_spend": 74.39,
    "meta_clicks": 197.0,
    "meta_impr": 6217.0
@@ -22545,6 +22600,7 @@
    "paypal_amount": 180.0,
    "paypal_orders": 1.0,
    "sp_fees": 2.98,
+   "paypal_fees": 5.57,
    "meta_spend": 47.96,
    "meta_clicks": 122.0,
    "meta_impr": 4015.0,
@@ -22594,7 +22650,11 @@
    "cogs": 0.0,
    "repeat_orders": 0.0,
    "paypal_amount": 0.0,
-   "paypal_orders": 1.0
+   "paypal_orders": 1.0,
+   "paypal_fees": 0.94
+  },
+  "2025-10-26": {
+   "paypal_fees": 0.64
   },
   "2025-10-27": {
    "orders": 1.0,
@@ -22632,7 +22692,8 @@
    "cogs": 18.6,
    "repeat_orders": 0.0,
    "paypal_amount": 42.0,
-   "paypal_orders": 1.0
+   "paypal_orders": 1.0,
+   "paypal_fees": 1.57
   },
   "2025-11-03": {
    "meta_spend": 12.48,
@@ -22667,6 +22728,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 20.4,
    "paypal_orders": 1.0,
+   "paypal_fees": 0.94,
    "meta_spend": 48.4,
    "meta_clicks": 147.0,
    "meta_impr": 3850.0,
@@ -22691,6 +22753,7 @@
    "shopify_payments_amount": 34.0,
    "shopify_payments_orders": 1.0,
    "sp_fees": 1.01,
+   "paypal_fees": 6.57,
    "meta_spend": 48.05,
    "meta_clicks": 123.0,
    "meta_impr": 3449.0,
@@ -22731,6 +22794,7 @@
    "shopify_payments_amount": 64.0,
    "shopify_payments_orders": 1.0,
    "sp_fees": 1.64,
+   "paypal_fees": 2.69,
    "meta_spend": 50.6,
    "meta_clicks": 131.0,
    "meta_impr": 4266.0,
@@ -22750,6 +22814,7 @@
    "shopify_payments_amount": 66.0,
    "shopify_payments_orders": 1.0,
    "sp_fees": 1.69,
+   "paypal_fees": 1.73,
    "meta_spend": 52.11,
    "meta_clicks": 139.0,
    "meta_impr": 4821.0,
@@ -22769,6 +22834,7 @@
    "paypal_amount": 33.15,
    "paypal_orders": 1.0,
    "sp_fees": 1.18,
+   "paypal_fees": 1.31,
    "meta_spend": 53.11,
    "meta_clicks": 118.0,
    "meta_impr": 4396.0,
@@ -22785,6 +22851,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 64.0,
    "paypal_orders": 1.0,
+   "paypal_fees": 2.21,
    "meta_spend": 47.87,
    "meta_clicks": 131.0,
    "meta_impr": 4697.0,
@@ -22848,6 +22915,7 @@
    "shopify_payments_amount": 140.0,
    "shopify_payments_orders": 1.0,
    "sp_fees": 3.24,
+   "paypal_fees": 1.53,
    "meta_spend": 52.99,
    "meta_clicks": 135.0,
    "meta_impr": 4302.0,
@@ -22898,6 +22966,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 35.7,
    "paypal_orders": 1.0,
+   "paypal_fees": 1.39,
    "meta_spend": 45.85,
    "meta_clicks": 98.0,
    "meta_impr": 3414.0,
@@ -22914,6 +22983,7 @@
    "repeat_orders": 2.0,
    "paypal_amount": 151.0,
    "paypal_orders": 2.0,
+   "paypal_fees": 5.08,
    "meta_spend": 48.12,
    "meta_clicks": 88.0,
    "meta_impr": 3848.0,
@@ -22933,6 +23003,7 @@
    "shopify_payments_amount": 513.5,
    "shopify_payments_orders": 2.0,
    "sp_fees": 11.38,
+   "paypal_fees": 5.43,
    "meta_spend": 60.03,
    "meta_clicks": 121.0,
    "meta_impr": 5112.0,
@@ -22949,6 +23020,7 @@
    "repeat_orders": 1.0,
    "paypal_amount": 68.0,
    "paypal_orders": 1.0,
+   "paypal_fees": 2.32,
    "meta_spend": 50.24,
    "meta_clicks": 147.0,
    "meta_impr": 5918.0,
@@ -22973,6 +23045,7 @@
    "shopify_payments_amount": 56.0,
    "shopify_payments_orders": 1.0,
    "sp_fees": 1.48,
+   "paypal_fees": 0.97,
    "meta_spend": 46.57,
    "meta_clicks": 115.0,
    "meta_impr": 4761.0,
@@ -23026,6 +23099,7 @@
    "shopify_payments_amount": 42.7,
    "shopify_payments_orders": 2.0,
    "sp_fees": 2.58,
+   "paypal_fees": 4.38,
    "meta_spend": 44.99,
    "meta_clicks": 107.0,
    "meta_impr": 4467.0,
@@ -23050,6 +23124,7 @@
    "paypal_amount": 14.0,
    "paypal_orders": 1.0,
    "sp_fees": 3.12,
+   "paypal_fees": 0.76,
    "meta_spend": 51.7,
    "meta_clicks": 112.0,
    "meta_impr": 5375.0,
@@ -23066,6 +23141,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 123.25,
    "paypal_orders": 1.0,
+   "paypal_fees": 3.92,
    "meta_spend": 49.65,
    "meta_clicks": 137.0,
    "meta_impr": 5565.0,
@@ -23085,6 +23161,7 @@
    "shopify_payments_amount": 153.0,
    "shopify_payments_orders": 1.0,
    "sp_fees": 3.51,
+   "paypal_fees": 2.52,
    "meta_spend": 47.23,
    "meta_clicks": 163.0,
    "meta_impr": 6920.0,
@@ -23101,6 +23178,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 0.0,
    "paypal_orders": 1.0,
+   "paypal_fees": 3.03,
    "meta_spend": 49.31,
    "meta_clicks": 154.0,
    "meta_impr": 7168.0
@@ -23119,6 +23197,7 @@
    "shopify_payments_amount": 47.6,
    "shopify_payments_orders": 1.0,
    "sp_fees": 1.3,
+   "paypal_fees": 7.13,
    "meta_spend": 45.72,
    "meta_clicks": 133.0,
    "meta_impr": 6038.0,
@@ -23231,6 +23310,7 @@
    "paypal_amount": 20.0,
    "paypal_orders": 1.0,
    "sp_fees": 0.97,
+   "paypal_fees": 0.93,
    "meta_spend": 47.58,
    "meta_clicks": 152.0,
    "meta_impr": 5707.0,
@@ -23283,6 +23363,7 @@
    "shopify_payments_amount": 7.0,
    "shopify_payments_orders": 1.0,
    "sp_fees": 0.45,
+   "paypal_fees": 1.71,
    "meta_spend": 49.65,
    "meta_clicks": 190.0,
    "meta_impr": 8368.0,
@@ -23309,6 +23390,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 40.0,
    "paypal_orders": 1.0,
+   "paypal_fees": 1.51,
    "meta_spend": 35.6,
    "meta_clicks": 114.0,
    "meta_impr": 5059.0
@@ -23350,6 +23432,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 71.0,
    "paypal_orders": 2.0,
+   "paypal_fees": 2.76,
    "meta_spend": 84.74,
    "meta_clicks": 394.0,
    "meta_impr": 19655.0,
@@ -23369,6 +23452,7 @@
    "paypal_amount": 540.0,
    "paypal_orders": 1.0,
    "sp_fees": 0.64,
+   "paypal_fees": 16.01,
    "meta_spend": 85.23,
    "meta_clicks": 360.0,
    "meta_impr": 14449.0,
@@ -23388,6 +23472,7 @@
    "paypal_amount": 40.8,
    "paypal_orders": 1.0,
    "sp_fees": 2.69,
+   "paypal_fees": 1.53,
    "meta_spend": 55.89,
    "meta_clicks": 258.0,
    "meta_impr": 10684.0,
@@ -23404,6 +23489,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 81.6,
    "paypal_orders": 1.0,
+   "paypal_fees": 2.72,
    "meta_spend": 49.86,
    "meta_clicks": 281.0,
    "meta_impr": 12245.0,
@@ -23423,6 +23509,7 @@
    "paypal_amount": 101.15,
    "paypal_orders": 1.0,
    "sp_fees": 8.57,
+   "paypal_fees": 3.28,
    "meta_spend": 238.29,
    "meta_clicks": 1253.0,
    "meta_impr": 32070.0,
@@ -23461,6 +23548,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 32.3,
    "paypal_orders": 1.0,
+   "paypal_fees": 1.29,
    "meta_spend": 54.44,
    "meta_clicks": 365.0,
    "meta_impr": 10653.0,
@@ -23497,6 +23585,7 @@
    "paypal_amount": 197.2,
    "paypal_orders": 1.0,
    "sp_fees": 2.67,
+   "paypal_fees": 6.07,
    "meta_spend": 53.64,
    "meta_clicks": 336.0,
    "meta_impr": 10542.0,
@@ -23516,6 +23605,7 @@
    "paypal_amount": 71.4,
    "paypal_orders": 1.0,
    "sp_fees": 2.23,
+   "paypal_fees": 2.42,
    "meta_spend": 52.63,
    "meta_clicks": 246.0,
    "meta_impr": 8157.0,
@@ -23567,6 +23657,7 @@
    "shopify_payments_amount": 146.8,
    "shopify_payments_orders": 2.0,
    "sp_fees": 3.69,
+   "paypal_fees": 3.82,
    "meta_spend": 46.6,
    "meta_clicks": 197.0,
    "meta_impr": 7490.0,
@@ -23602,6 +23693,7 @@
    "paypal_amount": 33.15,
    "paypal_orders": 1.0,
    "sp_fees": 0.82,
+   "paypal_fees": 1.31,
    "meta_spend": 47.75,
    "meta_clicks": 238.0,
    "meta_impr": 6419.0,
@@ -23621,6 +23713,7 @@
    "paypal_amount": 48.0,
    "paypal_orders": 1.0,
    "sp_fees": 4.48,
+   "paypal_fees": 1.74,
    "meta_spend": 57.14,
    "meta_clicks": 230.0,
    "meta_impr": 8357.0,
@@ -23650,6 +23743,7 @@
    "paypal_amount": 306.0,
    "paypal_orders": 1.0,
    "sp_fees": 0.64,
+   "paypal_fees": 9.22,
    "meta_spend": 50.22,
    "meta_clicks": 166.0,
    "meta_impr": 5898.0,
@@ -23679,6 +23773,7 @@
    "shopify_payments_amount": 68.0,
    "shopify_payments_orders": 1.0,
    "sp_fees": 3.74,
+   "paypal_fees": 0.72,
    "meta_spend": 50.17,
    "meta_clicks": 194.0,
    "meta_impr": 7010.0,
@@ -23695,6 +23790,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 18.0,
    "paypal_orders": 1.0,
+   "paypal_fees": 0.87,
    "meta_spend": 57.29,
    "meta_clicks": 268.0,
    "meta_impr": 8212.0,
@@ -23714,6 +23810,7 @@
    "shopify_payments_amount": 22.0,
    "shopify_payments_orders": 1.0,
    "sp_fees": 0.76,
+   "paypal_fees": 0.94,
    "meta_spend": 50.6,
    "meta_clicks": 166.0,
    "meta_impr": 7161.0,
@@ -23809,6 +23906,7 @@
    "shopify_payments_amount": 88.4,
    "shopify_payments_orders": 3.0,
    "sp_fees": 4.37,
+   "paypal_fees": 5.28,
    "meta_spend": 53.66,
    "meta_clicks": 188.0,
    "meta_impr": 7736.0,
@@ -23852,6 +23950,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 56.0,
    "paypal_orders": 1.0,
+   "paypal_fees": 1.97,
    "meta_spend": 45.36,
    "meta_clicks": 153.0,
    "meta_impr": 6828.0,
@@ -23906,6 +24005,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 55.7,
    "paypal_orders": 2.0,
+   "paypal_fees": 2.32,
    "meta_spend": 45.12,
    "meta_clicks": 192.0,
    "meta_impr": 8052.0,
@@ -23969,6 +24069,7 @@
    "shopify_payments_amount": 23.8,
    "shopify_payments_orders": 1.0,
    "sp_fees": 0.8,
+   "paypal_fees": 3.8,
    "meta_spend": 234.51,
    "meta_clicks": 784.0,
    "meta_impr": 22482.0,
@@ -23988,6 +24089,7 @@
    "paypal_amount": 27.2,
    "paypal_orders": 1.0,
    "sp_fees": 1.12,
+   "paypal_fees": 1.14,
    "meta_spend": 55.04,
    "meta_clicks": 211.0,
    "meta_impr": 4999.0,
@@ -24029,6 +24131,7 @@
    "shopify_payments_amount": 40.8,
    "shopify_payments_orders": 1.0,
    "sp_fees": 1.16,
+   "paypal_fees": 3.83,
    "meta_spend": 39.99,
    "meta_clicks": 172.0,
    "meta_impr": 4858.0,
@@ -24048,6 +24151,7 @@
    "paypal_amount": 40.8,
    "paypal_orders": 1.0,
    "sp_fees": 11.16,
+   "paypal_fees": 1.53,
    "meta_spend": 63.24,
    "meta_clicks": 234.0,
    "meta_impr": 7685.0,
@@ -24101,6 +24205,7 @@
    "paypal_amount": 107.95,
    "paypal_orders": 1.0,
    "sp_fees": 1.16,
+   "paypal_fees": 3.48,
    "meta_spend": 44.13,
    "meta_clicks": 131.0,
    "meta_impr": 5652.0,
@@ -24147,6 +24252,7 @@
    "paypal_amount": 127.5,
    "paypal_orders": 1.0,
    "sp_fees": 1.77,
+   "paypal_fees": 4.05,
    "meta_spend": 57.43,
    "meta_clicks": 148.0,
    "meta_impr": 6237.0,
@@ -24166,6 +24272,7 @@
    "shopify_payments_amount": 64.0,
    "shopify_payments_orders": 1.0,
    "sp_fees": 1.64,
+   "paypal_fees": 3.31,
    "meta_spend": 53.29,
    "meta_clicks": 147.0,
    "meta_impr": 5611.0,
@@ -24199,6 +24306,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 48.0,
    "paypal_orders": 1.0,
+   "paypal_fees": 1.74,
    "meta_spend": 50.28,
    "meta_clicks": 150.0,
    "meta_impr": 5176.0,
@@ -24298,6 +24406,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 54.4,
    "paypal_orders": 1.0,
+   "paypal_fees": 1.93,
    "meta_spend": 48.97,
    "meta_clicks": 140.0,
    "meta_impr": 5365.0,
@@ -24314,6 +24423,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 59.5,
    "paypal_orders": 1.0,
+   "paypal_fees": 2.08,
    "meta_spend": 49.9,
    "meta_clicks": 135.0,
    "meta_impr": 5162.0,
@@ -24347,6 +24457,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 64.0,
    "paypal_orders": 1.0,
+   "paypal_fees": 2.21,
    "meta_spend": 46.29,
    "meta_clicks": 105.0,
    "meta_impr": 4785.0,
@@ -24405,6 +24516,7 @@
    "paypal_amount": 42.0,
    "paypal_orders": 1.0,
    "sp_fees": 9.32,
+   "paypal_fees": 1.57,
    "meta_spend": 54.82,
    "meta_clicks": 162.0,
    "meta_impr": 4859.0,
@@ -24455,6 +24567,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 40.8,
    "paypal_orders": 1.0,
+   "paypal_fees": 1.53,
    "meta_spend": 48.81,
    "meta_clicks": 184.0,
    "meta_impr": 4967.0
@@ -24506,6 +24619,7 @@
    "paypal_amount": 22.0,
    "paypal_orders": 1.0,
    "sp_fees": 1.18,
+   "paypal_fees": 0.99,
    "meta_spend": 48.96,
    "meta_clicks": 168.0,
    "meta_impr": 6156.0,
@@ -24525,6 +24639,7 @@
    "paypal_amount": 20.0,
    "paypal_orders": 1.0,
    "sp_fees": 7.56,
+   "paypal_fees": 0.93,
    "meta_spend": 53.99,
    "meta_clicks": 176.0,
    "meta_impr": 5648.0,
@@ -24549,6 +24664,7 @@
    "paypal_amount": 162.4,
    "paypal_orders": 4.0,
    "sp_fees": 1.77,
+   "paypal_fees": 6.1,
    "meta_spend": 48.68,
    "meta_clicks": 162.0,
    "meta_impr": 5717.0,
@@ -24568,6 +24684,7 @@
    "shopify_payments_amount": 44.2,
    "shopify_payments_orders": 1.0,
    "sp_fees": 1.23,
+   "paypal_fees": 3.34,
    "meta_spend": 42.92,
    "meta_clicks": 159.0,
    "meta_impr": 5605.0,
@@ -24587,6 +24704,7 @@
    "shopify_payments_amount": 29.0,
    "shopify_payments_orders": 1.0,
    "sp_fees": 0.91,
+   "paypal_fees": 2.96,
    "meta_spend": 42.78,
    "meta_clicks": 143.0,
    "meta_impr": 5079.0
@@ -24605,6 +24723,7 @@
    "shopify_payments_amount": 153.0,
    "shopify_payments_orders": 1.0,
    "sp_fees": 3.51,
+   "paypal_fees": 6.49,
    "meta_spend": 64.11,
    "meta_clicks": 279.0,
    "meta_impr": 8155.0,
@@ -24646,6 +24765,7 @@
    "shopify_payments_amount": 73.0,
    "shopify_payments_orders": 1.0,
    "sp_fees": 1.83,
+   "paypal_fees": 1.57,
    "meta_spend": 48.75,
    "meta_clicks": 186.0,
    "meta_impr": 6394.0,
@@ -24665,6 +24785,7 @@
    "paypal_amount": 55.0,
    "paypal_orders": 1.0,
    "sp_fees": 1.61,
+   "paypal_fees": 3.04,
    "meta_spend": 50.21,
    "meta_clicks": 204.0,
    "meta_impr": 5173.0,
@@ -24684,6 +24805,7 @@
    "shopify_payments_amount": 33.15,
    "shopify_payments_orders": 1.0,
    "sp_fees": 1.0,
+   "paypal_fees": 7.01,
    "meta_spend": 44.08,
    "meta_clicks": 160.0,
    "meta_impr": 4807.0,
@@ -24719,6 +24841,7 @@
    "shopify_payments_amount": 14.0,
    "shopify_payments_orders": 1.0,
    "sp_fees": 0.59,
+   "paypal_fees": 0.87,
    "meta_spend": 61.71,
    "meta_clicks": 217.0,
    "meta_impr": 6826.0,
@@ -24757,6 +24880,7 @@
    "repeat_orders": 0.0,
    "paypal_amount": 25.98,
    "paypal_orders": 1.0,
+   "paypal_fees": 1.24,
    "meta_spend": 47.21,
    "meta_clicks": 187.0,
    "meta_impr": 6142.0,
@@ -24802,6 +24926,7 @@
    "paypal_amount": 61.2,
    "paypal_orders": 1.0,
    "sp_fees": 3.91,
+   "paypal_fees": 2.12,
    "meta_spend": 56.24,
    "meta_clicks": 228.0,
    "meta_impr": 7056.0,
@@ -24855,6 +24980,7 @@
    "shopify_payments_amount": 20.0,
    "shopify_payments_orders": 1.0,
    "sp_fees": 0.94,
+   "paypal_fees": 1.46,
    "meta_spend": 57.58,
    "meta_clicks": 284.0,
    "meta_impr": 6564.0,
@@ -24874,6 +25000,7 @@
    "shopify_payments_amount": 165.75,
    "shopify_payments_orders": 2.0,
    "sp_fees": 4.08,
+   "paypal_fees": 1.53,
    "meta_spend": 47.13,
    "meta_clicks": 217.0,
    "meta_impr": 6082.0,
@@ -24890,6 +25017,7 @@
    "repeat_orders": 1.0,
    "paypal_amount": 242.0,
    "paypal_orders": 3.0,
+   "paypal_fees": 8.07,
    "meta_spend": 42.37,
    "meta_clicks": 257.0,
    "meta_impr": 6904.0,
@@ -24909,6 +25037,7 @@
    "shopify_payments_amount": 76.5,
    "shopify_payments_orders": 2.0,
    "sp_fees": 3.22,
+   "paypal_fees": 10.12,
    "meta_spend": 48.15,
    "meta_clicks": 317.0,
    "meta_impr": 8717.0,
@@ -24928,6 +25057,7 @@
    "shopify_payments_amount": 642.98,
    "shopify_payments_orders": 5.0,
    "sp_fees": 21.96,
+   "paypal_fees": 2.09,
    "meta_spend": 58.63,
    "meta_clicks": 332.0,
    "meta_impr": 10712.0,
@@ -24944,7 +25074,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 216.0,
    "shopify_payments_orders": 2.0,
-   "sp_fees": 10.53
+   "sp_fees": 10.53,
+   "meta_spend": 50.21,
+   "meta_clicks": 395.0,
+   "meta_impr": 10879.0,
+   "meta_value": 482.0
   },
   "2026-04-14": {
    "orders": 2.0,
@@ -24959,7 +25093,12 @@
    "shopify_payments_orders": 1.0,
    "paypal_amount": 65.0,
    "paypal_orders": 1.0,
-   "sp_fees": 1.18
+   "sp_fees": 1.18,
+   "paypal_fees": 2.24,
+   "meta_spend": 48.83,
+   "meta_clicks": 312.0,
+   "meta_impr": 9710.0,
+   "meta_value": 107.0
   },
   "2026-04-15": {
    "orders": 2.0,
@@ -24971,7 +25110,12 @@
    "cogs": 78.36,
    "repeat_orders": 0.0,
    "paypal_amount": 148.33,
-   "paypal_orders": 2.0
+   "paypal_orders": 2.0,
+   "paypal_fees": 5.0,
+   "meta_spend": 48.53,
+   "meta_clicks": 241.0,
+   "meta_impr": 7445.0,
+   "meta_value": 148.33
   },
   "2026-04-16": {
    "orders": 2.0,
@@ -24984,7 +25128,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 103.7,
    "shopify_payments_orders": 2.0,
-   "sp_fees": 2.78
+   "sp_fees": 2.78,
+   "meta_spend": 51.36,
+   "meta_clicks": 209.0,
+   "meta_impr": 6482.0,
+   "meta_value": 103.7
   },
   "2026-04-17": {
    "orders": 2.0,
@@ -24999,7 +25147,12 @@
    "paypal_orders": 1.0,
    "shopify_payments_amount": 35.7,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 1.05
+   "sp_fees": 1.05,
+   "paypal_fees": 2.79,
+   "meta_spend": 47.03,
+   "meta_clicks": 232.0,
+   "meta_impr": 5997.0,
+   "meta_value": 119.7
   },
   "2026-04-18": {
    "orders": 2.0,
@@ -25014,7 +25167,12 @@
    "shopify_payments_orders": 1.0,
    "paypal_amount": 20.0,
    "paypal_orders": 1.0,
-   "sp_fees": 3.59
+   "sp_fees": 3.59,
+   "paypal_fees": 0.93,
+   "meta_spend": 44.03,
+   "meta_clicks": 216.0,
+   "meta_impr": 5599.0,
+   "meta_value": 102.85
   },
   "2026-04-19": {
    "orders": 1.0,
@@ -25027,7 +25185,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 198.0,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 4.46
+   "sp_fees": 4.46,
+   "meta_spend": 64.72,
+   "meta_clicks": 318.0,
+   "meta_impr": 9046.0,
+   "meta_value": 198.0
   },
   "2026-04-20": {
    "orders": 3.0,
@@ -25042,7 +25204,12 @@
    "shopify_payments_orders": 1.0,
    "paypal_amount": 174.25,
    "paypal_orders": 2.0,
-   "sp_fees": 3.5
+   "sp_fees": 3.5,
+   "paypal_fees": 5.76,
+   "meta_spend": 48.64,
+   "meta_clicks": 252.0,
+   "meta_impr": 7432.0,
+   "meta_value": 326.4
   },
   "2026-04-21": {
    "orders": 1.0,
@@ -25055,7 +25222,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 65.45,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 1.67
+   "sp_fees": 1.67,
+   "meta_spend": 53.82,
+   "meta_clicks": 222.0,
+   "meta_impr": 6812.0,
+   "meta_value": 65.45
   },
   "2026-04-22": {
    "orders": 2.0,
@@ -25070,7 +25241,12 @@
    "shopify_payments_orders": 1.0,
    "paypal_amount": 22.95,
    "paypal_orders": 1.0,
-   "sp_fees": 0.64
+   "sp_fees": 0.64,
+   "paypal_fees": 1.02,
+   "meta_spend": 51.75,
+   "meta_clicks": 202.0,
+   "meta_impr": 5623.0,
+   "meta_value": 38.95
   },
   "2026-04-23": {
    "orders": 2.0,
@@ -25083,7 +25259,10 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 199.09,
    "shopify_payments_orders": 2.0,
-   "sp_fees": 6.18
+   "sp_fees": 6.18,
+   "meta_spend": 44.5,
+   "meta_clicks": 206.0,
+   "meta_impr": 5856.0
   },
   "2026-04-24": {
    "orders": 1.0,
@@ -25095,7 +25274,12 @@
    "cogs": 38.58,
    "repeat_orders": 0.0,
    "paypal_amount": 90.0,
-   "paypal_orders": 1.0
+   "paypal_orders": 1.0,
+   "paypal_fees": 2.96,
+   "meta_spend": 45.51,
+   "meta_clicks": 178.0,
+   "meta_impr": 6390.0,
+   "meta_value": 90.0
   },
   "2026-04-25": {
    "orders": 1.0,
@@ -25107,7 +25291,12 @@
    "cogs": 143.94,
    "repeat_orders": 0.0,
    "paypal_amount": 277.95,
-   "paypal_orders": 1.0
+   "paypal_orders": 1.0,
+   "paypal_fees": 8.41,
+   "meta_spend": 50.21,
+   "meta_clicks": 237.0,
+   "meta_impr": 6809.0,
+   "meta_value": 277.95
   },
   "2026-04-26": {
    "orders": 2.0,
@@ -25120,7 +25309,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 142.1,
    "shopify_payments_orders": 2.0,
-   "sp_fees": 3.58
+   "sp_fees": 3.58,
+   "meta_spend": 59.33,
+   "meta_clicks": 293.0,
+   "meta_impr": 7708.0,
+   "meta_value": 22.1
   },
   "2026-04-27": {
    "orders": 1.0,
@@ -25133,7 +25326,11 @@
    "repeat_orders": 1.0,
    "shopify_payments_amount": 42.0,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 1.18
+   "sp_fees": 1.18,
+   "meta_spend": 48.16,
+   "meta_clicks": 225.0,
+   "meta_impr": 6463.0,
+   "meta_value": 42.0
   },
   "2026-04-28": {
    "orders": 2.0,
@@ -25148,7 +25345,12 @@
    "paypal_orders": 1.0,
    "shopify_payments_amount": 75.0,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 1.88
+   "sp_fees": 1.88,
+   "paypal_fees": 4.76,
+   "meta_spend": 55.02,
+   "meta_clicks": 337.0,
+   "meta_impr": 6434.0,
+   "meta_value": 152.15
   },
   "2026-04-29": {
    "orders": 2.0,
@@ -25162,7 +25364,11 @@
    "paypal_amount": 0.0,
    "paypal_orders": 1.0,
    "shopify_payments_amount": 0.0,
-   "shopify_payments_orders": 1.0
+   "shopify_payments_orders": 1.0,
+   "paypal_fees": 4.53,
+   "meta_spend": 51.09,
+   "meta_clicks": 253.0,
+   "meta_impr": 8046.0
   },
   "2026-04-30": {
    "orders": 1.0,
@@ -25175,7 +25381,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 68.0,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 1.73
+   "sp_fees": 1.73,
+   "meta_spend": 50.78,
+   "meta_clicks": 242.0,
+   "meta_impr": 8415.0,
+   "meta_value": 68.0
   },
   "2026-05-01": {
    "orders": 7.0,
@@ -25188,7 +25398,11 @@
    "repeat_orders": 2.0,
    "shopify_payments_amount": 929.8,
    "shopify_payments_orders": 7.0,
-   "sp_fees": 23.3
+   "sp_fees": 23.3,
+   "meta_spend": 55.55,
+   "meta_clicks": 305.0,
+   "meta_impr": 7807.0,
+   "meta_value": 724.2
   },
   "2026-05-02": {
    "orders": 5.0,
@@ -25201,7 +25415,16 @@
    "repeat_orders": 1.0,
    "shopify_payments_amount": 266.4,
    "shopify_payments_orders": 5.0,
-   "sp_fees": 11.09
+   "sp_fees": 11.09,
+   "meta_spend": 42.7,
+   "meta_clicks": 266.0,
+   "meta_impr": 7290.0,
+   "meta_value": 189.4
+  },
+  "2026-05-03": {
+   "meta_spend": 58.77,
+   "meta_clicks": 342.0,
+   "meta_impr": 8867.0
   },
   "2026-05-04": {
    "orders": 3.0,
@@ -25214,7 +25437,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 1687.2,
    "shopify_payments_orders": 3.0,
-   "sp_fees": 53.88
+   "sp_fees": 53.88,
+   "meta_spend": 50.23,
+   "meta_clicks": 247.0,
+   "meta_impr": 8442.0,
+   "meta_value": 1687.2
   },
   "2026-05-05": {
    "orders": 1.0,
@@ -25227,7 +25454,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 38.25,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 1.1
+   "sp_fees": 1.1,
+   "meta_spend": 47.85,
+   "meta_clicks": 242.0,
+   "meta_impr": 7633.0,
+   "meta_value": 38.25
   },
   "2026-05-06": {
    "orders": 1.0,
@@ -25240,7 +25471,11 @@
    "repeat_orders": 1.0,
    "shopify_payments_amount": 535.5,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 11.55
+   "sp_fees": 11.55,
+   "meta_spend": 52.72,
+   "meta_clicks": 232.0,
+   "meta_impr": 7912.0,
+   "meta_value": 535.5
   },
   "2026-05-07": {
    "orders": 1.0,
@@ -25252,7 +25487,12 @@
    "cogs": 20.94,
    "repeat_orders": 0.0,
    "paypal_amount": 48.0,
-   "paypal_orders": 1.0
+   "paypal_orders": 1.0,
+   "paypal_fees": 1.74,
+   "meta_spend": 46.28,
+   "meta_clicks": 200.0,
+   "meta_impr": 7531.0,
+   "meta_value": 48.0
   },
   "2026-05-08": {
    "orders": 1.0,
@@ -25265,7 +25505,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 14.0,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 0.59
+   "sp_fees": 0.59,
+   "meta_spend": 48.41,
+   "meta_clicks": 256.0,
+   "meta_impr": 7247.0,
+   "meta_value": 14.0
   },
   "2026-05-09": {
    "orders": 3.0,
@@ -25278,7 +25522,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 76.0,
    "shopify_payments_orders": 3.0,
-   "sp_fees": 4.11
+   "sp_fees": 4.11,
+   "meta_spend": 44.96,
+   "meta_clicks": 245.0,
+   "meta_impr": 6515.0,
+   "meta_value": 152.5
   },
   "2026-05-10": {
    "orders": 1.0,
@@ -25291,7 +25539,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 102.0,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 2.44
+   "sp_fees": 2.44,
+   "meta_spend": 55.31,
+   "meta_clicks": 282.0,
+   "meta_impr": 9415.0,
+   "meta_value": 102.0
   },
   "2026-05-11": {
    "orders": 1.0,
@@ -25304,7 +25556,16 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 184.45,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 4.17
+   "sp_fees": 4.17,
+   "meta_spend": 51.62,
+   "meta_clicks": 203.0,
+   "meta_impr": 6938.0,
+   "meta_value": 184.45
+  },
+  "2026-05-12": {
+   "meta_spend": 43.95,
+   "meta_clicks": 162.0,
+   "meta_impr": 6331.0
   },
   "2026-05-13": {
    "orders": 7.0,
@@ -25319,7 +25580,12 @@
    "shopify_payments_orders": 6.0,
    "paypal_amount": 126.65,
    "paypal_orders": 1.0,
-   "sp_fees": 15.21
+   "sp_fees": 15.21,
+   "paypal_fees": 4.02,
+   "meta_spend": 130.88,
+   "meta_clicks": 587.0,
+   "meta_impr": 12413.0,
+   "meta_value": 535.29
   },
   "2026-05-14": {
    "orders": 5.0,
@@ -25332,7 +25598,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 368.77,
    "shopify_payments_orders": 5.0,
-   "sp_fees": 14.17
+   "sp_fees": 14.17,
+   "meta_spend": 166.29,
+   "meta_clicks": 715.0,
+   "meta_impr": 17014.0,
+   "meta_value": 481.46
   },
   "2026-05-15": {
    "orders": 3.0,
@@ -25347,7 +25617,12 @@
    "paypal_orders": 1.0,
    "shopify_payments_amount": 941.7,
    "shopify_payments_orders": 2.0,
-   "sp_fees": 22.75
+   "sp_fees": 22.75,
+   "paypal_fees": 1.57,
+   "meta_spend": 51.36,
+   "meta_clicks": 201.0,
+   "meta_impr": 4091.0,
+   "meta_value": 163.56
   },
   "2026-05-16": {
    "orders": 2.0,
@@ -25359,7 +25634,17 @@
    "cogs": 36.05,
    "repeat_orders": 0.0,
    "paypal_amount": 73.1,
-   "paypal_orders": 2.0
+   "paypal_orders": 2.0,
+   "paypal_fees": 3.46,
+   "meta_spend": 48.41,
+   "meta_clicks": 248.0,
+   "meta_impr": 6740.0,
+   "meta_value": 861.3
+  },
+  "2026-05-17": {
+   "meta_spend": 53.17,
+   "meta_clicks": 278.0,
+   "meta_impr": 6840.0
   },
   "2026-05-18": {
    "orders": 4.0,
@@ -25374,7 +25659,17 @@
    "paypal_orders": 1.0,
    "shopify_payments_amount": 243.0,
    "shopify_payments_orders": 3.0,
-   "sp_fees": 6.01
+   "sp_fees": 6.01,
+   "paypal_fees": 0.81,
+   "meta_spend": 52.52,
+   "meta_clicks": 291.0,
+   "meta_impr": 7472.0,
+   "meta_value": 176.0
+  },
+  "2026-05-19": {
+   "meta_spend": 54.76,
+   "meta_clicks": 293.0,
+   "meta_impr": 6775.0
   },
   "2026-05-20": {
    "orders": 4.0,
@@ -25389,7 +25684,12 @@
    "paypal_orders": 3.0,
    "shopify_payments_amount": 289.0,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 6.37
+   "sp_fees": 6.37,
+   "paypal_fees": 4.15,
+   "meta_spend": 50.95,
+   "meta_clicks": 319.0,
+   "meta_impr": 7847.0,
+   "meta_value": 356.0
   },
   "2026-05-21": {
    "orders": 1.0,
@@ -25402,7 +25702,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 20.0,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 0.72
+   "sp_fees": 0.72,
+   "meta_spend": 46.91,
+   "meta_clicks": 268.0,
+   "meta_impr": 7548.0,
+   "meta_value": 20.0
   },
   "2026-05-22": {
    "orders": 3.0,
@@ -25415,7 +25719,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 158.9,
    "shopify_payments_orders": 3.0,
-   "sp_fees": 5.12
+   "sp_fees": 5.12,
+   "meta_spend": 46.46,
+   "meta_clicks": 257.0,
+   "meta_impr": 7953.0,
+   "meta_value": 158.9
   },
   "2026-05-23": {
    "orders": 2.0,
@@ -25427,7 +25735,11 @@
    "cogs": 33.3,
    "repeat_orders": 1.0,
    "paypal_amount": 75.2,
-   "paypal_orders": 2.0
+   "paypal_orders": 2.0,
+   "paypal_fees": 3.84,
+   "meta_spend": 51.64,
+   "meta_clicks": 331.0,
+   "meta_impr": 9371.0
   },
   "2026-05-24": {
    "orders": 2.0,
@@ -25442,7 +25754,12 @@
    "paypal_orders": 1.0,
    "shopify_payments_amount": 47.6,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 2.73
+   "sp_fees": 2.73,
+   "paypal_fees": 1.34,
+   "meta_spend": 59.04,
+   "meta_clicks": 271.0,
+   "meta_impr": 7759.0,
+   "meta_value": 81.6
   },
   "2026-05-25": {
    "orders": 1.0,
@@ -25454,7 +25771,12 @@
    "cogs": 14.0,
    "repeat_orders": 0.0,
    "paypal_amount": 28.9,
-   "paypal_orders": 1.0
+   "paypal_orders": 1.0,
+   "paypal_fees": 1.19,
+   "meta_spend": 47.67,
+   "meta_clicks": 180.0,
+   "meta_impr": 6783.0,
+   "meta_value": 28.9
   },
   "2026-05-26": {
    "orders": 1.0,
@@ -25466,7 +25788,12 @@
    "cogs": 22.75,
    "repeat_orders": 0.0,
    "paypal_amount": 49.3,
-   "paypal_orders": 1.0
+   "paypal_orders": 1.0,
+   "paypal_fees": 1.78,
+   "meta_spend": 48.57,
+   "meta_clicks": 183.0,
+   "meta_impr": 6365.0,
+   "meta_value": 49.3
   },
   "2026-05-27": {
    "orders": 3.0,
@@ -25481,7 +25808,17 @@
    "paypal_orders": 2.0,
    "shopify_payments_amount": 34.0,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 1.01
+   "sp_fees": 1.01,
+   "paypal_fees": 2.65,
+   "meta_spend": 41.2,
+   "meta_clicks": 204.0,
+   "meta_impr": 5165.0,
+   "meta_value": 67.0
+  },
+  "2026-05-28": {
+   "meta_spend": 49.04,
+   "meta_clicks": 154.0,
+   "meta_impr": 3936.0
   },
   "2026-05-29": {
    "orders": 1.0,
@@ -25494,7 +25831,10 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 43.02,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 2.05
+   "sp_fees": 2.05,
+   "meta_spend": 70.82,
+   "meta_clicks": 228.0,
+   "meta_impr": 5793.0
   },
   "2026-05-30": {
    "orders": 1.0,
@@ -25506,7 +25846,18 @@
    "cogs": 40.62,
    "repeat_orders": 0.0,
    "paypal_amount": 90.0,
-   "paypal_orders": 1.0
+   "paypal_orders": 1.0,
+   "paypal_fees": 2.96,
+   "meta_spend": 57.67,
+   "meta_clicks": 187.0,
+   "meta_impr": 4307.0,
+   "meta_value": 90.0
+  },
+  "2026-05-31": {
+   "paypal_fees": 4.18,
+   "meta_spend": 0.0,
+   "meta_clicks": 0.0,
+   "meta_impr": 0.0
   },
   "2026-06-01": {
    "orders": 4.0,
@@ -25521,7 +25872,12 @@
    "shopify_payments_orders": 1.0,
    "paypal_amount": 100.0,
    "paypal_orders": 3.0,
-   "sp_fees": 2.18
+   "sp_fees": 2.18,
+   "paypal_fees": 3.95,
+   "meta_spend": 95.72,
+   "meta_clicks": 435.0,
+   "meta_impr": 11895.0,
+   "meta_value": 78.28
   },
   "2026-06-02": {
    "orders": 6.0,
@@ -25536,7 +25892,12 @@
    "shopify_payments_orders": 4.0,
    "paypal_amount": 190.6,
    "paypal_orders": 2.0,
-   "sp_fees": 7.85
+   "sp_fees": 7.85,
+   "paypal_fees": 6.23,
+   "meta_spend": 196.86,
+   "meta_clicks": 999.0,
+   "meta_impr": 22900.0,
+   "meta_value": 331.5
   },
   "2026-06-03": {
    "orders": 4.0,
@@ -25549,7 +25910,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 225.2,
    "shopify_payments_orders": 4.0,
-   "sp_fees": 6.31
+   "sp_fees": 6.31,
+   "meta_spend": 128.31,
+   "meta_clicks": 784.0,
+   "meta_impr": 17908.0,
+   "meta_value": 195.45
   },
   "2026-06-04": {
    "orders": 1.0,
@@ -25562,7 +25927,11 @@
    "repeat_orders": 1.0,
    "shopify_payments_amount": 49.0,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 2.8
+   "sp_fees": 2.8,
+   "meta_spend": 60.29,
+   "meta_clicks": 260.0,
+   "meta_impr": 9432.0,
+   "meta_value": 49.0
   },
   "2026-06-05": {
    "orders": 3.0,
@@ -25575,7 +25944,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 269.75,
    "shopify_payments_orders": 3.0,
-   "sp_fees": 7.38
+   "sp_fees": 7.38,
+   "meta_spend": 57.58,
+   "meta_clicks": 240.0,
+   "meta_impr": 8570.0,
+   "meta_value": 269.75
   },
   "2026-06-06": {
    "orders": 4.0,
@@ -25590,7 +25963,17 @@
    "paypal_orders": 1.0,
    "shopify_payments_amount": 154.55,
    "shopify_payments_orders": 3.0,
-   "sp_fees": 5.05
+   "sp_fees": 5.05,
+   "paypal_fees": 8.56,
+   "meta_spend": 52.82,
+   "meta_clicks": 260.0,
+   "meta_impr": 7080.0,
+   "meta_value": 413.75
+  },
+  "2026-06-07": {
+   "meta_spend": 56.45,
+   "meta_clicks": 221.0,
+   "meta_impr": 7950.0
   },
   "2026-06-08": {
    "orders": 4.0,
@@ -25605,7 +25988,12 @@
    "shopify_payments_orders": 3.0,
    "paypal_amount": 48.0,
    "paypal_orders": 1.0,
-   "sp_fees": 3.09
+   "sp_fees": 3.09,
+   "paypal_fees": 1.74,
+   "meta_spend": 51.69,
+   "meta_clicks": 224.0,
+   "meta_impr": 7381.0,
+   "meta_value": 152.55
   },
   "2026-06-09": {
    "orders": 3.0,
@@ -25618,7 +26006,16 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 373.8,
    "shopify_payments_orders": 3.0,
-   "sp_fees": 10.38
+   "sp_fees": 10.38,
+   "meta_spend": 60.38,
+   "meta_clicks": 230.0,
+   "meta_impr": 7876.0,
+   "meta_value": 339.8
+  },
+  "2026-06-10": {
+   "meta_spend": 58.01,
+   "meta_clicks": 239.0,
+   "meta_impr": 7928.0
   },
   "2026-06-11": {
    "orders": 2.0,
@@ -25630,7 +26027,12 @@
    "cogs": 12.86,
    "repeat_orders": 1.0,
    "paypal_amount": 30.0,
-   "paypal_orders": 2.0
+   "paypal_orders": 2.0,
+   "paypal_fees": 1.57,
+   "meta_spend": 58.86,
+   "meta_clicks": 503.0,
+   "meta_impr": 9538.0,
+   "meta_value": 30.0
   },
   "2026-06-12": {
    "orders": 1.0,
@@ -25642,7 +26044,12 @@
    "cogs": 34.44,
    "repeat_orders": 0.0,
    "paypal_amount": 81.0,
-   "paypal_orders": 1.0
+   "paypal_orders": 1.0,
+   "paypal_fees": 2.7,
+   "meta_spend": 49.43,
+   "meta_clicks": 442.0,
+   "meta_impr": 9208.0,
+   "meta_value": 81.0
   },
   "2026-06-13": {
    "orders": 2.0,
@@ -25657,7 +26064,12 @@
    "paypal_orders": 1.0,
    "shopify_payments_amount": 33.15,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 1.0
+   "sp_fees": 1.0,
+   "paypal_fees": 3.83,
+   "meta_spend": 45.82,
+   "meta_clicks": 272.0,
+   "meta_impr": 5487.0,
+   "meta_value": 153.15
   },
   "2026-06-14": {
    "orders": 3.0,
@@ -25672,7 +26084,12 @@
    "paypal_orders": 1.0,
    "shopify_payments_amount": 151.4,
    "shopify_payments_orders": 2.0,
-   "sp_fees": 8.25
+   "sp_fees": 8.25,
+   "paypal_fees": 0.93,
+   "meta_spend": 60.98,
+   "meta_clicks": 208.0,
+   "meta_impr": 5839.0,
+   "meta_value": 91.4
   },
   "2026-06-15": {
    "orders": 3.0,
@@ -25685,7 +26102,16 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 144.0,
    "shopify_payments_orders": 3.0,
-   "sp_fees": 3.99
+   "sp_fees": 3.99,
+   "meta_spend": 52.4,
+   "meta_clicks": 210.0,
+   "meta_impr": 5858.0,
+   "meta_value": 80.25
+  },
+  "2026-06-16": {
+   "meta_spend": 48.39,
+   "meta_clicks": 168.0,
+   "meta_impr": 6032.0
   },
   "2026-06-17": {
    "orders": 1.0,
@@ -25697,7 +26123,11 @@
    "cogs": 19.68,
    "repeat_orders": 0.0,
    "paypal_amount": 35.7,
-   "paypal_orders": 1.0
+   "paypal_orders": 1.0,
+   "paypal_fees": 1.39,
+   "meta_spend": 47.75,
+   "meta_clicks": 191.0,
+   "meta_impr": 7998.0
   },
   "2026-06-18": {
    "orders": 2.0,
@@ -25710,7 +26140,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 131.0,
    "shopify_payments_orders": 2.0,
-   "sp_fees": 3.64
+   "sp_fees": 3.64,
+   "meta_spend": 48.56,
+   "meta_clicks": 183.0,
+   "meta_impr": 7075.0,
+   "meta_value": 96.0
   },
   "2026-06-19": {
    "orders": 1.0,
@@ -25723,7 +26157,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 159.8,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 3.66
+   "sp_fees": 3.66,
+   "meta_spend": 61.21,
+   "meta_clicks": 258.0,
+   "meta_impr": 6991.0,
+   "meta_value": 159.8
   },
   "2026-06-20": {
    "orders": 2.0,
@@ -25738,7 +26176,12 @@
    "shopify_payments_orders": 1.0,
    "paypal_amount": 8.0,
    "paypal_orders": 1.0,
-   "sp_fees": 0.73
+   "sp_fees": 0.73,
+   "paypal_fees": 0.58,
+   "meta_spend": 55.61,
+   "meta_clicks": 238.0,
+   "meta_impr": 5602.0,
+   "meta_value": 28.0
   },
   "2026-06-21": {
    "orders": 6.0,
@@ -25753,7 +26196,12 @@
    "shopify_payments_orders": 4.0,
    "paypal_amount": 107.0,
    "paypal_orders": 2.0,
-   "sp_fees": 11.59
+   "sp_fees": 11.59,
+   "paypal_fees": 4.19,
+   "meta_spend": 61.08,
+   "meta_clicks": 266.0,
+   "meta_impr": 9342.0,
+   "meta_value": 330.1
   },
   "2026-06-22": {
    "orders": 6.0,
@@ -25768,7 +26216,12 @@
    "paypal_orders": 2.0,
    "shopify_payments_amount": 103.75,
    "shopify_payments_orders": 4.0,
-   "sp_fees": 3.41
+   "sp_fees": 3.41,
+   "paypal_fees": 4.3,
+   "meta_spend": 61.86,
+   "meta_clicks": 459.0,
+   "meta_impr": 12612.0,
+   "meta_value": 91.6
   },
   "2026-06-23": {
    "orders": 1.0,
@@ -25781,7 +26234,10 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 17.73,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 1.22
+   "sp_fees": 1.22,
+   "meta_spend": 51.19,
+   "meta_clicks": 267.0,
+   "meta_impr": 8265.0
   },
   "2026-06-24": {
    "orders": 2.0,
@@ -25794,7 +26250,16 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 448.8,
    "shopify_payments_orders": 2.0,
-   "sp_fees": 10.1
+   "sp_fees": 10.1,
+   "meta_spend": 45.4,
+   "meta_clicks": 221.0,
+   "meta_impr": 7907.0,
+   "meta_value": 40.8
+  },
+  "2026-06-25": {
+   "meta_spend": 44.51,
+   "meta_clicks": 233.0,
+   "meta_impr": 7946.0
   },
   "2026-06-26": {
    "orders": 1.0,
@@ -25807,7 +26272,10 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 17.75,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 1.22
+   "sp_fees": 1.22,
+   "meta_spend": 43.93,
+   "meta_clicks": 231.0,
+   "meta_impr": 7588.0
   },
   "2026-06-27": {
    "orders": 1.0,
@@ -25820,7 +26288,16 @@
    "repeat_orders": 1.0,
    "shopify_payments_amount": 113.05,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 5.99
+   "sp_fees": 5.99,
+   "meta_spend": 42.05,
+   "meta_clicks": 187.0,
+   "meta_impr": 5994.0,
+   "meta_value": 113.05
+  },
+  "2026-06-28": {
+   "meta_spend": 2.86,
+   "meta_clicks": 13.0,
+   "meta_impr": 516.0
   },
   "2026-06-29": {
    "orders": 1.0,
@@ -25846,7 +26323,10 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 34.0,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 1.01
+   "sp_fees": 1.01,
+   "meta_spend": 0.0,
+   "meta_clicks": 0.0,
+   "meta_impr": 0.0
   },
   "2026-07-01": {
    "orders": 7.0,
@@ -25861,7 +26341,12 @@
    "paypal_orders": 3.0,
    "shopify_payments_amount": 253.93,
    "shopify_payments_orders": 4.0,
-   "sp_fees": 8.33
+   "sp_fees": 8.33,
+   "paypal_fees": 9.56,
+   "meta_spend": 142.93,
+   "meta_clicks": 720.0,
+   "meta_impr": 12962.0,
+   "meta_value": 471.89
   },
   "2026-07-02": {
    "orders": 9.0,
@@ -25876,7 +26361,12 @@
    "paypal_orders": 4.0,
    "shopify_payments_amount": 255.36,
    "shopify_payments_orders": 5.0,
-   "sp_fees": 9.95
+   "sp_fees": 9.95,
+   "paypal_fees": 8.16,
+   "meta_spend": 212.71,
+   "meta_clicks": 968.0,
+   "meta_impr": 22630.0,
+   "meta_value": 446.07
   },
   "2026-07-03": {
    "orders": 2.0,
@@ -25889,7 +26379,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 241.4,
    "shopify_payments_orders": 2.0,
-   "sp_fees": 7.7
+   "sp_fees": 7.7,
+   "meta_spend": 75.05,
+   "meta_clicks": 406.0,
+   "meta_impr": 11199.0,
+   "meta_value": 241.4
   },
   "2026-07-04": {
    "orders": 3.0,
@@ -25904,7 +26398,12 @@
    "shopify_payments_orders": 1.0,
    "paypal_amount": 52.9,
    "paypal_orders": 2.0,
-   "sp_fees": 1.69
+   "sp_fees": 1.69,
+   "paypal_fees": 2.24,
+   "meta_spend": 76.72,
+   "meta_clicks": 454.0,
+   "meta_impr": 12299.0,
+   "meta_value": 112.9
   },
   "2026-07-05": {
    "orders": 4.0,
@@ -25919,7 +26418,12 @@
    "shopify_payments_orders": 3.0,
    "paypal_amount": 20.0,
    "paypal_orders": 1.0,
-   "sp_fees": 3.83
+   "sp_fees": 3.83,
+   "paypal_fees": 0.93,
+   "meta_spend": 52.27,
+   "meta_clicks": 280.0,
+   "meta_impr": 9166.0,
+   "meta_value": 104.7
   },
   "2026-07-06": {
    "orders": 2.0,
@@ -25932,7 +26436,10 @@
    "repeat_orders": 1.0,
    "shopify_payments_amount": 401.0,
    "shopify_payments_orders": 2.0,
-   "sp_fees": 11.75
+   "sp_fees": 11.75,
+   "meta_spend": 42.6,
+   "meta_clicks": 240.0,
+   "meta_impr": 8124.0
   },
   "2026-07-07": {
    "orders": 2.0,
@@ -25945,7 +26452,11 @@
    "repeat_orders": 1.0,
    "shopify_payments_amount": 200.25,
    "shopify_payments_orders": 2.0,
-   "sp_fees": 5.04
+   "sp_fees": 5.04,
+   "meta_spend": 49.3,
+   "meta_clicks": 251.0,
+   "meta_impr": 8071.0,
+   "meta_value": 21.25
   },
   "2026-07-08": {
    "orders": 2.0,
@@ -25958,7 +26469,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 148.15,
    "shopify_payments_orders": 2.0,
-   "sp_fees": 3.71
+   "sp_fees": 3.71,
+   "meta_spend": 41.94,
+   "meta_clicks": 176.0,
+   "meta_impr": 5893.0,
+   "meta_value": 64.0
   },
   "2026-07-09": {
    "orders": 3.0,
@@ -25973,7 +26488,12 @@
    "shopify_payments_orders": 2.0,
    "paypal_amount": 42.0,
    "paypal_orders": 1.0,
-   "sp_fees": 1.97
+   "sp_fees": 1.97,
+   "paypal_fees": 1.57,
+   "meta_spend": 42.93,
+   "meta_clicks": 200.0,
+   "meta_impr": 5742.0,
+   "meta_value": 70.9
   },
   "2026-07-10": {
    "orders": 1.0,
@@ -25986,7 +26506,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 54.4,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 1.44
+   "sp_fees": 1.44,
+   "meta_spend": 43.82,
+   "meta_clicks": 207.0,
+   "meta_impr": 5256.0,
+   "meta_value": 54.4
   },
   "2026-07-11": {
    "orders": 3.0,
@@ -25999,7 +26523,11 @@
    "repeat_orders": 2.0,
    "shopify_payments_amount": 159.0,
    "shopify_payments_orders": 3.0,
-   "sp_fees": 4.4
+   "sp_fees": 4.4,
+   "meta_spend": 41.19,
+   "meta_clicks": 189.0,
+   "meta_impr": 5030.0,
+   "meta_value": 42.0
   },
   "2026-07-12": {
    "orders": 3.0,
@@ -26014,7 +26542,12 @@
    "shopify_payments_orders": 2.0,
    "paypal_amount": 90.0,
    "paypal_orders": 1.0,
-   "sp_fees": 6.79
+   "sp_fees": 6.79,
+   "paypal_fees": 2.96,
+   "meta_spend": 57.18,
+   "meta_clicks": 240.0,
+   "meta_impr": 6773.0,
+   "meta_value": 352.0
   },
   "2026-07-13": {
    "orders": 1.0,
@@ -26027,7 +26560,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 20.4,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 0.73
+   "sp_fees": 0.73,
+   "meta_spend": 44.8,
+   "meta_clicks": 180.0,
+   "meta_impr": 5341.0,
+   "meta_value": 20.4
   },
   "2026-07-14": {
    "orders": 3.0,
@@ -26042,7 +26579,12 @@
    "paypal_orders": 1.0,
    "shopify_payments_amount": 141.0,
    "shopify_payments_orders": 2.0,
-   "sp_fees": 3.83
+   "sp_fees": 3.83,
+   "paypal_fees": 1.28,
+   "meta_spend": 44.69,
+   "meta_clicks": 201.0,
+   "meta_impr": 5771.0,
+   "meta_value": 173.0
   },
   "2026-07-15": {
    "orders": 3.0,
@@ -26057,7 +26599,12 @@
    "paypal_orders": 1.0,
    "shopify_payments_amount": 84.7,
    "shopify_payments_orders": 2.0,
-   "sp_fees": 4.0
+   "sp_fees": 4.0,
+   "paypal_fees": 3.77,
+   "meta_spend": 39.57,
+   "meta_clicks": 180.0,
+   "meta_impr": 6351.0,
+   "meta_value": 84.7
   },
   "2026-07-16": {
    "orders": 2.0,
@@ -26072,7 +26619,17 @@
    "shopify_payments_orders": 1.0,
    "paypal_amount": 27.2,
    "paypal_orders": 1.0,
-   "sp_fees": 1.4
+   "sp_fees": 1.4,
+   "paypal_fees": 1.14,
+   "meta_spend": 38.26,
+   "meta_clicks": 173.0,
+   "meta_impr": 5836.0,
+   "meta_value": 75.2
+  },
+  "2026-07-17": {
+   "meta_spend": 39.98,
+   "meta_clicks": 174.0,
+   "meta_impr": 4694.0
   },
   "2026-07-18": {
    "orders": 3.0,
@@ -26087,7 +26644,12 @@
    "shopify_payments_orders": 2.0,
    "paypal_amount": 34.0,
    "paypal_orders": 1.0,
-   "sp_fees": 5.38
+   "sp_fees": 5.38,
+   "paypal_fees": 1.34,
+   "meta_spend": 34.32,
+   "meta_clicks": 135.0,
+   "meta_impr": 3999.0,
+   "meta_value": 226.2
   },
   "2026-07-19": {
    "orders": 3.0,
@@ -26100,7 +26662,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 158.9,
    "shopify_payments_orders": 3.0,
-   "sp_fees": 6.78
+   "sp_fees": 6.78,
+   "meta_spend": 65.16,
+   "meta_clicks": 315.0,
+   "meta_impr": 8784.0,
+   "meta_value": 143.6
   },
   "2026-07-20": {
    "orders": 2.0,
@@ -26113,7 +26679,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 189.0,
    "shopify_payments_orders": 2.0,
-   "sp_fees": 7.22
+   "sp_fees": 7.22,
+   "meta_spend": 27.4,
+   "meta_clicks": 108.0,
+   "meta_impr": 2758.0,
+   "meta_value": 99.0
   },
   "2026-07-21": {
    "orders": 3.0,
@@ -26126,7 +26696,11 @@
    "repeat_orders": 1.0,
    "shopify_payments_amount": 236.39,
    "shopify_payments_orders": 3.0,
-   "sp_fees": 8.23
+   "sp_fees": 8.23,
+   "meta_spend": 15.61,
+   "meta_clicks": 91.0,
+   "meta_impr": 2570.0,
+   "meta_value": 158.75
   },
   "2026-07-22": {
    "orders": 3.0,
@@ -26139,7 +26713,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 303.0,
    "shopify_payments_orders": 3.0,
-   "sp_fees": 7.89
+   "sp_fees": 7.89,
+   "meta_spend": 40.54,
+   "meta_clicks": 170.0,
+   "meta_impr": 5828.0,
+   "meta_value": 99.0
   },
   "2026-07-23": {
    "orders": 3.0,
@@ -26152,7 +26730,11 @@
    "repeat_orders": 1.0,
    "shopify_payments_amount": 96.0,
    "shopify_payments_orders": 3.0,
-   "sp_fees": 7.98
+   "sp_fees": 7.98,
+   "meta_spend": 42.89,
+   "meta_clicks": 203.0,
+   "meta_impr": 6114.0,
+   "meta_value": 198.4
   },
   "2026-07-24": {
    "orders": 2.0,
@@ -26167,7 +26749,12 @@
    "shopify_payments_orders": 1.0,
    "paypal_amount": 43.2,
    "paypal_orders": 1.0,
-   "sp_fees": 0.97
+   "sp_fees": 0.97,
+   "paypal_fees": 1.6,
+   "meta_spend": 46.67,
+   "meta_clicks": 227.0,
+   "meta_impr": 6627.0,
+   "meta_value": 43.2
   },
   "2026-07-25": {
    "orders": 1.0,
@@ -26179,7 +26766,12 @@
    "cogs": 21.75,
    "repeat_orders": 1.0,
    "paypal_amount": 45.9,
-   "paypal_orders": 1.0
+   "paypal_orders": 1.0,
+   "paypal_fees": 1.68,
+   "meta_spend": 41.12,
+   "meta_clicks": 163.0,
+   "meta_impr": 5792.0,
+   "meta_value": 45.9
   },
   "2026-07-26": {
    "orders": 1.0,
@@ -26192,7 +26784,10 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 63.0,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 1.62
+   "sp_fees": 1.62,
+   "meta_spend": 49.15,
+   "meta_clicks": 254.0,
+   "meta_impr": 7867.0
   },
   "2026-07-27": {
    "orders": 2.0,
@@ -26205,7 +26800,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 62.0,
    "shopify_payments_orders": 2.0,
-   "sp_fees": 1.96
+   "sp_fees": 1.96,
+   "meta_spend": 37.37,
+   "meta_clicks": 152.0,
+   "meta_impr": 5767.0,
+   "meta_value": 62.0
   },
   "2026-07-28": {
    "orders": 3.0,
@@ -26218,7 +26817,11 @@
    "repeat_orders": 1.0,
    "shopify_payments_amount": 120.6,
    "shopify_payments_orders": 3.0,
-   "sp_fees": 4.39
+   "sp_fees": 4.39,
+   "meta_spend": 39.87,
+   "meta_clicks": 183.0,
+   "meta_impr": 6699.0,
+   "meta_value": 196.2
   },
   "2026-07-29": {
    "orders": 1.0,
@@ -26231,7 +26834,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 90.0,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 2.19
+   "sp_fees": 2.19,
+   "meta_spend": 37.9,
+   "meta_clicks": 155.0,
+   "meta_impr": 5513.0,
+   "meta_value": 90.0
   },
   "2026-07-30": {
    "orders": 1.0,
@@ -26244,7 +26851,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 42.0,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 2.45
+   "sp_fees": 2.45,
+   "meta_spend": 41.2,
+   "meta_clicks": 190.0,
+   "meta_impr": 6262.0,
+   "meta_value": 42.0
   },
   "2026-07-31": {
    "orders": 1.0,
@@ -26257,7 +26868,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 37.8,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 1.16
+   "sp_fees": 1.16,
+   "meta_spend": 39.98,
+   "meta_clicks": 199.0,
+   "meta_impr": 5871.0,
+   "meta_value": 37.8
   },
   "2026-08-01": {
    "orders": 9.0,
@@ -26272,7 +26887,12 @@
    "shopify_payments_orders": 7.0,
    "paypal_amount": 39.2,
    "paypal_orders": 2.0,
-   "sp_fees": 15.79
+   "sp_fees": 15.79,
+   "paypal_fees": 1.84,
+   "meta_spend": 216.96,
+   "meta_clicks": 1383.0,
+   "meta_impr": 30057.0,
+   "meta_value": 303.42
   },
   "2026-08-02": {
    "orders": 9.0,
@@ -26285,7 +26905,11 @@
    "repeat_orders": 1.0,
    "shopify_payments_amount": 880.9,
    "shopify_payments_orders": 9.0,
-   "sp_fees": 22.02
+   "sp_fees": 22.02,
+   "meta_spend": 164.74,
+   "meta_clicks": 1074.0,
+   "meta_impr": 20829.0,
+   "meta_value": 887.77
   },
   "2026-08-03": {
    "orders": 3.0,
@@ -26300,7 +26924,12 @@
    "shopify_payments_orders": 2.0,
    "paypal_amount": 37.8,
    "paypal_orders": 1.0,
-   "sp_fees": 4.9
+   "sp_fees": 4.9,
+   "paypal_fees": 1.45,
+   "meta_spend": 27.51,
+   "meta_clicks": 192.0,
+   "meta_impr": 6859.0,
+   "meta_value": 152.2
   },
   "2026-08-04": {
    "orders": 1.0,
@@ -26313,7 +26942,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 48.0,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 2.75
+   "sp_fees": 2.75,
+   "meta_spend": 20.21,
+   "meta_clicks": 165.0,
+   "meta_impr": 5661.0,
+   "meta_value": 48.0
   },
   "2026-08-05": {
    "orders": 3.0,
@@ -26326,7 +26959,11 @@
    "repeat_orders": 1.0,
    "shopify_payments_amount": 306.0,
    "shopify_payments_orders": 3.0,
-   "sp_fees": 9.71
+   "sp_fees": 9.71,
+   "meta_spend": 23.76,
+   "meta_clicks": 123.0,
+   "meta_impr": 5276.0,
+   "meta_value": 48.0
   },
   "2026-08-06": {
    "orders": 1.0,
@@ -26339,7 +26976,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 161.0,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 4.11
+   "sp_fees": 4.11,
+   "meta_spend": 22.12,
+   "meta_clicks": 137.0,
+   "meta_impr": 4550.0,
+   "meta_value": 161.0
   },
   "2026-08-07": {
    "orders": 1.0,
@@ -26351,7 +26992,11 @@
    "cogs": 6.77,
    "repeat_orders": 1.0,
    "paypal_amount": 15.0,
-   "paypal_orders": 1.0
+   "paypal_orders": 1.0,
+   "paypal_fees": 0.79,
+   "meta_spend": 21.67,
+   "meta_clicks": 108.0,
+   "meta_impr": 4266.0
   },
   "2026-08-08": {
    "orders": 1.0,
@@ -26364,7 +27009,16 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 60.3,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 3.36
+   "sp_fees": 3.36,
+   "meta_spend": 17.79,
+   "meta_clicks": 102.0,
+   "meta_impr": 3291.0,
+   "meta_value": 60.3
+  },
+  "2026-08-09": {
+   "meta_spend": 26.38,
+   "meta_clicks": 186.0,
+   "meta_impr": 6514.0
   },
   "2026-08-10": {
    "orders": 1.0,
@@ -26377,7 +27031,10 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 80.1,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 2.17
+   "sp_fees": 2.17,
+   "meta_spend": 20.66,
+   "meta_clicks": 102.0,
+   "meta_impr": 4014.0
   },
   "2026-08-11": {
    "orders": 2.0,
@@ -26392,7 +27049,12 @@
    "shopify_payments_orders": 1.0,
    "paypal_amount": 277.0,
    "paypal_orders": 1.0,
-   "sp_fees": 1.59
+   "sp_fees": 1.59,
+   "paypal_fees": 8.38,
+   "meta_spend": 19.93,
+   "meta_clicks": 95.0,
+   "meta_impr": 3574.0,
+   "meta_value": 277.0
   },
   "2026-08-12": {
    "orders": 2.0,
@@ -26405,7 +27067,11 @@
    "repeat_orders": 2.0,
    "shopify_payments_amount": 229.6,
    "shopify_payments_orders": 2.0,
-   "sp_fees": 5.98
+   "sp_fees": 5.98,
+   "meta_spend": 21.72,
+   "meta_clicks": 94.0,
+   "meta_impr": 4280.0,
+   "meta_value": 28.0
   },
   "2026-08-13": {
    "orders": 3.0,
@@ -26420,7 +27086,12 @@
    "shopify_payments_orders": 2.0,
    "paypal_amount": 42.0,
    "paypal_orders": 1.0,
-   "sp_fees": 4.95
+   "sp_fees": 4.95,
+   "paypal_fees": 1.57,
+   "meta_spend": 19.38,
+   "meta_clicks": 82.0,
+   "meta_impr": 3927.0,
+   "meta_value": 227.4
   },
   "2026-08-14": {
    "orders": 2.0,
@@ -26435,7 +27106,17 @@
    "shopify_payments_orders": 1.0,
    "paypal_amount": 69.47,
    "paypal_orders": 1.0,
-   "sp_fees": 2.24
+   "sp_fees": 2.24,
+   "paypal_fees": 2.79,
+   "meta_spend": 19.84,
+   "meta_clicks": 129.0,
+   "meta_impr": 4713.0,
+   "meta_value": 178.41
+  },
+  "2026-08-15": {
+   "meta_spend": 18.93,
+   "meta_clicks": 76.0,
+   "meta_impr": 3013.0
   },
   "2026-08-16": {
    "orders": 5.0,
@@ -26449,6 +27130,9 @@
    "shopify_payments_amount": 0.0,
    "shopify_payments_orders": 5.0,
    "sp_fees": 1.58,
+   "meta_spend": 21.77,
+   "meta_clicks": 148.0,
+   "meta_impr": 5489.0,
    "google_spend": 12.3235,
    "google_clicks": 36.0,
    "google_conv": 0.0,
@@ -26467,6 +27151,9 @@
    "shopify_payments_amount": 170.1,
    "shopify_payments_orders": 4.0,
    "sp_fees": 5.83,
+   "meta_spend": 18.6,
+   "meta_clicks": 104.0,
+   "meta_impr": 3835.0,
    "google_spend": 34.5513,
    "google_clicks": 92.0,
    "google_conv": 2.0,
@@ -26485,6 +27172,9 @@
    "shopify_payments_amount": 16.0,
    "shopify_payments_orders": 1.0,
    "sp_fees": 0.64,
+   "meta_spend": 19.7,
+   "meta_clicks": 107.0,
+   "meta_impr": 3746.0,
    "google_spend": 29.5616,
    "google_clicks": 43.0,
    "google_conv": 0.0,
@@ -26502,7 +27192,16 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 54.0,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 1.55
+   "sp_fees": 1.55,
+   "meta_spend": 24.37,
+   "meta_clicks": 103.0,
+   "meta_impr": 4239.0,
+   "meta_value": 54.0
+  },
+  "2026-08-20": {
+   "meta_spend": 21.13,
+   "meta_clicks": 166.0,
+   "meta_impr": 3342.0
   },
   "2026-08-21": {
    "orders": 1.0,
@@ -26515,7 +27214,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 90.0,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 2.19
+   "sp_fees": 2.19,
+   "meta_spend": 33.78,
+   "meta_clicks": 257.0,
+   "meta_impr": 5915.0,
+   "meta_value": 90.0
   },
   "2026-08-22": {
    "orders": 4.0,
@@ -26528,7 +27231,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 618.71,
    "shopify_payments_orders": 4.0,
-   "sp_fees": 27.91
+   "sp_fees": 27.91,
+   "meta_spend": 28.13,
+   "meta_clicks": 344.0,
+   "meta_impr": 5630.0,
+   "meta_value": 115.2
   },
   "2026-08-23": {
    "orders": 1.0,
@@ -26541,7 +27248,10 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 58.5,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 1.53
+   "sp_fees": 1.53,
+   "meta_spend": 26.11,
+   "meta_clicks": 267.0,
+   "meta_impr": 5287.0
   },
   "2026-08-24": {
    "orders": 1.0,
@@ -26554,7 +27264,16 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 187.0,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 4.23
+   "sp_fees": 4.23,
+   "meta_spend": 9.01,
+   "meta_clicks": 90.0,
+   "meta_impr": 1961.0,
+   "meta_value": 187.0
+  },
+  "2026-08-25": {
+   "meta_spend": 15.81,
+   "meta_clicks": 170.0,
+   "meta_impr": 4577.0
   },
   "2026-08-26": {
    "orders": 4.0,
@@ -26569,7 +27288,11 @@
    "shopify_payments_orders": 2.0,
    "paypal_amount": 53.2,
    "paypal_orders": 2.0,
-   "sp_fees": 5.12
+   "sp_fees": 5.12,
+   "paypal_fees": 2.24,
+   "meta_spend": 19.95,
+   "meta_clicks": 220.0,
+   "meta_impr": 6003.0
   },
   "2026-08-27": {
    "orders": 2.0,
@@ -26584,7 +27307,11 @@
    "shopify_payments_orders": 1.0,
    "paypal_amount": 36.0,
    "paypal_orders": 1.0,
-   "sp_fees": 1.01
+   "sp_fees": 1.01,
+   "paypal_fees": 1.86,
+   "meta_spend": 23.4,
+   "meta_clicks": 210.0,
+   "meta_impr": 5308.0
   },
   "2026-08-28": {
    "orders": 2.0,
@@ -26597,7 +27324,16 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 499.0,
    "shopify_payments_orders": 2.0,
-   "sp_fees": 11.08
+   "sp_fees": 11.08,
+   "meta_spend": 23.27,
+   "meta_clicks": 162.0,
+   "meta_impr": 5083.0,
+   "meta_value": 586.15
+  },
+  "2026-08-29": {
+   "meta_spend": 22.39,
+   "meta_clicks": 345.0,
+   "meta_impr": 7102.0
   },
   "2026-08-30": {
    "orders": 1.0,
@@ -26609,7 +27345,11 @@
    "cogs": 11.65,
    "repeat_orders": 1.0,
    "paypal_amount": 25.0,
-   "paypal_orders": 1.0
+   "paypal_orders": 1.0,
+   "paypal_fees": 1.08,
+   "meta_spend": 17.53,
+   "meta_clicks": 174.0,
+   "meta_impr": 4110.0
   },
   "2026-08-31": {
    "orders": 1.0,
@@ -26621,7 +27361,12 @@
    "cogs": 14.0,
    "repeat_orders": 0.0,
    "paypal_amount": 30.6,
-   "paypal_orders": 1.0
+   "paypal_orders": 1.0,
+   "paypal_fees": 1.24,
+   "meta_spend": 20.32,
+   "meta_clicks": 156.0,
+   "meta_impr": 5052.0,
+   "meta_value": 30.6
   },
   "2026-09-01": {
    "orders": 1.0,
@@ -26634,7 +27379,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 27.0,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 1.16
+   "sp_fees": 1.16,
+   "meta_spend": 55.02,
+   "meta_clicks": 374.0,
+   "meta_impr": 9070.0,
+   "meta_value": 27.0
   },
   "2026-09-02": {
    "orders": 6.0,
@@ -26649,7 +27398,12 @@
    "paypal_orders": 2.0,
    "shopify_payments_amount": 326.42,
    "shopify_payments_orders": 4.0,
-   "sp_fees": 12.62
+   "sp_fees": 12.62,
+   "paypal_fees": 3.45,
+   "meta_spend": 99.79,
+   "meta_clicks": 583.0,
+   "meta_impr": 15208.0,
+   "meta_value": 337.2
   },
   "2026-09-03": {
    "orders": 3.0,
@@ -26662,7 +27416,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 90.29,
    "shopify_payments_orders": 3.0,
-   "sp_fees": 4.34
+   "sp_fees": 4.34,
+   "meta_spend": 63.37,
+   "meta_clicks": 298.0,
+   "meta_impr": 8761.0,
+   "meta_value": 90.24
   },
   "2026-09-04": {
    "orders": 1.0,
@@ -26675,7 +27433,10 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 0.0,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 4.22
+   "sp_fees": 4.22,
+   "meta_spend": 29.33,
+   "meta_clicks": 148.0,
+   "meta_impr": 4965.0
   },
   "2026-09-05": {
    "orders": 2.0,
@@ -26688,7 +27449,16 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 52.0,
    "shopify_payments_orders": 2.0,
-   "sp_fees": 2.79
+   "sp_fees": 2.79,
+   "meta_spend": 29.81,
+   "meta_clicks": 162.0,
+   "meta_impr": 4097.0,
+   "meta_value": 52.0
+  },
+  "2026-09-06": {
+   "meta_spend": 35.13,
+   "meta_clicks": 156.0,
+   "meta_impr": 5263.0
   },
   "2026-09-07": {
    "orders": 2.0,
@@ -26701,7 +27471,11 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 34.0,
    "shopify_payments_orders": 2.0,
-   "sp_fees": 1.31
+   "sp_fees": 1.31,
+   "meta_spend": 71.08,
+   "meta_clicks": 377.0,
+   "meta_impr": 12215.0,
+   "meta_value": 14.0
   },
   "2026-09-08": {
    "orders": 2.0,
@@ -26716,7 +27490,12 @@
    "paypal_orders": 1.0,
    "shopify_payments_amount": 35.5,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 2.12
+   "sp_fees": 2.12,
+   "paypal_fees": 2.44,
+   "meta_spend": 91.41,
+   "meta_clicks": 532.0,
+   "meta_impr": 13078.0,
+   "meta_value": 72.0
   },
   "2026-09-09": {
    "orders": 2.0,
@@ -26731,7 +27510,17 @@
    "paypal_orders": 1.0,
    "shopify_payments_amount": 67.5,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 1.72
+   "sp_fees": 1.72,
+   "paypal_fees": 0.79,
+   "meta_spend": 73.29,
+   "meta_clicks": 361.0,
+   "meta_impr": 9812.0,
+   "meta_value": 67.5
+  },
+  "2026-09-10": {
+   "meta_spend": 62.05,
+   "meta_clicks": 193.0,
+   "meta_impr": 5778.0
   },
   "2026-09-11": {
    "orders": 1.0,
@@ -26744,9 +27533,16 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 100.8,
    "shopify_payments_orders": 1.0,
-   "sp_fees": 2.42
+   "sp_fees": 2.42,
+   "meta_spend": 25.46,
+   "meta_clicks": 96.0,
+   "meta_impr": 2383.0,
+   "meta_value": 100.8
   },
   "2026-09-12": {
+   "meta_spend": 21.14,
+   "meta_clicks": 74.0,
+   "meta_impr": 1417.0,
    "google_spend": 25.2023,
    "google_clicks": 54.0,
    "google_conv": 0.0,
@@ -26765,6 +27561,9 @@
    "shopify_payments_amount": 50.4,
    "shopify_payments_orders": 1.0,
    "sp_fees": 1.36,
+   "meta_spend": 3.83,
+   "meta_clicks": 6.0,
+   "meta_impr": 142.0,
    "google_spend": 17.8196,
    "google_clicks": 57.0,
    "google_conv": 1.0,
@@ -26785,6 +27584,11 @@
    "shopify_payments_amount": 88.24,
    "shopify_payments_orders": 1.0,
    "sp_fees": 6.48,
+   "paypal_fees": 2.79,
+   "meta_spend": 0.0,
+   "meta_clicks": 0.0,
+   "meta_impr": 0.0,
+   "meta_value": 84.0,
    "google_spend": 33.5411,
    "google_clicks": 156.0,
    "google_conv": 1.0,
@@ -26792,6 +27596,9 @@
    "google_impr": 2029.0
   },
   "2026-09-15": {
+   "meta_spend": 0.0,
+   "meta_clicks": 0.0,
+   "meta_impr": 0.0,
    "google_spend": 11.2005,
    "google_clicks": 45.0,
    "google_conv": 0.0,
@@ -26810,11 +27617,19 @@
    "shopify_payments_amount": 14.4,
    "shopify_payments_orders": 1.0,
    "sp_fees": 0.6,
+   "meta_spend": 0.0,
+   "meta_clicks": 0.0,
+   "meta_impr": 0.0,
    "google_spend": 21.8546,
    "google_clicks": 37.0,
    "google_conv": 0.0,
    "google_value": 0.0,
    "google_impr": 4111.0
+  },
+  "2026-09-17": {
+   "meta_spend": 0.0,
+   "meta_clicks": 0.0,
+   "meta_impr": 0.0
   },
   "2026-09-19": {
    "orders": 1.0,
@@ -26826,7 +27641,8 @@
    "cogs": 16.2,
    "repeat_orders": 1.0,
    "paypal_amount": 42.0,
-   "paypal_orders": 1.0
+   "paypal_orders": 1.0,
+   "paypal_fees": 1.57
   },
   "2026-09-20": {
    "orders": 1.0,
@@ -26854,7 +27670,12 @@
    "shopify_payments_orders": 4.0,
    "paypal_amount": 60.0,
    "paypal_orders": 1.0,
-   "sp_fees": 9.28
+   "sp_fees": 9.28,
+   "paypal_fees": 2.09,
+   "meta_spend": 153.37,
+   "meta_clicks": 550.0,
+   "meta_impr": 16170.0,
+   "meta_value": 117.9
   },
   "2026-10-02": {
    "orders": 4.0,
@@ -26869,7 +27690,12 @@
    "shopify_payments_orders": 2.0,
    "paypal_amount": 92.2,
    "paypal_orders": 2.0,
-   "sp_fees": 2.45
+   "sp_fees": 2.45,
+   "paypal_fees": 3.37,
+   "meta_spend": 176.23,
+   "meta_clicks": 700.0,
+   "meta_impr": 19951.0,
+   "meta_value": 180.2
   },
   "2026-10-03": {
    "orders": 7.0,
@@ -26884,7 +27710,12 @@
    "paypal_orders": 2.0,
    "shopify_payments_amount": 547.07,
    "shopify_payments_orders": 5.0,
-   "sp_fees": 14.29
+   "sp_fees": 14.29,
+   "paypal_fees": 2.68,
+   "meta_spend": 58.79,
+   "meta_clicks": 281.0,
+   "meta_impr": 6885.0,
+   "meta_value": 470.0
   },
   "2026-10-04": {
    "orders": 3.0,
@@ -26897,7 +27728,16 @@
    "repeat_orders": 0.0,
    "shopify_payments_amount": 375.6,
    "shopify_payments_orders": 3.0,
-   "sp_fees": 9.62
+   "sp_fees": 9.62,
+   "meta_spend": 85.16,
+   "meta_clicks": 614.0,
+   "meta_impr": 9982.0,
+   "meta_value": 300.0
+  },
+  "2026-10-05": {
+   "meta_spend": 38.97,
+   "meta_clicks": 357.0,
+   "meta_impr": 6528.0
   },
   "2026-10-06": {
    "orders": 4.0,
@@ -26913,6 +27753,11 @@
    "paypal_amount": 34.0,
    "paypal_orders": 1.0,
    "sp_fees": 4.83,
+   "paypal_fees": 1.34,
+   "meta_spend": 33.89,
+   "meta_clicks": 291.0,
+   "meta_impr": 5884.0,
+   "meta_value": 174.0,
    "google_spend": 21.55,
    "google_clicks": 19.0,
    "google_conv": 1.0,
@@ -26920,6 +27765,9 @@
    "google_impr": 1958.0
   },
   "2026-10-07": {
+   "meta_spend": 19.27,
+   "meta_clicks": 179.0,
+   "meta_impr": 4917.0,
    "google_spend": 21.83,
    "google_clicks": 31.0,
    "google_conv": 0.0,
@@ -26940,6 +27788,10 @@
    "paypal_amount": 0.0,
    "paypal_orders": 1.0,
    "sp_fees": 4.84,
+   "paypal_fees": 8.4,
+   "meta_spend": 18.26,
+   "meta_clicks": 157.0,
+   "meta_impr": 4377.0,
    "google_spend": 20.14,
    "google_clicks": 32.0,
    "google_conv": 0.0,
@@ -26958,6 +27810,9 @@
    "shopify_payments_amount": 91.06,
    "shopify_payments_orders": 4.0,
    "sp_fees": 5.57,
+   "meta_spend": 19.07,
+   "meta_clicks": 143.0,
+   "meta_impr": 4230.0,
    "google_spend": 19.75,
    "google_clicks": 43.0,
    "google_conv": 4.0,
@@ -26976,6 +27831,9 @@
    "shopify_payments_amount": 10.63,
    "shopify_payments_orders": 2.0,
    "sp_fees": 2.11,
+   "meta_spend": 21.99,
+   "meta_clicks": 175.0,
+   "meta_impr": 4711.0,
    "google_spend": 21.15,
    "google_clicks": 33.0,
    "google_conv": 2.0,
@@ -26996,6 +27854,11 @@
    "paypal_amount": 0.0,
    "paypal_orders": 1.0,
    "sp_fees": 3.18,
+   "paypal_fees": 2.78,
+   "meta_spend": 22.1,
+   "meta_clicks": 226.0,
+   "meta_impr": 5278.0,
+   "meta_value": 137.0,
    "google_spend": 22.44,
    "google_clicks": 42.0,
    "google_conv": 1.0,
@@ -27014,6 +27877,10 @@
    "shopify_payments_amount": 42.0,
    "shopify_payments_orders": 1.0,
    "sp_fees": 1.64,
+   "paypal_fees": 8.1,
+   "meta_spend": 22.18,
+   "meta_clicks": 196.0,
+   "meta_impr": 4115.0,
    "google_spend": 18.64,
    "google_clicks": 32.0,
    "google_conv": 1.0,
@@ -27032,6 +27899,9 @@
    "shopify_payments_amount": 10.8,
    "shopify_payments_orders": 1.0,
    "sp_fees": 0.51,
+   "meta_spend": 0.0,
+   "meta_clicks": 0.0,
+   "meta_impr": 0.0,
    "google_spend": 19.82,
    "google_clicks": 36.0,
    "google_conv": 1.0,
@@ -27068,6 +27938,9 @@
    "shopify_payments_amount": 133.58,
    "shopify_payments_orders": 1.0,
    "sp_fees": 7.2,
+   "meta_spend": 0.0,
+   "meta_clicks": 0.0,
+   "meta_impr": 0.0,
    "google_spend": 20.02,
    "google_clicks": 49.0,
    "google_conv": 1.0,
@@ -27086,6 +27959,9 @@
    "shopify_payments_amount": 53.9,
    "shopify_payments_orders": 1.0,
    "sp_fees": 1.43,
+   "meta_spend": 0.0,
+   "meta_clicks": 0.0,
+   "meta_impr": 0.0,
    "google_spend": 19.14,
    "google_clicks": 34.0,
    "google_conv": 1.0,
@@ -27103,6 +27979,10 @@
    "repeat_orders": 0.0,
    "paypal_amount": 20.3,
    "paypal_orders": 1.0,
+   "paypal_fees": 0.94,
+   "meta_spend": 0.0,
+   "meta_clicks": 0.0,
+   "meta_impr": 0.0,
    "google_spend": 23.0,
    "google_clicks": 39.0,
    "google_conv": 2.0,
@@ -27141,6 +28021,7 @@
    "shopify_payments_amount": 36.5,
    "shopify_payments_orders": 1.0,
    "sp_fees": 1.07,
+   "paypal_fees": 1.54,
    "google_spend": 18.64,
    "google_clicks": 29.0,
    "google_conv": 2.0,
