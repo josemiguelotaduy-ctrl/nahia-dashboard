@@ -28,7 +28,20 @@ def load_env():
 
 
 ENV = load_env()
-days = defaultdict(lambda: defaultdict(float))
+def load_cached_days():
+    c = defaultdict(lambda: defaultdict(float))
+    dp = os.path.join(ROOT, "data.json")
+    if os.path.exists(dp):
+        try:
+            prev = json.load(open(dp)).get("days", {})
+            for d, row in prev.items():
+                for k, v in row.items():
+                    c[d][k] = v
+        except Exception as e:
+            print("Note: data.json cache load:", e)
+    return c
+
+days = load_cached_days()
 orders_out = []
 
 
@@ -228,12 +241,12 @@ def main():
         import subprocess
         subprocess.run(["git", "add", "-A"], cwd=ROOT, capture_output=True)
         r = subprocess.run(["git", "commit", "-m", f"Auto-update {dt.datetime.now(TZ).strftime('%Y-%m-%d')}"], cwd=ROOT, capture_output=True)
-        if r.returncode == 0:
-            p_res = subprocess.run(["git", "push", "origin", "main"], cwd=ROOT, capture_output=True)
-            if p_res.returncode == 0:
-                print("Synced and pushed to GitHub Pages successfully")
-            else:
-                print(f"Git push warning: {p_res.stderr.decode()[:100]}")
+        subprocess.run(["git", "pull", "--rebase", "origin", "main"], cwd=ROOT, capture_output=True)
+        p_res = subprocess.run(["git", "push", "origin", "main"], cwd=ROOT, capture_output=True)
+        if p_res.returncode == 0:
+            print("Synced and pushed to GitHub Pages successfully")
+        else:
+            print(f"Git push warning: {p_res.stderr.decode()[:100]}")
     except Exception as e:
         print(f"Git auto-sync skipped: {e}")
 

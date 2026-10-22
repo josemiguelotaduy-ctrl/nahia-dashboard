@@ -80,14 +80,14 @@
     <div class="card"><h3>Ingresos, gasto publicitario y beneficio por día</h3><canvas id="chart" height="230"></canvas></div>
   </div>
   <div class="grid full">
-    <div class="card exp"><h3>Gastos varios (% sobre ventas netas)</h3>
+    <div class="card exp"><h3>Gastos varios (% sobre ventas brutas de producto)</h3>
       <table id="exp"></table>
       <div style="margin-top:8px"><button id="addExp">+ Añadir gasto</button> <button id="dl">Descargar config.json</button> <button id="reset">Restablecer</button></div>
       <div class="note">Se guarda en este navegador. Para que lo vea todo el mundo, descarga el config.json y sustituye <code>dashboard/config.json</code>.</div>
     </div>
     <div class="card exp"><h3>Parámetros de estimación</h3>
       <table id="params"></table>
-      <div class="note">UPS: mientras no haya API, se estima como % de las ventas netas. PayPal y publicidad son datos reales.</div>
+      <div class="note">UPS, Gastos varios y Materiales se calculan como % sobre las ventas brutas de producto (excluyendo envíos cobrados). PayPal y publicidad son datos reales.</div>
     </div>
   </div>
   </div>
@@ -110,7 +110,7 @@
 const DATA = __DATA__;
 const days = DATA.days, keys = Object.keys(days).sort();
 const eur = n => (n<0?"-":"")+Math.abs(n).toLocaleString("es-ES",{minimumFractionDigits:2,maximumFractionDigits:2})+" €";
-const LS="nahia_cfg_v6"; let cfg = JSON.parse(localStorage.getItem(LS)||"null") || JSON.parse(JSON.stringify(DATA.config));
+const LS="nahia_cfg_v8"; let cfg = JSON.parse(localStorage.getItem(LS)||"null") || JSON.parse(JSON.stringify(DATA.config));
 const ORD=DATA.orders;
 const g=(d,k)=>(days[d]&&days[d][k])||0;
 const tx=d=>g(d,"gross")*cfg.params.iva_pct/(100+cfg.params.iva_pct);
@@ -119,15 +119,19 @@ const iso=d=>d.toISOString().slice(0,10);
 const addD=(s,n)=>{const d=new Date(s+"T12:00:00Z");d.setUTCDate(d.getUTCDate()+n);return iso(d)};
 function range(a,b){const r=[];for(let d=a;d<=b;d=addD(d,1))r.push(d);return r}
 function pnl(list){
-  const o={orders:0,gross:0,ship:0,tax:0,refunds:0,cogs:0,pp_fee:0,sp_fee:0,ups:0,meta:0,google:0,varios:0,exp:{}};
+  const o={orders:0,gross:0,ship:0,prodGross:0,tax:0,refunds:0,cogs:0,pp_fee:0,sp_fee:0,ups:0,meta:0,google:0,varios:0,exp:{}};
   const P=cfg.params;
   for(const d of list){
-    const net=g(d,"gross")-tx(d);
-    o.orders+=g(d,"orders"); o.gross+=g(d,"gross"); o.ship+=g(d,"shipping_charged"); o.tax+=tx(d); o.refunds+=g(d,"refunds"); o.cogs+=g(d,"cogs");
+    const dayGross=g(d,"gross");
+    const dayShip=g(d,"shipping_charged");
+    const dayProdGross=dayGross - dayShip;
+    o.orders+=g(d,"orders"); o.gross+=dayGross; o.ship+=dayShip; o.prodGross+=dayProdGross;
+    o.tax+=tx(d); o.refunds+=g(d,"refunds"); o.cogs+=g(d,"cogs");
     o.pp_fee+=g(d,"paypal_fees"); o.sp_fee+=g(d,"sp_fees");
-    o.ups+=net*P.ups_pct_of_sales/100;
+    // Todos los % calculados sobre las ventas brutas de producto (sin envíos)
+    o.ups+=dayProdGross*P.ups_pct_of_sales/100;
     o.meta+=g(d,"meta_spend"); o.google+=g(d,"google_spend");
-    for(const e of cfg.expenses){const v=net*(+e.pct||0)/100;o.varios+=v;o.exp[e.name]=(o.exp[e.name]||0)+v}
+    for(const e of cfg.expenses){const v=dayProdGross*(+e.pct||0)/100;o.varios+=v;o.exp[e.name]=(o.exp[e.name]||0)+v}
   }
   o.rev=o.gross-o.tax; o.gm=o.rev-o.cogs; o.fees=o.pp_fee+o.sp_fee; o.ads=o.meta+o.google;
   o.net=o.gm-o.fees-o.ups-o.ads-o.varios; return o;
@@ -143,11 +147,11 @@ function preset(p){
 }
 let chart;
 function render(){
-  const list=range(from,to), o=pnl(list), pc=(v)=>o.rev?(v/o.rev*100).toFixed(1)+"%":"–";
+  const list=range(from,to), o=pnl(list), pc=(v)=>o.prodGross?(v/o.prodGross*100).toFixed(1)+"%":"–";
   document.getElementById("gen").textContent="Actualizado "+DATA.generated+" · "+list.length+" días · "+o.orders+" pedidos";
-  const k=[["Ventas netas (sin IVA)",eur(o.rev),o.orders+" pedidos"],["Margen bruto",eur(o.gm),pc(o.gm)+" s/ventas"],
-    ["Gasto publicitario",eur(o.ads),o.ads?(o.ads/o.rev*100).toFixed(1)+"% s/ventas netas":"–"],
-    ["Beneficio neto",eur(o.net),pc(o.net)+" s/ventas",o.net>=0?"pos":"neg"]];
+  const k=[["Ventas netas (sin IVA)",eur(o.rev),o.orders+" pedidos"],["Margen bruto",eur(o.gm),pc(o.gm)+" s/ventas prod."],
+    ["Gasto publicitario",eur(o.ads),o.ads?(o.ads/o.prodGross*100).toFixed(1)+"% s/ventas prod.":"–"],
+    ["Beneficio neto",eur(o.net),pc(o.net)+" s/ventas prod.",o.net>=0?"pos":"neg"]];
   const lo=ORD.filter(x=>x.d>=from&&x.d<=to), rep=lo.filter(x=>x.r), uniq=new Set(lo.filter(x=>x.u).map(x=>x.u)), ret=new Set(rep.filter(x=>x.u).map(x=>x.u));
   const k2=[["Pedidos de clientes recurrentes",rep.length+" de "+lo.length,(lo.length?(rep.length/lo.length*100).toFixed(1):"0")+"% de los pedidos"],
     ["Clientes únicos / que repiten",uniq.size+" / "+ret.size,(uniq.size?(ret.size/uniq.size*100).toFixed(1):"0")+"% repiten"]];
@@ -156,7 +160,7 @@ function render(){
   renderTables(lo);
   document.getElementById("kpis").innerHTML=k.map(x=>`<div class="card kpi"><div class="l">${x[0]}</div><div class="v ${x[3]||""}">${x[1]}</div><div class="s">${x[2]}</div></div>`).join("");
   const row=(l,v,c="",e="")=>`<tr class="${c}"><td>${l}${e?'<span class="est">estimado</span>':""}</td><td>${eur(v)}</td><td class="pct">${pc(v)}</td></tr>`;
-  document.getElementById("pnl").innerHTML=`<tr><th></th><th>Importe</th><th>% ventas</th></tr>`+
+  document.getElementById("pnl").innerHTML=`<tr><th></th><th>Importe</th><th>% s/ventas prod.</th></tr>`+
     row("Ventas de producto (con IVA)",o.gross-o.ship,"sub")+row("Portes de envío cobrados (con IVA)",o.ship,"sub")+row("Ventas brutas (con IVA)",o.gross,"sec")+row("IVA",-o.tax,"sub")+row("Ventas netas",o.rev,"sec")+
     row("Coste de producto",-o.cogs,"sub")+row("Margen bruto",o.gm,"sec")+
     row("Comisiones PayPal",-o.pp_fee,"sub")+row("Comisiones Shopify Payments",-o.sp_fee,"sub")+row("Envíos UPS",-o.ups,"sub",1)+
@@ -208,8 +212,8 @@ function renderTables(lo){
   const P=cfg.params, v=1+P.iva_pct/100, names=new Intl.DisplayNames(["es"],{type:"region"});
   const cn=c=>{try{return names.of(c)}catch(e){return c}};
   const by=(keyf,add)=>{const m={};for(const o of lo)add(m,keyf(o),o);return m};
-  const c=by(o=>o.c,(m,k,o)=>{const r=m[k]||(m[k]=[k,0,0,0,0,0]);r[1]++;r[2]+=o.g/v;r[3]+=o.k;r[4]+=o.s;});
-  const cr=Object.values(c).map(r=>[cn(r[0]),r[1],r[2],r[2]-r[3],r[4],r[2]*P.ups_pct_of_sales/100]).map(r=>[r[0],r[1],r[2],r[3],r[3]/r[2]*100,r[4],r[5],r[3]-r[5]]);
+  const c=by(o=>o.c,(m,k,o)=>{const r=m[k]||(m[k]=[k,0,0,0,0,0,0]);r[1]++;r[2]+=o.g/v;r[3]+=o.k;r[4]+=o.s;r[5]=(r[5]||0)+(o.g-o.s);});
+  const cr=Object.values(c).map(r=>[cn(r[0]),r[1],r[2],r[2]-r[3],r[4],(r[5]||r[2])*P.ups_pct_of_sales/100]).map(r=>[r[0],r[1],r[2],r[3],r[3]/r[2]*100,r[4],r[5],r[3]-r[5]]);
   const pc=(x,r,t)=>(t&&t[2]?(x/t[2]*100).toFixed(1):"0")+"%";
   dtable("tpaises",[{n:"País"},{n:"Pedidos",sum:1,def:0},{n:"Ventas netas",sum:1,f:eur,def:1},{n:"Margen bruto",sum:1,f:eur},
     {n:"Margen %",f:x=>x.toFixed(1)+"%"},{n:"Portes cobrados (c/IVA)",sum:1,f:eur},{n:"UPS estimado",sum:1,f:eur},{n:"Contribución antes de publicidad",sum:1,f:eur}],
@@ -220,9 +224,9 @@ function renderTables(lo){
   dtable("tprod",[{n:"Producto"},{n:"Uds",sum:1},{n:"Ventas netas",sum:1,f:eur,def:1},{n:"Coste",sum:1,f:eur},{n:"Margen",sum:1,f:eur},{n:"Margen %",f:x=>x.toFixed(1)+"%"}],prr,"prod");
 }
 function renderCfg(){
-  document.getElementById("exp").innerHTML=`<tr><th>Concepto</th><th>% ventas netas</th><th></th></tr>`+cfg.expenses.map((e,i)=>
+  document.getElementById("exp").innerHTML=`<tr><th>Concepto</th><th>% s/ventas brutas prod.</th></tr>`+cfg.expenses.map((e,i)=>
     `<tr><td><input data-i="${i}" data-f="name" value="${e.name}"></td><td><input type="number" step="0.01" data-i="${i}" data-f="pct" value="${e.pct}"></td><td><button data-del="${i}">✕</button></td></tr>`).join("");
-  const L={iva_pct:"IVA (%, incluido en precios)",ups_pct_of_sales:"UPS (% ventas netas)"};
+  const L={iva_pct:"IVA (%, incluido en precios)",ups_pct_of_sales:"UPS (% ventas brutas producto)"};
   document.getElementById("params").innerHTML=Object.keys(cfg.params).map(k=>`<tr><td>${L[k]||k}</td><td><input type="number" step="0.01" data-p="${k}" value="${cfg.params[k]}"></td></tr>`).join("");
 }
 function save(){localStorage.setItem(LS,JSON.stringify(cfg));render()}
