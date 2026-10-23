@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23 07:23",
+ "generated": "2026-10-23 11:31",
  "start": "2022-08-01",
  "orders": [
   {
@@ -18933,6 +18933,23 @@
      15.5
     ]
    ]
+  },
+  {
+   "d": "2026-10-23",
+   "c": "GB",
+   "g": 49.21,
+   "s": 20.18,
+   "k": 16.77,
+   "u": "5364ef86",
+   "r": 0,
+   "i": [
+    [
+     "Cuenco Sopa / Cereales Costa Nova, PEARL 16cm",
+     3,
+     32.25,
+     16.77
+    ]
+   ]
   }
  ],
  "days": {
@@ -27906,7 +27923,7 @@
    "google_clicks": 36.0,
    "google_conv": 1.0,
    "google_value": 10.8,
-   "google_impr": 3084.0
+   "google_impr": 3083.0
   },
   "2026-10-14": {
    "orders": 1.0,
@@ -27987,7 +28004,7 @@
    "google_clicks": 39.0,
    "google_conv": 2.0,
    "google_value": 34.4,
-   "google_impr": 3850.0
+   "google_impr": 3846.0
   },
   "2026-10-18": {
    "orders": 5.0,
@@ -28058,11 +28075,36 @@
    "shopify_payments_amount": 158.0,
    "shopify_payments_orders": 1.0,
    "sp_fees": 3.62,
-   "google_spend": 41.22,
-   "google_clicks": 51.0,
+   "google_spend": 42.4,
+   "google_clicks": 55.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 5757.0
+   "google_impr": 5920.0
+  },
+  "2026-10-22": {
+   "google_spend": 29.4384,
+   "google_clicks": 52.0,
+   "google_conv": 0.0,
+   "google_value": 0.0,
+   "google_impr": 5708.0
+  },
+  "2026-10-23": {
+   "orders": 1.0,
+   "gross": 49.21,
+   "tax": 0.0,
+   "shipping_charged": 20.18,
+   "discounts": 3.22,
+   "refunds": 0.0,
+   "cogs": 16.77,
+   "repeat_orders": 0.0,
+   "shopify_payments_amount": 49.21,
+   "shopify_payments_orders": 1.0,
+   "sp_fees": 2.84,
+   "google_spend": 6.7,
+   "google_clicks": 12.0,
+   "google_conv": 1.0,
+   "google_value": 29.0129,
+   "google_impr": 1706.0
   }
  },
  "config": {
