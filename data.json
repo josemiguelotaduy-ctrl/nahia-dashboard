@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23 12:52",
+ "generated": "2026-10-23 17:26",
  "start": "2022-08-01",
  "orders": [
   {
@@ -18950,6 +18950,23 @@
      16.77
     ]
    ]
+  },
+  {
+   "d": "2026-10-23",
+   "c": "IE",
+   "g": 120.0,
+   "s": 0.0,
+   "k": 70.27,
+   "u": "f84e79ee",
+   "r": 0,
+   "i": [
+    [
+     "Jazz Kissa \u2014 The Soul of Japanese Listening Culture",
+     1,
+     120.0,
+     70.27
+    ]
+   ]
   }
  ],
  "days": {
@@ -30259,16 +30276,18 @@
    "google_impr": 5708.0
   },
   "2026-10-23": {
-   "orders": 1.0,
-   "gross": 49.21,
+   "orders": 2.0,
+   "gross": 169.21,
    "tax": 0.0,
    "shipping_charged": 20.18,
    "discounts": 3.22,
    "refunds": 0.0,
-   "cogs": 16.77,
+   "cogs": 87.04,
    "repeat_orders": 0.0,
    "shopify_payments_amount": 49.21,
    "shopify_payments_orders": 1.0,
+   "paypal_amount": 120.0,
+   "paypal_orders": 1.0,
    "sp_fees": 2.84,
    "google_spend": 6.7,
    "google_clicks": 12.0,
