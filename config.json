@@ -1,6 +1,6 @@
 {
   "params": {
-    "ups_pct_of_sales": 25.0,
+    "ups_pct_of_sales": 23.0,
     "vat_by_country": {
       "ES": 21, "GR": 24, "PT": 23, "IE": 23, "NL": 21,
       "DE": 19, "FR": 20, "BE": 21, "IT": 22, "SE": 25,

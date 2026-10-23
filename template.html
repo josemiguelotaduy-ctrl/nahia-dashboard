@@ -119,7 +119,7 @@
 const DATA = __DATA__;
 const days = DATA.days, keys = Object.keys(days).sort();
 const eur = n => (n<0?"-":"")+Math.abs(n).toLocaleString("es-ES",{minimumFractionDigits:2,maximumFractionDigits:2})+" €";
-const LS="nahia_cfg_v10"; let cfg = JSON.parse(localStorage.getItem(LS)||"null") || JSON.parse(JSON.stringify(DATA.config));
+const LS="nahia_cfg_v11"; let cfg = JSON.parse(localStorage.getItem(LS)||"null") || JSON.parse(JSON.stringify(DATA.config));
 const ORD=DATA.orders;
 const g=(d,k)=>(days[d]&&days[d][k])||0;
 // IVA pre-calculado por país en build.py, acumulado en days[d]["tax"]
