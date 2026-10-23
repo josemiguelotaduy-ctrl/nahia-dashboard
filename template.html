@@ -100,6 +100,11 @@
       <div class="card"><h3>Gasto por canal</h3><canvas id="chSp" height="200"></canvas></div></div>
     <div class="card full"><h3>Desglose por canal</h3><table id="roasT"></table>
       <div class="note">ROAS total = ventas netas de Shopify (sin IVA) / gasto publicitario total. ROAS por canal = valor de compras atribuido por cada plataforma (sin IVA) / gasto del canal. Las plataformas pueden atribuirse la misma venta, por eso la suma de canales puede superar al total. El ROAS de equilibrio es el mínimo para no perder dinero tras producto, comisiones y UPS.</div></div>
+    <div class="card full"><h3>Embudo Meta Ads (View Content → Add to Cart → Checkout → Compra)</h3><table id="funnelT"></table></div>
+    <div class="grid full">
+      <div class="card"><h3>Campañas Meta Ads (ROAS y Embudo)</h3><table class="dt" id="tmetaC"></table></div>
+      <div class="card"><h3>Campañas Google Ads</h3><table class="dt" id="tgoogC"></table></div>
+    </div>
   </div>
   <div class="view" id="v-paises"><div class="card"><h3>Por país de envío</h3><table class="dt" id="tpaises"></table>
     <div class="note">Ventas netas con el IVA de los parámetros aplicado a todos los países. UPS estimado con el % de los parámetros. La publicidad no se puede repartir por país, así que la contribución es antes de publicidad.</div></div></div>
@@ -202,6 +207,18 @@ function renderRoas(list,o){
   document.getElementById("roasT").innerHTML="<tr><th>Canal</th><th>Gasto</th><th>Valor atribuido (sin IVA)</th><th>ROAS</th><th>CPC</th><th>Clics</th></tr>"+
     row("Meta",ms,mv,mc,mc.toLocaleString("es-ES"))+row("Google",gs,gv,gc,gc.toLocaleString("es-ES"))+
     `<tr class="sec"><td>Total (Shopify)</td><td>${eur(ads)}</td><td>${eur(rev)}</td><td>${ads?ver(tr):"–"}</td><td>${(mc+gc)?eur(ads/(mc+gc)):"–"}</td><td>${(mc+gc).toLocaleString("es-ES")}</td></tr>`;
+  const mvc=list.reduce((a,d)=>a+g(d,"meta_vc"),0), matc=list.reduce((a,d)=>a+g(d,"meta_atc"),0), mic=list.reduce((a,d)=>a+g(d,"meta_ic"),0), mcv=list.reduce((a,d)=>a+g(d,"meta_conv"),0);
+  const fp=(a,b)=>b?(a/b*100).toFixed(1)+"%":"–";
+  document.getElementById("funnelT").innerHTML="<tr><th>Clics</th><th>View Content</th><th>Add to Cart (ATC)</th><th>% VC→ATC</th><th>Initiate Checkout (IC)</th><th>% ATC→IC (Meta >22%)</th><th>Compras</th><th>% IC→Compra</th><th>CR% (Compra/Clic)</th></tr>"+
+    `<tr><td>${mc.toLocaleString("es-ES")}</td><td>${mvc.toLocaleString("es-ES")}</td><td>${matc.toLocaleString("es-ES")}</td><td>${fp(matc,mvc)}</td><td>${mic.toLocaleString("es-ES")}</td><td><b>${fp(mic,matc)}</b></td><td>${mcv.toLocaleString("es-ES")}</td><td>${fp(mcv,mic)}</td><td><b>${fp(mcv,mc)}</b></td></tr>`;
+  const mcList=(DATA.meta_campaigns||[]).filter(x=>x.d>=from&&x.d<=to);
+  const mcMap={}; for(const r of mcList){const a=mcMap[r.n]||(mcMap[r.n]=[r.n,0,0,0,0,0,0]);a[1]+=r.sp;a[2]+=r.cl;a[3]+=r.atc;a[4]+=r.ic;a[5]+=r.cv;a[6]+=r.val}
+  const mcRows=Object.values(mcMap).map(r=>[r[0],r[1],r[6],r[1]?r[6]/r[1]:0,r[3],r[4],r[3]?r[4]/r[3]*100:0,r[5]]);
+  dtable("tmetaC",[{n:"Campaña"},{n:"Gasto",sum:1,f:eur,def:1},{n:"Ventas (c/IVA)",sum:1,f:eur},{n:"ROAS bruto",f:x=>x.toFixed(2)},{n:"ATC",sum:1},{n:"IC",sum:1},{n:"ATC→IC%",f:x=>x.toFixed(1)+"%"},{n:"Compras",sum:1}],mcRows,"metaC");
+  const gcList=(DATA.google_campaigns||[]).filter(x=>x.d>=from&&x.d<=to);
+  const gcMap={}; for(const r of gcList){const a=gcMap[r.n]||(gcMap[r.n]=[r.n,0,0,0,0]);a[1]+=r.sp;a[2]+=r.cl;a[3]+=r.cv;a[4]+=r.val}
+  const gcRows=Object.values(gcMap).map(r=>[r[0],r[1],r[4],r[1]?r[4]/r[1]:0,r[2],r[3],r[2]?r[3]/r[2]*100:0]);
+  dtable("tgoogC",[{n:"Campaña"},{n:"Gasto",sum:1,f:eur,def:1},{n:"Ventas (c/IVA)",sum:1,f:eur},{n:"ROAS bruto",f:x=>x.toFixed(2)},{n:"Clics",sum:1},{n:"Conv",sum:1,f:x=>x.toFixed(1)},{n:"CR%",f:x=>x.toFixed(2)+"%"}],gcRows,"googC");
 }
 const sortState={};
 function dtable(el,cols,rows,key){

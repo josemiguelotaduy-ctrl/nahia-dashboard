@@ -173,11 +173,15 @@ def paypal():
 
 
 # ------------------------------------------------------------------- Meta
+meta_campaigns_out = []
+google_campaigns_out = []
+
+
 def meta():
     # Meta only serves the last 37 months of insights
     since = max(START, (dt.date.today() - dt.timedelta(days=1090)).isoformat())
     rng = json.dumps({"since": since, "until": dt.date.today().isoformat()})
-    qs = urllib.parse.urlencode({"fields": "spend,impressions,clicks,action_values", "time_increment": 1, "time_range": rng,
+    qs = urllib.parse.urlencode({"fields": "spend,impressions,clicks,actions,action_values", "time_increment": 1, "time_range": rng,
                                  "limit": 500, "access_token": ENV["META_ACCESS_TOKEN"]})
     url = f"https://graph.facebook.com/v21.0/{ENV['META_AD_ACCOUNT_ID']}/insights?" + qs
     rows = []
@@ -190,10 +194,45 @@ def meta():
         day["meta_spend"] += float(r["spend"])
         day["meta_clicks"] += float(r["clicks"])
         day["meta_impr"] += float(r["impressions"])
+        for ac in r.get("actions", []):
+            at = ac["action_type"]
+            if at == "omni_view_content":
+                day["meta_vc"] += float(ac["value"])
+            elif at == "omni_add_to_cart":
+                day["meta_atc"] += float(ac["value"])
+            elif at == "omni_initiated_checkout":
+                day["meta_ic"] += float(ac["value"])
+            elif at == "omni_purchase":
+                day["meta_conv"] += float(ac["value"])
         for av in r.get("action_values", []):
             if av["action_type"] == "omni_purchase":
                 day["meta_value"] += float(av["value"])
-    print(f"Meta: {len(rows)} days")
+    # Also fetch campaign-level daily breakdown for scientific testing tab
+    try:
+        qs_c = urllib.parse.urlencode({"fields": "campaign_name,spend,impressions,clicks,actions,action_values",
+                                       "level": "campaign", "time_increment": 1, "time_range": rng,
+                                       "limit": 500, "access_token": ENV["META_ACCESS_TOKEN"]})
+        url_c = f"https://graph.facebook.com/v21.0/{ENV['META_AD_ACCOUNT_ID']}/insights?" + qs_c
+        while url_c:
+            dc = http_json(url_c)
+            for r in dc.get("data", []):
+                act = {a["action_type"]: float(a["value"]) for a in r.get("actions", [])}
+                av = {a["action_type"]: float(a["value"]) for a in r.get("action_values", [])}
+                meta_campaigns_out.append({
+                    "d": r["date_start"],
+                    "n": r.get("campaign_name", ""),
+                    "sp": round(float(r.get("spend", 0)), 2),
+                    "cl": int(float(r.get("clicks", 0))),
+                    "vc": int(act.get("omni_view_content", 0)),
+                    "atc": int(act.get("omni_add_to_cart", 0)),
+                    "ic": int(act.get("omni_initiated_checkout", 0)),
+                    "cv": int(act.get("omni_purchase", 0)),
+                    "val": round(av.get("omni_purchase", 0.0), 2),
+                })
+            url_c = dc.get("paging", {}).get("next")
+    except Exception as e:
+        print(f"Meta campaign-level warning: {e}", file=sys.stderr)
+    print(f"Meta: {len(rows)} days, {len(meta_campaigns_out)} campaign-day rows")
 
 
 # ----------------------------------------------------------------- Google
@@ -209,6 +248,14 @@ def google():
         day["google_conv"] += float(r["conversions"])
         day["google_value"] += float(r["conversions_value"])
         day["google_impr"] += float(r["impressions"])
+        google_campaigns_out.append({
+            "d": r["date"],
+            "n": r.get("campaign", ""),
+            "sp": round(float(r["cost"]), 2),
+            "cl": int(float(r["clicks"])),
+            "cv": round(float(r["conversions"]), 2),
+            "val": round(float(r["conversions_value"]), 2),
+        })
         n += 1
     print(f"Google: {n} rows")
 
@@ -248,6 +295,8 @@ def main():
         "start": START,
         "orders": orders_out,
         "days": {k: {m: round(v, 4) for m, v in d.items()} for k, d in sorted(days.items())},
+        "meta_campaigns": meta_campaigns_out or (json.load(open(dp)).get("meta_campaigns", []) if os.path.exists(dp) else []),
+        "google_campaigns": google_campaigns_out,
         "config": cfg,
     }
     json.dump(payload, open(os.path.join(ROOT, "data.json"), "w"), indent=1)
