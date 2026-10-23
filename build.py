@@ -123,6 +123,30 @@ def shopify():
         day[f"{key}_amount"] += o["g"]; day[f"{key}_orders"] += 1
         orders_out.append({"d": o["d"], "c": o["c"], "g": o["g"], "s": o["s"], "k": o["k"], "u": o["u"], "r": rep, "i": o["i"]})
     print(f"Shopify: {fetched} fetched, {len(orders_out)} in history, {sum(o['r'] for o in orders_out)} from returning customers")
+    # Override daily sales/shipping/discounts/refunds with ShopifyQL so every date range matches Shopify Analytics to the cent
+    sql_rows = 0
+    for yr in range(2022, dt.date.today().year + 1):
+        end = "today" if yr == dt.date.today().year else f"{yr}-12-31"
+        q_sql = f'{{ shopifyqlQuery(query: "FROM sales SHOW orders, gross_sales, discounts, returns, net_sales, shipping_charges, taxes, total_sales TIMESERIES day SINCE {yr}-01-01 UNTIL {end}") {{ tableData {{ rows }} }} }}'
+        td = (gql(q_sql, {}).get("shopifyqlQuery") or {}).get("tableData") or {}
+        for r in td.get("rows", []):
+            d_str = r["day"]
+            if d_str < START:
+                continue
+            tot_s = float(r["total_sales"])
+            ord_c = float(r["orders"])
+            ship_c = float(r["shipping_charges"])
+            disc_c = abs(float(r["discounts"]))
+            ret_c = abs(float(r["returns"]))
+            day = days[d_str]
+            if tot_s or ord_c or ship_c or ret_c or d_str in days:
+                day["orders"] = ord_c
+                day["gross"] = tot_s
+                day["shipping_charged"] = ship_c
+                day["discounts"] = disc_c
+                day["refunds"] = ret_c
+                sql_rows += 1
+    print(f"ShopifyQL: {sql_rows} daily sales rows synced")
     # Shopify Payments real fees (balance transactions, newest first)
     bq = """query($c:String){shopifyPaymentsAccount{balanceTransactions(first:100,after:$c,reverse:true){
       pageInfo{hasNextPage endCursor} nodes{type fee{amount} transactionDate}}}}"""
