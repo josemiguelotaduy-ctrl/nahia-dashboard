@@ -136,7 +136,7 @@ def shopify():
     sql_rows = 0
     for yr in range(2022, dt.date.today().year + 1):
         end = "today" if yr == dt.date.today().year else f"{yr}-12-31"
-        q_sql = f'{{ shopifyqlQuery(query: "FROM sales SHOW orders, gross_sales, discounts, returns, net_sales, shipping_charges, taxes, total_sales TIMESERIES day SINCE {yr}-01-01 UNTIL {end}") {{ tableData {{ rows }} }} }}'
+        q_sql = f'{{ shopifyqlQuery(query: "FROM sales SHOW orders, gross_sales, discounts, returns, net_sales, shipping_charges, taxes, total_sales, cost_of_goods_sold TIMESERIES day SINCE {yr}-01-01 UNTIL {end}") {{ tableData {{ rows }} }} }}'
         td = (gql(q_sql, {}).get("shopifyqlQuery") or {}).get("tableData") or {}
         for r in td.get("rows", []):
             d_str = r["day"]
@@ -147,6 +147,7 @@ def shopify():
             ship_c = float(r["shipping_charges"])
             disc_c = abs(float(r["discounts"]))
             ret_c = abs(float(r["returns"]))
+            cogs_c = abs(float(r.get("cost_of_goods_sold", 0) or 0))
             day = days[d_str]
             if tot_s or ord_c or ship_c or ret_c or d_str in days:
                 day["orders"] = ord_c
@@ -154,6 +155,8 @@ def shopify():
                 day["shipping_charged"] = ship_c
                 day["discounts"] = disc_c
                 day["refunds"] = ret_c
+                if cogs_c:  # Only override COGS if ShopifyQL returns a non-zero value
+                    day["cogs"] = cogs_c
                 sql_rows += 1
     print(f"ShopifyQL: {sql_rows} daily sales rows synced")
     # Shopify Payments real fees (balance transactions, newest first)
