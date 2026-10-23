@@ -56,12 +56,30 @@ def shopify():
             "client_secret": ENV["SHOPIFY_CLIENT_SECRET"]}).encode())["access_token"]
 
     def gql(q, v):
-        d = http_json(f"https://{store}/admin/api/2025-10/graphql.json",
-                      json.dumps({"query": q, "variables": v}).encode(),
-                      {"X-Shopify-Access-Token": tok, "Content-Type": "application/json"})
-        if "errors" in d:
-            raise RuntimeError(d["errors"])
-        return d["data"]
+        import time
+        for attempt in range(8):
+            d = http_json(f"https://{store}/admin/api/2025-10/graphql.json",
+                          json.dumps({"query": q, "variables": v}).encode(),
+                          {"X-Shopify-Access-Token": tok, "Content-Type": "application/json"})
+            if "errors" in d:
+                err_str = json.dumps(d["errors"])
+                if "THROTTLED" in err_str or "Rate limited" in err_str:
+                    wait_sec = 10
+                    try:
+                        ext = d["errors"][0].get("extensions", {})
+                        reset_str = ext.get("cost", {}).get("windowResetAt")
+                        if reset_str:
+                            reset_dt = dt.datetime.fromisoformat(reset_str.replace("Z", "+00:00"))
+                            now_utc = dt.datetime.now(dt.timezone.utc)
+                            wait_sec = max(2.0, (reset_dt - now_utc).total_seconds() + 1.5)
+                    except Exception:
+                        pass
+                    print(f"Shopify throttled, waiting {wait_sec:.1f}s before retry (attempt {attempt+1})...")
+                    time.sleep(wait_sec)
+                    continue
+                raise RuntimeError(d["errors"])
+            return d["data"]
+        raise RuntimeError("Shopify rate limit exceeded after retries")
 
     q = """query($c:String,$f:String){orders(first:50,after:$c,query:$f){
       pageInfo{hasNextPage endCursor}
@@ -147,16 +165,15 @@ def shopify():
             ship_c = float(r["shipping_charges"])
             disc_c = abs(float(r["discounts"]))
             ret_c = abs(float(r["returns"]))
-            cogs_c = abs(float(r.get("cost_of_goods_sold", 0) or 0))
+            cogs_c = float(r.get("cost_of_goods_sold", 0) or 0)
             day = days[d_str]
-            if tot_s or ord_c or ship_c or ret_c or d_str in days:
+            if tot_s or ord_c or ship_c or ret_c or cogs_c or d_str in days:
                 day["orders"] = ord_c
                 day["gross"] = tot_s
                 day["shipping_charged"] = ship_c
                 day["discounts"] = disc_c
                 day["refunds"] = ret_c
-                if cogs_c:  # Only override COGS if ShopifyQL returns a non-zero value
-                    day["cogs"] = cogs_c
+                day["cogs"] = cogs_c
                 sql_rows += 1
     print(f"ShopifyQL: {sql_rows} daily sales rows synced")
     # Shopify Payments real fees (balance transactions, newest first)
