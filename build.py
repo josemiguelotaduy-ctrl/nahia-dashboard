@@ -256,17 +256,19 @@ def main():
     open(os.path.join(ROOT, "public", "index.html"), "w").write(html)
     open(os.path.join(ROOT, "index.html"), "w").write(html)
     print("OK -> dashboard/index.html & public/index.html")
-    # Auto-push to GitHub if remote exists
+    # Auto-push to GitHub if remote exists (generated files: our fresh build always wins)
     try:
         import subprocess
-        subprocess.run(["git", "add", "-A"], cwd=ROOT, capture_output=True)
-        r = subprocess.run(["git", "commit", "-m", f"Auto-update {dt.datetime.now(TZ).strftime('%Y-%m-%d')}"], cwd=ROOT, capture_output=True)
-        subprocess.run(["git", "pull", "--rebase", "origin", "main"], cwd=ROOT, capture_output=True)
-        p_res = subprocess.run(["git", "push", "origin", "main"], cwd=ROOT, capture_output=True)
+        sh = lambda *c: subprocess.run(c, cwd=ROOT, capture_output=True)
+        sh("git", "fetch", "origin", "main")
+        sh("git", "reset", "--soft", "origin/main")
+        sh("git", "add", "-A")
+        sh("git", "commit", "-m", f"Auto-update {dt.datetime.now(TZ).strftime('%Y-%m-%d %H:%M')}")
+        p_res = sh("git", "push", "origin", "main")
         if p_res.returncode == 0:
             print("Synced and pushed to GitHub Pages successfully")
         else:
-            print(f"Git push warning: {p_res.stderr.decode()[:100]}")
+            print(f"Git push warning: {p_res.stderr.decode()[:200]}")
     except Exception as e:
         print(f"Git auto-sync skipped: {e}")
 

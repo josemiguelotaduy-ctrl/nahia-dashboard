@@ -66,7 +66,7 @@
   <header>
     <div><h1>Nahia Home · P&amp;L</h1><div class="sub" id="gen"></div></div>
     <div class="controls">
-      <button data-p="mtd">Mes actual</button><button data-p="lm">Mes pasado</button>
+      <button data-p="mtd">Mes actual (hasta ayer)</button><button data-p="lm">Mes pasado</button>
       <button data-p="30">30 días</button><button data-p="all">Todo</button>
       <input type="date" id="from"><span class="sub">→</span><input type="date" id="to">
     </div>
@@ -139,11 +139,15 @@ function pnl(list){
 let from=keys[0], to=iso(new Date());
 function setRange(a,b){from=a;to=b;document.getElementById("from").value=a;document.getElementById("to").value=b;render()}
 function preset(p){
-  const t=new Date(),y=t.getFullYear(),m=t.getMonth();const today=iso(t);
-  if(p==="mtd")setRange(iso(new Date(Date.UTC(y,m,1))),today);
-  if(p==="lm")setRange(iso(new Date(Date.UTC(y,m-1,1))),iso(new Date(Date.UTC(y,m,0))));
-  if(p==="30")setRange(addD(today,-29),today);
-  if(p==="all")setRange(keys[0],today);
+  // Today in Madrid; "to" is always YESTERDAY (today's data is incomplete)
+  const today=new Date().toLocaleDateString("sv-SE",{timeZone:"Europe/Madrid"});
+  const yest=addD(today,-1);
+  const [y,m]=today.split("-").map(Number);
+  const first=`${y}-${String(m).padStart(2,"0")}-01`;
+  if(p==="mtd") setRange(first<=yest?first:addD(first,-1).slice(0,8)+"01",yest); // on the 1st, show the previous month
+  if(p==="lm"){const e=addD(first,-1);setRange(e.slice(0,8)+"01",e)}
+  if(p==="30") setRange(addD(yest,-29),yest);
+  if(p==="all") setRange(keys[0],yest);
 }
 let chart;
 function render(){
