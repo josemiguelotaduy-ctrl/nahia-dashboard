@@ -106,6 +106,11 @@ def shopify():
     allo = sorted(hist.values(), key=lambda x: x["created"])
     json.dump(allo, open(hist_path, "w"))
     seen = set()
+    # Load vat_by_country early so we can compute per-order IVA
+    # (Shopify currentTotalTaxSet returns 0 for "taxes included" stores, so we compute it ourselves)
+    _cfg_path = os.path.join(ROOT, "config.json")
+    _cfg_early = json.load(open(_cfg_path)) if os.path.exists(_cfg_path) else {}
+    vat_by_country = (_cfg_early.get("params") or {}).get("vat_by_country", {})
     for o in allo:
         if o["d"] < START:
             continue
@@ -114,9 +119,13 @@ def shopify():
         rep = 1 if (o["u"] and o["u"] in seen) or o["idx"] >= 2 else 0
         if o["u"]:
             seen.add(o["u"])
+        # Compute IVA using per-country rate (taxes are included in the gross price)
+        cc = o.get("c") or "??"
+        vat_rate = vat_by_country.get(cc, vat_by_country.get("??", 0))
+        order_tax = round(o["g"] * vat_rate / (100 + vat_rate), 4) if vat_rate else 0.0
         day = days[o["d"]]
         day["orders"] += 1
-        day["gross"] += o["g"]; day["tax"] += o["tax"]; day["shipping_charged"] += o["s"]
+        day["gross"] += o["g"]; day["tax"] += order_tax; day["shipping_charged"] += o["s"]
         day["discounts"] += o["disc"]; day["refunds"] += o["ref"]; day["cogs"] += o["k"]
         day["repeat_orders"] += rep
         key = "paypal" if o["pp"] else "shopify_payments"

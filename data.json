@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23 18:14",
+ "generated": "2026-10-23 18:17",
  "start": "2022-08-01",
  "orders": [
   {
@@ -19093,7 +19093,7 @@
   "2022-08-17": {
    "orders": 1.0,
    "gross": 32.5,
-   "tax": 0.0,
+   "tax": 5.6405,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -24801,7 +24801,7 @@
   "2024-11-05": {
    "orders": 1.0,
    "gross": 47.7,
-   "tax": 0.0,
+   "tax": 8.2785,
    "shipping_charged": 6.9,
    "discounts": 7.2,
    "refunds": 0.0,
@@ -24892,7 +24892,7 @@
   "2024-11-12": {
    "orders": 1.0,
    "gross": 54.9,
-   "tax": 0.0,
+   "tax": 9.5281,
    "shipping_charged": 6.9,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -24926,7 +24926,7 @@
   "2024-11-14": {
    "orders": 1.0,
    "gross": 148.9,
-   "tax": 0.0,
+   "tax": 25.8421,
    "shipping_charged": 6.9,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -24959,7 +24959,7 @@
   "2024-11-16": {
    "orders": 1.0,
    "gross": 42.6,
-   "tax": 0.0,
+   "tax": 7.3934,
    "shipping_charged": 6.9,
    "discounts": 6.3,
    "refunds": 0.0,
@@ -24980,7 +24980,7 @@
   "2024-11-17": {
    "orders": 1.0,
    "gross": 51.9,
-   "tax": 0.0,
+   "tax": 9.359,
    "shipping_charged": 6.9,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -25068,7 +25068,7 @@
   "2024-11-24": {
    "orders": 3.0,
    "gross": 167.7,
-   "tax": 0.0,
+   "tax": 29.1049,
    "shipping_charged": 20.7,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -25101,7 +25101,7 @@
   "2024-11-26": {
    "orders": 1.0,
    "gross": 95.9,
-   "tax": 0.0,
+   "tax": 16.6438,
    "shipping_charged": 6.9,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -25120,7 +25120,7 @@
   "2024-11-27": {
    "orders": 1.0,
    "gross": 83.4,
-   "tax": 0.0,
+   "tax": 14.4744,
    "shipping_charged": 6.9,
    "discounts": 13.5,
    "refunds": 0.0,
@@ -25154,7 +25154,7 @@
   "2024-11-29": {
    "orders": 1.0,
    "gross": 38.9,
-   "tax": 0.0,
+   "tax": 6.7512,
    "shipping_charged": 6.9,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -25175,7 +25175,7 @@
   "2024-11-30": {
    "orders": 1.0,
    "gross": 68.1,
-   "tax": 0.0,
+   "tax": 11.819,
    "shipping_charged": 6.9,
    "discounts": 10.8,
    "refunds": 0.0,
@@ -25334,7 +25334,7 @@
   "2024-12-12": {
    "orders": 3.0,
    "gross": 390.85,
-   "tax": 0.0,
+   "tax": 67.8335,
    "shipping_charged": 20.7,
    "discounts": 56.85,
    "refunds": 0.0,
@@ -25403,7 +25403,7 @@
   "2024-12-17": {
    "orders": 1.0,
    "gross": 40.05,
-   "tax": 0.0,
+   "tax": 6.9508,
    "shipping_charged": 6.9,
    "discounts": 5.85,
    "refunds": 0.0,
@@ -25442,7 +25442,7 @@
   "2024-12-21": {
    "orders": 3.0,
    "gross": 186.9,
-   "tax": 0.0,
+   "tax": 32.4372,
    "shipping_charged": 6.9,
    "discounts": 49.4,
    "refunds": 10.6,
@@ -25492,7 +25492,7 @@
   "2024-12-24": {
    "orders": 1.0,
    "gross": 54.5,
-   "tax": 0.0,
+   "tax": 9.4587,
    "shipping_charged": 6.9,
    "discounts": 8.4,
    "refunds": 0.0,
@@ -25535,7 +25535,7 @@
   "2024-12-27": {
    "orders": 1.0,
    "gross": 85.1,
-   "tax": 0.0,
+   "tax": 14.7694,
    "shipping_charged": 6.9,
    "discounts": 13.8,
    "refunds": 0.0,
@@ -25614,7 +25614,7 @@
   "2025-01-03": {
    "orders": 1.0,
    "gross": 38.9,
-   "tax": 0.0,
+   "tax": 6.7512,
    "shipping_charged": 6.9,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -25635,7 +25635,7 @@
   "2025-01-04": {
    "orders": 2.0,
    "gross": 163.4,
-   "tax": 0.0,
+   "tax": 28.3587,
    "shipping_charged": 6.9,
    "discounts": 13.5,
    "refunds": 0.0,
@@ -25656,7 +25656,7 @@
   "2025-01-05": {
    "orders": 1.0,
    "gross": 102.1,
-   "tax": 0.0,
+   "tax": 17.7198,
    "shipping_charged": 6.9,
    "discounts": 16.8,
    "refunds": 0.0,
@@ -25677,7 +25677,7 @@
   "2025-01-06": {
    "orders": 2.0,
    "gross": 110.4,
-   "tax": 0.0,
+   "tax": 19.1603,
    "shipping_charged": 13.8,
    "discounts": 11.4,
    "refunds": 0.0,
@@ -25701,7 +25701,7 @@
   "2025-01-07": {
    "orders": 1.0,
    "gross": 42.6,
-   "tax": 0.0,
+   "tax": 7.3934,
    "shipping_charged": 6.9,
    "discounts": 6.3,
    "refunds": 0.0,
@@ -25734,7 +25734,7 @@
   "2025-01-09": {
    "orders": 2.0,
    "gross": 205.8,
-   "tax": 0.0,
+   "tax": 35.7174,
    "shipping_charged": 13.8,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -25755,7 +25755,7 @@
   "2025-01-10": {
    "orders": 2.0,
    "gross": 81.8,
-   "tax": 0.0,
+   "tax": 14.1967,
    "shipping_charged": 13.8,
    "discounts": 12.0,
    "refunds": 0.0,
@@ -25789,7 +25789,7 @@
   "2025-01-12": {
    "orders": 1.0,
    "gross": 78.3,
-   "tax": 0.0,
+   "tax": 13.5893,
    "shipping_charged": 6.9,
    "discounts": 12.6,
    "refunds": 0.0,
@@ -25835,7 +25835,7 @@
   "2025-01-15": {
    "orders": 1.0,
    "gross": 54.9,
-   "tax": 0.0,
+   "tax": 9.5281,
    "shipping_charged": 6.9,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -25878,7 +25878,7 @@
   "2025-01-18": {
    "orders": 1.0,
    "gross": 88.5,
-   "tax": 0.0,
+   "tax": 15.3595,
    "shipping_charged": 6.9,
    "discounts": 14.4,
    "refunds": 0.0,
@@ -25924,7 +25924,7 @@
   "2025-01-21": {
    "orders": 1.0,
    "gross": 145.45,
-   "tax": 0.0,
+   "tax": 25.2434,
    "shipping_charged": 6.9,
    "discounts": 24.45,
    "refunds": 0.0,
@@ -25994,7 +25994,7 @@
   "2025-01-26": {
    "orders": 3.0,
    "gross": 152.5,
-   "tax": 0.0,
+   "tax": 26.4669,
    "shipping_charged": 20.7,
    "discounts": 19.2,
    "refunds": 0.0,
@@ -26031,7 +26031,7 @@
   "2025-01-28": {
    "orders": 2.0,
    "gross": 121.6,
-   "tax": 0.0,
+   "tax": 21.1041,
    "shipping_charged": 13.8,
    "discounts": 4.2,
    "refunds": 0.0,
@@ -26103,7 +26103,7 @@
   "2025-02-02": {
    "orders": 1.0,
    "gross": 34.1,
-   "tax": 0.0,
+   "tax": 5.9182,
    "shipping_charged": 6.9,
    "discounts": 4.8,
    "refunds": 0.0,
@@ -26122,7 +26122,7 @@
   "2025-02-03": {
    "orders": 1.0,
    "gross": 20.9,
-   "tax": 0.0,
+   "tax": 3.6273,
    "shipping_charged": 6.9,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -26143,7 +26143,7 @@
   "2025-02-04": {
    "orders": 2.0,
    "gross": 120.9,
-   "tax": 0.0,
+   "tax": 23.1694,
    "shipping_charged": 13.8,
    "discounts": 6.3,
    "refunds": 12.6,
@@ -26229,7 +26229,7 @@
   "2025-02-10": {
    "orders": 1.0,
    "gross": 71.9,
-   "tax": 0.0,
+   "tax": 12.4785,
    "shipping_charged": 6.9,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -26272,7 +26272,7 @@
   "2025-02-13": {
    "orders": 1.0,
    "gross": 85.9,
-   "tax": 0.0,
+   "tax": 14.9083,
    "shipping_charged": 6.9,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -26306,7 +26306,7 @@
   "2025-02-15": {
    "orders": 2.0,
    "gross": 330.35,
-   "tax": 0.0,
+   "tax": 57.3335,
    "shipping_charged": 13.8,
    "discounts": 48.45,
    "refunds": 0.0,
@@ -26327,7 +26327,7 @@
   "2025-02-16": {
    "orders": 2.0,
    "gross": 231.8,
-   "tax": 0.0,
+   "tax": 40.2297,
    "shipping_charged": 13.8,
    "discounts": 27.0,
    "refunds": 0.0,
@@ -26361,7 +26361,7 @@
   "2025-02-18": {
    "orders": 1.0,
    "gross": 96.15,
-   "tax": 0.0,
+   "tax": 16.6872,
    "shipping_charged": 6.9,
    "discounts": 15.75,
    "refunds": 0.0,
@@ -26382,7 +26382,7 @@
   "2025-02-19": {
    "orders": 2.0,
    "gross": 109.85,
-   "tax": 0.0,
+   "tax": 19.0649,
    "shipping_charged": 13.8,
    "discounts": 16.95,
    "refunds": 0.0,
@@ -26419,7 +26419,7 @@
   "2025-02-21": {
    "orders": 1.0,
    "gross": 34.9,
-   "tax": 0.0,
+   "tax": 6.057,
    "shipping_charged": 6.9,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -26440,7 +26440,7 @@
   "2025-02-22": {
    "orders": 1.0,
    "gross": 91.0,
-   "tax": 0.0,
+   "tax": 15.7934,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -26536,7 +26536,7 @@
   "2025-03-01": {
    "orders": 1.0,
    "gross": 76.9,
-   "tax": 0.0,
+   "tax": 13.3463,
    "shipping_charged": 6.9,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -26557,7 +26557,7 @@
   "2025-03-02": {
    "orders": 1.0,
    "gross": 62.9,
-   "tax": 0.0,
+   "tax": 10.9165,
    "shipping_charged": 6.9,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -26640,7 +26640,7 @@
   "2025-03-08": {
    "orders": 2.0,
    "gross": 67.35,
-   "tax": 0.0,
+   "tax": 11.6888,
    "shipping_charged": 13.8,
    "discounts": 9.45,
    "refunds": 0.0,
@@ -26738,7 +26738,7 @@
   "2025-03-15": {
    "orders": 2.0,
    "gross": 119.0,
-   "tax": 0.0,
+   "tax": 20.6528,
    "shipping_charged": 0.0,
    "discounts": 21.0,
    "refunds": 0.0,
@@ -26785,7 +26785,7 @@
   "2025-03-18": {
    "orders": 2.0,
    "gross": 305.0,
-   "tax": 0.0,
+   "tax": 52.9339,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -26809,7 +26809,7 @@
   "2025-03-19": {
    "orders": 7.0,
    "gross": 217.0,
-   "tax": 0.0,
+   "tax": 21.0,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -26842,7 +26842,7 @@
   "2025-03-21": {
    "orders": 1.0,
    "gross": 80.0,
-   "tax": 0.0,
+   "tax": 13.8843,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -26901,7 +26901,7 @@
   "2025-03-25": {
    "orders": 1.0,
    "gross": 103.0,
-   "tax": 0.0,
+   "tax": 17.876,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -26995,7 +26995,7 @@
   "2025-04-01": {
    "orders": 1.0,
    "gross": 30.0,
-   "tax": 0.0,
+   "tax": 5.2066,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -27016,7 +27016,7 @@
   "2025-04-02": {
    "orders": 1.0,
    "gross": 16.0,
-   "tax": 0.0,
+   "tax": 2.7769,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -27035,7 +27035,7 @@
   "2025-04-03": {
    "orders": 1.0,
    "gross": 84.0,
-   "tax": 0.0,
+   "tax": 14.5785,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -27056,7 +27056,7 @@
   "2025-04-04": {
    "orders": 1.0,
    "gross": -47.7,
-   "tax": 0.0,
+   "tax": 5.6058,
    "shipping_charged": 0.0,
    "discounts": 5.7,
    "refunds": 80.0,
@@ -27101,7 +27101,7 @@
   "2025-04-07": {
    "orders": 1.0,
    "gross": 124.0,
-   "tax": 0.0,
+   "tax": 21.5207,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -27170,7 +27170,7 @@
   "2025-04-12": {
    "orders": 1.0,
    "gross": 123.25,
-   "tax": 0.0,
+   "tax": 21.5988,
    "shipping_charged": 0.0,
    "discounts": 21.75,
    "refunds": 0.0,
@@ -27256,7 +27256,7 @@
   "2025-04-18": {
    "orders": 2.0,
    "gross": 213.75,
-   "tax": 0.0,
+   "tax": 37.0971,
    "shipping_charged": 0.0,
    "discounts": 11.25,
    "refunds": 0.0,
@@ -27277,7 +27277,7 @@
   "2025-04-19": {
    "orders": 1.0,
    "gross": 42.0,
-   "tax": 0.0,
+   "tax": 7.2893,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -27296,7 +27296,7 @@
   "2025-04-20": {
    "orders": 2.0,
    "gross": 40.35,
-   "tax": 0.0,
+   "tax": 7.0029,
    "shipping_charged": 0.0,
    "discounts": 4.65,
    "refunds": 0.0,
@@ -27468,7 +27468,7 @@
   "2025-05-03": {
    "orders": 1.0,
    "gross": 248.94,
-   "tax": 0.0,
+   "tax": 43.2045,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -27489,7 +27489,7 @@
   "2025-05-04": {
    "orders": 1.0,
    "gross": 51.0,
-   "tax": 0.0,
+   "tax": 8.8512,
    "shipping_charged": 0.0,
    "discounts": 9.0,
    "refunds": 0.0,
@@ -27521,7 +27521,7 @@
   "2025-05-06": {
    "orders": 1.0,
    "gross": 46.75,
-   "tax": 0.0,
+   "tax": 8.1136,
    "shipping_charged": 0.0,
    "discounts": 8.25,
    "refunds": 0.0,
@@ -27542,7 +27542,7 @@
   "2025-05-07": {
    "orders": 3.0,
    "gross": 300.6,
-   "tax": 0.0,
+   "tax": 52.1703,
    "shipping_charged": 0.0,
    "discounts": 11.4,
    "refunds": 0.0,
@@ -27590,7 +27590,7 @@
   "2025-05-10": {
    "orders": 2.0,
    "gross": 49.3,
-   "tax": 0.0,
+   "tax": 8.5562,
    "shipping_charged": 0.0,
    "discounts": 8.7,
    "refunds": 0.0,
@@ -27614,7 +27614,7 @@
   "2025-05-11": {
    "orders": 1.0,
    "gross": 60.0,
-   "tax": 0.0,
+   "tax": 10.4132,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -27656,7 +27656,7 @@
   "2025-05-14": {
    "orders": 1.0,
    "gross": 68.0,
-   "tax": 0.0,
+   "tax": 11.8017,
    "shipping_charged": 0.0,
    "discounts": 12.0,
    "refunds": 0.0,
@@ -27689,7 +27689,7 @@
   "2025-05-16": {
    "orders": 1.0,
    "gross": 15.0,
-   "tax": 0.0,
+   "tax": 2.6033,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -27710,7 +27710,7 @@
   "2025-05-17": {
    "orders": 1.0,
    "gross": 95.0,
-   "tax": 0.0,
+   "tax": 16.4876,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -27727,7 +27727,7 @@
   "2025-05-18": {
    "orders": 1.0,
    "gross": 152.0,
-   "tax": 0.0,
+   "tax": 26.3802,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -27853,7 +27853,7 @@
   "2025-05-28": {
    "orders": 1.0,
    "gross": 142.8,
-   "tax": 0.0,
+   "tax": 24.7835,
    "shipping_charged": 0.0,
    "discounts": 25.2,
    "refunds": 0.0,
@@ -27900,7 +27900,7 @@
   "2025-05-31": {
    "orders": 2.0,
    "gross": 49.15,
-   "tax": 0.0,
+   "tax": 8.5302,
    "shipping_charged": 0.0,
    "discounts": 5.85,
    "refunds": 0.0,
@@ -27921,7 +27921,7 @@
   "2025-06-01": {
    "orders": 1.0,
    "gross": 12.75,
-   "tax": 0.0,
+   "tax": 2.2128,
    "shipping_charged": 0.0,
    "discounts": 2.25,
    "refunds": 0.0,
@@ -27942,7 +27942,7 @@
   "2025-06-02": {
    "orders": 1.0,
    "gross": 27.2,
-   "tax": 0.0,
+   "tax": 4.7207,
    "shipping_charged": 0.0,
    "discounts": 4.8,
    "refunds": 0.0,
@@ -27963,7 +27963,7 @@
   "2025-06-03": {
    "orders": 1.0,
    "gross": 18.7,
-   "tax": 0.0,
+   "tax": 3.2455,
    "shipping_charged": 0.0,
    "discounts": 3.3,
    "refunds": 0.0,
@@ -28008,7 +28008,7 @@
   "2025-06-06": {
    "orders": 2.0,
    "gross": 396.1,
-   "tax": 0.0,
+   "tax": 68.7446,
    "shipping_charged": 0.0,
    "discounts": 69.9,
    "refunds": 0.0,
@@ -28044,7 +28044,7 @@
   "2025-06-08": {
    "orders": 4.0,
    "gross": 147.0,
-   "tax": 0.0,
+   "tax": 25.5124,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -28068,7 +28068,7 @@
   "2025-06-09": {
    "orders": 2.0,
    "gross": 144.0,
-   "tax": 0.0,
+   "tax": 24.9918,
    "shipping_charged": 0.0,
    "discounts": 18.0,
    "refunds": 0.0,
@@ -28092,7 +28092,7 @@
   "2025-06-10": {
    "orders": 1.0,
    "gross": 13.6,
-   "tax": 0.0,
+   "tax": 2.3603,
    "shipping_charged": 0.0,
    "discounts": 2.4,
    "refunds": 0.0,
@@ -28113,7 +28113,7 @@
   "2025-06-11": {
    "orders": 1.0,
    "gross": 16.0,
-   "tax": 0.0,
+   "tax": 2.7769,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -28134,7 +28134,7 @@
   "2025-06-12": {
    "orders": 2.0,
    "gross": 158.0,
-   "tax": 0.0,
+   "tax": 27.4214,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -28176,7 +28176,7 @@
   "2025-06-15": {
    "orders": 1.0,
    "gross": 16.0,
-   "tax": 0.0,
+   "tax": 2.7769,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -28197,7 +28197,7 @@
   "2025-06-16": {
    "orders": 3.0,
    "gross": 188.35,
-   "tax": 0.0,
+   "tax": 32.6888,
    "shipping_charged": 0.0,
    "discounts": 22.65,
    "refunds": 0.0,
@@ -28221,7 +28221,7 @@
   "2025-06-17": {
    "orders": 1.0,
    "gross": 15.3,
-   "tax": 0.0,
+   "tax": 2.6554,
    "shipping_charged": 0.0,
    "discounts": 2.7,
    "refunds": 0.0,
@@ -28250,7 +28250,7 @@
   "2025-06-19": {
    "orders": 1.0,
    "gross": 27.2,
-   "tax": 0.0,
+   "tax": 4.7207,
    "shipping_charged": 0.0,
    "discounts": 4.8,
    "refunds": 0.0,
@@ -28268,7 +28268,7 @@
   "2025-06-20": {
    "orders": 1.0,
    "gross": 40.8,
-   "tax": 0.0,
+   "tax": 7.081,
    "shipping_charged": 0.0,
    "discounts": 7.2,
    "refunds": 0.0,
@@ -28289,7 +28289,7 @@
   "2025-06-21": {
    "orders": 1.0,
    "gross": 33.91,
-   "tax": 0.0,
+   "tax": 5.8852,
    "shipping_charged": 0.0,
    "discounts": 5.99,
    "refunds": 0.0,
@@ -28369,7 +28369,7 @@
   "2025-06-27": {
    "orders": 1.0,
    "gross": 35.7,
-   "tax": 0.0,
+   "tax": 6.1959,
    "shipping_charged": 0.0,
    "discounts": 6.3,
    "refunds": 0.0,
@@ -28398,7 +28398,7 @@
   "2025-06-29": {
    "orders": 1.0,
    "gross": 13.6,
-   "tax": 0.0,
+   "tax": 2.3603,
    "shipping_charged": 0.0,
    "discounts": 2.4,
    "refunds": 0.0,
@@ -28416,7 +28416,7 @@
   "2025-06-30": {
    "orders": 1.0,
    "gross": 68.0,
-   "tax": 0.0,
+   "tax": 11.8017,
    "shipping_charged": 0.0,
    "discounts": 12.0,
    "refunds": 0.0,
@@ -28448,7 +28448,7 @@
   "2025-07-02": {
    "orders": 1.0,
    "gross": 40.8,
-   "tax": 0.0,
+   "tax": 7.081,
    "shipping_charged": 0.0,
    "discounts": 7.2,
    "refunds": 0.0,
@@ -28496,7 +28496,7 @@
   "2025-07-05": {
    "orders": 5.0,
    "gross": 123.15,
-   "tax": 0.0,
+   "tax": 21.3731,
    "shipping_charged": 0.0,
    "discounts": 5.85,
    "refunds": 51.0,
@@ -28517,7 +28517,7 @@
   "2025-07-06": {
    "orders": 3.0,
    "gross": 278.24,
-   "tax": 0.0,
+   "tax": 45.9293,
    "shipping_charged": 0.0,
    "discounts": 2.4,
    "refunds": 0.0,
@@ -28538,7 +28538,7 @@
   "2025-07-07": {
    "orders": 2.0,
    "gross": 179.35,
-   "tax": 0.0,
+   "tax": 31.1269,
    "shipping_charged": 0.0,
    "discounts": 31.65,
    "refunds": 0.0,
@@ -28572,7 +28572,7 @@
   "2025-07-09": {
    "orders": 2.0,
    "gross": 85.85,
-   "tax": 0.0,
+   "tax": 14.8996,
    "shipping_charged": 0.0,
    "discounts": 15.15,
    "refunds": 0.0,
@@ -28608,7 +28608,7 @@
   "2025-07-11": {
    "orders": 3.0,
    "gross": 176.75,
-   "tax": 0.0,
+   "tax": 22.8657,
    "shipping_charged": 0.0,
    "discounts": 23.25,
    "refunds": 0.0,
@@ -28673,7 +28673,7 @@
   "2025-07-15": {
    "orders": 1.0,
    "gross": 76.5,
-   "tax": 0.0,
+   "tax": 13.7951,
    "shipping_charged": 0.0,
    "discounts": 13.5,
    "refunds": 0.0,
@@ -28694,7 +28694,7 @@
   "2025-07-16": {
    "orders": 2.0,
    "gross": 23.0,
-   "tax": 0.0,
+   "tax": 3.9298,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -28718,7 +28718,7 @@
   "2025-07-17": {
    "orders": 2.0,
    "gross": 120.5,
-   "tax": 0.0,
+   "tax": 6.5,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -28761,7 +28761,7 @@
   "2025-07-19": {
    "orders": 5.0,
    "gross": 383.0,
-   "tax": 0.0,
+   "tax": 56.2314,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -28785,7 +28785,7 @@
   "2025-07-20": {
    "orders": 2.0,
    "gross": 45.84,
-   "tax": 0.0,
+   "tax": 6.1988,
    "shipping_charged": 0.0,
    "discounts": 5.85,
    "refunds": 0.0,
@@ -28806,7 +28806,7 @@
   "2025-07-21": {
    "orders": 1.0,
    "gross": 187.0,
-   "tax": 0.0,
+   "tax": 32.4545,
    "shipping_charged": 0.0,
    "discounts": 33.0,
    "refunds": 0.0,
@@ -28827,7 +28827,7 @@
   "2025-07-22": {
    "orders": 2.0,
    "gross": 799.0,
-   "tax": 0.0,
+   "tax": 149.5639,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -28851,7 +28851,7 @@
   "2025-07-23": {
    "orders": 2.0,
    "gross": 261.0,
-   "tax": 0.0,
+   "tax": 45.2975,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -28881,7 +28881,7 @@
   "2025-07-25": {
    "orders": 2.0,
    "gross": 87.25,
-   "tax": 0.0,
+   "tax": 14.9221,
    "shipping_charged": 0.0,
    "discounts": 9.75,
    "refunds": 0.0,
@@ -28937,7 +28937,7 @@
   "2025-07-28": {
    "orders": 1.0,
    "gross": 32.0,
-   "tax": 0.0,
+   "tax": 5.5537,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -28955,7 +28955,7 @@
   "2025-07-29": {
    "orders": 1.0,
    "gross": 42.72,
-   "tax": 0.0,
+   "tax": 8.544,
    "shipping_charged": 0.0,
    "discounts": 7.54,
    "refunds": 0.0,
@@ -28989,7 +28989,7 @@
   "2025-07-31": {
    "orders": 1.0,
    "gross": 25.5,
-   "tax": 0.0,
+   "tax": 4.25,
    "shipping_charged": 0.0,
    "discounts": 4.5,
    "refunds": 0.0,
@@ -29010,7 +29010,7 @@
   "2025-08-01": {
    "orders": 2.0,
    "gross": 110.96,
-   "tax": 0.0,
+   "tax": 20.3937,
    "shipping_charged": 0.0,
    "discounts": 12.0,
    "refunds": 0.0,
@@ -29031,7 +29031,7 @@
   "2025-08-02": {
    "orders": 1.0,
    "gross": 320.0,
-   "tax": 0.0,
+   "tax": 59.8374,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -29052,7 +29052,7 @@
   "2025-08-03": {
    "orders": 1.0,
    "gross": 10.28,
-   "tax": 0.0,
+   "tax": 2.056,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 120.0,
@@ -29073,7 +29073,7 @@
   "2025-08-04": {
    "orders": 1.0,
    "gross": 40.8,
-   "tax": 0.0,
+   "tax": 6.8,
    "shipping_charged": 0.0,
    "discounts": 7.2,
    "refunds": 0.0,
@@ -29119,7 +29119,7 @@
   "2025-08-07": {
    "orders": 1.0,
    "gross": 83.7,
-   "tax": 0.0,
+   "tax": 16.74,
    "shipping_charged": 0.0,
    "discounts": 14.78,
    "refunds": 0.0,
@@ -29140,7 +29140,7 @@
   "2025-08-08": {
    "orders": 3.0,
    "gross": 138.7,
-   "tax": 0.0,
+   "tax": 25.4829,
    "shipping_charged": 0.0,
    "discounts": 6.3,
    "refunds": 0.0,
@@ -29223,7 +29223,7 @@
   "2025-08-14": {
    "orders": 2.0,
    "gross": 633.75,
-   "tax": 0.0,
+   "tax": 111.1124,
    "shipping_charged": 0.0,
    "discounts": 29.25,
    "refunds": 0.0,
@@ -29260,7 +29260,7 @@
   "2025-08-16": {
    "orders": 1.0,
    "gross": 35.7,
-   "tax": 0.0,
+   "tax": 5.95,
    "shipping_charged": 0.0,
    "discounts": 6.3,
    "refunds": 0.0,
@@ -29281,7 +29281,7 @@
   "2025-08-17": {
    "orders": 1.0,
    "gross": 51.0,
-   "tax": 0.0,
+   "tax": 8.8512,
    "shipping_charged": 0.0,
    "discounts": 9.0,
    "refunds": 0.0,
@@ -29302,7 +29302,7 @@
   "2025-08-18": {
    "orders": 6.0,
    "gross": 439.7,
-   "tax": 0.0,
+   "tax": 78.1721,
    "shipping_charged": 0.0,
    "discounts": 54.3,
    "refunds": 0.0,
@@ -29326,7 +29326,7 @@
   "2025-08-19": {
    "orders": 6.0,
    "gross": 440.3,
-   "tax": 0.0,
+   "tax": 76.9476,
    "shipping_charged": 0.0,
    "discounts": 5.7,
    "refunds": 0.0,
@@ -29350,7 +29350,7 @@
   "2025-08-20": {
    "orders": 1.0,
    "gross": 84.0,
-   "tax": 0.0,
+   "tax": 15.1475,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -29371,7 +29371,7 @@
   "2025-08-21": {
    "orders": 2.0,
    "gross": 67.1,
-   "tax": 0.0,
+   "tax": 13.9934,
    "shipping_charged": 0.0,
    "discounts": 8.4,
    "refunds": 10.5,
@@ -29392,7 +29392,7 @@
   "2025-08-22": {
    "orders": 1.0,
    "gross": 300.0,
-   "tax": 0.0,
+   "tax": 54.0984,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -29432,7 +29432,7 @@
   "2025-08-24": {
    "orders": 1.0,
    "gross": 153.0,
-   "tax": 0.0,
+   "tax": 27.5902,
    "shipping_charged": 0.0,
    "discounts": 27.0,
    "refunds": 0.0,
@@ -29453,7 +29453,7 @@
   "2025-08-25": {
    "orders": 1.0,
    "gross": 23.8,
-   "tax": 0.0,
+   "tax": 4.2918,
    "shipping_charged": 0.0,
    "discounts": 4.2,
    "refunds": 0.0,
@@ -29474,7 +29474,7 @@
   "2025-08-26": {
    "orders": 2.0,
    "gross": 309.0,
-   "tax": 0.0,
+   "tax": 55.7213,
    "shipping_charged": 0.0,
    "discounts": 36.0,
    "refunds": 0.0,
@@ -29495,7 +29495,7 @@
   "2025-08-27": {
    "orders": 1.0,
    "gross": 40.8,
-   "tax": 0.0,
+   "tax": 7.3574,
    "shipping_charged": 0.0,
    "discounts": 7.2,
    "refunds": 0.0,
@@ -29528,7 +29528,7 @@
   "2025-08-29": {
    "orders": 1.0,
    "gross": 28.0,
-   "tax": 0.0,
+   "tax": 5.0492,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -29547,7 +29547,7 @@
   "2025-08-30": {
    "orders": 3.0,
    "gross": 239.34,
-   "tax": 0.0,
+   "tax": 41.7847,
    "shipping_charged": 0.0,
    "discounts": 3.24,
    "refunds": 0.0,
@@ -29583,7 +29583,7 @@
   "2025-09-01": {
    "orders": 1.0,
    "gross": 160.0,
-   "tax": 0.0,
+   "tax": 28.8525,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -29604,7 +29604,7 @@
   "2025-09-02": {
    "orders": 2.0,
    "gross": 68.45,
-   "tax": 0.0,
+   "tax": 12.0153,
    "shipping_charged": 0.0,
    "discounts": 8.55,
    "refunds": 0.0,
@@ -29660,7 +29660,7 @@
   "2025-09-06": {
    "orders": 4.0,
    "gross": 184.6,
-   "tax": 0.0,
+   "tax": 33.2885,
    "shipping_charged": 0.0,
    "discounts": 8.4,
    "refunds": 0.0,
@@ -29684,7 +29684,7 @@
   "2025-09-07": {
    "orders": 1.0,
    "gross": 35.7,
-   "tax": 0.0,
+   "tax": 6.4377,
    "shipping_charged": 0.0,
    "discounts": 6.3,
    "refunds": 0.0,
@@ -29730,7 +29730,7 @@
   "2025-09-10": {
    "orders": 6.0,
    "gross": 328.4,
-   "tax": 0.0,
+   "tax": 58.4605,
    "shipping_charged": 0.0,
    "discounts": 45.6,
    "refunds": 0.0,
@@ -29751,7 +29751,7 @@
   "2025-09-11": {
    "orders": 2.0,
    "gross": 31.45,
-   "tax": 0.0,
+   "tax": 5.8322,
    "shipping_charged": 0.0,
    "discounts": 5.55,
    "refunds": 0.0,
@@ -29772,7 +29772,7 @@
   "2025-09-12": {
    "orders": 1.0,
    "gross": 39.0,
-   "tax": 0.0,
+   "tax": 6.7686,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -29793,7 +29793,7 @@
   "2025-09-13": {
    "orders": 2.0,
    "gross": 137.7,
-   "tax": 0.0,
+   "tax": 24.1402,
    "shipping_charged": 0.0,
    "discounts": 24.3,
    "refunds": 0.0,
@@ -29817,7 +29817,7 @@
   "2025-09-14": {
    "orders": 2.0,
    "gross": 102.65,
-   "tax": 0.0,
+   "tax": 17.9982,
    "shipping_charged": 0.0,
    "discounts": 13.35,
    "refunds": 0.0,
@@ -29863,7 +29863,7 @@
   "2025-09-17": {
    "orders": 2.0,
    "gross": 431.1,
-   "tax": 0.0,
+   "tax": 80.8417,
    "shipping_charged": 0.0,
    "discounts": 69.9,
    "refunds": 0.0,
@@ -29897,7 +29897,7 @@
   "2025-09-19": {
    "orders": 1.0,
    "gross": 32.3,
-   "tax": 0.0,
+   "tax": 6.0398,
    "shipping_charged": 0.0,
    "discounts": 5.7,
    "refunds": 0.0,
@@ -29918,7 +29918,7 @@
   "2025-09-20": {
    "orders": 2.0,
    "gross": 116.7,
-   "tax": 0.0,
+   "tax": 22.5871,
    "shipping_charged": 0.0,
    "discounts": 6.3,
    "refunds": 0.0,
@@ -29935,7 +29935,7 @@
   "2025-09-21": {
    "orders": 2.0,
    "gross": 293.75,
-   "tax": 0.0,
+   "tax": 52.9713,
    "shipping_charged": 0.0,
    "discounts": 26.25,
    "refunds": 0.0,
@@ -29956,7 +29956,7 @@
   "2025-09-22": {
    "orders": 1.0,
    "gross": 17.85,
-   "tax": 0.0,
+   "tax": 3.2189,
    "shipping_charged": 0.0,
    "discounts": 3.15,
    "refunds": 0.0,
@@ -29988,7 +29988,7 @@
   "2025-09-24": {
    "orders": 1.0,
    "gross": 10.0,
-   "tax": 0.0,
+   "tax": 1.8033,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -30068,7 +30068,7 @@
   "2025-10-01": {
    "orders": 10.0,
    "gross": 456.15,
-   "tax": 0.0,
+   "tax": 77.8475,
    "shipping_charged": 0.0,
    "discounts": 50.85,
    "refunds": 0.0,
@@ -30092,7 +30092,7 @@
   "2025-10-02": {
    "orders": 1.0,
    "gross": 44.4,
-   "tax": 0.0,
+   "tax": 9.0667,
    "shipping_charged": 0.0,
    "discounts": 9.6,
    "refunds": 10.0,
@@ -30113,7 +30113,7 @@
   "2025-10-03": {
    "orders": 2.0,
    "gross": 136.57,
-   "tax": 0.0,
+   "tax": 26.9888,
    "shipping_charged": 0.0,
    "discounts": 19.67,
    "refunds": 0.0,
@@ -30169,7 +30169,7 @@
   "2025-10-07": {
    "orders": 1.0,
    "gross": 61.2,
-   "tax": 0.0,
+   "tax": 11.8452,
    "shipping_charged": 0.0,
    "discounts": 10.8,
    "refunds": 0.0,
@@ -30188,7 +30188,7 @@
   "2025-10-08": {
    "orders": 2.0,
    "gross": 86.7,
-   "tax": 0.0,
+   "tax": 15.0471,
    "shipping_charged": 0.0,
    "discounts": 15.3,
    "refunds": 0.0,
@@ -30212,7 +30212,7 @@
   "2025-10-09": {
    "orders": 1.0,
    "gross": 46.75,
-   "tax": 0.0,
+   "tax": 8.1136,
    "shipping_charged": 0.0,
    "discounts": 8.25,
    "refunds": 0.0,
@@ -30233,7 +30233,7 @@
   "2025-10-10": {
    "orders": 2.0,
    "gross": 43.2,
-   "tax": 0.0,
+   "tax": 7.4976,
    "shipping_charged": 0.0,
    "discounts": 4.8,
    "refunds": 0.0,
@@ -30254,7 +30254,7 @@
   "2025-10-11": {
    "orders": 1.0,
    "gross": 102.0,
-   "tax": 0.0,
+   "tax": 17.7025,
    "shipping_charged": 0.0,
    "discounts": 18.0,
    "refunds": 0.0,
@@ -30275,7 +30275,7 @@
   "2025-10-12": {
    "orders": 2.0,
    "gross": 45.0,
-   "tax": 0.0,
+   "tax": 7.8099,
    "shipping_charged": 0.0,
    "discounts": 3.0,
    "refunds": 0.0,
@@ -30296,7 +30296,7 @@
   "2025-10-13": {
    "orders": 1.0,
    "gross": 40.0,
-   "tax": 0.0,
+   "tax": 6.9421,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -30331,7 +30331,7 @@
   "2025-10-15": {
    "orders": 1.0,
    "gross": 70.0,
-   "tax": 0.0,
+   "tax": 12.1488,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -30352,7 +30352,7 @@
   "2025-10-16": {
    "orders": 2.0,
    "gross": 307.5,
-   "tax": 0.0,
+   "tax": 53.3678,
    "shipping_charged": 0.0,
    "discounts": 22.5,
    "refunds": 0.0,
@@ -30389,7 +30389,7 @@
   "2025-10-18": {
    "orders": 1.0,
    "gross": 54.4,
-   "tax": 0.0,
+   "tax": 10.1724,
    "shipping_charged": 0.0,
    "discounts": 9.6,
    "refunds": 0.0,
@@ -30415,7 +30415,7 @@
   "2025-10-20": {
    "orders": 1.0,
    "gross": 104.0,
-   "tax": 0.0,
+   "tax": 19.4472,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -30477,7 +30477,7 @@
   "2025-10-27": {
    "orders": 1.0,
    "gross": 120.0,
-   "tax": 0.0,
+   "tax": 20.8264,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -30490,7 +30490,7 @@
   "2025-10-28": {
    "orders": 1.0,
    "gross": 22.0,
-   "tax": 0.0,
+   "tax": 3.8182,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -30531,7 +30531,7 @@
   "2025-11-02": {
    "orders": 1.0,
    "gross": 42.0,
-   "tax": 0.0,
+   "tax": 7.2893,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -30555,7 +30555,7 @@
   "2025-11-04": {
    "orders": 2.0,
    "gross": 83.5,
-   "tax": 0.0,
+   "tax": 15.0574,
    "shipping_charged": 0.0,
    "discounts": 13.5,
    "refunds": 0.0,
@@ -30576,7 +30576,7 @@
   "2025-11-05": {
    "orders": 1.0,
    "gross": 20.4,
-   "tax": 0.0,
+   "tax": 3.6787,
    "shipping_charged": 0.0,
    "discounts": 3.6,
    "refunds": 0.0,
@@ -30610,7 +30610,7 @@
   "2025-11-07": {
    "orders": 3.0,
    "gross": 236.3,
-   "tax": 0.0,
+   "tax": 42.6114,
    "shipping_charged": 0.0,
    "discounts": 41.7,
    "refunds": 0.0,
@@ -30634,7 +30634,7 @@
   "2025-11-08": {
    "orders": 1.0,
    "gross": 234.6,
-   "tax": 0.0,
+   "tax": 40.7157,
    "shipping_charged": 0.0,
    "discounts": 41.4,
    "refunds": 0.0,
@@ -30665,7 +30665,7 @@
   "2025-11-10": {
    "orders": 2.0,
    "gross": 144.75,
-   "tax": 0.0,
+   "tax": 26.1025,
    "shipping_charged": 0.0,
    "discounts": 14.25,
    "refunds": 0.0,
@@ -30689,7 +30689,7 @@
   "2025-11-11": {
    "orders": 2.0,
    "gross": 113.6,
-   "tax": 0.0,
+   "tax": 20.9251,
    "shipping_charged": 0.0,
    "discounts": 8.4,
    "refunds": 0.0,
@@ -30713,7 +30713,7 @@
   "2025-11-12": {
    "orders": 2.0,
    "gross": 75.15,
-   "tax": 0.0,
+   "tax": 13.5517,
    "shipping_charged": 0.0,
    "discounts": 5.85,
    "refunds": 0.0,
@@ -30737,7 +30737,7 @@
   "2025-11-13": {
    "orders": 1.0,
    "gross": 64.0,
-   "tax": 0.0,
+   "tax": 11.541,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -30781,7 +30781,7 @@
   "2025-11-16": {
    "orders": 1.0,
    "gross": 64.0,
-   "tax": 0.0,
+   "tax": 11.541,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -30802,7 +30802,7 @@
   "2025-11-17": {
    "orders": 1.0,
    "gross": 42.0,
-   "tax": 0.0,
+   "tax": 7.5738,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -30823,7 +30823,7 @@
   "2025-11-18": {
    "orders": 2.0,
    "gross": 180.8,
-   "tax": 0.0,
+   "tax": 32.6033,
    "shipping_charged": 0.0,
    "discounts": 7.2,
    "refunds": 0.0,
@@ -30847,7 +30847,7 @@
   "2025-11-19": {
    "orders": 2.0,
    "gross": 221.0,
-   "tax": 0.0,
+   "tax": 39.8524,
    "shipping_charged": 0.0,
    "discounts": 39.0,
    "refunds": 0.0,
@@ -30868,7 +30868,7 @@
   "2025-11-20": {
    "orders": 1.0,
    "gross": 153.0,
-   "tax": 0.0,
+   "tax": 27.5902,
    "shipping_charged": 0.0,
    "discounts": 27.0,
    "refunds": 0.0,
@@ -30889,7 +30889,7 @@
   "2025-11-21": {
    "orders": 1.0,
    "gross": 35.7,
-   "tax": 0.0,
+   "tax": 6.4377,
    "shipping_charged": 0.0,
    "discounts": 6.3,
    "refunds": 0.0,
@@ -30910,7 +30910,7 @@
   "2025-11-22": {
    "orders": 2.0,
    "gross": 151.0,
-   "tax": 0.0,
+   "tax": 26.586,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -30931,7 +30931,7 @@
   "2025-11-23": {
    "orders": 4.0,
    "gross": 676.7,
-   "tax": 0.0,
+   "tax": 122.5609,
    "shipping_charged": 0.0,
    "discounts": 105.3,
    "refunds": 0.0,
@@ -30955,7 +30955,7 @@
   "2025-11-24": {
    "orders": 1.0,
    "gross": 68.0,
-   "tax": 0.0,
+   "tax": 12.2623,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -30988,7 +30988,7 @@
   "2025-11-26": {
    "orders": 2.0,
    "gross": 77.25,
-   "tax": 0.0,
+   "tax": 13.9304,
    "shipping_charged": 0.0,
    "discounts": 3.75,
    "refunds": 0.0,
@@ -31012,7 +31012,7 @@
   "2025-11-27": {
    "orders": 1.0,
    "gross": 35.7,
-   "tax": 0.0,
+   "tax": 6.4377,
    "shipping_charged": 0.0,
    "discounts": 6.3,
    "refunds": 0.0,
@@ -31033,7 +31033,7 @@
   "2025-11-28": {
    "orders": 1.0,
    "gross": 96.0,
-   "tax": 0.0,
+   "tax": 17.3115,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -31054,7 +31054,7 @@
   "2025-11-29": {
    "orders": 5.0,
    "gross": 157.3,
-   "tax": 0.0,
+   "tax": 28.3656,
    "shipping_charged": 0.0,
    "discounts": 14.7,
    "refunds": 0.0,
@@ -31090,7 +31090,7 @@
   "2025-12-01": {
    "orders": 2.0,
    "gross": 102.0,
-   "tax": 0.0,
+   "tax": 18.3935,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -31114,7 +31114,7 @@
   "2025-12-02": {
    "orders": 1.0,
    "gross": 123.25,
-   "tax": 0.0,
+   "tax": 22.2254,
    "shipping_charged": 0.0,
    "discounts": 21.75,
    "refunds": 0.0,
@@ -31135,7 +31135,7 @@
   "2025-12-03": {
    "orders": 2.0,
    "gross": 227.8,
-   "tax": 0.0,
+   "tax": 41.0787,
    "shipping_charged": 0.0,
    "discounts": 40.2,
    "refunds": 0.0,
@@ -31177,7 +31177,7 @@
   "2025-12-05": {
    "orders": 4.0,
    "gross": 239.2,
-   "tax": 0.0,
+   "tax": 42.3893,
    "shipping_charged": 0.0,
    "discounts": 22.8,
    "refunds": 0.0,
@@ -31201,7 +31201,7 @@
   "2025-12-06": {
    "orders": 3.0,
    "gross": 134.3,
-   "tax": 0.0,
+   "tax": 24.218,
    "shipping_charged": 0.0,
    "discounts": 23.7,
    "refunds": 0.0,
@@ -31222,7 +31222,7 @@
   "2025-12-07": {
    "orders": 2.0,
    "gross": 105.4,
-   "tax": 0.0,
+   "tax": 19.0066,
    "shipping_charged": 0.0,
    "discounts": 18.6,
    "refunds": 0.0,
@@ -31243,7 +31243,7 @@
   "2025-12-08": {
    "orders": 2.0,
    "gross": 127.6,
-   "tax": 0.0,
+   "tax": 23.0099,
    "shipping_charged": 0.0,
    "discounts": 11.4,
    "refunds": 0.0,
@@ -31290,7 +31290,7 @@
   "2025-12-11": {
    "orders": 1.0,
    "gross": 34.0,
-   "tax": 0.0,
+   "tax": 6.1311,
    "shipping_charged": 0.0,
    "discounts": 6.0,
    "refunds": 0.0,
@@ -31309,7 +31309,7 @@
   "2025-12-12": {
    "orders": 1.0,
    "gross": 54.4,
-   "tax": 0.0,
+   "tax": 9.8098,
    "shipping_charged": 0.0,
    "discounts": 9.6,
    "refunds": 0.0,
@@ -31328,7 +31328,7 @@
   "2025-12-13": {
    "orders": 2.0,
    "gross": 52.0,
-   "tax": 0.0,
+   "tax": 9.3771,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -31352,7 +31352,7 @@
   "2025-12-14": {
    "orders": 1.0,
    "gross": 38.0,
-   "tax": 0.0,
+   "tax": 6.595,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -31371,7 +31371,7 @@
   "2025-12-15": {
    "orders": 1.0,
    "gross": 28.0,
-   "tax": 0.0,
+   "tax": 5.0492,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -31392,7 +31392,7 @@
   "2025-12-16": {
    "orders": 2.0,
    "gross": 53.75,
-   "tax": 0.0,
+   "tax": 9.6926,
    "shipping_charged": 0.0,
    "discounts": 8.25,
    "refunds": 0.0,
@@ -31442,7 +31442,7 @@
   "2025-12-19": {
    "orders": 1.0,
    "gross": 40.0,
-   "tax": 0.0,
+   "tax": 6.9421,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -31492,7 +31492,7 @@
   "2025-12-24": {
    "orders": 1.0,
    "gross": 28.0,
-   "tax": 0.0,
+   "tax": 5.0492,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -31524,7 +31524,7 @@
   "2025-12-26": {
    "orders": 2.0,
    "gross": 71.0,
-   "tax": 0.0,
+   "tax": 12.8033,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -31545,7 +31545,7 @@
   "2025-12-27": {
    "orders": 2.0,
    "gross": 556.0,
-   "tax": 0.0,
+   "tax": 100.2622,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -31569,7 +31569,7 @@
   "2025-12-28": {
    "orders": 2.0,
    "gross": 154.8,
-   "tax": 0.0,
+   "tax": 27.9148,
    "shipping_charged": 0.0,
    "discounts": 7.2,
    "refunds": 0.0,
@@ -31593,7 +31593,7 @@
   "2025-12-29": {
    "orders": 1.0,
    "gross": 81.6,
-   "tax": 0.0,
+   "tax": 14.7148,
    "shipping_charged": 0.0,
    "discounts": 14.4,
    "refunds": 0.0,
@@ -31614,7 +31614,7 @@
   "2025-12-30": {
    "orders": 6.0,
    "gross": 438.15,
-   "tax": 0.0,
+   "tax": 78.8297,
    "shipping_charged": 0.0,
    "discounts": 68.85,
    "refunds": 0.0,
@@ -31651,7 +31651,7 @@
   "2026-01-01": {
    "orders": 3.0,
    "gross": 196.0,
-   "tax": 0.0,
+   "tax": 36.6504,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 25.0,
@@ -31672,7 +31672,7 @@
   "2026-01-02": {
    "orders": 1.0,
    "gross": 32.3,
-   "tax": 0.0,
+   "tax": 6.0398,
    "shipping_charged": 0.0,
    "discounts": 5.7,
    "refunds": 0.0,
@@ -31693,7 +31693,7 @@
   "2026-01-03": {
    "orders": 2.0,
    "gross": 111.0,
-   "tax": 0.0,
+   "tax": 20.2763,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -31714,7 +31714,7 @@
   "2026-01-04": {
    "orders": 3.0,
    "gross": 295.8,
-   "tax": 0.0,
+   "tax": 55.3122,
    "shipping_charged": 0.0,
    "discounts": 52.2,
    "refunds": 0.0,
@@ -31738,7 +31738,7 @@
   "2026-01-05": {
    "orders": 3.0,
    "gross": 105.4,
-   "tax": 0.0,
+   "tax": 19.2331,
    "shipping_charged": 0.0,
    "discounts": 18.6,
    "refunds": 0.0,
@@ -31780,7 +31780,7 @@
   "2026-01-07": {
    "orders": 1.0,
    "gross": 224.4,
-   "tax": 0.0,
+   "tax": 41.961,
    "shipping_charged": 0.0,
    "discounts": 39.6,
    "refunds": 0.0,
@@ -31801,7 +31801,7 @@
   "2026-01-08": {
    "orders": 4.0,
    "gross": 254.45,
-   "tax": 0.0,
+   "tax": 45.5127,
    "shipping_charged": 0.0,
    "discounts": 20.55,
    "refunds": 0.0,
@@ -31825,7 +31825,7 @@
   "2026-01-09": {
    "orders": 1.0,
    "gross": 63.0,
-   "tax": 0.0,
+   "tax": 10.9339,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -31843,7 +31843,7 @@
   "2026-01-10": {
    "orders": 2.0,
    "gross": 57.8,
-   "tax": 0.0,
+   "tax": 10.4769,
    "shipping_charged": 0.0,
    "discounts": 10.2,
    "refunds": 0.0,
@@ -31867,7 +31867,7 @@
   "2026-01-11": {
    "orders": 3.0,
    "gross": 220.95,
-   "tax": 0.0,
+   "tax": 41.3159,
    "shipping_charged": 0.0,
    "discounts": 4.05,
    "refunds": 0.0,
@@ -31917,7 +31917,7 @@
   "2026-01-14": {
    "orders": 2.0,
    "gross": 322.0,
-   "tax": 0.0,
+   "tax": 59.9964,
    "shipping_charged": 0.0,
    "discounts": 54.0,
    "refunds": 0.0,
@@ -31967,7 +31967,7 @@
   "2026-01-17": {
    "orders": 2.0,
    "gross": 80.75,
-   "tax": 0.0,
+   "tax": 14.1858,
    "shipping_charged": 0.0,
    "discounts": 14.25,
    "refunds": 0.0,
@@ -31991,7 +31991,7 @@
   "2026-01-18": {
    "orders": 1.0,
    "gross": 18.0,
-   "tax": 0.0,
+   "tax": 3.3659,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -32012,7 +32012,7 @@
   "2026-01-19": {
    "orders": 2.0,
    "gross": 42.4,
-   "tax": 0.0,
+   "tax": 7.9284,
    "shipping_charged": 0.0,
    "discounts": 3.6,
    "refunds": 0.0,
@@ -32036,7 +32036,7 @@
   "2026-01-20": {
    "orders": 1.0,
    "gross": 28.9,
-   "tax": 0.0,
+   "tax": 5.4041,
    "shipping_charged": 0.0,
    "discounts": 5.1,
    "refunds": 0.0,
@@ -32076,7 +32076,7 @@
   "2026-01-22": {
    "orders": 1.0,
    "gross": 42.5,
-   "tax": 0.0,
+   "tax": 7.9472,
    "shipping_charged": 0.0,
    "discounts": 7.5,
    "refunds": 0.0,
@@ -32142,7 +32142,7 @@
   "2026-01-26": {
    "orders": 4.0,
    "gross": 334.9,
-   "tax": 0.0,
+   "tax": 48.3187,
    "shipping_charged": 0.0,
    "discounts": 29.1,
    "refunds": 0.0,
@@ -32192,7 +32192,7 @@
   "2026-01-29": {
    "orders": 1.0,
    "gross": 59.5,
-   "tax": 0.0,
+   "tax": 11.126,
    "shipping_charged": 0.0,
    "discounts": 10.5,
    "refunds": 0.0,
@@ -32213,7 +32213,7 @@
   "2026-01-30": {
    "orders": 1.0,
    "gross": 56.0,
-   "tax": 0.0,
+   "tax": 10.4715,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -32246,7 +32246,7 @@
   "2026-02-01": {
    "orders": 2.0,
    "gross": 60.35,
-   "tax": 0.0,
+   "tax": 11.285,
    "shipping_charged": 0.0,
    "discounts": 10.65,
    "refunds": 0.0,
@@ -32265,7 +32265,7 @@
   "2026-02-02": {
    "orders": 1.0,
    "gross": 123.25,
-   "tax": 0.0,
+   "tax": 23.0467,
    "shipping_charged": 0.0,
    "discounts": 21.75,
    "refunds": 0.0,
@@ -32286,7 +32286,7 @@
   "2026-02-03": {
    "orders": 2.0,
    "gross": 55.7,
-   "tax": 0.0,
+   "tax": 10.4154,
    "shipping_charged": 0.0,
    "discounts": 6.3,
    "refunds": 0.0,
@@ -32343,7 +32343,7 @@
   "2026-02-08": {
    "orders": 2.0,
    "gross": 67.6,
-   "tax": 0.0,
+   "tax": 12.3234,
    "shipping_charged": 0.0,
    "discounts": 8.4,
    "refunds": 0.0,
@@ -32364,7 +32364,7 @@
   "2026-02-09": {
    "orders": 1.0,
    "gross": 28.9,
-   "tax": 0.0,
+   "tax": 5.4041,
    "shipping_charged": 0.0,
    "discounts": 5.1,
    "refunds": 0.0,
@@ -32385,7 +32385,7 @@
   "2026-02-10": {
    "orders": 3.0,
    "gross": 130.8,
-   "tax": 0.0,
+   "tax": 22.5837,
    "shipping_charged": 0.0,
    "discounts": 7.2,
    "refunds": 0.0,
@@ -32409,7 +32409,7 @@
   "2026-02-11": {
    "orders": 2.0,
    "gross": 66.2,
-   "tax": 0.0,
+   "tax": 11.3019,
    "shipping_charged": 0.0,
    "discounts": 4.8,
    "refunds": 0.0,
@@ -32433,7 +32433,7 @@
   "2026-02-12": {
    "orders": 1.0,
    "gross": 20.4,
-   "tax": 0.0,
+   "tax": 3.4,
    "shipping_charged": 0.0,
    "discounts": 3.6,
    "refunds": 0.0,
@@ -32467,7 +32467,7 @@
   "2026-02-14": {
    "orders": 2.0,
    "gross": 160.8,
-   "tax": 0.0,
+   "tax": 26.8,
    "shipping_charged": 0.0,
    "discounts": 7.2,
    "refunds": 0.0,
@@ -32491,7 +32491,7 @@
   "2026-02-15": {
    "orders": 5.0,
    "gross": 440.8,
-   "tax": 0.0,
+   "tax": 73.4667,
    "shipping_charged": 0.0,
    "discounts": 7.2,
    "refunds": 0.0,
@@ -32515,7 +32515,7 @@
   "2026-02-16": {
    "orders": 2.0,
    "gross": 363.25,
-   "tax": 0.0,
+   "tax": 62.1946,
    "shipping_charged": 0.0,
    "discounts": 21.75,
    "refunds": 0.0,
@@ -32536,7 +32536,7 @@
   "2026-02-17": {
    "orders": 5.0,
    "gross": 157.0,
-   "tax": 0.0,
+   "tax": 27.0415,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -32557,7 +32557,7 @@
   "2026-02-18": {
    "orders": 2.0,
    "gross": 148.75,
-   "tax": 0.0,
+   "tax": 24.0357,
    "shipping_charged": 0.0,
    "discounts": 26.25,
    "refunds": 0.0,
@@ -32594,7 +32594,7 @@
   "2026-02-20": {
    "orders": 2.0,
    "gross": 236.7,
-   "tax": 0.0,
+   "tax": 39.45,
    "shipping_charged": 0.0,
    "discounts": 33.3,
    "refunds": 0.0,
@@ -32627,7 +32627,7 @@
   "2026-02-22": {
    "orders": 3.0,
    "gross": 183.5,
-   "tax": 0.0,
+   "tax": 30.6798,
    "shipping_charged": 0.0,
    "discounts": 22.5,
    "refunds": 0.0,
@@ -32651,7 +32651,7 @@
   "2026-02-23": {
    "orders": 3.0,
    "gross": 154.1,
-   "tax": 0.0,
+   "tax": 25.6834,
    "shipping_charged": 0.0,
    "discounts": 15.9,
    "refunds": 0.0,
@@ -32675,7 +32675,7 @@
   "2026-02-24": {
    "orders": 2.0,
    "gross": 90.0,
-   "tax": 0.0,
+   "tax": 15.0,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -32696,7 +32696,7 @@
   "2026-02-25": {
    "orders": 1.0,
    "gross": 48.0,
-   "tax": 0.0,
+   "tax": 8.0,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -32717,7 +32717,7 @@
   "2026-02-26": {
    "orders": 2.0,
    "gross": 110.6,
-   "tax": 0.0,
+   "tax": 18.4333,
    "shipping_charged": 0.0,
    "discounts": 5.4,
    "refunds": 0.0,
@@ -32738,7 +32738,7 @@
   "2026-02-27": {
    "orders": 4.0,
    "gross": 140.65,
-   "tax": 0.0,
+   "tax": 23.4417,
    "shipping_charged": 0.0,
    "discounts": 22.35,
    "refunds": 0.0,
@@ -32778,7 +32778,7 @@
   "2026-03-01": {
    "orders": 2.0,
    "gross": 78.2,
-   "tax": 0.0,
+   "tax": 13.0333,
    "shipping_charged": 0.0,
    "discounts": 13.8,
    "refunds": 0.0,
@@ -32799,7 +32799,7 @@
   "2026-03-02": {
    "orders": 2.0,
    "gross": 116.45,
-   "tax": 0.0,
+   "tax": 19.4083,
    "shipping_charged": 0.0,
    "discounts": 20.55,
    "refunds": 0.0,
@@ -32820,7 +32820,7 @@
   "2026-03-03": {
    "orders": 1.0,
    "gross": -22.1,
-   "tax": 0.0,
+   "tax": 9.0667,
    "shipping_charged": 0.0,
    "discounts": 9.6,
    "refunds": 76.5,
@@ -32841,7 +32841,7 @@
   "2026-03-04": {
    "orders": 1.0,
    "gross": 59.5,
-   "tax": 0.0,
+   "tax": 9.9167,
    "shipping_charged": 0.0,
    "discounts": 10.5,
    "refunds": 0.0,
@@ -32862,7 +32862,7 @@
   "2026-03-05": {
    "orders": 5.0,
    "gross": 408.55,
-   "tax": 0.0,
+   "tax": 68.0916,
    "shipping_charged": 0.0,
    "discounts": 66.45,
    "refunds": 0.0,
@@ -32883,7 +32883,7 @@
   "2026-03-06": {
    "orders": 1.0,
    "gross": 64.0,
-   "tax": 0.0,
+   "tax": 10.6667,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -32917,7 +32917,7 @@
   "2026-03-08": {
    "orders": 5.0,
    "gross": 294.85,
-   "tax": 0.0,
+   "tax": 50.1519,
    "shipping_charged": 0.0,
    "discounts": 12.15,
    "refunds": 0.0,
@@ -32938,7 +32938,7 @@
   "2026-03-09": {
    "orders": 1.0,
    "gross": 54.4,
-   "tax": 0.0,
+   "tax": 9.0667,
    "shipping_charged": 0.0,
    "discounts": 9.6,
    "refunds": 0.0,
@@ -32959,7 +32959,7 @@
   "2026-03-10": {
    "orders": 4.0,
    "gross": 442.95,
-   "tax": 0.0,
+   "tax": 45.9617,
    "shipping_charged": 0.0,
    "discounts": 46.05,
    "refunds": 0.0,
@@ -32983,7 +32983,7 @@
   "2026-03-11": {
    "orders": 1.0,
    "gross": 210.0,
-   "tax": 0.0,
+   "tax": 39.2683,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -33004,7 +33004,7 @@
   "2026-03-12": {
    "orders": 1.0,
    "gross": 12.75,
-   "tax": 0.0,
+   "tax": 2.125,
    "shipping_charged": 0.0,
    "discounts": 2.25,
    "refunds": 0.0,
@@ -33025,7 +33025,7 @@
   "2026-03-13": {
    "orders": 1.0,
    "gross": 40.8,
-   "tax": 0.0,
+   "tax": 6.8,
    "shipping_charged": 0.0,
    "discounts": 7.2,
    "refunds": 0.0,
@@ -33044,7 +33044,7 @@
   "2026-03-14": {
    "orders": 2.0,
    "gross": 76.5,
-   "tax": 0.0,
+   "tax": 13.3074,
    "shipping_charged": 0.0,
    "discounts": 13.5,
    "refunds": 0.0,
@@ -33065,7 +33065,7 @@
   "2026-03-15": {
    "orders": 1.0,
    "gross": 51.0,
-   "tax": 0.0,
+   "tax": 9.5366,
    "shipping_charged": 0.0,
    "discounts": 9.0,
    "refunds": 0.0,
@@ -33084,7 +33084,7 @@
   "2026-03-16": {
    "orders": 2.0,
    "gross": 64.0,
-   "tax": 0.0,
+   "tax": 11.6876,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -33108,7 +33108,7 @@
   "2026-03-17": {
    "orders": 4.0,
    "gross": 312.4,
-   "tax": 0.0,
+   "tax": 54.5248,
    "shipping_charged": 0.0,
    "discounts": 9.6,
    "refunds": 0.0,
@@ -33145,7 +33145,7 @@
   "2026-03-19": {
    "orders": 5.0,
    "gross": 232.4,
-   "tax": 0.0,
+   "tax": 40.0945,
    "shipping_charged": 0.0,
    "discounts": 12.6,
    "refunds": 0.0,
@@ -33169,7 +33169,7 @@
   "2026-03-20": {
    "orders": 3.0,
    "gross": 135.2,
-   "tax": 0.0,
+   "tax": 24.383,
    "shipping_charged": 0.0,
    "discounts": 7.8,
    "refunds": 0.0,
@@ -33193,7 +33193,7 @@
   "2026-03-21": {
    "orders": 2.0,
    "gross": 119.0,
-   "tax": 0.0,
+   "tax": 20.6529,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -33215,7 +33215,7 @@
   "2026-03-22": {
    "orders": 4.0,
    "gross": 340.5,
-   "tax": 0.0,
+   "tax": 61.2391,
    "shipping_charged": 0.0,
    "discounts": 37.5,
    "refunds": 0.0,
@@ -33252,7 +33252,7 @@
   "2026-03-24": {
    "orders": 2.0,
    "gross": 96.1,
-   "tax": 0.0,
+   "tax": 16.6785,
    "shipping_charged": 0.0,
    "discounts": 12.9,
    "refunds": 0.0,
@@ -33273,7 +33273,7 @@
   "2026-03-25": {
    "orders": 2.0,
    "gross": 115.0,
-   "tax": 0.0,
+   "tax": 21.5041,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -33297,7 +33297,7 @@
   "2026-03-26": {
    "orders": 3.0,
    "gross": 103.0,
-   "tax": 0.0,
+   "tax": 17.918,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -33321,7 +33321,7 @@
   "2026-03-27": {
    "orders": 2.0,
    "gross": 262.65,
-   "tax": 0.0,
+   "tax": 44.4488,
    "shipping_charged": 0.0,
    "discounts": 46.35,
    "refunds": 0.0,
@@ -33345,7 +33345,7 @@
   "2026-03-28": {
    "orders": 1.0,
    "gross": 96.0,
-   "tax": 0.0,
+   "tax": 18.5806,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -33364,7 +33364,7 @@
   "2026-03-29": {
    "orders": 2.0,
    "gross": 31.85,
-   "tax": 0.0,
+   "tax": 5.7435,
    "shipping_charged": 0.0,
    "discounts": 3.15,
    "refunds": 0.0,
@@ -33388,7 +33388,7 @@
   "2026-03-30": {
    "orders": 6.0,
    "gross": 424.15,
-   "tax": 0.0,
+   "tax": 77.1192,
    "shipping_charged": 0.0,
    "discounts": 8.85,
    "refunds": 0.0,
@@ -33468,7 +33468,7 @@
   "2026-04-04": {
    "orders": 1.0,
    "gross": 8.0,
-   "tax": 0.0,
+   "tax": 1.3333,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -33488,7 +33488,7 @@
   "2026-04-05": {
    "orders": 2.0,
    "gross": 132.6,
-   "tax": 0.0,
+   "tax": 24.3873,
    "shipping_charged": 0.0,
    "discounts": 23.4,
    "refunds": 0.0,
@@ -33512,7 +33512,7 @@
   "2026-04-06": {
    "orders": 1.0,
    "gross": 65.0,
-   "tax": 0.0,
+   "tax": 12.5806,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -33533,7 +33533,7 @@
   "2026-04-07": {
    "orders": 1.0,
    "gross": 76.5,
-   "tax": 0.0,
+   "tax": 14.3049,
    "shipping_charged": 0.0,
    "discounts": 13.5,
    "refunds": 0.0,
@@ -33554,7 +33554,7 @@
   "2026-04-08": {
    "orders": 2.0,
    "gross": 58.25,
-   "tax": 0.0,
+   "tax": 10.6373,
    "shipping_charged": 0.0,
    "discounts": 6.75,
    "refunds": 0.0,
@@ -33578,7 +33578,7 @@
   "2026-04-09": {
    "orders": 3.0,
    "gross": 206.55,
-   "tax": 0.0,
+   "tax": 39.1037,
    "shipping_charged": 0.0,
    "discounts": 36.45,
    "refunds": 0.0,
@@ -33602,7 +33602,7 @@
   "2026-04-10": {
    "orders": 3.0,
    "gross": 242.0,
-   "tax": 0.0,
+   "tax": 43.6393,
    "shipping_charged": 0.0,
    "discounts": 30.0,
    "refunds": 0.0,
@@ -33623,7 +33623,7 @@
   "2026-04-11": {
    "orders": 4.0,
    "gross": 449.2,
-   "tax": 0.0,
+   "tax": 73.3785,
    "shipping_charged": 0.0,
    "discounts": 70.8,
    "refunds": 0.0,
@@ -33647,7 +33647,7 @@
   "2026-04-12": {
    "orders": 6.0,
    "gross": 654.98,
-   "tax": 0.0,
+   "tax": 124.9089,
    "shipping_charged": 0.0,
    "discounts": 6.52,
    "refunds": 48.0,
@@ -33671,7 +33671,7 @@
   "2026-04-13": {
    "orders": 2.0,
    "gross": 216.0,
-   "tax": 0.0,
+   "tax": 38.9508,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -33692,7 +33692,7 @@
   "2026-04-14": {
    "orders": 2.0,
    "gross": 107.0,
-   "tax": 0.0,
+   "tax": 19.8503,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -33716,7 +33716,7 @@
   "2026-04-15": {
    "orders": 2.0,
    "gross": 148.33,
-   "tax": 0.0,
+   "tax": 28.1303,
    "shipping_charged": 0.0,
    "discounts": 26.17,
    "refunds": 0.0,
@@ -33737,7 +33737,7 @@
   "2026-04-16": {
    "orders": 2.0,
    "gross": -85.0,
-   "tax": 0.0,
+   "tax": 19.127,
    "shipping_charged": 0.0,
    "discounts": 18.3,
    "refunds": 188.7,
@@ -33758,7 +33758,7 @@
   "2026-04-17": {
    "orders": 2.0,
    "gross": 119.7,
-   "tax": 0.0,
+   "tax": 22.0572,
    "shipping_charged": 0.0,
    "discounts": 6.3,
    "refunds": 0.0,
@@ -33782,7 +33782,7 @@
   "2026-04-18": {
    "orders": 2.0,
    "gross": 122.85,
-   "tax": 0.0,
+   "tax": 22.4177,
    "shipping_charged": 0.0,
    "discounts": 18.15,
    "refunds": 0.0,
@@ -33806,7 +33806,7 @@
   "2026-04-19": {
    "orders": 1.0,
    "gross": 198.0,
-   "tax": 0.0,
+   "tax": 38.3226,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -33827,7 +33827,7 @@
   "2026-04-20": {
    "orders": 3.0,
    "gross": 326.4,
-   "tax": 0.0,
+   "tax": 60.8705,
    "shipping_charged": 0.0,
    "discounts": 57.6,
    "refunds": 0.0,
@@ -33851,7 +33851,7 @@
   "2026-04-21": {
    "orders": 1.0,
    "gross": 65.45,
-   "tax": 0.0,
+   "tax": 11.8025,
    "shipping_charged": 0.0,
    "discounts": 11.55,
    "refunds": 0.0,
@@ -33872,7 +33872,7 @@
   "2026-04-22": {
    "orders": 2.0,
    "gross": 38.95,
-   "tax": 0.0,
+   "tax": 6.7102,
    "shipping_charged": 0.0,
    "discounts": 4.05,
    "refunds": 0.0,
@@ -33896,7 +33896,7 @@
   "2026-04-23": {
    "orders": 2.0,
    "gross": 199.09,
-   "tax": 0.0,
+   "tax": 27.5902,
    "shipping_charged": 0.0,
    "discounts": 27.0,
    "refunds": 0.0,
@@ -33915,7 +33915,7 @@
   "2026-04-24": {
    "orders": 1.0,
    "gross": 90.0,
-   "tax": 0.0,
+   "tax": 17.4194,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -33936,7 +33936,7 @@
   "2026-04-25": {
    "orders": 1.0,
    "gross": 277.95,
-   "tax": 0.0,
+   "tax": 53.7968,
    "shipping_charged": 0.0,
    "discounts": 49.05,
    "refunds": 0.0,
@@ -33957,7 +33957,7 @@
   "2026-04-26": {
    "orders": 2.0,
    "gross": 142.1,
-   "tax": 0.0,
+   "tax": 25.9167,
    "shipping_charged": 0.0,
    "discounts": 3.9,
    "refunds": 0.0,
@@ -33978,7 +33978,7 @@
   "2026-04-27": {
    "orders": 1.0,
    "gross": 42.0,
-   "tax": 0.0,
+   "tax": 7.0,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -33999,7 +33999,7 @@
   "2026-04-28": {
    "orders": 2.0,
    "gross": 227.15,
-   "tax": 0.0,
+   "tax": 40.4534,
    "shipping_charged": 0.0,
    "discounts": 26.85,
    "refunds": 0.0,
@@ -34044,7 +34044,7 @@
   "2026-04-30": {
    "orders": 1.0,
    "gross": 68.0,
-   "tax": 0.0,
+   "tax": 13.1613,
    "shipping_charged": 0.0,
    "discounts": 12.0,
    "refunds": 0.0,
@@ -34065,7 +34065,7 @@
   "2026-05-01": {
    "orders": 7.0,
    "gross": 929.8,
-   "tax": 0.0,
+   "tax": 173.5132,
    "shipping_charged": 0.0,
    "discounts": 154.2,
    "refunds": 0.0,
@@ -34086,7 +34086,7 @@
   "2026-05-02": {
    "orders": 5.0,
    "gross": 266.4,
-   "tax": 0.0,
+   "tax": 48.6665,
    "shipping_charged": 0.0,
    "discounts": 9.6,
    "refunds": 0.0,
@@ -34120,7 +34120,7 @@
   "2026-05-04": {
    "orders": 3.0,
    "gross": 1687.2,
-   "tax": 0.0,
+   "tax": 305.4549,
    "shipping_charged": 0.0,
    "discounts": 4.8,
    "refunds": 0.0,
@@ -34141,7 +34141,7 @@
   "2026-05-05": {
    "orders": 1.0,
    "gross": 38.25,
-   "tax": 0.0,
+   "tax": 6.8975,
    "shipping_charged": 0.0,
    "discounts": 6.75,
    "refunds": 0.0,
@@ -34162,7 +34162,7 @@
   "2026-05-06": {
    "orders": 1.0,
    "gross": 535.5,
-   "tax": 0.0,
+   "tax": 103.6452,
    "shipping_charged": 0.0,
    "discounts": 94.5,
    "refunds": 0.0,
@@ -34183,7 +34183,7 @@
   "2026-05-07": {
    "orders": 1.0,
    "gross": 48.0,
-   "tax": 0.0,
+   "tax": 9.2903,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -34204,7 +34204,7 @@
   "2026-05-08": {
    "orders": 1.0,
    "gross": 14.0,
-   "tax": 0.0,
+   "tax": 2.5246,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -34225,7 +34225,7 @@
   "2026-05-09": {
    "orders": 3.0,
    "gross": 76.0,
-   "tax": 0.0,
+   "tax": 14.7097,
    "shipping_charged": 0.0,
    "discounts": 22.5,
    "refunds": 76.5,
@@ -34246,7 +34246,7 @@
   "2026-05-10": {
    "orders": 1.0,
    "gross": 102.0,
-   "tax": 0.0,
+   "tax": 18.3934,
    "shipping_charged": 0.0,
    "discounts": 18.0,
    "refunds": 0.0,
@@ -34267,7 +34267,7 @@
   "2026-05-11": {
    "orders": 1.0,
    "gross": 184.45,
-   "tax": 0.0,
+   "tax": 33.2615,
    "shipping_charged": 0.0,
    "discounts": 32.55,
    "refunds": 0.0,
@@ -34300,7 +34300,7 @@
   "2026-05-13": {
    "orders": 7.0,
    "gross": 535.48,
-   "tax": 0.0,
+   "tax": 96.5726,
    "shipping_charged": 0.0,
    "discounts": 46.69,
    "refunds": 0.0,
@@ -34324,7 +34324,7 @@
   "2026-05-14": {
    "orders": 5.0,
    "gross": 368.77,
-   "tax": 0.0,
+   "tax": 70.6365,
    "shipping_charged": 0.0,
    "discounts": 56.61,
    "refunds": 0.0,
@@ -34345,7 +34345,7 @@
   "2026-05-15": {
    "orders": 3.0,
    "gross": 983.7,
-   "tax": 0.0,
+   "tax": 180.328,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -34369,7 +34369,7 @@
   "2026-05-16": {
    "orders": 2.0,
    "gross": 73.1,
-   "tax": 0.0,
+   "tax": 13.9366,
    "shipping_charged": 0.0,
    "discounts": 12.9,
    "refunds": 0.0,
@@ -34403,7 +34403,7 @@
   "2026-05-18": {
    "orders": 4.0,
    "gross": 259.0,
-   "tax": 0.0,
+   "tax": 47.5641,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -34440,7 +34440,7 @@
   "2026-05-20": {
    "orders": 4.0,
    "gross": 379.8,
-   "tax": 0.0,
+   "tax": 68.4885,
    "shipping_charged": 0.0,
    "discounts": 64.2,
    "refunds": 0.0,
@@ -34464,7 +34464,7 @@
   "2026-05-21": {
    "orders": 1.0,
    "gross": 20.0,
-   "tax": 0.0,
+   "tax": 3.871,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -34485,7 +34485,7 @@
   "2026-05-22": {
    "orders": 3.0,
    "gross": 158.9,
-   "tax": 0.0,
+   "tax": 28.6541,
    "shipping_charged": 0.0,
    "discounts": 8.1,
    "refunds": 0.0,
@@ -34506,7 +34506,7 @@
   "2026-05-23": {
    "orders": 2.0,
    "gross": 75.2,
-   "tax": 0.0,
+   "tax": 13.3764,
    "shipping_charged": 0.0,
    "discounts": 4.8,
    "refunds": 0.0,
@@ -34525,7 +34525,7 @@
   "2026-05-24": {
    "orders": 2.0,
    "gross": 81.6,
-   "tax": 0.0,
+   "tax": 15.1642,
    "shipping_charged": 0.0,
    "discounts": 8.4,
    "refunds": 0.0,
@@ -34549,7 +34549,7 @@
   "2026-05-25": {
    "orders": 1.0,
    "gross": 28.9,
-   "tax": 0.0,
+   "tax": 5.2115,
    "shipping_charged": 0.0,
    "discounts": 5.1,
    "refunds": 0.0,
@@ -34570,7 +34570,7 @@
   "2026-05-26": {
    "orders": 1.0,
    "gross": 49.3,
-   "tax": 0.0,
+   "tax": 8.8902,
    "shipping_charged": 0.0,
    "discounts": 8.7,
    "refunds": 0.0,
@@ -34591,7 +34591,7 @@
   "2026-05-27": {
    "orders": 3.0,
    "gross": 101.0,
-   "tax": 0.0,
+   "tax": 18.2131,
    "shipping_charged": 0.0,
    "discounts": 6.0,
    "refunds": 0.0,
@@ -34628,7 +34628,7 @@
   "2026-05-29": {
    "orders": 1.0,
    "gross": 43.02,
-   "tax": 0.0,
+   "tax": 8.0444,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -34647,7 +34647,7 @@
   "2026-05-30": {
    "orders": 1.0,
    "gross": 90.0,
-   "tax": 0.0,
+   "tax": 16.2295,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -34680,7 +34680,7 @@
   "2026-06-01": {
    "orders": 4.0,
    "gross": 126.31,
-   "tax": 0.0,
+   "tax": 23.5771,
    "shipping_charged": 0.0,
    "discounts": 4.65,
    "refunds": 0.0,
@@ -34704,7 +34704,7 @@
   "2026-06-02": {
    "orders": 6.0,
    "gross": 372.5,
-   "tax": 0.0,
+   "tax": 61.4735,
    "shipping_charged": 0.0,
    "discounts": 31.5,
    "refunds": 0.0,
@@ -34728,7 +34728,7 @@
   "2026-06-03": {
    "orders": 4.0,
    "gross": 225.2,
-   "tax": 0.0,
+   "tax": 42.3815,
    "shipping_charged": 0.0,
    "discounts": 34.8,
    "refunds": 0.0,
@@ -34749,7 +34749,7 @@
   "2026-06-04": {
    "orders": 1.0,
    "gross": 49.0,
-   "tax": 0.0,
+   "tax": 8.5041,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -34770,7 +34770,7 @@
   "2026-06-05": {
    "orders": 3.0,
    "gross": 269.75,
-   "tax": 0.0,
+   "tax": 51.09,
    "shipping_charged": 0.0,
    "discounts": 11.25,
    "refunds": 0.0,
@@ -34791,7 +34791,7 @@
   "2026-06-06": {
    "orders": 4.0,
    "gross": 437.55,
-   "tax": 0.0,
+   "tax": 73.9609,
    "shipping_charged": 0.0,
    "discounts": 18.45,
    "refunds": 0.0,
@@ -34828,7 +34828,7 @@
   "2026-06-08": {
    "orders": 4.0,
    "gross": 152.55,
-   "tax": 0.0,
+   "tax": 27.3556,
    "shipping_charged": 0.0,
    "discounts": 18.45,
    "refunds": 0.0,
@@ -34852,7 +34852,7 @@
   "2026-06-09": {
    "orders": 3.0,
    "gross": 373.8,
-   "tax": 0.0,
+   "tax": 64.7741,
    "shipping_charged": 0.0,
    "discounts": 10.2,
    "refunds": 0.0,
@@ -34886,7 +34886,7 @@
   "2026-06-11": {
    "orders": 2.0,
    "gross": 30.0,
-   "tax": 0.0,
+   "tax": 4.7899,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -34907,7 +34907,7 @@
   "2026-06-12": {
    "orders": 1.0,
    "gross": 81.0,
-   "tax": 0.0,
+   "tax": 12.9328,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -34928,7 +34928,7 @@
   "2026-06-13": {
    "orders": 2.0,
    "gross": 153.15,
-   "tax": 0.0,
+   "tax": 27.2425,
    "shipping_charged": 0.0,
    "discounts": 5.85,
    "refunds": 0.0,
@@ -34952,7 +34952,7 @@
   "2026-06-14": {
    "orders": 3.0,
    "gross": 171.4,
-   "tax": 0.0,
+   "tax": 30.5443,
    "shipping_charged": 0.0,
    "discounts": 12.6,
    "refunds": 0.0,
@@ -34976,7 +34976,7 @@
   "2026-06-15": {
    "orders": 3.0,
    "gross": 144.0,
-   "tax": 0.0,
+   "tax": 25.8314,
    "shipping_charged": 0.0,
    "discounts": 18.0,
    "refunds": 0.0,
@@ -35010,7 +35010,7 @@
   "2026-06-17": {
    "orders": 1.0,
    "gross": 35.7,
-   "tax": 0.0,
+   "tax": 5.7,
    "shipping_charged": 0.0,
    "discounts": 6.3,
    "refunds": 0.0,
@@ -35028,7 +35028,7 @@
   "2026-06-18": {
    "orders": 2.0,
    "gross": 131.0,
-   "tax": 0.0,
+   "tax": 22.7356,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -35049,7 +35049,7 @@
   "2026-06-19": {
    "orders": 1.0,
    "gross": 159.8,
-   "tax": 0.0,
+   "tax": 30.929,
    "shipping_charged": 0.0,
    "discounts": 28.2,
    "refunds": 0.0,
@@ -35070,7 +35070,7 @@
   "2026-06-20": {
    "orders": 2.0,
    "gross": 28.0,
-   "tax": 0.0,
+   "tax": 4.7484,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -35094,7 +35094,7 @@
   "2026-06-21": {
    "orders": 6.0,
    "gross": 333.6,
-   "tax": 0.0,
+   "tax": 62.1898,
    "shipping_charged": 0.0,
    "discounts": 24.9,
    "refunds": 13.5,
@@ -35118,7 +35118,7 @@
   "2026-06-22": {
    "orders": 6.0,
    "gross": 227.85,
-   "tax": 0.0,
+   "tax": 40.0625,
    "shipping_charged": 0.0,
    "discounts": 27.15,
    "refunds": 0.0,
@@ -35161,7 +35161,7 @@
   "2026-06-24": {
    "orders": 2.0,
    "gross": 448.8,
-   "tax": 0.0,
+   "tax": 86.0487,
    "shipping_charged": 0.0,
    "discounts": 7.2,
    "refunds": 0.0,
@@ -35213,7 +35213,7 @@
   "2026-06-27": {
    "orders": 1.0,
    "gross": 113.05,
-   "tax": 0.0,
+   "tax": 21.8806,
    "shipping_charged": 0.0,
    "discounts": 19.95,
    "refunds": 0.0,
@@ -35245,7 +35245,7 @@
   "2026-06-29": {
    "orders": 1.0,
    "gross": 79.0,
-   "tax": 0.0,
+   "tax": 13.7107,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -35258,7 +35258,7 @@
   "2026-06-30": {
    "orders": 1.0,
    "gross": 34.0,
-   "tax": 0.0,
+   "tax": 6.3577,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -35275,7 +35275,7 @@
   "2026-07-01": {
    "orders": 7.0,
    "gross": 546.93,
-   "tax": 0.0,
+   "tax": 93.4202,
    "shipping_charged": 0.0,
    "discounts": 18.75,
    "refunds": 0.0,
@@ -35299,7 +35299,7 @@
   "2026-07-02": {
    "orders": 9.0,
    "gross": 404.06,
-   "tax": 0.0,
+   "tax": 86.6941,
    "shipping_charged": 0.0,
    "discounts": 20.7,
    "refunds": 84.0,
@@ -35323,7 +35323,7 @@
   "2026-07-03": {
    "orders": 2.0,
    "gross": 241.4,
-   "tax": 0.0,
+   "tax": 41.8958,
    "shipping_charged": 0.0,
    "discounts": 12.6,
    "refunds": 0.0,
@@ -35344,7 +35344,7 @@
   "2026-07-04": {
    "orders": 3.0,
    "gross": 112.9,
-   "tax": 0.0,
+   "tax": 19.4566,
    "shipping_charged": 0.0,
    "discounts": 5.1,
    "refunds": 0.0,
@@ -35368,7 +35368,7 @@
   "2026-07-05": {
    "orders": 4.0,
    "gross": 104.7,
-   "tax": 0.0,
+   "tax": 17.682,
    "shipping_charged": 0.0,
    "discounts": 6.3,
    "refunds": 0.0,
@@ -35392,7 +35392,7 @@
   "2026-07-06": {
    "orders": 2.0,
    "gross": 401.0,
-   "tax": 0.0,
+   "tax": 69.595,
    "shipping_charged": 0.0,
    "discounts": 27.0,
    "refunds": 0.0,
@@ -35411,7 +35411,7 @@
   "2026-07-07": {
    "orders": 2.0,
    "gross": 200.25,
-   "tax": 0.0,
+   "tax": 34.8981,
    "shipping_charged": 0.0,
    "discounts": 3.75,
    "refunds": 0.0,
@@ -35432,7 +35432,7 @@
   "2026-07-08": {
    "orders": 2.0,
    "gross": 148.15,
-   "tax": 0.0,
+   "tax": 26.7156,
    "shipping_charged": 0.0,
    "discounts": 14.85,
    "refunds": 0.0,
@@ -35453,7 +35453,7 @@
   "2026-07-09": {
    "orders": 3.0,
    "gross": 92.15,
-   "tax": 0.0,
+   "tax": 16.4744,
    "shipping_charged": 0.0,
    "discounts": 8.85,
    "refunds": 0.0,
@@ -35477,7 +35477,7 @@
   "2026-07-10": {
    "orders": 1.0,
    "gross": 54.4,
-   "tax": 0.0,
+   "tax": 9.4413,
    "shipping_charged": 0.0,
    "discounts": 9.6,
    "refunds": 0.0,
@@ -35498,7 +35498,7 @@
   "2026-07-11": {
    "orders": 3.0,
    "gross": 159.0,
-   "tax": 0.0,
+   "tax": 27.5951,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -35519,7 +35519,7 @@
   "2026-07-12": {
    "orders": 3.0,
    "gross": 352.0,
-   "tax": 0.0,
+   "tax": 59.8408,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -35543,7 +35543,7 @@
   "2026-07-13": {
    "orders": 1.0,
    "gross": 20.4,
-   "tax": 0.0,
+   "tax": 3.5405,
    "shipping_charged": 0.0,
    "discounts": 3.6,
    "refunds": 0.0,
@@ -35564,7 +35564,7 @@
   "2026-07-14": {
    "orders": 3.0,
    "gross": 173.0,
-   "tax": 0.0,
+   "tax": 29.108,
    "shipping_charged": 0.0,
    "discounts": 6.0,
    "refunds": 0.0,
@@ -35588,7 +35588,7 @@
   "2026-07-15": {
    "orders": 3.0,
    "gross": 202.7,
-   "tax": 0.0,
+   "tax": 35.9787,
    "shipping_charged": 0.0,
    "discounts": 6.3,
    "refunds": 0.0,
@@ -35612,7 +35612,7 @@
   "2026-07-16": {
    "orders": 2.0,
    "gross": 75.2,
-   "tax": 0.0,
+   "tax": 12.6735,
    "shipping_charged": 0.0,
    "discounts": 4.8,
    "refunds": 0.0,
@@ -35648,7 +35648,7 @@
   "2026-07-18": {
    "orders": 3.0,
    "gross": 260.2,
-   "tax": 0.0,
+   "tax": 42.6249,
    "shipping_charged": 0.0,
    "discounts": 4.8,
    "refunds": 0.0,
@@ -35672,7 +35672,7 @@
   "2026-07-19": {
    "orders": 3.0,
    "gross": 158.9,
-   "tax": 0.0,
+   "tax": 27.5777,
    "shipping_charged": 0.0,
    "discounts": 17.1,
    "refunds": 0.0,
@@ -35693,7 +35693,7 @@
   "2026-07-20": {
    "orders": 2.0,
    "gross": 189.0,
-   "tax": 0.0,
+   "tax": 33.4113,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -35714,7 +35714,7 @@
   "2026-07-21": {
    "orders": 3.0,
    "gross": 236.39,
-   "tax": 0.0,
+   "tax": 27.5516,
    "shipping_charged": 0.0,
    "discounts": 11.25,
    "refunds": 0.0,
@@ -35735,7 +35735,7 @@
   "2026-07-22": {
    "orders": 3.0,
    "gross": 303.0,
-   "tax": 0.0,
+   "tax": 55.999,
    "shipping_charged": 0.0,
    "discounts": 45.0,
    "refunds": 0.0,
@@ -35756,7 +35756,7 @@
   "2026-07-23": {
    "orders": 3.0,
    "gross": 198.4,
-   "tax": 0.0,
+   "tax": 16.6612,
    "shipping_charged": 0.0,
    "discounts": 9.6,
    "refunds": 0.0,
@@ -35777,7 +35777,7 @@
   "2026-07-24": {
    "orders": 2.0,
    "gross": 73.2,
-   "tax": 0.0,
+   "tax": 12.1041,
    "shipping_charged": 0.0,
    "discounts": 4.8,
    "refunds": 0.0,
@@ -35801,7 +35801,7 @@
   "2026-07-25": {
    "orders": 1.0,
    "gross": 45.9,
-   "tax": 0.0,
+   "tax": 7.3286,
    "shipping_charged": 0.0,
    "discounts": 5.1,
    "refunds": 0.0,
@@ -35822,7 +35822,7 @@
   "2026-07-26": {
    "orders": 1.0,
    "gross": 63.0,
-   "tax": 0.0,
+   "tax": 10.9339,
    "shipping_charged": 0.0,
    "discounts": 7.0,
    "refunds": 0.0,
@@ -35841,7 +35841,7 @@
   "2026-07-27": {
    "orders": 2.0,
    "gross": 62.0,
-   "tax": 0.0,
+   "tax": 10.7603,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -35862,7 +35862,7 @@
   "2026-07-28": {
    "orders": 3.0,
    "gross": 120.6,
-   "tax": 0.0,
+   "tax": 20.5834,
    "shipping_charged": 0.0,
    "discounts": 8.4,
    "refunds": 0.0,
@@ -35883,7 +35883,7 @@
   "2026-07-29": {
    "orders": 1.0,
    "gross": 90.0,
-   "tax": 0.0,
+   "tax": 15.6198,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -35904,7 +35904,7 @@
   "2026-07-30": {
    "orders": 1.0,
    "gross": 42.0,
-   "tax": 0.0,
+   "tax": 6.7059,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -35925,7 +35925,7 @@
   "2026-07-31": {
    "orders": 1.0,
    "gross": 37.8,
-   "tax": 0.0,
+   "tax": 6.5603,
    "shipping_charged": 0.0,
    "discounts": 4.2,
    "refunds": 0.0,
@@ -35946,7 +35946,7 @@
   "2026-08-01": {
    "orders": 9.0,
    "gross": 434.67,
-   "tax": 0.0,
+   "tax": 70.5409,
    "shipping_charged": 0.0,
    "discounts": 10.67,
    "refunds": 0.0,
@@ -35970,7 +35970,7 @@
   "2026-08-02": {
    "orders": 9.0,
    "gross": 880.9,
-   "tax": 0.0,
+   "tax": 159.3215,
    "shipping_charged": 0.0,
    "discounts": 27.1,
    "refunds": 0.0,
@@ -35991,7 +35991,7 @@
   "2026-08-03": {
    "orders": 3.0,
    "gross": 152.2,
-   "tax": 0.0,
+   "tax": 26.4148,
    "shipping_charged": 0.0,
    "discounts": 9.8,
    "refunds": 0.0,
@@ -36015,7 +36015,7 @@
   "2026-08-04": {
    "orders": 1.0,
    "gross": 48.0,
-   "tax": 0.0,
+   "tax": 8.3306,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -36036,7 +36036,7 @@
   "2026-08-05": {
    "orders": 3.0,
    "gross": 306.0,
-   "tax": 0.0,
+   "tax": 54.5165,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -36057,7 +36057,7 @@
   "2026-08-06": {
    "orders": 1.0,
    "gross": 113.0,
-   "tax": 0.0,
+   "tax": 27.9421,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 48.0,
@@ -36078,7 +36078,7 @@
   "2026-08-07": {
    "orders": 1.0,
    "gross": 15.0,
-   "tax": 0.0,
+   "tax": 2.395,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -36097,7 +36097,7 @@
   "2026-08-08": {
    "orders": 1.0,
    "gross": 60.3,
-   "tax": 0.0,
+   "tax": 10.4653,
    "shipping_charged": 0.0,
    "discounts": 6.7,
    "refunds": 0.0,
@@ -36131,7 +36131,7 @@
   "2026-08-10": {
    "orders": 1.0,
    "gross": 80.1,
-   "tax": 0.0,
+   "tax": 13.9017,
    "shipping_charged": 0.0,
    "discounts": 8.9,
    "refunds": 0.0,
@@ -36150,7 +36150,7 @@
   "2026-08-11": {
    "orders": 2.0,
    "gross": 278.6,
-   "tax": 0.0,
+   "tax": 57.7934,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 54.4,
@@ -36174,7 +36174,7 @@
   "2026-08-12": {
    "orders": 2.0,
    "gross": 229.6,
-   "tax": 0.0,
+   "tax": 39.8479,
    "shipping_charged": 0.0,
    "discounts": 22.4,
    "refunds": 0.0,
@@ -36195,7 +36195,7 @@
   "2026-08-13": {
    "orders": 3.0,
    "gross": 227.4,
-   "tax": 0.0,
+   "tax": 39.4661,
    "shipping_charged": 0.0,
    "discounts": 20.6,
    "refunds": 0.0,
@@ -36219,7 +36219,7 @@
   "2026-08-14": {
    "orders": 2.0,
    "gross": 107.27,
-   "tax": 0.0,
+   "tax": 6.5603,
    "shipping_charged": 0.0,
    "discounts": 11.92,
    "refunds": 0.0,
@@ -36280,7 +36280,7 @@
   "2026-08-17": {
    "orders": 4.0,
    "gross": 170.1,
-   "tax": 0.0,
+   "tax": 29.5214,
    "shipping_charged": 0.0,
    "discounts": 18.9,
    "refunds": 0.0,
@@ -36303,7 +36303,7 @@
   "2026-08-18": {
    "orders": 1.0,
    "gross": 16.0,
-   "tax": 0.0,
+   "tax": 3.0968,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -36326,7 +36326,7 @@
   "2026-08-19": {
    "orders": 1.0,
    "gross": 54.0,
-   "tax": 0.0,
+   "tax": 9.3719,
    "shipping_charged": 0.0,
    "discounts": 6.0,
    "refunds": 0.0,
@@ -36360,7 +36360,7 @@
   "2026-08-21": {
    "orders": 1.0,
    "gross": 90.0,
-   "tax": 0.0,
+   "tax": 17.4194,
    "shipping_charged": 0.0,
    "discounts": 10.0,
    "refunds": 0.0,
@@ -36381,7 +36381,7 @@
   "2026-08-22": {
    "orders": 4.0,
    "gross": 618.71,
-   "tax": 0.0,
+   "tax": 32.8575,
    "shipping_charged": 0.0,
    "discounts": 65.96,
    "refunds": 0.0,
@@ -36402,7 +36402,7 @@
   "2026-08-23": {
    "orders": 1.0,
    "gross": 58.5,
-   "tax": 0.0,
+   "tax": 10.1529,
    "shipping_charged": 0.0,
    "discounts": 6.5,
    "refunds": 0.0,
@@ -36421,7 +36421,7 @@
   "2026-08-24": {
    "orders": 1.0,
    "gross": 187.0,
-   "tax": 0.0,
+   "tax": 36.1935,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -36455,7 +36455,7 @@
   "2026-08-26": {
    "orders": 4.0,
    "gross": 140.45,
-   "tax": 0.0,
+   "tax": 9.2331,
    "shipping_charged": 0.0,
    "discounts": 12.5,
    "refunds": 0.0,
@@ -36477,7 +36477,7 @@
   "2026-08-27": {
    "orders": 2.0,
    "gross": 70.0,
-   "tax": 0.0,
+   "tax": 13.0724,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -36499,7 +36499,7 @@
   "2026-08-28": {
    "orders": 2.0,
    "gross": 499.0,
-   "tax": 0.0,
+   "tax": 96.5807,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -36532,7 +36532,7 @@
   "2026-08-30": {
    "orders": 1.0,
    "gross": 25.0,
-   "tax": 0.0,
+   "tax": 4.3388,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -36551,7 +36551,7 @@
   "2026-08-31": {
    "orders": 1.0,
    "gross": 30.6,
-   "tax": 0.0,
+   "tax": 5.9226,
    "shipping_charged": 0.0,
    "discounts": 3.4,
    "refunds": 0.0,
@@ -36572,7 +36572,7 @@
   "2026-09-01": {
    "orders": 1.0,
    "gross": 27.0,
-   "tax": 0.0,
+   "tax": 4.8689,
    "shipping_charged": 0.0,
    "discounts": 3.0,
    "refunds": 0.0,
@@ -36593,7 +36593,7 @@
   "2026-09-02": {
    "orders": 6.0,
    "gross": 421.02,
-   "tax": 0.0,
+   "tax": 76.2279,
    "shipping_charged": 0.0,
    "discounts": 9.8,
    "refunds": 0.0,
@@ -36617,7 +36617,7 @@
   "2026-09-03": {
    "orders": 3.0,
    "gross": 90.29,
-   "tax": 0.0,
+   "tax": 16.4386,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -36656,7 +36656,7 @@
   "2026-09-05": {
    "orders": 2.0,
    "gross": 52.0,
-   "tax": 0.0,
+   "tax": 9.0248,
    "shipping_charged": 0.0,
    "discounts": 4.0,
    "refunds": 0.0,
@@ -36690,7 +36690,7 @@
   "2026-09-07": {
    "orders": 2.0,
    "gross": 34.0,
-   "tax": 0.0,
+   "tax": 6.0364,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -36711,7 +36711,7 @@
   "2026-09-08": {
    "orders": 2.0,
    "gross": 107.5,
-   "tax": 0.0,
+   "tax": 19.1448,
    "shipping_charged": 0.0,
    "discounts": 8.0,
    "refunds": 0.0,
@@ -36735,7 +36735,7 @@
   "2026-09-09": {
    "orders": 2.0,
    "gross": 82.5,
-   "tax": 0.0,
+   "tax": 14.877,
    "shipping_charged": 0.0,
    "discounts": 7.5,
    "refunds": 0.0,
@@ -36771,7 +36771,7 @@
   "2026-09-11": {
    "orders": 1.0,
    "gross": 100.8,
-   "tax": 0.0,
+   "tax": 20.16,
    "shipping_charged": 0.0,
    "discounts": 11.2,
    "refunds": 0.0,
@@ -36809,7 +36809,7 @@
   "2026-09-13": {
    "orders": 1.0,
    "gross": 50.4,
-   "tax": 0.0,
+   "tax": 8.7471,
    "shipping_charged": 0.0,
    "discounts": 5.6,
    "refunds": 0.0,
@@ -36831,7 +36831,7 @@
   "2026-09-14": {
    "orders": 2.0,
    "gross": 172.24,
-   "tax": 0.0,
+   "tax": 32.7955,
    "shipping_charged": 0.0,
    "discounts": 9.8,
    "refunds": 0.0,
@@ -36876,7 +36876,7 @@
   "2026-09-16": {
    "orders": 1.0,
    "gross": 14.4,
-   "tax": 0.0,
+   "tax": 2.4992,
    "shipping_charged": 0.0,
    "discounts": 1.6,
    "refunds": 0.0,
@@ -36916,7 +36916,7 @@
   "2026-09-19": {
    "orders": 1.0,
    "gross": 42.0,
-   "tax": 0.0,
+   "tax": 7.2893,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -36929,7 +36929,7 @@
   "2026-09-20": {
    "orders": 1.0,
    "gross": 39.0,
-   "tax": 0.0,
+   "tax": 6.7686,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -37012,7 +37012,7 @@
   "2026-10-01": {
    "orders": 5.0,
    "gross": 263.33,
-   "tax": 0.0,
+   "tax": 59.1988,
    "shipping_charged": 0.0,
    "discounts": 13.1,
    "refunds": 122.4,
@@ -37036,7 +37036,7 @@
   "2026-10-02": {
    "orders": 4.0,
    "gross": 180.2,
-   "tax": 0.0,
+   "tax": 32.3968,
    "shipping_charged": 0.0,
    "discounts": 4.8,
    "refunds": 0.0,
@@ -37060,7 +37060,7 @@
   "2026-10-03": {
    "orders": 7.0,
    "gross": 615.07,
-   "tax": 0.0,
+   "tax": 104.282,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -37084,7 +37084,7 @@
   "2026-10-04": {
    "orders": 3.0,
    "gross": 375.6,
-   "tax": 0.0,
+   "tax": 66.2027,
    "shipping_charged": 0.0,
    "discounts": 8.4,
    "refunds": 0.0,
@@ -37118,7 +37118,7 @@
   "2026-10-06": {
    "orders": 4.0,
    "gross": 193.1,
-   "tax": 0.0,
+   "tax": 33.2278,
    "shipping_charged": 0.0,
    "discounts": 2.12,
    "refunds": 0.0,
@@ -37164,7 +37164,7 @@
   "2026-10-08": {
    "orders": 2.0,
    "gross": 237.15,
-   "tax": 0.0,
+   "tax": 15.6198,
    "shipping_charged": 0.0,
    "discounts": 16.35,
    "refunds": 0.0,
@@ -37191,7 +37191,7 @@
   "2026-10-09": {
    "orders": 4.0,
    "gross": 91.06,
-   "tax": 0.0,
+   "tax": 2.9919,
    "shipping_charged": 0.0,
    "discounts": 1.66,
    "refunds": 0.0,
@@ -37239,7 +37239,7 @@
   "2026-10-11": {
    "orders": 2.0,
    "gross": 118.48,
-   "tax": 0.0,
+   "tax": 26.5161,
    "shipping_charged": 0.0,
    "discounts": 1.53,
    "refunds": 32.34,
@@ -37268,7 +37268,7 @@
   "2026-10-12": {
    "orders": 1.0,
    "gross": -105.15,
-   "tax": 0.0,
+   "tax": 7.8537,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 147.15,
@@ -37293,7 +37293,7 @@
   "2026-10-13": {
    "orders": 1.0,
    "gross": 10.8,
-   "tax": 0.0,
+   "tax": 1.8744,
    "shipping_charged": 0.0,
    "discounts": 1.2,
    "refunds": 0.0,
@@ -37355,7 +37355,7 @@
   "2026-10-16": {
    "orders": 1.0,
    "gross": 53.9,
-   "tax": 0.0,
+   "tax": 10.4323,
    "shipping_charged": 5.9,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -37377,7 +37377,7 @@
   "2026-10-17": {
    "orders": 1.0,
    "gross": 20.3,
-   "tax": 0.0,
+   "tax": 3.5231,
    "shipping_charged": 5.9,
    "discounts": 1.6,
    "refunds": 0.0,
@@ -37399,7 +37399,7 @@
   "2026-10-18": {
    "orders": 5.0,
    "gross": 355.5,
-   "tax": 0.0,
+   "tax": 44.24,
    "shipping_charged": 23.73,
    "discounts": 20.1,
    "refunds": 0.0,
@@ -37417,7 +37417,7 @@
   "2026-10-19": {
    "orders": 2.0,
    "gross": 71.56,
-   "tax": 0.0,
+   "tax": 6.3347,
    "shipping_charged": 25.98,
    "discounts": 5.06,
    "refunds": 0.0,
@@ -37456,7 +37456,7 @@
   "2026-10-21": {
    "orders": 1.0,
    "gross": 158.0,
-   "tax": 0.0,
+   "tax": 27.4215,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
@@ -37486,7 +37486,7 @@
   "2026-10-23": {
    "orders": 2.0,
    "gross": 170.12,
-   "tax": 0.0,
+   "tax": 22.439,
    "shipping_charged": 20.18,
    "discounts": 3.22,
    "refunds": 0.91,
