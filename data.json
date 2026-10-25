@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25 14:56",
+ "generated": "2026-10-25 17:47",
  "start": "2022-08-01",
  "orders": [
   {
@@ -18982,6 +18982,47 @@
      1,
      14.29,
      7.0
+    ]
+   ]
+  },
+  {
+   "d": "2026-10-25",
+   "c": "GB",
+   "g": 340.66,
+   "s": 0.0,
+   "k": 169.15,
+   "u": "2ae83590",
+   "r": 0,
+   "i": [
+    [
+     "Fuente horno rectangular Pearl, Costa Nova",
+     1,
+     33.43,
+     13.96
+    ],
+    [
+     "Fuente horno rectangular grande Pearl, Costa Nova",
+     1,
+     44.18,
+     18.67
+    ],
+    [
+     "Plato de pan Pearl, Costa Nova",
+     10,
+     71.6,
+     28.8
+    ],
+    [
+     "Cuenco Sopa / Cereales Costa Nova, PEARL 16cm",
+     8,
+     86.0,
+     44.72
+    ],
+    [
+     "Plato Llano Costa Nova, Pearl 28cm",
+     10,
+     143.3,
+     63.0
     ]
    ]
   }
@@ -38640,17 +38681,22 @@
    "google_impr": 3777.0
   },
   "2026-10-25": {
-   "orders": 0.0,
-   "gross": 0.0,
+   "orders": 1.0,
+   "gross": 340.66,
+   "tax": 0.0,
    "shipping_charged": 0.0,
-   "discounts": 0.0,
+   "discounts": 37.85,
    "refunds": 0.0,
-   "cogs": 0.0,
-   "google_spend": 10.04,
-   "google_clicks": 24.0,
+   "cogs": 169.15,
+   "repeat_orders": 0.0,
+   "shopify_payments_amount": 340.66,
+   "shopify_payments_orders": 1.0,
+   "sp_fees": 17.87,
+   "google_spend": 13.85,
+   "google_clicks": 36.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 3255.0
+   "google_impr": 4173.0
   }
  },
  "meta_campaigns": [
@@ -54269,8 +54315,8 @@
   {
    "d": "2026-10-25",
    "n": "Sales-Shopping-1",
-   "sp": 10.04,
-   "cl": 24,
+   "sp": 13.85,
+   "cl": 36,
    "cv": 0.0,
    "val": 0.0
   }
