@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24 07:21",
+ "generated": "2026-10-25 06:22",
  "start": "2022-08-01",
  "orders": [
   {
@@ -18965,6 +18965,23 @@
      1,
      120.0,
      70.27
+    ]
+   ]
+  },
+  {
+   "d": "2026-10-24",
+   "c": "SE",
+   "g": 20.49,
+   "s": 6.2,
+   "k": 7.0,
+   "u": "460464a0",
+   "r": 0,
+   "i": [
+    [
+     "Esmalte de u\u00f1as Amour 15ml.",
+     1,
+     14.29,
+     7.0
     ]
    ]
   }
@@ -38585,11 +38602,11 @@
   },
   "2026-10-23": {
    "orders": 2.0,
-   "gross": 170.12,
+   "gross": 118.78,
    "tax": 22.439,
    "shipping_charged": 20.18,
    "discounts": 3.22,
-   "refunds": 0.91,
+   "refunds": 50.43,
    "cogs": 62.3,
    "repeat_orders": 0.0,
    "shopify_payments_amount": 49.21,
@@ -38605,17 +38622,30 @@
    "google_impr": 3801.0
   },
   "2026-10-24": {
-   "orders": 0.0,
-   "gross": 0.0,
-   "shipping_charged": 0.0,
+   "orders": 1.0,
+   "gross": 20.49,
+   "tax": 4.098,
+   "shipping_charged": 6.2,
    "discounts": 0.0,
    "refunds": 0.0,
-   "cogs": 0.0,
+   "cogs": 7.0,
+   "repeat_orders": 0.0,
+   "shopify_payments_amount": 20.49,
+   "shopify_payments_orders": 1.0,
+   "sp_fees": 1.13,
    "google_spend": 0.78,
    "google_clicks": 5.0,
    "google_conv": 0.0,
    "google_value": 0.0,
    "google_impr": 345.0
+  },
+  "2026-10-25": {
+   "orders": 0.0,
+   "gross": 0.0,
+   "shipping_charged": 0.0,
+   "discounts": 0.0,
+   "refunds": 0.0,
+   "cogs": 0.0
   }
  },
  "meta_campaigns": [
