@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25 06:22",
+ "generated": "2026-10-25 14:56",
  "start": "2022-08-01",
  "orders": [
   {
@@ -38633,11 +38633,11 @@
    "shopify_payments_amount": 20.49,
    "shopify_payments_orders": 1.0,
    "sp_fees": 1.13,
-   "google_spend": 0.78,
-   "google_clicks": 5.0,
-   "google_conv": 0.0,
-   "google_value": 0.0,
-   "google_impr": 345.0
+   "google_spend": 20.69,
+   "google_clicks": 42.0,
+   "google_conv": 1.0,
+   "google_value": 14.2945,
+   "google_impr": 3777.0
   },
   "2026-10-25": {
    "orders": 0.0,
@@ -38645,7 +38645,12 @@
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
-   "cogs": 0.0
+   "cogs": 0.0,
+   "google_spend": 10.04,
+   "google_clicks": 24.0,
+   "google_conv": 0.0,
+   "google_value": 0.0,
+   "google_impr": 3255.0
   }
  },
  "meta_campaigns": [
@@ -54256,8 +54261,16 @@
   {
    "d": "2026-10-24",
    "n": "Sales-Shopping-1",
-   "sp": 0.78,
-   "cl": 5,
+   "sp": 20.69,
+   "cl": 42,
+   "cv": 1.0,
+   "val": 14.29
+  },
+  {
+   "d": "2026-10-25",
+   "n": "Sales-Shopping-1",
+   "sp": 10.04,
+   "cl": 24,
    "cv": 0.0,
    "val": 0.0
   }
