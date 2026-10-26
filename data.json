@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25 17:47",
+ "generated": "2026-10-26 08:51",
  "start": "2022-08-01",
  "orders": [
   {
@@ -38637,8 +38637,8 @@
    "cogs": 0.0,
    "google_spend": 29.4384,
    "google_clicks": 52.0,
-   "google_conv": 0.0,
-   "google_value": 0.0,
+   "google_conv": 1.0,
+   "google_value": 340.6049,
    "google_impr": 5708.0
   },
   "2026-10-23": {
@@ -38692,11 +38692,24 @@
    "shopify_payments_amount": 340.66,
    "shopify_payments_orders": 1.0,
    "sp_fees": 17.87,
-   "google_spend": 13.85,
-   "google_clicks": 36.0,
+   "google_spend": 19.31,
+   "google_clicks": 48.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 4173.0
+   "google_impr": 4947.0
+  },
+  "2026-10-26": {
+   "orders": 0.0,
+   "gross": 0.0,
+   "shipping_charged": 0.0,
+   "discounts": 0.0,
+   "refunds": 0.0,
+   "cogs": 0.0,
+   "google_spend": 1.89,
+   "google_clicks": 5.0,
+   "google_conv": 0.0,
+   "google_value": 0.0,
+   "google_impr": 343.0
   }
  },
  "meta_campaigns": [
@@ -54293,8 +54306,8 @@
    "n": "PMAX SHOPPING",
    "sp": 10.47,
    "cl": 28,
-   "cv": 0.0,
-   "val": 0.0
+   "cv": 1.0,
+   "val": 340.6
   },
   {
    "d": "2026-10-23",
@@ -54315,8 +54328,16 @@
   {
    "d": "2026-10-25",
    "n": "Sales-Shopping-1",
-   "sp": 13.85,
-   "cl": 36,
+   "sp": 19.31,
+   "cl": 48,
+   "cv": 0.0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-10-26",
+   "n": "Sales-Shopping-1",
+   "sp": 1.89,
+   "cl": 5,
    "cv": 0.0,
    "val": 0.0
   }
