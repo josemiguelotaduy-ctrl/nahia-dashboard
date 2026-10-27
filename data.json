@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-26 09:35",
+ "generated": "2026-10-27 08:45",
  "start": "2022-08-01",
  "orders": [
   {
@@ -19023,6 +19023,35 @@
      10,
      143.3,
      63.0
+    ]
+   ]
+  },
+  {
+   "d": "2026-10-26",
+   "c": "GB",
+   "g": 149.1,
+   "s": 0.0,
+   "k": 73.41,
+   "u": "952dea6d",
+   "r": 0,
+   "i": [
+    [
+     "Cuenco Sopa / Cereales Costa Nova, PEARL 16cm",
+     4,
+     42.92,
+     22.36
+    ],
+    [
+     "Plato de postre Costa Nova, Pearl 22cm",
+     5,
+     65.55,
+     25.85
+    ],
+    [
+     "Plato Llano Costa Nova, Pearl 28cm",
+     4,
+     57.2,
+     25.2
     ]
    ]
   }
@@ -38699,17 +38728,35 @@
    "google_impr": 4947.0
   },
   "2026-10-26": {
+   "orders": 1.0,
+   "gross": 149.1,
+   "tax": 0.0,
+   "shipping_charged": 0.0,
+   "discounts": 16.57,
+   "refunds": 0.0,
+   "cogs": 73.41,
+   "repeat_orders": 0.0,
+   "shopify_payments_amount": 149.1,
+   "shopify_payments_orders": 1.0,
+   "sp_fees": 7.99,
+   "google_spend": 16.59,
+   "google_clicks": 48.0,
+   "google_conv": 1.0,
+   "google_value": 149.2698,
+   "google_impr": 4655.0
+  },
+  "2026-10-27": {
    "orders": 0.0,
    "gross": 0.0,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
    "cogs": 0.0,
-   "google_spend": 1.89,
+   "google_spend": 0.51,
    "google_clicks": 5.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 343.0
+   "google_impr": 543.0
   }
  },
  "meta_campaigns": [
@@ -54336,7 +54383,15 @@
   {
    "d": "2026-10-26",
    "n": "Sales-Shopping-1",
-   "sp": 1.89,
+   "sp": 16.59,
+   "cl": 48,
+   "cv": 1.0,
+   "val": 149.27
+  },
+  {
+   "d": "2026-10-27",
+   "n": "Sales-Shopping-1",
+   "sp": 0.51,
    "cl": 5,
    "cv": 0.0,
    "val": 0.0
