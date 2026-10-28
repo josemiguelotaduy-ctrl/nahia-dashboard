@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27 09:30",
+ "generated": "2026-10-28 08:57",
  "start": "2022-08-01",
  "orders": [
   {
@@ -19052,6 +19052,29 @@
      4,
      57.2,
      25.2
+    ]
+   ]
+  },
+  {
+   "d": "2026-10-27",
+   "c": "SE",
+   "g": 147.36,
+   "s": 0.0,
+   "k": 68.16,
+   "u": "1547e9ab",
+   "r": 0,
+   "i": [
+    [
+     "Plato hondo Costa Nova, Rosa 24cm",
+     6,
+     79.62,
+     37.14
+    ],
+    [
+     "Plato de Postre Costa Nova, ROSA 21cm",
+     6,
+     67.74,
+     31.02
     ]
    ]
   }
@@ -38746,17 +38769,35 @@
    "google_impr": 4655.0
   },
   "2026-10-27": {
+   "orders": 1.0,
+   "gross": 147.36,
+   "tax": 29.472,
+   "shipping_charged": 0.0,
+   "discounts": 0.0,
+   "refunds": 0.0,
+   "cogs": 68.16,
+   "repeat_orders": 0.0,
+   "shopify_payments_amount": 147.36,
+   "shopify_payments_orders": 1.0,
+   "sp_fees": 10.59,
+   "google_spend": 17.24,
+   "google_clicks": 40.0,
+   "google_conv": 1.0,
+   "google_value": 146.6434,
+   "google_impr": 2665.0
+  },
+  "2026-10-28": {
    "orders": 0.0,
    "gross": 0.0,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
    "cogs": 0.0,
-   "google_spend": 0.51,
-   "google_clicks": 5.0,
+   "google_spend": 2.71,
+   "google_clicks": 2.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 543.0
+   "google_impr": 369.0
   }
  },
  "meta_campaigns": [
@@ -54391,8 +54432,16 @@
   {
    "d": "2026-10-27",
    "n": "Sales-Shopping-1",
-   "sp": 0.51,
-   "cl": 5,
+   "sp": 17.24,
+   "cl": 40,
+   "cv": 1.0,
+   "val": 146.64
+  },
+  {
+   "d": "2026-10-28",
+   "n": "Sales-Shopping-1",
+   "sp": 2.71,
+   "cl": 2,
    "cv": 0.0,
    "val": 0.0
   }
