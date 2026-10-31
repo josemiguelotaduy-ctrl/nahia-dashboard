@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30 09:41",
+ "generated": "2026-10-31 08:50",
  "start": "2022-08-01",
  "orders": [
   {
@@ -19092,6 +19092,23 @@
      1,
      16.0,
      8.0
+    ]
+   ]
+  },
+  {
+   "d": "2026-10-30",
+   "c": "IT",
+   "g": 37.4,
+   "s": 5.9,
+   "k": 14.4,
+   "u": "361bc742",
+   "r": 0,
+   "i": [
+    [
+     "Plato de pan Pearl, Costa Nova",
+     5,
+     35.0,
+     14.4
     ]
    ]
   }
@@ -38761,8 +38778,8 @@
    "shopify_payments_amount": 340.66,
    "shopify_payments_orders": 1.0,
    "sp_fees": 17.87,
-   "google_spend": 19.31,
-   "google_clicks": 48.0,
+   "google_spend": 19.03,
+   "google_clicks": 46.0,
    "google_conv": 0.0,
    "google_value": 0.0,
    "google_impr": 4946.0
@@ -38779,8 +38796,8 @@
    "shopify_payments_amount": 149.1,
    "shopify_payments_orders": 1.0,
    "sp_fees": 7.99,
-   "google_spend": 16.59,
-   "google_clicks": 48.0,
+   "google_spend": 16.26,
+   "google_clicks": 46.0,
    "google_conv": 1.0,
    "google_value": 149.2698,
    "google_impr": 4655.0
@@ -38801,7 +38818,7 @@
    "google_clicks": 41.0,
    "google_conv": 1.0,
    "google_value": 146.6434,
-   "google_impr": 2665.0
+   "google_impr": 2664.0
   },
   "2026-10-28": {
    "orders": 1.0,
@@ -38828,24 +38845,42 @@
    "discounts": 0.0,
    "refunds": 0.0,
    "cogs": 0.0,
-   "google_spend": 19.68,
-   "google_clicks": 45.0,
+   "google_spend": 20.63,
+   "google_clicks": 46.0,
    "google_conv": 0.0,
    "google_value": 0.0,
    "google_impr": 5398.0
   },
   "2026-10-30": {
+   "orders": 1.0,
+   "gross": 37.4,
+   "tax": 6.7443,
+   "shipping_charged": 5.9,
+   "discounts": 3.5,
+   "refunds": 0.0,
+   "cogs": 14.4,
+   "repeat_orders": 0.0,
+   "shopify_payments_amount": 37.4,
+   "shopify_payments_orders": 1.0,
+   "sp_fees": 1.09,
+   "google_spend": 19.7,
+   "google_clicks": 52.0,
+   "google_conv": 0.0,
+   "google_value": 0.0,
+   "google_impr": 4712.0
+  },
+  "2026-10-31": {
    "orders": 0.0,
    "gross": 0.0,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
    "cogs": 0.0,
-   "google_spend": 1.56,
-   "google_clicks": 8.0,
+   "google_spend": 0.62,
+   "google_clicks": 3.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 613.0
+   "google_impr": 359.0
   }
  },
  "meta_campaigns": [
@@ -54464,16 +54499,16 @@
   {
    "d": "2026-10-25",
    "n": "Sales-Shopping-1",
-   "sp": 19.31,
-   "cl": 48,
+   "sp": 19.03,
+   "cl": 46,
    "cv": 0.0,
    "val": 0.0
   },
   {
    "d": "2026-10-26",
    "n": "Sales-Shopping-1",
-   "sp": 16.59,
-   "cl": 48,
+   "sp": 16.26,
+   "cl": 46,
    "cv": 1.0,
    "val": 149.27
   },
@@ -54496,16 +54531,24 @@
   {
    "d": "2026-10-29",
    "n": "Sales-Shopping-1",
-   "sp": 19.68,
-   "cl": 45,
+   "sp": 20.63,
+   "cl": 46,
    "cv": 0.0,
    "val": 0.0
   },
   {
    "d": "2026-10-30",
    "n": "Sales-Shopping-1",
-   "sp": 1.56,
-   "cl": 8,
+   "sp": 19.7,
+   "cl": 52,
+   "cv": 0.0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-10-31",
+   "n": "Sales-Shopping-1",
+   "sp": 0.62,
+   "cl": 3,
    "cv": 0.0,
    "val": 0.0
   }
