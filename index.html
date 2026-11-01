@@ -364,10 +364,13 @@ async function sha256(str){
   const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(str));
   return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
 }
-const AUTH_HASH = "3f9fe0cf8466ed9e8e396636892f82d9e7e26b86c974f012efa21dd85d87296d"; // nahia2026
+const VALID_PNL = [
+  "3f9fe0cf8466ed9e8e396636892f82d9e7e26b86c974f012efa21dd85d87296d", // nahia2026
+  "8961fada71905662d5c797ed24ce9060935413c0f2f8b9d3787ad0e1ed5141a1"  // Nahia2026
+];
 async function checkAuth(){
-  const saved = localStorage.getItem("nahia_auth");
-  if(saved === AUTH_HASH){
+  const saved = localStorage.getItem("nahia_pnl_auth") || localStorage.getItem("nahia_auth");
+  if(VALID_PNL.includes(saved)){
     document.getElementById("loginOverlay").style.display = "none";
   } else {
     document.getElementById("loginOverlay").style.display = "flex";
@@ -375,9 +378,10 @@ async function checkAuth(){
 }
 async function handleLogin(e){
   e.preventDefault();
-  const val = document.getElementById("pwdInput").value;
+  const val = document.getElementById("pwdInput").value.trim();
   const hash = await sha256(val);
-  if(hash === AUTH_HASH){
+  if(VALID_PNL.includes(hash)){
+    localStorage.setItem("nahia_pnl_auth", hash);
     localStorage.setItem("nahia_auth", hash);
     document.getElementById("loginOverlay").style.display = "none";
   } else {
