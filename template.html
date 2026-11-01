@@ -46,6 +46,62 @@
   .loginBox button{width:100%;padding:10px;background:var(--ink);color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer}
   .loginBox .err{color:var(--neg);font-size:12px;margin-top:10px;display:none}
 
+
+  .portal-nav-bar {
+    background: #FFFFFF;
+    border-bottom: 1px solid var(--line);
+    padding: 10px 24px;
+    font-size: 12px;
+  }
+  .portal-nav-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .portal-nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--mute);
+    font-size: 11px;
+  }
+  .portal-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--pos);
+    display: inline-block;
+  }
+  .portal-nav-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .portal-nav-link {
+    color: var(--mute);
+    text-decoration: none;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    transition: all 0.15s ease;
+  }
+  .portal-nav-link:hover {
+    color: var(--ink);
+    background: var(--bg);
+  }
+  .portal-nav-link.active {
+    color: var(--ink);
+    background: var(--bg);
+    font-weight: 600;
+    border: 1px solid var(--line);
+  }
+
 </style>
 </head>
 <body>
@@ -61,6 +117,22 @@
     </form>
   </div>
 </div>
+
+
+<nav class="portal-nav-bar">
+  <div class="portal-nav-inner">
+    <div class="portal-nav-brand">
+      <span class="portal-dot"></span>
+      <span class="portal-brand-text">NAHIA HOME · SUITE</span>
+    </div>
+    <div class="portal-nav-links">
+      <a href="https://josemiguelotaduy-ctrl.github.io/" class="portal-nav-link">🏠 Portal Hub</a>
+      <a href="https://josemiguelotaduy-ctrl.github.io/nahia-dashboard/" class="portal-nav-link active">📈 P&amp;L</a>
+      <a href="https://josemiguelotaduy-ctrl.github.io/nahia-ads-test/" class="portal-nav-link ">🎯 Ads Test Lab</a>
+      <a href="https://josemiguelotaduy-ctrl.github.io/nahia-social-studio/" class="portal-nav-link ">🎞️ Social Studio</a>
+    </div>
+  </div>
+</nav>
 
 <div class="wrap">
   <header>
