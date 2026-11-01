@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-31 09:32",
+ "generated": "2026-11-01 08:56",
  "start": "2022-08-01",
  "orders": [
   {
@@ -38782,7 +38782,7 @@
    "google_clicks": 46.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 4946.0
+   "google_impr": 4945.0
   },
   "2026-10-26": {
    "orders": 1.0,
@@ -38800,7 +38800,7 @@
    "google_clicks": 46.0,
    "google_conv": 1.0,
    "google_value": 149.2698,
-   "google_impr": 4655.0
+   "google_impr": 4653.0
   },
   "2026-10-27": {
    "orders": 1.0,
@@ -38834,8 +38834,8 @@
    "sp_fees": 0.76,
    "google_spend": 18.35,
    "google_clicks": 32.0,
-   "google_conv": 1.0,
-   "google_value": 16.0,
+   "google_conv": 2.0,
+   "google_value": 47.5,
    "google_impr": 2853.0
   },
   "2026-10-29": {
@@ -38849,7 +38849,7 @@
    "google_clicks": 46.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 5398.0
+   "google_impr": 5392.0
   },
   "2026-10-30": {
    "orders": 1.0,
@@ -38863,8 +38863,8 @@
    "shopify_payments_amount": 37.4,
    "shopify_payments_orders": 1.0,
    "sp_fees": 1.09,
-   "google_spend": 19.7,
-   "google_clicks": 52.0,
+   "google_spend": 20.01,
+   "google_clicks": 53.0,
    "google_conv": 0.0,
    "google_value": 0.0,
    "google_impr": 4712.0
@@ -38876,11 +38876,24 @@
    "discounts": 0.0,
    "refunds": 0.0,
    "cogs": 0.0,
-   "google_spend": 0.62,
-   "google_clicks": 3.0,
+   "google_spend": 15.12,
+   "google_clicks": 46.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 359.0
+   "google_impr": 4946.0
+  },
+  "2026-11-01": {
+   "orders": 0.0,
+   "gross": 0.0,
+   "shipping_charged": 0.0,
+   "discounts": 0.0,
+   "refunds": 0.0,
+   "cogs": 0.0,
+   "google_spend": 4.34,
+   "google_clicks": 2.0,
+   "google_conv": 0.0,
+   "google_value": 0.0,
+   "google_impr": 321.0
   }
  },
  "meta_campaigns": [
@@ -54525,8 +54538,8 @@
    "n": "Sales-Shopping-1",
    "sp": 18.35,
    "cl": 32,
-   "cv": 1.0,
-   "val": 16.0
+   "cv": 2.0,
+   "val": 47.5
   },
   {
    "d": "2026-10-29",
@@ -54539,16 +54552,24 @@
   {
    "d": "2026-10-30",
    "n": "Sales-Shopping-1",
-   "sp": 19.7,
-   "cl": 52,
+   "sp": 20.01,
+   "cl": 53,
    "cv": 0.0,
    "val": 0.0
   },
   {
    "d": "2026-10-31",
    "n": "Sales-Shopping-1",
-   "sp": 0.62,
-   "cl": 3,
+   "sp": 15.12,
+   "cl": 46,
+   "cv": 0.0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-01",
+   "n": "Sales-Shopping-1",
+   "sp": 4.34,
+   "cl": 2,
    "cv": 0.0,
    "val": 0.0
   }
