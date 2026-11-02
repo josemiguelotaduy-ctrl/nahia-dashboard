@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01 09:36",
+ "generated": "2026-11-02 09:26",
  "start": "2022-08-01",
  "orders": [
   {
@@ -19109,6 +19109,46 @@
      5,
      35.0,
      14.4
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-01",
+   "c": "BE",
+   "g": 80.9,
+   "s": 5.9,
+   "k": 32.5,
+   "u": "8f48ed97",
+   "r": 0,
+   "i": [
+    [
+     "Abanico de Lino Granada, The Viana Fan",
+     1,
+     75.0,
+     32.5
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-01",
+   "c": "PT",
+   "g": 162.0,
+   "s": 0.0,
+   "k": 81.24,
+   "u": "4ee570fb",
+   "r": 0,
+   "i": [
+    [
+     "Vaso agua \"Abeille\", 260 ml",
+     12,
+     84.0,
+     39.36
+    ],
+    [
+     "Copa de vino \"Abeille\", 240 ml",
+     12,
+     96.0,
+     41.88
     ]
    ]
   }
@@ -38883,17 +38923,47 @@
    "google_impr": 4946.0
   },
   "2026-11-01": {
+   "orders": 2.0,
+   "gross": 242.9,
+   "tax": 44.3332,
+   "shipping_charged": 5.9,
+   "discounts": 18.0,
+   "refunds": 0.0,
+   "cogs": 113.74,
+   "repeat_orders": 0.0,
+   "shopify_payments_amount": 242.9,
+   "shopify_payments_orders": 2.0,
+   "sp_fees": 5.7,
+   "meta_spend": 6.99,
+   "meta_clicks": 31.0,
+   "meta_impr": 643.0,
+   "meta_conv": 1.0,
+   "meta_atc": 2.0,
+   "meta_vc": 35.0,
+   "meta_value": 80.9,
+   "google_spend": 22.48,
+   "google_clicks": 57.0,
+   "google_conv": 0.0,
+   "google_value": 0.0,
+   "google_impr": 4643.0
+  },
+  "2026-11-02": {
    "orders": 0.0,
    "gross": 0.0,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
    "cogs": 0.0,
-   "google_spend": 4.34,
-   "google_clicks": 2.0,
+   "meta_spend": 2.78,
+   "meta_clicks": 10.0,
+   "meta_impr": 277.0,
+   "meta_atc": 2.0,
+   "meta_vc": 10.0,
+   "google_spend": 5.78,
+   "google_clicks": 5.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 321.0
+   "google_impr": 438.0
   }
  },
  "meta_campaigns": [
@@ -54274,6 +54344,50 @@
    "ic": 0,
    "cv": 0,
    "val": 0.0
+  },
+  {
+   "d": "2026-11-01",
+   "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
+   "sp": 5.65,
+   "cl": 24,
+   "vc": 30,
+   "atc": 2,
+   "ic": 0,
+   "cv": 1,
+   "val": 80.9
+  },
+  {
+   "d": "2026-11-01",
+   "n": "M2_Nov2026_Retargeting_Warm_PanEU",
+   "sp": 1.34,
+   "cl": 7,
+   "vc": 5,
+   "atc": 0,
+   "ic": 0,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-02",
+   "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
+   "sp": 2.46,
+   "cl": 6,
+   "vc": 5,
+   "atc": 2,
+   "ic": 0,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-02",
+   "n": "M2_Nov2026_Retargeting_Warm_PanEU",
+   "sp": 0.32,
+   "cl": 4,
+   "vc": 5,
+   "atc": 0,
+   "ic": 0,
+   "cv": 0,
+   "val": 0.0
   }
  ],
  "google_campaigns": [
@@ -54568,8 +54682,56 @@
   {
    "d": "2026-11-01",
    "n": "Sales-Shopping-1",
-   "sp": 4.34,
-   "cl": 2,
+   "sp": 12.5,
+   "cl": 23,
+   "cv": 0.0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-01",
+   "n": "G1_Nov2026_Shopping_ManualCPC_ArmA",
+   "sp": 6.88,
+   "cl": 23,
+   "cv": 0.0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-01",
+   "n": "G1_Nov2026_Shopping_MaxConvValue_ArmB",
+   "sp": 3.1,
+   "cl": 11,
+   "cv": 0.0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-01",
+   "n": "G2_Nov2026_Search_LuxuryBrands_Exact",
+   "sp": 0.0,
+   "cl": 0,
+   "cv": 0.0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-02",
+   "n": "G1_Nov2026_Shopping_ManualCPC_ArmA",
+   "sp": 0.0,
+   "cl": 0,
+   "cv": 0.0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-02",
+   "n": "G1_Nov2026_Shopping_MaxConvValue_ArmB",
+   "sp": 5.13,
+   "cl": 4,
+   "cv": 0.0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-02",
+   "n": "G2_Nov2026_Search_LuxuryBrands_Exact",
+   "sp": 0.65,
+   "cl": 1,
    "cv": 0.0,
    "val": 0.0
   }
