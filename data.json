@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03 09:47",
+ "generated": "2026-11-04 09:18",
  "start": "2022-08-01",
  "orders": [
   {
@@ -19234,6 +19234,40 @@
      2,
      40.0,
      17.2
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-03",
+   "c": "ES",
+   "g": 19.9,
+   "s": 5.9,
+   "k": 7.0,
+   "u": "893384a2",
+   "r": 0,
+   "i": [
+    [
+     "Esmalte de u\u00f1as Victoria Plum, MANUCURIST 15ml",
+     1,
+     14.0,
+     7.0
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-03",
+   "c": "BE",
+   "g": 13.1,
+   "s": 5.9,
+   "k": 3.1,
+   "u": "a3759bb4",
+   "r": 0,
+   "i": [
+    [
+     "Bol de vidrio C\u00f4t\u00e9 Table, Perloa, 13 cm",
+     1,
+     8.0,
+     3.1
     ]
    ]
   }
@@ -39028,8 +39062,8 @@
    "meta_value": 80.9,
    "google_spend": 22.48,
    "google_clicks": 57.0,
-   "google_conv": 0.0,
-   "google_value": 0.0,
+   "google_conv": 1.0,
+   "google_value": 14.0,
    "google_impr": 4644.0
   },
   "2026-11-02": {
@@ -39049,7 +39083,7 @@
    "paypal_fees": 3.92,
    "meta_spend": 11.3,
    "meta_clicks": 54.0,
-   "meta_impr": 1252.0,
+   "meta_impr": 1253.0,
    "meta_conv": 3.0,
    "meta_ic": 4.0,
    "meta_atc": 10.0,
@@ -39062,21 +39096,49 @@
    "google_impr": 3458.0
   },
   "2026-11-03": {
+   "orders": 2.0,
+   "gross": 33.0,
+   "tax": 5.7273,
+   "shipping_charged": 11.8,
+   "discounts": 0.8,
+   "refunds": 0.0,
+   "cogs": 10.1,
+   "repeat_orders": 0.0,
+   "shopify_payments_amount": 33.0,
+   "shopify_payments_orders": 2.0,
+   "sp_fees": 1.92,
+   "meta_spend": 8.9,
+   "meta_clicks": 34.0,
+   "meta_impr": 1353.0,
+   "meta_conv": 1.0,
+   "meta_ic": 1.0,
+   "meta_atc": 9.0,
+   "meta_vc": 36.0,
+   "meta_value": 13.1,
+   "google_spend": 14.7,
+   "google_clicks": 34.0,
+   "google_conv": 0.0,
+   "google_value": 0.0,
+   "google_impr": 2437.0
+  },
+  "2026-11-04": {
    "orders": 0.0,
    "gross": 0.0,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
    "cogs": 0.0,
-   "meta_spend": 2.19,
-   "meta_clicks": 9.0,
-   "meta_impr": 348.0,
-   "meta_vc": 1.0,
-   "google_spend": 2.01,
-   "google_clicks": 6.0,
+   "meta_spend": 2.65,
+   "meta_clicks": 16.0,
+   "meta_impr": 423.0,
+   "meta_ic": 1.0,
+   "meta_atc": 2.0,
+   "meta_vc": 10.0,
+   "google_spend": 0.84,
+   "google_clicks": 4.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 301.0
+   "google_impr": 311.0
   }
  },
  "meta_campaigns": [
@@ -54505,20 +54567,42 @@
   {
    "d": "2026-11-03",
    "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
-   "sp": 1.84,
-   "cl": 4,
-   "vc": 1,
-   "atc": 0,
+   "sp": 7.01,
+   "cl": 23,
+   "vc": 31,
+   "atc": 8,
+   "ic": 1,
+   "cv": 1,
+   "val": 13.1
+  },
+  {
+   "d": "2026-11-03",
+   "n": "M2_Nov2026_Retargeting_Warm_PanEU",
+   "sp": 1.89,
+   "cl": 11,
+   "vc": 5,
+   "atc": 1,
    "ic": 0,
    "cv": 0,
    "val": 0.0
   },
   {
-   "d": "2026-11-03",
+   "d": "2026-11-04",
+   "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
+   "sp": 1.98,
+   "cl": 10,
+   "vc": 9,
+   "atc": 2,
+   "ic": 1,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-04",
    "n": "M2_Nov2026_Retargeting_Warm_PanEU",
-   "sp": 0.35,
-   "cl": 5,
-   "vc": 0,
+   "sp": 0.67,
+   "cl": 6,
+   "vc": 1,
    "atc": 0,
    "ic": 0,
    "cv": 0,
@@ -54827,8 +54911,8 @@
    "n": "G1_Nov2026_Shopping_ManualCPC_ArmA",
    "sp": 6.88,
    "cl": 23,
-   "cv": 0.0,
-   "val": 0.0
+   "cv": 1.0,
+   "val": 14.0
   },
   {
    "d": "2026-11-01",
@@ -54873,21 +54957,45 @@
   {
    "d": "2026-11-03",
    "n": "G1_Nov2026_Shopping_ManualCPC_ArmA",
-   "sp": 1.68,
-   "cl": 4,
+   "sp": 7.57,
+   "cl": 21,
    "cv": 0.0,
    "val": 0.0
   },
   {
    "d": "2026-11-03",
    "n": "G1_Nov2026_Shopping_MaxConvValue_ArmB",
-   "sp": 0.33,
-   "cl": 2,
+   "sp": 6.48,
+   "cl": 12,
    "cv": 0.0,
    "val": 0.0
   },
   {
    "d": "2026-11-03",
+   "n": "G2_Nov2026_Search_LuxuryBrands_Exact",
+   "sp": 0.65,
+   "cl": 1,
+   "cv": 0.0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-04",
+   "n": "G1_Nov2026_Shopping_ManualCPC_ArmA",
+   "sp": 0.74,
+   "cl": 3,
+   "cv": 0.0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-04",
+   "n": "G1_Nov2026_Shopping_MaxConvValue_ArmB",
+   "sp": 0.1,
+   "cl": 1,
+   "cv": 0.0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-04",
    "n": "G2_Nov2026_Search_LuxuryBrands_Exact",
    "sp": 0.0,
    "cl": 0,
