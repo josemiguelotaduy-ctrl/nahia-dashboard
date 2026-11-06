@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05 09:47",
+ "generated": "2026-11-06 09:16",
  "start": "2022-08-01",
  "orders": [
   {
@@ -19331,6 +19331,40 @@
      7,
      49.0,
      21.7
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-05",
+   "c": "GR",
+   "g": 102.0,
+   "s": 0.0,
+   "k": 42.0,
+   "u": "dd34d2a8",
+   "r": 0,
+   "i": [
+    [
+     "Grifo de jard\u00edn con roseta Verde, LIVLIG",
+     3,
+     102.0,
+     42.0
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-05",
+   "c": "GR",
+   "g": 122.4,
+   "s": 0.0,
+   "k": 56.0,
+   "u": "cea56b8f",
+   "r": 0,
+   "i": [
+    [
+     "Grifo de jard\u00edn con roseta Gentle Greige, LIVLIG",
+     4,
+     136.0,
+     56.0
     ]
    ]
   }
@@ -39198,7 +39232,7 @@
    "sp_fees": 8.24,
    "meta_spend": 10.67,
    "meta_clicks": 76.0,
-   "meta_impr": 1757.0,
+   "meta_impr": 1759.0,
    "meta_conv": 1.0,
    "meta_ic": 3.0,
    "meta_atc": 5.0,
@@ -39211,29 +39245,47 @@
    "google_impr": 2762.0
   },
   "2026-11-05": {
-   "orders": 1.0,
-   "gross": 54.9,
-   "tax": 9.9,
+   "orders": 3.0,
+   "gross": 279.3,
+   "tax": 53.3322,
    "shipping_charged": 5.9,
-   "discounts": 0.0,
+   "discounts": 13.6,
    "refunds": 0.0,
-   "cogs": 21.7,
+   "cogs": 119.7,
    "repeat_orders": 1.0,
-   "paypal_amount": 54.9,
-   "paypal_orders": 1.0,
-   "meta_spend": 1.48,
-   "meta_clicks": 11.0,
-   "meta_impr": 268.0,
-   "meta_conv": 1.0,
-   "meta_ic": 1.0,
-   "meta_atc": 3.0,
-   "meta_vc": 6.0,
-   "meta_value": 54.9,
-   "google_spend": 2.2,
-   "google_clicks": 7.0,
+   "paypal_amount": 279.3,
+   "paypal_orders": 3.0,
+   "paypal_fees": 9.15,
+   "meta_spend": 11.12,
+   "meta_clicks": 99.0,
+   "meta_impr": 1697.0,
+   "meta_conv": 3.0,
+   "meta_ic": 3.0,
+   "meta_atc": 8.0,
+   "meta_vc": 93.0,
+   "meta_value": 279.3,
+   "google_spend": 13.25,
+   "google_clicks": 46.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 304.0
+   "google_impr": 4921.0
+  },
+  "2026-11-06": {
+   "orders": 0.0,
+   "gross": 0.0,
+   "shipping_charged": 0.0,
+   "discounts": 0.0,
+   "refunds": 0.0,
+   "cogs": 0.0,
+   "meta_spend": 3.48,
+   "meta_clicks": 11.0,
+   "meta_impr": 451.0,
+   "meta_vc": 13.0,
+   "google_spend": 4.13,
+   "google_clicks": 8.0,
+   "google_conv": 0.0,
+   "google_value": 0.0,
+   "google_impr": 245.0
   }
  },
  "meta_campaigns": [
@@ -54706,20 +54758,42 @@
   {
    "d": "2026-11-05",
    "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
-   "sp": 1.32,
-   "cl": 8,
-   "vc": 6,
-   "atc": 3,
-   "ic": 1,
-   "cv": 1,
-   "val": 54.9
+   "sp": 8.74,
+   "cl": 80,
+   "vc": 89,
+   "atc": 8,
+   "ic": 3,
+   "cv": 3,
+   "val": 279.3
   },
   {
    "d": "2026-11-05",
    "n": "M2_Nov2026_Retargeting_Warm_PanEU",
-   "sp": 0.16,
+   "sp": 2.38,
+   "cl": 19,
+   "vc": 4,
+   "atc": 0,
+   "ic": 0,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-06",
+   "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
+   "sp": 3.14,
+   "cl": 8,
+   "vc": 9,
+   "atc": 0,
+   "ic": 0,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-06",
+   "n": "M2_Nov2026_Retargeting_Warm_PanEU",
+   "sp": 0.34,
    "cl": 3,
-   "vc": 0,
+   "vc": 4,
    "atc": 0,
    "ic": 0,
    "cv": 0,
@@ -55122,24 +55196,40 @@
   {
    "d": "2026-11-05",
    "n": "G1_Nov2026_Shopping_ManualCPC_ArmA",
-   "sp": 1.09,
-   "cl": 3,
+   "sp": 7.39,
+   "cl": 21,
    "cv": 0.0,
    "val": 0.0
   },
   {
    "d": "2026-11-05",
    "n": "G1_Nov2026_Shopping_MaxConvValue_ArmB",
-   "sp": 0.47,
-   "cl": 3,
+   "sp": 2.65,
+   "cl": 20,
    "cv": 0.0,
    "val": 0.0
   },
   {
    "d": "2026-11-05",
    "n": "G2_Nov2026_Search_LuxuryBrands_Exact",
-   "sp": 0.64,
-   "cl": 1,
+   "sp": 3.21,
+   "cl": 5,
+   "cv": 0.0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-06",
+   "n": "G1_Nov2026_Shopping_ManualCPC_ArmA",
+   "sp": 1.39,
+   "cl": 5,
+   "cv": 0.0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-06",
+   "n": "G1_Nov2026_Shopping_MaxConvValue_ArmB",
+   "sp": 2.74,
+   "cl": 3,
    "cv": 0.0,
    "val": 0.0
   }
