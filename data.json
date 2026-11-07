@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07 08:57",
+ "generated": "2026-11-07 09:39",
  "start": "2022-08-01",
  "orders": [
   {
@@ -39295,10 +39295,10 @@
    "discounts": 0.0,
    "refunds": 0.0,
    "cogs": 0.0,
-   "meta_spend": 2.65,
-   "meta_clicks": 9.0,
-   "meta_impr": 443.0,
-   "meta_vc": 9.0,
+   "meta_spend": 3.61,
+   "meta_clicks": 13.0,
+   "meta_impr": 597.0,
+   "meta_vc": 10.0,
    "google_spend": 0.98,
    "google_clicks": 3.0,
    "google_conv": 0.0,
@@ -54820,8 +54820,8 @@
   {
    "d": "2026-11-07",
    "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
-   "sp": 2.15,
-   "cl": 7,
+   "sp": 3.06,
+   "cl": 9,
    "vc": 8,
    "atc": 0,
    "ic": 0,
@@ -54831,9 +54831,9 @@
   {
    "d": "2026-11-07",
    "n": "M2_Nov2026_Retargeting_Warm_PanEU",
-   "sp": 0.5,
-   "cl": 2,
-   "vc": 1,
+   "sp": 0.57,
+   "cl": 4,
+   "vc": 2,
    "atc": 0,
    "ic": 0,
    "cv": 0,
