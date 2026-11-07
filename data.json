@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06 09:45",
+ "generated": "2026-11-07 08:57",
  "start": "2022-08-01",
  "orders": [
   {
@@ -39258,7 +39258,7 @@
    "paypal_fees": 9.15,
    "meta_spend": 11.12,
    "meta_clicks": 99.0,
-   "meta_impr": 1697.0,
+   "meta_impr": 1699.0,
    "meta_conv": 3.0,
    "meta_ic": 3.0,
    "meta_atc": 8.0,
@@ -39277,15 +39277,33 @@
    "discounts": 0.0,
    "refunds": 0.0,
    "cogs": 0.0,
-   "meta_spend": 3.83,
-   "meta_clicks": 12.0,
-   "meta_impr": 513.0,
-   "meta_vc": 13.0,
-   "google_spend": 4.13,
-   "google_clicks": 8.0,
+   "meta_spend": 14.44,
+   "meta_clicks": 77.0,
+   "meta_impr": 2270.0,
+   "meta_atc": 7.0,
+   "meta_vc": 70.0,
+   "google_spend": 16.93,
+   "google_clicks": 48.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 245.0
+   "google_impr": 4627.0
+  },
+  "2026-11-07": {
+   "orders": 0.0,
+   "gross": 0.0,
+   "shipping_charged": 0.0,
+   "discounts": 0.0,
+   "refunds": 0.0,
+   "cogs": 0.0,
+   "meta_spend": 2.65,
+   "meta_clicks": 9.0,
+   "meta_impr": 443.0,
+   "meta_vc": 9.0,
+   "google_spend": 0.98,
+   "google_clicks": 3.0,
+   "google_conv": 0.0,
+   "google_value": 0.0,
+   "google_impr": 513.0
   }
  },
  "meta_campaigns": [
@@ -54780,9 +54798,9 @@
   {
    "d": "2026-11-06",
    "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
-   "sp": 3.44,
-   "cl": 8,
-   "vc": 9,
+   "sp": 11.77,
+   "cl": 44,
+   "vc": 34,
    "atc": 0,
    "ic": 0,
    "cv": 0,
@@ -54791,9 +54809,31 @@
   {
    "d": "2026-11-06",
    "n": "M2_Nov2026_Retargeting_Warm_PanEU",
-   "sp": 0.39,
-   "cl": 4,
-   "vc": 4,
+   "sp": 2.67,
+   "cl": 33,
+   "vc": 36,
+   "atc": 7,
+   "ic": 0,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-07",
+   "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
+   "sp": 2.15,
+   "cl": 7,
+   "vc": 8,
+   "atc": 0,
+   "ic": 0,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-07",
+   "n": "M2_Nov2026_Retargeting_Warm_PanEU",
+   "sp": 0.5,
+   "cl": 2,
+   "vc": 1,
    "atc": 0,
    "ic": 0,
    "cv": 0,
@@ -55220,16 +55260,48 @@
   {
    "d": "2026-11-06",
    "n": "G1_Nov2026_Shopping_ManualCPC_ArmA",
-   "sp": 1.39,
-   "cl": 5,
+   "sp": 6.95,
+   "cl": 21,
    "cv": 0.0,
    "val": 0.0
   },
   {
    "d": "2026-11-06",
    "n": "G1_Nov2026_Shopping_MaxConvValue_ArmB",
-   "sp": 2.74,
+   "sp": 8.04,
+   "cl": 24,
+   "cv": 0.0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-06",
+   "n": "G2_Nov2026_Search_LuxuryBrands_Exact",
+   "sp": 1.94,
    "cl": 3,
+   "cv": 0.0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-07",
+   "n": "G1_Nov2026_Shopping_ManualCPC_ArmA",
+   "sp": 0.54,
+   "cl": 1,
+   "cv": 0.0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-07",
+   "n": "G1_Nov2026_Shopping_MaxConvValue_ArmB",
+   "sp": 0.44,
+   "cl": 2,
+   "cv": 0.0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-07",
+   "n": "G2_Nov2026_Search_LuxuryBrands_Exact",
+   "sp": 0.0,
+   "cl": 0,
    "cv": 0.0,
    "val": 0.0
   }
