@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07 09:39",
+ "generated": "2026-11-08 08:58",
  "start": "2022-08-01",
  "orders": [
   {
@@ -19365,6 +19365,23 @@
      4,
      136.0,
      56.0
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-08",
+   "c": "SE",
+   "g": 46.07,
+   "s": 6.26,
+   "k": 19.15,
+   "u": "9d536cf3",
+   "r": 0,
+   "i": [
+    [
+     "Jarra Bordemer, C\u00f4t\u00e9 Table 4L",
+     1,
+     39.81,
+     19.15
     ]
    ]
   }
@@ -39295,15 +39312,39 @@
    "discounts": 0.0,
    "refunds": 0.0,
    "cogs": 0.0,
-   "meta_spend": 3.61,
-   "meta_clicks": 13.0,
-   "meta_impr": 597.0,
-   "meta_vc": 10.0,
-   "google_spend": 0.98,
-   "google_clicks": 3.0,
+   "meta_spend": 15.56,
+   "meta_clicks": 66.0,
+   "meta_impr": 2298.0,
+   "meta_ic": 1.0,
+   "meta_atc": 4.0,
+   "meta_vc": 78.0,
+   "google_spend": 29.23,
+   "google_clicks": 74.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 513.0
+   "google_impr": 8879.0
+  },
+  "2026-11-08": {
+   "orders": 1.0,
+   "gross": 46.07,
+   "tax": 9.214,
+   "shipping_charged": 6.26,
+   "discounts": 0.0,
+   "refunds": 0.0,
+   "cogs": 19.15,
+   "repeat_orders": 0.0,
+   "shopify_payments_amount": 46.07,
+   "shopify_payments_orders": 1.0,
+   "sp_fees": 3.55,
+   "meta_spend": 4.53,
+   "meta_clicks": 23.0,
+   "meta_impr": 785.0,
+   "meta_vc": 19.0,
+   "google_spend": 3.42,
+   "google_clicks": 7.0,
+   "google_conv": 1.0,
+   "google_value": 39.7998,
+   "google_impr": 364.0
   }
  },
  "meta_campaigns": [
@@ -54820,9 +54861,9 @@
   {
    "d": "2026-11-07",
    "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
-   "sp": 3.06,
-   "cl": 9,
-   "vc": 8,
+   "sp": 12.64,
+   "cl": 42,
+   "vc": 32,
    "atc": 0,
    "ic": 0,
    "cv": 0,
@@ -54831,9 +54872,31 @@
   {
    "d": "2026-11-07",
    "n": "M2_Nov2026_Retargeting_Warm_PanEU",
-   "sp": 0.57,
-   "cl": 4,
-   "vc": 2,
+   "sp": 2.92,
+   "cl": 24,
+   "vc": 46,
+   "atc": 4,
+   "ic": 1,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-08",
+   "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
+   "sp": 3.32,
+   "cl": 13,
+   "vc": 15,
+   "atc": 0,
+   "ic": 0,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-08",
+   "n": "M2_Nov2026_Retargeting_Warm_PanEU",
+   "sp": 1.21,
+   "cl": 10,
+   "vc": 4,
    "atc": 0,
    "ic": 0,
    "cv": 0,
@@ -55283,27 +55346,43 @@
   },
   {
    "d": "2026-11-07",
+   "n": "Sales-Shopping-1",
+   "sp": 20.03,
+   "cl": 50,
+   "cv": 0.0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-07",
    "n": "G1_Nov2026_Shopping_ManualCPC_ArmA",
-   "sp": 0.54,
-   "cl": 1,
+   "sp": 3.41,
+   "cl": 9,
    "cv": 0.0,
    "val": 0.0
   },
   {
    "d": "2026-11-07",
    "n": "G1_Nov2026_Shopping_MaxConvValue_ArmB",
-   "sp": 0.44,
-   "cl": 2,
+   "sp": 5.19,
+   "cl": 14,
    "cv": 0.0,
    "val": 0.0
   },
   {
    "d": "2026-11-07",
    "n": "G2_Nov2026_Search_LuxuryBrands_Exact",
-   "sp": 0.0,
-   "cl": 0,
+   "sp": 0.6,
+   "cl": 1,
    "cv": 0.0,
    "val": 0.0
+  },
+  {
+   "d": "2026-11-08",
+   "n": "Sales-Shopping-1",
+   "sp": 3.42,
+   "cl": 7,
+   "cv": 1.0,
+   "val": 39.8
   }
  ],
  "config": {
