@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09 09:56",
+ "generated": "2026-11-09 20:25",
  "start": "2022-08-01",
  "orders": [
   {
@@ -19416,6 +19416,40 @@
      1,
      91.05,
      42.8
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-09",
+   "c": "ES",
+   "g": 36.5,
+   "s": 5.9,
+   "k": 22.1,
+   "u": "e02dd6ad",
+   "r": 0,
+   "i": [
+    [
+     "Jab\u00f3n de lavander\u00eda para seda, lana y plum\u00f3n N\u00ba13, Botella 1L, HOME HEALTHY HOME",
+     1,
+     34.0,
+     22.1
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-09",
+   "c": "SE",
+   "g": 26.72,
+   "s": 6.27,
+   "k": 6.7,
+   "u": "7327caf3",
+   "r": 0,
+   "i": [
+    [
+     "Botella Poisson, C\u00f4t\u00e9 Table, 1,1 L",
+     1,
+     20.45,
+     6.7
     ]
    ]
   }
@@ -39382,16 +39416,22 @@
    "google_impr": 6015.0
   },
   "2026-11-09": {
-   "orders": 0.0,
-   "gross": 0.0,
-   "shipping_charged": 0.0,
-   "discounts": 0.0,
+   "orders": 2.0,
+   "gross": 63.22,
+   "tax": 11.6787,
+   "shipping_charged": 12.17,
+   "discounts": 3.4,
    "refunds": 0.0,
-   "cogs": 0.0,
-   "meta_spend": 2.34,
-   "meta_clicks": 9.0,
-   "meta_impr": 361.0,
-   "meta_vc": 16.0,
+   "cogs": 28.8,
+   "repeat_orders": 0.0,
+   "shopify_payments_amount": 63.22,
+   "shopify_payments_orders": 2.0,
+   "sp_fees": 2.75,
+   "meta_spend": 11.71,
+   "meta_clicks": 64.0,
+   "meta_impr": 1769.0,
+   "meta_atc": 2.0,
+   "meta_vc": 82.0,
    "google_spend": 1.0,
    "google_clicks": 2.0,
    "google_conv": 0.0,
@@ -54957,9 +54997,9 @@
   {
    "d": "2026-11-09",
    "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
-   "sp": 1.57,
-   "cl": 5,
-   "vc": 16,
+   "sp": 8.04,
+   "cl": 45,
+   "vc": 62,
    "atc": 0,
    "ic": 0,
    "cv": 0,
@@ -54968,10 +55008,10 @@
   {
    "d": "2026-11-09",
    "n": "M2_Nov2026_Retargeting_Warm_PanEU",
-   "sp": 0.77,
-   "cl": 4,
-   "vc": 0,
-   "atc": 0,
+   "sp": 3.67,
+   "cl": 19,
+   "vc": 20,
+   "atc": 2,
    "ic": 0,
    "cv": 0,
    "val": 0.0
