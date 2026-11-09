@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08 09:39",
+ "generated": "2026-11-09 09:27",
  "start": "2022-08-01",
  "orders": [
   {
@@ -19382,6 +19382,40 @@
      1,
      39.81,
      19.15
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-08",
+   "c": "SE",
+   "g": 49.16,
+   "s": 6.26,
+   "k": 19.03,
+   "u": "6e0c1fe0",
+   "r": 0,
+   "i": [
+    [
+     "Jarra Costa Nova, Pearl 2.9L",
+     1,
+     42.9,
+     19.03
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-08",
+   "c": "GB",
+   "g": 111.3,
+   "s": 20.25,
+   "k": 42.8,
+   "u": "e8d28f18",
+   "r": 0,
+   "i": [
+    [
+     "Hervidor El\u00e9ctrico de Doble Pared, Leaf 1700 ml",
+     1,
+     91.05,
+     42.8
     ]
    ]
   }
@@ -39314,37 +39348,55 @@
    "cogs": 0.0,
    "meta_spend": 15.56,
    "meta_clicks": 66.0,
-   "meta_impr": 2298.0,
+   "meta_impr": 2300.0,
    "meta_ic": 1.0,
    "meta_atc": 4.0,
    "meta_vc": 78.0,
-   "google_spend": 29.23,
-   "google_clicks": 74.0,
-   "google_conv": 0.0,
-   "google_value": 0.0,
+   "google_spend": 29.5,
+   "google_clicks": 75.0,
+   "google_conv": 0.6667,
+   "google_value": 28.5882,
    "google_impr": 8879.0
   },
   "2026-11-08": {
-   "orders": 1.0,
-   "gross": 46.07,
-   "tax": 9.214,
-   "shipping_charged": 6.26,
+   "orders": 3.0,
+   "gross": 206.53,
+   "tax": 19.046,
+   "shipping_charged": 32.77,
    "discounts": 0.0,
    "refunds": 0.0,
-   "cogs": 19.15,
+   "cogs": 80.98,
    "repeat_orders": 0.0,
-   "shopify_payments_amount": 46.07,
-   "shopify_payments_orders": 1.0,
-   "sp_fees": 3.55,
-   "meta_spend": 6.32,
-   "meta_clicks": 31.0,
-   "meta_impr": 982.0,
-   "meta_vc": 21.0,
-   "google_spend": 3.42,
-   "google_clicks": 7.0,
-   "google_conv": 1.0,
-   "google_value": 39.7998,
-   "google_impr": 364.0
+   "shopify_payments_amount": 206.53,
+   "shopify_payments_orders": 3.0,
+   "sp_fees": 11.89,
+   "meta_spend": 18.57,
+   "meta_clicks": 102.0,
+   "meta_impr": 2624.0,
+   "meta_atc": 4.0,
+   "meta_vc": 87.0,
+   "google_spend": 22.07,
+   "google_clicks": 65.0,
+   "google_conv": 2.3333,
+   "google_value": 145.1529,
+   "google_impr": 6015.0
+  },
+  "2026-11-09": {
+   "orders": 0.0,
+   "gross": 0.0,
+   "shipping_charged": 0.0,
+   "discounts": 0.0,
+   "refunds": 0.0,
+   "cogs": 0.0,
+   "meta_spend": 1.97,
+   "meta_clicks": 8.0,
+   "meta_impr": 320.0,
+   "meta_vc": 16.0,
+   "google_spend": 1.0,
+   "google_clicks": 2.0,
+   "google_conv": 0.0,
+   "google_value": 0.0,
+   "google_impr": 235.0
   }
  },
  "meta_campaigns": [
@@ -54883,9 +54935,9 @@
   {
    "d": "2026-11-08",
    "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
-   "sp": 4.68,
-   "cl": 18,
-   "vc": 17,
+   "sp": 14.07,
+   "cl": 68,
+   "vc": 56,
    "atc": 0,
    "ic": 0,
    "cv": 0,
@@ -54894,9 +54946,31 @@
   {
    "d": "2026-11-08",
    "n": "M2_Nov2026_Retargeting_Warm_PanEU",
-   "sp": 1.64,
-   "cl": 13,
-   "vc": 4,
+   "sp": 4.5,
+   "cl": 34,
+   "vc": 31,
+   "atc": 4,
+   "ic": 0,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-09",
+   "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
+   "sp": 1.23,
+   "cl": 4,
+   "vc": 16,
+   "atc": 0,
+   "ic": 0,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-09",
+   "n": "M2_Nov2026_Retargeting_Warm_PanEU",
+   "sp": 0.74,
+   "cl": 4,
+   "vc": 0,
    "atc": 0,
    "ic": 0,
    "cv": 0,
@@ -55347,10 +55421,10 @@
   {
    "d": "2026-11-07",
    "n": "Sales-Shopping-1",
-   "sp": 20.03,
-   "cl": 50,
-   "cv": 0.0,
-   "val": 0.0
+   "sp": 20.3,
+   "cl": 51,
+   "cv": 0.67,
+   "val": 28.59
   },
   {
    "d": "2026-11-07",
@@ -55379,10 +55453,18 @@
   {
    "d": "2026-11-08",
    "n": "Sales-Shopping-1",
-   "sp": 3.42,
-   "cl": 7,
-   "cv": 1.0,
-   "val": 39.8
+   "sp": 22.07,
+   "cl": 65,
+   "cv": 2.33,
+   "val": 145.15
+  },
+  {
+   "d": "2026-11-09",
+   "n": "Sales-Shopping-1",
+   "sp": 1.0,
+   "cl": 2,
+   "cv": 0.0,
+   "val": 0.0
   }
  ],
  "config": {
