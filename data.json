@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09 20:25",
+ "generated": "2026-11-10 09:12",
  "start": "2022-08-01",
  "orders": [
   {
@@ -19450,6 +19450,23 @@
      1,
      20.45,
      6.7
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-09",
+   "c": "ES",
+   "g": 37.4,
+   "s": 5.9,
+   "k": 16.0,
+   "u": "0fdb1ea7",
+   "r": 0,
+   "i": [
+    [
+     "Tetera Artesanal, Leaf 1,5L",
+     1,
+     35.0,
+     16.0
     ]
    ]
   }
@@ -39353,7 +39370,7 @@
    "google_clicks": 46.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 4921.0
+   "google_impr": 4919.0
   },
   "2026-11-06": {
    "orders": 0.0,
@@ -39406,37 +39423,55 @@
    "sp_fees": 11.89,
    "meta_spend": 18.57,
    "meta_clicks": 102.0,
-   "meta_impr": 2624.0,
+   "meta_impr": 2625.0,
    "meta_atc": 4.0,
    "meta_vc": 87.0,
    "google_spend": 22.07,
    "google_clicks": 65.0,
    "google_conv": 2.3333,
    "google_value": 145.1529,
-   "google_impr": 6015.0
+   "google_impr": 6014.0
   },
   "2026-11-09": {
-   "orders": 2.0,
-   "gross": 63.22,
-   "tax": 11.6787,
-   "shipping_charged": 12.17,
-   "discounts": 3.4,
+   "orders": 3.0,
+   "gross": 100.62,
+   "tax": 18.1696,
+   "shipping_charged": 18.07,
+   "discounts": 6.9,
    "refunds": 0.0,
-   "cogs": 28.8,
+   "cogs": 44.8,
    "repeat_orders": 0.0,
-   "shopify_payments_amount": 63.22,
-   "shopify_payments_orders": 2.0,
-   "sp_fees": 2.75,
-   "meta_spend": 11.71,
-   "meta_clicks": 64.0,
-   "meta_impr": 1769.0,
+   "shopify_payments_amount": 100.62,
+   "shopify_payments_orders": 3.0,
+   "sp_fees": 3.84,
+   "meta_spend": 15.25,
+   "meta_clicks": 80.0,
+   "meta_impr": 2341.0,
    "meta_atc": 2.0,
-   "meta_vc": 82.0,
-   "google_spend": 1.0,
+   "meta_vc": 107.0,
+   "google_spend": 19.67,
+   "google_clicks": 49.0,
+   "google_conv": 3.0,
+   "google_value": 82.5036,
+   "google_impr": 3734.0
+  },
+  "2026-11-10": {
+   "orders": 0.0,
+   "gross": 0.0,
+   "shipping_charged": 0.0,
+   "discounts": 0.0,
+   "refunds": 0.0,
+   "cogs": 0.0,
+   "meta_spend": 3.66,
+   "meta_clicks": 17.0,
+   "meta_impr": 511.0,
+   "meta_atc": 2.0,
+   "meta_vc": 10.0,
+   "google_spend": 0.66,
    "google_clicks": 2.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 235.0
+   "google_impr": 210.0
   }
  },
  "meta_campaigns": [
@@ -54997,9 +55032,9 @@
   {
    "d": "2026-11-09",
    "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
-   "sp": 8.04,
-   "cl": 45,
-   "vc": 62,
+   "sp": 10.86,
+   "cl": 57,
+   "vc": 80,
    "atc": 0,
    "ic": 0,
    "cv": 0,
@@ -55008,9 +55043,31 @@
   {
    "d": "2026-11-09",
    "n": "M2_Nov2026_Retargeting_Warm_PanEU",
-   "sp": 3.67,
-   "cl": 19,
-   "vc": 20,
+   "sp": 4.39,
+   "cl": 23,
+   "vc": 27,
+   "atc": 2,
+   "ic": 0,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-10",
+   "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
+   "sp": 2.43,
+   "cl": 10,
+   "vc": 8,
+   "atc": 0,
+   "ic": 0,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-10",
+   "n": "M2_Nov2026_Retargeting_Warm_PanEU",
+   "sp": 1.23,
+   "cl": 7,
+   "vc": 2,
    "atc": 2,
    "ic": 0,
    "cv": 0,
@@ -55501,7 +55558,15 @@
   {
    "d": "2026-11-09",
    "n": "Sales-Shopping-1",
-   "sp": 1.0,
+   "sp": 19.67,
+   "cl": 49,
+   "cv": 3.0,
+   "val": 82.5
+  },
+  {
+   "d": "2026-11-10",
+   "n": "Sales-Shopping-1",
+   "sp": 0.66,
    "cl": 2,
    "cv": 0.0,
    "val": 0.0
