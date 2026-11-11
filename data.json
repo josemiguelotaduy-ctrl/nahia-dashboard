@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10 09:47",
+ "generated": "2026-11-11 09:17",
  "start": "2022-08-01",
  "orders": [
   {
@@ -19467,6 +19467,40 @@
      1,
      35.0,
      16.0
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-10",
+   "c": "US",
+   "g": 172.16,
+   "s": 133.66,
+   "k": 18.6,
+   "u": "0ba900c1",
+   "r": 0,
+   "i": [
+    [
+     "Vaso agua \"Abeille\", 260 ml",
+     6,
+     42.78,
+     18.6
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-10",
+   "c": "HR",
+   "g": 73.4,
+   "s": 5.9,
+   "k": 32.5,
+   "u": "56f54846",
+   "r": 0,
+   "i": [
+    [
+     "Abanico de Lino Milos, The Viana Fan",
+     1,
+     75.0,
+     32.5
     ]
    ]
   }
@@ -39407,7 +39441,7 @@
    "google_clicks": 75.0,
    "google_conv": 0.6667,
    "google_value": 28.5882,
-   "google_impr": 8879.0
+   "google_impr": 8878.0
   },
   "2026-11-08": {
    "orders": 3.0,
@@ -39430,7 +39464,7 @@
    "google_clicks": 65.0,
    "google_conv": 2.3333,
    "google_value": 145.1529,
-   "google_impr": 6014.0
+   "google_impr": 6011.0
   },
   "2026-11-09": {
    "orders": 3.0,
@@ -39446,7 +39480,7 @@
    "sp_fees": 3.84,
    "meta_spend": 15.25,
    "meta_clicks": 80.0,
-   "meta_impr": 2343.0,
+   "meta_impr": 2346.0,
    "meta_atc": 2.0,
    "meta_vc": 107.0,
    "google_spend": 19.67,
@@ -39456,22 +39490,45 @@
    "google_impr": 3734.0
   },
   "2026-11-10": {
+   "orders": 2.0,
+   "gross": 245.56,
+   "tax": 14.68,
+   "shipping_charged": 139.56,
+   "discounts": 11.78,
+   "refunds": 0.0,
+   "cogs": 51.1,
+   "repeat_orders": 0.0,
+   "paypal_amount": 245.56,
+   "paypal_orders": 2.0,
+   "paypal_fees": 12.23,
+   "meta_spend": 17.2,
+   "meta_clicks": 76.0,
+   "meta_impr": 2729.0,
+   "meta_atc": 2.0,
+   "meta_vc": 61.0,
+   "google_spend": 10.36,
+   "google_clicks": 34.0,
+   "google_conv": 0.0,
+   "google_value": 0.0,
+   "google_impr": 2932.0
+  },
+  "2026-11-11": {
    "orders": 0.0,
    "gross": 0.0,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
    "cogs": 0.0,
-   "meta_spend": 4.26,
-   "meta_clicks": 22.0,
-   "meta_impr": 605.0,
+   "meta_spend": 3.5,
+   "meta_clicks": 18.0,
+   "meta_impr": 776.0,
    "meta_atc": 2.0,
-   "meta_vc": 12.0,
-   "google_spend": 0.66,
-   "google_clicks": 2.0,
+   "meta_vc": 24.0,
+   "google_spend": 2.52,
+   "google_clicks": 5.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 210.0
+   "google_impr": 248.0
   }
  },
  "meta_campaigns": [
@@ -55054,9 +55111,9 @@
   {
    "d": "2026-11-10",
    "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
-   "sp": 2.91,
-   "cl": 14,
-   "vc": 10,
+   "sp": 12.56,
+   "cl": 54,
+   "vc": 52,
    "atc": 0,
    "ic": 0,
    "cv": 0,
@@ -55065,10 +55122,32 @@
   {
    "d": "2026-11-10",
    "n": "M2_Nov2026_Retargeting_Warm_PanEU",
-   "sp": 1.35,
-   "cl": 8,
-   "vc": 2,
+   "sp": 4.64,
+   "cl": 22,
+   "vc": 9,
    "atc": 2,
+   "ic": 0,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-11",
+   "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
+   "sp": 2.72,
+   "cl": 15,
+   "vc": 24,
+   "atc": 2,
+   "ic": 0,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-11",
+   "n": "M2_Nov2026_Retargeting_Warm_PanEU",
+   "sp": 0.78,
+   "cl": 3,
+   "vc": 0,
+   "atc": 0,
    "ic": 0,
    "cv": 0,
    "val": 0.0
@@ -55566,8 +55645,16 @@
   {
    "d": "2026-11-10",
    "n": "Sales-Shopping-1",
-   "sp": 0.66,
-   "cl": 2,
+   "sp": 10.36,
+   "cl": 34,
+   "cv": 0.0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-11",
+   "n": "Sales-Shopping-1",
+   "sp": 2.52,
+   "cl": 5,
    "cv": 0.0,
    "val": 0.0
   }
