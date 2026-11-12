@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11 09:45",
+ "generated": "2026-11-12 09:20",
  "start": "2022-08-01",
  "orders": [
   {
@@ -19501,6 +19501,29 @@
      1,
      75.0,
      32.5
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-11",
+   "c": "ES",
+   "g": 91.4,
+   "s": 5.9,
+   "k": 43.0,
+   "u": "7b241392",
+   "r": 0,
+   "i": [
+    [
+     "Set de riego con boquilla de lat\u00f3n, LIVLIG",
+     1,
+     45.0,
+     20.0
+    ],
+    [
+     "Rociador de Flores, LIVLIG",
+     1,
+     50.0,
+     23.0
     ]
    ]
   }
@@ -39464,7 +39487,7 @@
    "google_clicks": 65.0,
    "google_conv": 2.3333,
    "google_value": 145.1529,
-   "google_impr": 6011.0
+   "google_impr": 6009.0
   },
   "2026-11-09": {
    "orders": 3.0,
@@ -39503,7 +39526,7 @@
    "paypal_fees": 12.23,
    "meta_spend": 17.2,
    "meta_clicks": 76.0,
-   "meta_impr": 2729.0,
+   "meta_impr": 2730.0,
    "meta_atc": 2.0,
    "meta_vc": 61.0,
    "google_spend": 10.36,
@@ -39513,22 +39536,47 @@
    "google_impr": 2932.0
   },
   "2026-11-11": {
+   "orders": 1.0,
+   "gross": 91.4,
+   "tax": 15.8628,
+   "shipping_charged": 5.9,
+   "discounts": 9.5,
+   "refunds": 0.0,
+   "cogs": 43.0,
+   "repeat_orders": 0.0,
+   "shopify_payments_amount": 91.4,
+   "shopify_payments_orders": 1.0,
+   "sp_fees": 4.91,
+   "meta_spend": 14.95,
+   "meta_clicks": 65.0,
+   "meta_impr": 2536.0,
+   "meta_conv": 1.0,
+   "meta_ic": 1.0,
+   "meta_atc": 6.0,
+   "meta_vc": 80.0,
+   "meta_value": 91.4,
+   "google_spend": 22.72,
+   "google_clicks": 64.0,
+   "google_conv": 0.0,
+   "google_value": 0.0,
+   "google_impr": 4146.0
+  },
+  "2026-11-12": {
    "orders": 0.0,
    "gross": 0.0,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
    "cogs": 0.0,
-   "meta_spend": 4.16,
-   "meta_clicks": 20.0,
-   "meta_impr": 862.0,
-   "meta_atc": 2.0,
-   "meta_vc": 24.0,
-   "google_spend": 2.52,
-   "google_clicks": 5.0,
+   "meta_spend": 3.08,
+   "meta_clicks": 18.0,
+   "meta_impr": 516.0,
+   "meta_vc": 18.0,
+   "google_spend": 1.29,
+   "google_clicks": 3.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 248.0
+   "google_impr": 318.0
   }
  },
  "meta_campaigns": [
@@ -55133,9 +55181,9 @@
   {
    "d": "2026-11-11",
    "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
-   "sp": 3.34,
-   "cl": 17,
-   "vc": 24,
+   "sp": 10.28,
+   "cl": 45,
+   "vc": 60,
    "atc": 2,
    "ic": 0,
    "cv": 0,
@@ -55144,9 +55192,31 @@
   {
    "d": "2026-11-11",
    "n": "M2_Nov2026_Retargeting_Warm_PanEU",
-   "sp": 0.82,
-   "cl": 3,
-   "vc": 0,
+   "sp": 4.67,
+   "cl": 20,
+   "vc": 20,
+   "atc": 4,
+   "ic": 1,
+   "cv": 1,
+   "val": 91.4
+  },
+  {
+   "d": "2026-11-12",
+   "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
+   "sp": 1.39,
+   "cl": 10,
+   "vc": 11,
+   "atc": 0,
+   "ic": 0,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-12",
+   "n": "M2_Nov2026_Retargeting_Warm_PanEU",
+   "sp": 1.8,
+   "cl": 8,
+   "vc": 7,
    "atc": 0,
    "ic": 0,
    "cv": 0,
@@ -55653,8 +55723,16 @@
   {
    "d": "2026-11-11",
    "n": "Sales-Shopping-1",
-   "sp": 2.52,
-   "cl": 5,
+   "sp": 22.72,
+   "cl": 64,
+   "cv": 0.0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-12",
+   "n": "Sales-Shopping-1",
+   "sp": 1.29,
+   "cl": 3,
    "cv": 0.0,
    "val": 0.0
   }
