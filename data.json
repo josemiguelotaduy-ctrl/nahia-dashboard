@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13 09:19",
+ "generated": "2026-11-13 09:47",
  "start": "2022-08-01",
  "orders": [
   {
@@ -39598,7 +39598,7 @@
    "sp_fees": 4.49,
    "meta_spend": 10.97,
    "meta_clicks": 52.0,
-   "meta_impr": 1747.0,
+   "meta_impr": 1748.0,
    "meta_conv": 1.0,
    "meta_ic": 2.0,
    "meta_vc": 56.0,
