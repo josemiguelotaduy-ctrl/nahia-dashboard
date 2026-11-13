@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12 09:49",
+ "generated": "2026-11-13 09:19",
  "start": "2022-08-01",
  "orders": [
   {
@@ -19524,6 +19524,29 @@
      1,
      50.0,
      23.0
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-12",
+   "c": "GR",
+   "g": 82.9,
+   "s": 5.9,
+   "k": 33.28,
+   "u": "d731994d",
+   "r": 0,
+   "i": [
+    [
+     "Regadera con Pico Largo, 900 ml",
+     1,
+     29.0,
+     12.34
+    ],
+    [
+     "Copa de vino \"Abeille\", 240 ml",
+     6,
+     48.0,
+     20.94
     ]
    ]
   }
@@ -39510,7 +39533,7 @@
    "google_clicks": 49.0,
    "google_conv": 3.0,
    "google_value": 82.5036,
-   "google_impr": 3734.0
+   "google_impr": 3733.0
   },
   "2026-11-10": {
    "orders": 2.0,
@@ -39533,7 +39556,7 @@
    "google_clicks": 34.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 2932.0
+   "google_impr": 2931.0
   },
   "2026-11-11": {
    "orders": 1.0,
@@ -39562,21 +39585,42 @@
    "google_impr": 4146.0
   },
   "2026-11-12": {
+   "orders": 1.0,
+   "gross": 82.9,
+   "tax": 16.0452,
+   "shipping_charged": 5.9,
+   "discounts": 0.0,
+   "refunds": 0.0,
+   "cogs": 33.28,
+   "repeat_orders": 0.0,
+   "shopify_payments_amount": 82.9,
+   "shopify_payments_orders": 1.0,
+   "sp_fees": 4.49,
+   "meta_spend": 10.97,
+   "meta_clicks": 52.0,
+   "meta_impr": 1747.0,
+   "meta_conv": 1.0,
+   "meta_ic": 2.0,
+   "meta_vc": 56.0,
+   "meta_value": 82.9,
+   "google_spend": 22.44,
+   "google_clicks": 51.0,
+   "google_conv": 0.0,
+   "google_value": 0.0,
+   "google_impr": 4028.0
+  },
+  "2026-11-13": {
    "orders": 0.0,
    "gross": 0.0,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
    "cogs": 0.0,
-   "meta_spend": 3.8,
-   "meta_clicks": 19.0,
-   "meta_impr": 598.0,
-   "meta_vc": 18.0,
-   "google_spend": 1.29,
+   "google_spend": 1.5,
    "google_clicks": 3.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 318.0
+   "google_impr": 298.0
   }
  },
  "meta_campaigns": [
@@ -55203,9 +55247,9 @@
   {
    "d": "2026-11-12",
    "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
-   "sp": 1.87,
-   "cl": 10,
-   "vc": 11,
+   "sp": 5.82,
+   "cl": 27,
+   "vc": 35,
    "atc": 0,
    "ic": 0,
    "cv": 0,
@@ -55214,13 +55258,13 @@
   {
    "d": "2026-11-12",
    "n": "M2_Nov2026_Retargeting_Warm_PanEU",
-   "sp": 1.93,
-   "cl": 9,
-   "vc": 7,
+   "sp": 5.15,
+   "cl": 25,
+   "vc": 21,
    "atc": 0,
-   "ic": 0,
-   "cv": 0,
-   "val": 0.0
+   "ic": 2,
+   "cv": 1,
+   "val": 82.9
   }
  ],
  "google_campaigns": [
@@ -55731,7 +55775,15 @@
   {
    "d": "2026-11-12",
    "n": "Sales-Shopping-1",
-   "sp": 1.29,
+   "sp": 22.44,
+   "cl": 51,
+   "cv": 0.0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-13",
+   "n": "Sales-Shopping-1",
+   "sp": 1.5,
    "cl": 3,
    "cv": 0.0,
    "val": 0.0
