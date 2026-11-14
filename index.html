@@ -365,11 +365,17 @@ async function sha256(str){
   return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
 }
 const VALID_PNL = [
+  "8a5d438a1a7fbf354c43b08668bbc5c350566454cdd756fd1d1aa04c43bdd72c", // Esperanza26
+  "63c57975163ee6a977b657bda190ae0ac927dd341bfda6584cd1922561987e41", // esperanza26
+  "b83dc330dab18d589011b5ab637d997011270b1b3cf8a3fa76f92901858d3dad", // nahiajose26
+  "4b169e92fb51178c90065079408f584a56cdf9f0aefbd08aaac79577e042b63f", // Nahiajose26
+  "3ba6235aed4391d574ccdf945d7d7c694823aa6ab47b3a85e0018e363136dd32", // nahiajose2026
+  "72464de6614d2c2b78668f1479f6ff265a5a05d52d7ba65f7f51935f7e186528", // Nahiajose2026
   "3f9fe0cf8466ed9e8e396636892f82d9e7e26b86c974f012efa21dd85d87296d", // nahia2026
   "8961fada71905662d5c797ed24ce9060935413c0f2f8b9d3787ad0e1ed5141a1"  // Nahia2026
 ];
 async function checkAuth(){
-  const saved = localStorage.getItem("nahia_pnl_auth") || localStorage.getItem("nahia_auth");
+  const saved = localStorage.getItem("nahia_pnl_auth") || localStorage.getItem("nahia_portal_auth") || localStorage.getItem("nahia_ads_auth") || localStorage.getItem("nahia_auth");
   if(VALID_PNL.includes(saved)){
     document.getElementById("loginOverlay").style.display = "none";
   } else {
@@ -380,9 +386,13 @@ async function handleLogin(e){
   e.preventDefault();
   const val = document.getElementById("pwdInput").value.trim();
   const hash = await sha256(val);
-  if(VALID_PNL.includes(hash)){
-    localStorage.setItem("nahia_pnl_auth", hash);
-    localStorage.setItem("nahia_auth", hash);
+  const hashLower = await sha256(val.toLowerCase());
+  const matched = VALID_PNL.includes(hash) ? hash : (VALID_PNL.includes(hashLower) ? hashLower : null);
+  if(matched){
+    localStorage.setItem("nahia_pnl_auth", matched);
+    localStorage.setItem("nahia_portal_auth", matched);
+    localStorage.setItem("nahia_ads_auth", matched);
+    localStorage.setItem("nahia_auth", matched);
     document.getElementById("loginOverlay").style.display = "none";
   } else {
     document.getElementById("loginErr").style.display = "block";
