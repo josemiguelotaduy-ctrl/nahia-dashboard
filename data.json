@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-14 09:39",
+ "generated": "2026-11-14 17:26",
  "start": "2022-08-01",
  "orders": [
   {
@@ -19547,6 +19547,98 @@
      6,
      48.0,
      20.94
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-14",
+   "c": "GB",
+   "g": 81.37,
+   "s": 20.25,
+   "k": 24.5,
+   "u": "09fe05da",
+   "r": 0,
+   "i": [
+    [
+     "Kit Esencial para Amantes de Mariscos",
+     1,
+     61.12,
+     24.5
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-14",
+   "c": "ES",
+   "g": 31.1,
+   "s": 5.9,
+   "k": 12.8,
+   "u": "1786345a",
+   "r": 0,
+   "i": [
+    [
+     "Ensaladera Perloa 21 cm, C\u00f4t\u00e9 Table",
+     1,
+     20.0,
+     9.7
+    ],
+    [
+     "Bol de vidrio C\u00f4t\u00e9 Table, Perloa, 13 cm",
+     1,
+     8.0,
+     3.1
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-14",
+   "c": "GB",
+   "g": 103.55,
+   "s": 0.0,
+   "k": 46.94,
+   "u": "e861e1ca",
+   "r": 0,
+   "i": [
+    [
+     "Puzle Dinner with Monet 1000 piezas, Thames & Hudson",
+     1,
+     33.56,
+     12.84
+    ],
+    [
+     "Esmalte de u\u00f1as Old Rose, MANUCURIST 15ml",
+     1,
+     14.38,
+     7.0
+    ],
+    [
+     "Ajedrez Cl\u00e1sico, Printworks",
+     1,
+     67.12,
+     27.1
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-14",
+   "c": "GR",
+   "g": 65.9,
+   "s": 5.9,
+   "k": 26.35,
+   "u": "2ffbb026",
+   "r": 1,
+   "i": [
+    [
+     "Puzle Dinner with Monet 1000 piezas, Thames & Hudson",
+     1,
+     32.0,
+     12.84
+    ],
+    [
+     "Puzle Sea Life 1000 piezas, John Derian",
+     1,
+     28.0,
+     13.51
     ]
    ]
   }
@@ -39623,12 +39715,22 @@
    "google_impr": 5591.0
   },
   "2026-11-14": {
-   "orders": 0.0,
-   "gross": 0.0,
-   "shipping_charged": 0.0,
-   "discounts": 0.0,
+   "orders": 4.0,
+   "gross": 281.92,
+   "tax": 18.1523,
+   "shipping_charged": 32.05,
+   "discounts": 14.31,
    "refunds": 0.0,
-   "cogs": 0.0,
+   "cogs": 110.59,
+   "repeat_orders": 1.0,
+   "shopify_payments_amount": 281.92,
+   "shopify_payments_orders": 4.0,
+   "sp_fees": 12.75,
+   "meta_spend": 8.09,
+   "meta_clicks": 42.0,
+   "meta_impr": 950.0,
+   "meta_atc": 6.0,
+   "meta_vc": 37.0,
    "google_spend": 2.4,
    "google_clicks": 5.0,
    "google_conv": 0.0,
@@ -55278,6 +55380,17 @@
    "ic": 2,
    "cv": 1,
    "val": 82.9
+  },
+  {
+   "d": "2026-11-14",
+   "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
+   "sp": 8.09,
+   "cl": 42,
+   "vc": 37,
+   "atc": 6,
+   "ic": 0,
+   "cv": 0,
+   "val": 0.0
   }
  ],
  "google_campaigns": [
