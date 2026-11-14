@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13 09:47",
+ "generated": "2026-11-14 08:58",
  "start": "2022-08-01",
  "orders": [
   {
@@ -39556,7 +39556,7 @@
    "google_clicks": 34.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 2931.0
+   "google_impr": 2930.0
   },
   "2026-11-11": {
    "orders": 1.0,
@@ -39578,8 +39578,8 @@
    "meta_atc": 6.0,
    "meta_vc": 80.0,
    "meta_value": 91.4,
-   "google_spend": 22.72,
-   "google_clicks": 64.0,
+   "google_spend": 22.51,
+   "google_clicks": 62.0,
    "google_conv": 0.0,
    "google_value": 0.0,
    "google_impr": 4146.0
@@ -39616,11 +39616,24 @@
    "discounts": 0.0,
    "refunds": 0.0,
    "cogs": 0.0,
-   "google_spend": 1.5,
-   "google_clicks": 3.0,
+   "google_spend": 16.19,
+   "google_clicks": 55.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 298.0
+   "google_impr": 5591.0
+  },
+  "2026-11-14": {
+   "orders": 0.0,
+   "gross": 0.0,
+   "shipping_charged": 0.0,
+   "discounts": 0.0,
+   "refunds": 0.0,
+   "cogs": 0.0,
+   "google_spend": 2.4,
+   "google_clicks": 5.0,
+   "google_conv": 0.0,
+   "google_value": 0.0,
+   "google_impr": 383.0
   }
  },
  "meta_campaigns": [
@@ -55767,8 +55780,8 @@
   {
    "d": "2026-11-11",
    "n": "Sales-Shopping-1",
-   "sp": 22.72,
-   "cl": 64,
+   "sp": 22.51,
+   "cl": 62,
    "cv": 0.0,
    "val": 0.0
   },
@@ -55783,8 +55796,16 @@
   {
    "d": "2026-11-13",
    "n": "Sales-Shopping-1",
-   "sp": 1.5,
-   "cl": 3,
+   "sp": 16.19,
+   "cl": 55,
+   "cv": 0.0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-14",
+   "n": "Sales-Shopping-1",
+   "sp": 2.4,
+   "cl": 5,
    "cv": 0.0,
    "val": 0.0
   }
