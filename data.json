@@ -39895,7 +39895,7 @@
    "meta_atc": 7.0,
    "meta_vc": 59.0,
    "meta_value": 41.9,
-   "google_spend": 5.17,
+   "google_spend": 21.9,
    "google_clicks": 5.0,
    "google_conv": 0.0,
    "google_value": 0.0,
@@ -56114,7 +56114,7 @@
   {
    "d": "2026-11-15",
    "n": "Sales-Shopping-1",
-   "sp": 5.17,
+   "sp": 21.9,
    "cl": 5,
    "cv": 0.0,
    "val": 0.0
