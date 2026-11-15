@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-14 17:26",
+ "generated": "2026-11-15 09:03",
  "start": "2022-08-01",
  "orders": [
   {
@@ -19641,6 +19641,40 @@
      13.51
     ]
    ]
+  },
+  {
+   "d": "2026-11-14",
+   "c": "FR",
+   "g": 15.9,
+   "s": 5.9,
+   "k": 5.59,
+   "u": "55a0fa69",
+   "r": 0,
+   "i": [
+    [
+     "Cuenco Sopa / Cereales Costa Nova, PEARL 16cm",
+     1,
+     10.0,
+     5.59
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-14",
+   "c": "PT",
+   "g": 23.9,
+   "s": 5.9,
+   "k": 9.7,
+   "u": "cd60ae31",
+   "r": 0,
+   "i": [
+    [
+     "Ensaladera Perloa 21 cm, C\u00f4t\u00e9 Table",
+     1,
+     20.0,
+     9.7
+    ]
+   ]
   }
  ],
  "days": {
@@ -38022,12 +38056,7 @@
    "meta_impr": 5489.0,
    "meta_ic": 1.0,
    "meta_atc": 7.0,
-   "meta_vc": 107.0,
-   "google_spend": 12.3235,
-   "google_clicks": 36.0,
-   "google_conv": 0.0,
-   "google_value": 0.0,
-   "google_impr": 2401.0
+   "meta_vc": 107.0
   },
   "2026-08-17": {
    "orders": 4.0,
@@ -39514,8 +39543,8 @@
    "meta_value": 35.9,
    "google_spend": 15.74,
    "google_clicks": 35.0,
-   "google_conv": 1.0,
-   "google_value": 137.0,
+   "google_conv": 2.0,
+   "google_value": 222.5,
    "google_impr": 2762.0
   },
   "2026-11-05": {
@@ -39715,27 +39744,51 @@
    "google_impr": 5591.0
   },
   "2026-11-14": {
-   "orders": 4.0,
-   "gross": 281.92,
-   "tax": 18.1523,
-   "shipping_charged": 32.05,
-   "discounts": 14.31,
+   "orders": 6.0,
+   "gross": 321.72,
+   "tax": 25.2714,
+   "shipping_charged": 43.85,
+   "discounts": 16.31,
    "refunds": 0.0,
-   "cogs": 110.59,
+   "cogs": 125.88,
    "repeat_orders": 1.0,
-   "shopify_payments_amount": 281.92,
-   "shopify_payments_orders": 4.0,
-   "sp_fees": 12.75,
-   "meta_spend": 8.09,
-   "meta_clicks": 42.0,
-   "meta_impr": 950.0,
+   "shopify_payments_amount": 305.82,
+   "shopify_payments_orders": 5.0,
+   "paypal_amount": 15.9,
+   "paypal_orders": 1.0,
+   "sp_fees": 13.55,
+   "paypal_fees": 0.81,
+   "meta_spend": 20.73,
+   "meta_clicks": 117.0,
+   "meta_impr": 2606.0,
+   "meta_conv": 1.0,
+   "meta_ic": 1.0,
+   "meta_atc": 13.0,
+   "meta_vc": 94.0,
+   "meta_value": 23.9,
+   "google_spend": 25.54,
+   "google_clicks": 64.0,
+   "google_conv": 2.0,
+   "google_value": 113.4987,
+   "google_impr": 6677.0
+  },
+  "2026-11-15": {
+   "orders": 0.0,
+   "gross": 0.0,
+   "shipping_charged": 0.0,
+   "discounts": 0.0,
+   "refunds": 0.0,
+   "cogs": 0.0,
+   "meta_spend": 4.47,
+   "meta_clicks": 24.0,
+   "meta_impr": 638.0,
    "meta_atc": 6.0,
-   "meta_vc": 37.0,
-   "google_spend": 2.4,
+   "meta_vc": 25.0,
+   "google_spend": 5.17,
    "google_clicks": 5.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 383.0
+   "google_impr": 137.0
   }
  },
  "meta_campaigns": [
@@ -55384,24 +55437,49 @@
   {
    "d": "2026-11-14",
    "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
-   "sp": 8.09,
-   "cl": 42,
-   "vc": 37,
+   "sp": 11.73,
+   "cl": 61,
+   "vc": 68,
    "atc": 6,
+   "ic": 0,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-14",
+   "n": "M2_Nov2026_Retargeting_Warm_PanEU",
+   "sp": 9.0,
+   "cl": 56,
+   "vc": 26,
+   "atc": 7,
+   "ic": 1,
+   "cv": 1,
+   "val": 23.9
+  },
+  {
+   "d": "2026-11-15",
+   "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
+   "sp": 2.45,
+   "cl": 13,
+   "vc": 15,
+   "atc": 4,
+   "ic": 0,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-15",
+   "n": "M2_Nov2026_Retargeting_Warm_PanEU",
+   "sp": 2.17,
+   "cl": 11,
+   "vc": 10,
+   "atc": 2,
    "ic": 0,
    "cv": 0,
    "val": 0.0
   }
  ],
  "google_campaigns": [
-  {
-   "d": "2026-08-16",
-   "n": "PMAX",
-   "sp": 12.32,
-   "cl": 36,
-   "cv": 0.0,
-   "val": 0.0
-  },
   {
    "d": "2026-08-17",
    "n": "PMAX",
@@ -55775,8 +55853,8 @@
    "n": "G1_Nov2026_Shopping_MaxConvValue_ArmB",
    "sp": 6.99,
    "cl": 13,
-   "cv": 1.0,
-   "val": 137.0
+   "cv": 2.0,
+   "val": 222.5
   },
   {
    "d": "2026-11-04",
@@ -55917,7 +55995,15 @@
   {
    "d": "2026-11-14",
    "n": "Sales-Shopping-1",
-   "sp": 2.4,
+   "sp": 25.54,
+   "cl": 64,
+   "cv": 2.0,
+   "val": 113.5
+  },
+  {
+   "d": "2026-11-15",
+   "n": "Sales-Shopping-1",
+   "sp": 5.17,
    "cl": 5,
    "cv": 0.0,
    "val": 0.0
