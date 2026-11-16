@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15 20:24",
+ "generated": "2026-11-16 10:39",
  "start": "2022-08-01",
  "orders": [
   {
@@ -19473,17 +19473,17 @@
   {
    "d": "2026-11-10",
    "c": "US",
-   "g": 172.16,
+   "g": 0.0,
    "s": 133.66,
-   "k": 18.6,
+   "k": 0.0,
    "u": "0ba900c1",
    "r": 0,
    "i": [
     [
      "Vaso agua \"Abeille\", 260 ml",
-     6,
-     42.78,
-     18.6
+     0,
+     0.0,
+     0.0
     ]
    ]
   },
@@ -19776,6 +19776,23 @@
      1,
      34.0,
      14.0
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-16",
+   "c": "ES",
+   "g": 108.0,
+   "s": 0.0,
+   "k": 70.27,
+   "u": "6d49ffce",
+   "r": 0,
+   "i": [
+    [
+     "Jazz Kissa \u2014 The Soul of Japanese Listening Culture",
+     1,
+     120.0,
+     70.27
     ]
    ]
   }
@@ -38177,12 +38194,7 @@
    "meta_clicks": 104.0,
    "meta_impr": 3835.0,
    "meta_atc": 9.0,
-   "meta_vc": 69.0,
-   "google_spend": 34.5513,
-   "google_clicks": 92.0,
-   "google_conv": 2.0,
-   "google_value": 46.6,
-   "google_impr": 8461.0
+   "meta_vc": 69.0
   },
   "2026-08-18": {
    "orders": 1.0,
@@ -39768,7 +39780,7 @@
    "refunds": 0.0,
    "cogs": 51.1,
    "repeat_orders": 0.0,
-   "paypal_amount": 245.56,
+   "paypal_amount": 73.4,
    "paypal_orders": 2.0,
    "paypal_fees": 12.23,
    "meta_spend": 17.2,
@@ -39873,33 +39885,55 @@
    "google_clicks": 64.0,
    "google_conv": 2.0,
    "google_value": 113.4987,
-   "google_impr": 6677.0
+   "google_impr": 6676.0
   },
   "2026-11-15": {
    "orders": 5.0,
-   "gross": 441.64,
+   "gross": 269.48,
    "tax": 60.3887,
-   "shipping_charged": 11.8,
+   "shipping_charged": -121.86,
    "discounts": 14.4,
-   "refunds": 0.0,
-   "cogs": 217.72,
+   "refunds": 38.5,
+   "cogs": 199.12,
    "repeat_orders": 0.0,
    "shopify_payments_amount": 441.64,
    "shopify_payments_orders": 5.0,
    "sp_fees": 14.14,
-   "meta_spend": 13.83,
-   "meta_clicks": 65.0,
-   "meta_impr": 2012.0,
-   "meta_conv": 1.0,
-   "meta_ic": 1.0,
-   "meta_atc": 7.0,
-   "meta_vc": 59.0,
-   "meta_value": 41.9,
-   "google_spend": 21.9,
-   "google_clicks": 5.0,
+   "meta_spend": 16.02,
+   "meta_clicks": 74.0,
+   "meta_impr": 2354.0,
+   "meta_conv": 2.0,
+   "meta_ic": 3.0,
+   "meta_atc": 9.0,
+   "meta_vc": 75.0,
+   "meta_value": 81.8,
+   "google_spend": 23.8,
+   "google_clicks": 63.0,
+   "google_conv": 2.0,
+   "google_value": 230.2833,
+   "google_impr": 4069.0
+  },
+  "2026-11-16": {
+   "orders": 1.0,
+   "gross": 108.0,
+   "tax": 18.7438,
+   "shipping_charged": 0.0,
+   "discounts": 12.0,
+   "refunds": 0.0,
+   "cogs": 70.27,
+   "repeat_orders": 0.0,
+   "shopify_payments_amount": 108.0,
+   "shopify_payments_orders": 1.0,
+   "sp_fees": 2.57,
+   "meta_spend": 4.34,
+   "meta_clicks": 23.0,
+   "meta_impr": 677.0,
+   "meta_vc": 19.0,
+   "google_spend": 8.66,
+   "google_clicks": 3.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 137.0
+   "google_impr": 241.0
   }
  },
  "meta_campaigns": [
@@ -55570,9 +55604,9 @@
   {
    "d": "2026-11-15",
    "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
-   "sp": 7.48,
-   "cl": 40,
-   "vc": 43,
+   "sp": 8.56,
+   "cl": 48,
+   "vc": 54,
    "atc": 5,
    "ic": 1,
    "cv": 1,
@@ -55581,24 +55615,38 @@
   {
    "d": "2026-11-15",
    "n": "M2_Nov2026_Retargeting_Warm_PanEU",
-   "sp": 6.35,
-   "cl": 25,
-   "vc": 16,
-   "atc": 2,
+   "sp": 7.46,
+   "cl": 26,
+   "vc": 21,
+   "atc": 4,
+   "ic": 2,
+   "cv": 1,
+   "val": 39.9
+  },
+  {
+   "d": "2026-11-16",
+   "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
+   "sp": 2.71,
+   "cl": 15,
+   "vc": 12,
+   "atc": 0,
+   "ic": 0,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-16",
+   "n": "M2_Nov2026_Retargeting_Warm_PanEU",
+   "sp": 1.63,
+   "cl": 8,
+   "vc": 7,
+   "atc": 0,
    "ic": 0,
    "cv": 0,
    "val": 0.0
   }
  ],
  "google_campaigns": [
-  {
-   "d": "2026-08-17",
-   "n": "PMAX",
-   "sp": 34.55,
-   "cl": 92,
-   "cv": 2.0,
-   "val": 46.6
-  },
   {
    "d": "2026-08-18",
    "n": "PMAX",
@@ -56114,8 +56162,16 @@
   {
    "d": "2026-11-15",
    "n": "Sales-Shopping-1",
-   "sp": 21.9,
-   "cl": 5,
+   "sp": 23.8,
+   "cl": 63,
+   "cv": 2.0,
+   "val": 230.28
+  },
+  {
+   "d": "2026-11-16",
+   "n": "Sales-Shopping-1",
+   "sp": 8.66,
+   "cl": 3,
    "cv": 0.0,
    "val": 0.0
   }
