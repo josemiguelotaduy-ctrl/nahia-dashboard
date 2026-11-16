@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16 10:39",
+ "generated": "2026-11-16 11:09",
  "start": "2022-08-01",
  "orders": [
   {
@@ -19793,6 +19793,46 @@
      1,
      120.0,
      70.27
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-16",
+   "c": "ES",
+   "g": 144.75,
+   "s": 0.0,
+   "k": 89.55,
+   "u": "f8fcdcde",
+   "r": 0,
+   "i": [
+    [
+     "Jarra Bordemer, C\u00f4t\u00e9 Table 4L",
+     3,
+     117.0,
+     57.45
+    ],
+    [
+     "Jarra Alhel\u00ed, C\u00f4t\u00e9 Table, 2.3 L",
+     2,
+     76.0,
+     32.1
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-16",
+   "c": "GB",
+   "g": 34.63,
+   "s": 20.25,
+   "k": 6.3,
+   "u": "da1b1a4c",
+   "r": 0,
+   "i": [
+    [
+     "Plato Llano Costa Nova, Pearl 28cm",
+     1,
+     14.38,
+     6.3
     ]
    ]
   }
@@ -39914,20 +39954,20 @@
    "google_impr": 4069.0
   },
   "2026-11-16": {
-   "orders": 1.0,
-   "gross": 108.0,
-   "tax": 18.7438,
-   "shipping_charged": 0.0,
-   "discounts": 12.0,
+   "orders": 3.0,
+   "gross": 287.38,
+   "tax": 43.8657,
+   "shipping_charged": 20.25,
+   "discounts": 60.25,
    "refunds": 0.0,
-   "cogs": 70.27,
+   "cogs": 166.12,
    "repeat_orders": 0.0,
-   "shopify_payments_amount": 108.0,
-   "shopify_payments_orders": 1.0,
-   "sp_fees": 2.57,
-   "meta_spend": 4.34,
-   "meta_clicks": 23.0,
-   "meta_impr": 677.0,
+   "shopify_payments_amount": 287.38,
+   "shopify_payments_orders": 3.0,
+   "sp_fees": 9.58,
+   "meta_spend": 4.9,
+   "meta_clicks": 25.0,
+   "meta_impr": 773.0,
    "meta_vc": 19.0,
    "google_spend": 8.66,
    "google_clicks": 3.0,
@@ -55626,8 +55666,8 @@
   {
    "d": "2026-11-16",
    "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
-   "sp": 2.71,
-   "cl": 15,
+   "sp": 2.89,
+   "cl": 16,
    "vc": 12,
    "atc": 0,
    "ic": 0,
@@ -55637,8 +55677,8 @@
   {
    "d": "2026-11-16",
    "n": "M2_Nov2026_Retargeting_Warm_PanEU",
-   "sp": 1.63,
-   "cl": 8,
+   "sp": 2.01,
+   "cl": 9,
    "vc": 7,
    "atc": 0,
    "ic": 0,
