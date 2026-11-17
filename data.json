@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16 11:09",
+ "generated": "2026-11-17 09:22",
  "start": "2022-08-01",
  "orders": [
   {
@@ -19739,7 +19739,7 @@
    "g": 129.6,
    "s": 0.0,
    "k": 64.0,
-   "u": "312a2b01",
+   "u": "5d75871d",
    "r": 0,
    "i": [
     [
@@ -19833,6 +19833,23 @@
      1,
      14.38,
      6.3
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-16",
+   "c": "ES",
+   "g": 39.9,
+   "s": 5.9,
+   "k": 14.0,
+   "u": "0ce330e6",
+   "r": 0,
+   "i": [
+    [
+     "Grifo de jard\u00edn con roseta Verde, LIVLIG",
+     1,
+     34.0,
+     14.0
     ]
    ]
   }
@@ -38252,12 +38269,7 @@
    "meta_clicks": 107.0,
    "meta_impr": 3746.0,
    "meta_atc": 15.0,
-   "meta_vc": 99.0,
-   "google_spend": 29.5616,
-   "google_clicks": 43.0,
-   "google_conv": 0.0,
-   "google_value": 0.0,
-   "google_impr": 4482.0
+   "meta_vc": 99.0
   },
   "2026-08-19": {
    "orders": 1.0,
@@ -39954,26 +39966,48 @@
    "google_impr": 4069.0
   },
   "2026-11-16": {
-   "orders": 3.0,
-   "gross": 287.38,
-   "tax": 43.8657,
-   "shipping_charged": 20.25,
+   "orders": 4.0,
+   "gross": 327.28,
+   "tax": 50.7905,
+   "shipping_charged": 26.15,
    "discounts": 60.25,
    "refunds": 0.0,
-   "cogs": 166.12,
+   "cogs": 180.12,
    "repeat_orders": 0.0,
-   "shopify_payments_amount": 287.38,
-   "shopify_payments_orders": 3.0,
-   "sp_fees": 9.58,
-   "meta_spend": 4.9,
-   "meta_clicks": 25.0,
-   "meta_impr": 773.0,
-   "meta_vc": 19.0,
-   "google_spend": 8.66,
-   "google_clicks": 3.0,
+   "shopify_payments_amount": 327.28,
+   "shopify_payments_orders": 4.0,
+   "sp_fees": 10.72,
+   "meta_spend": 14.61,
+   "meta_clicks": 98.0,
+   "meta_impr": 2645.0,
+   "meta_conv": 2.0,
+   "meta_ic": 4.0,
+   "meta_atc": 14.0,
+   "meta_vc": 102.0,
+   "meta_value": 184.65,
+   "google_spend": 12.53,
+   "google_clicks": 29.0,
+   "google_conv": 1.0,
+   "google_value": 108.0,
+   "google_impr": 2456.0
+  },
+  "2026-11-17": {
+   "orders": 0.0,
+   "gross": 0.0,
+   "shipping_charged": 0.0,
+   "discounts": 0.0,
+   "refunds": 0.0,
+   "cogs": 0.0,
+   "meta_spend": 3.11,
+   "meta_clicks": 29.0,
+   "meta_impr": 534.0,
+   "meta_ic": 1.0,
+   "meta_vc": 25.0,
+   "google_spend": 0.04,
+   "google_clicks": 1.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 241.0
+   "google_impr": 98.0
   }
  },
  "meta_campaigns": [
@@ -55666,20 +55700,42 @@
   {
    "d": "2026-11-16",
    "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
-   "sp": 2.89,
-   "cl": 16,
-   "vc": 12,
-   "atc": 0,
-   "ic": 0,
+   "sp": 8.21,
+   "cl": 68,
+   "vc": 62,
+   "atc": 10,
+   "ic": 2,
    "cv": 0,
    "val": 0.0
   },
   {
    "d": "2026-11-16",
    "n": "M2_Nov2026_Retargeting_Warm_PanEU",
-   "sp": 2.01,
-   "cl": 9,
-   "vc": 7,
+   "sp": 6.4,
+   "cl": 30,
+   "vc": 40,
+   "atc": 4,
+   "ic": 2,
+   "cv": 2,
+   "val": 184.65
+  },
+  {
+   "d": "2026-11-17",
+   "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
+   "sp": 2.09,
+   "cl": 15,
+   "vc": 16,
+   "atc": 0,
+   "ic": 1,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-17",
+   "n": "M2_Nov2026_Retargeting_Warm_PanEU",
+   "sp": 1.02,
+   "cl": 14,
+   "vc": 9,
    "atc": 0,
    "ic": 0,
    "cv": 0,
@@ -55687,14 +55743,6 @@
   }
  ],
  "google_campaigns": [
-  {
-   "d": "2026-08-18",
-   "n": "PMAX",
-   "sp": 29.56,
-   "cl": 43,
-   "cv": 0.0,
-   "val": 0.0
-  },
   {
    "d": "2026-09-12",
    "n": "PMAX",
@@ -56210,8 +56258,16 @@
   {
    "d": "2026-11-16",
    "n": "Sales-Shopping-1",
-   "sp": 8.66,
-   "cl": 3,
+   "sp": 12.53,
+   "cl": 29,
+   "cv": 1.0,
+   "val": 108.0
+  },
+  {
+   "d": "2026-11-17",
+   "n": "Sales-Shopping-1",
+   "sp": 0.04,
+   "cl": 1,
    "cv": 0.0,
    "val": 0.0
   }
