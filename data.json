@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17 09:49",
+ "generated": "2026-11-18 09:19",
  "start": "2022-08-01",
  "orders": [
   {
@@ -19850,6 +19850,63 @@
      1,
      34.0,
      14.0
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-17",
+   "c": "ES",
+   "g": 43.9,
+   "s": 5.9,
+   "k": 17.0,
+   "u": "6a6e9848",
+   "r": 0,
+   "i": [
+    [
+     "Soporte de Manguera Sand, LIVLIG",
+     1,
+     38.0,
+     17.0
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-17",
+   "c": "ES",
+   "g": 70.9,
+   "s": 5.9,
+   "k": 30.0,
+   "u": "6a6e9848",
+   "r": 1,
+   "i": [
+    [
+     "Manguera de Jard\u00edn Gentle Greige 20M, LIVLIG",
+     1,
+     65.0,
+     30.0
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-17",
+   "c": "GR",
+   "g": 180.0,
+   "s": 0.0,
+   "k": 81.24,
+   "u": "142f8db8",
+   "r": 0,
+   "i": [
+    [
+     "Copa de vino \"Abeille\", 240 ml",
+     12,
+     96.0,
+     41.88
+    ],
+    [
+     "Vaso agua \"Abeille\", 260 ml",
+     12,
+     84.0,
+     39.36
     ]
    ]
   }
@@ -39895,7 +39952,7 @@
    "google_clicks": 51.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 4028.0
+   "google_impr": 4027.0
   },
   "2026-11-13": {
    "orders": 0.0,
@@ -39908,7 +39965,7 @@
    "google_clicks": 55.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 5591.0
+   "google_impr": 5590.0
   },
   "2026-11-14": {
    "orders": 6.0,
@@ -39963,7 +40020,7 @@
    "google_clicks": 63.0,
    "google_conv": 2.0,
    "google_value": 230.2833,
-   "google_impr": 4069.0
+   "google_impr": 4068.0
   },
   "2026-11-16": {
    "orders": 4.0,
@@ -39977,9 +40034,9 @@
    "shopify_payments_amount": 327.28,
    "shopify_payments_orders": 4.0,
    "sp_fees": 10.72,
-   "meta_spend": 14.62,
+   "meta_spend": 14.64,
    "meta_clicks": 98.0,
-   "meta_impr": 2646.0,
+   "meta_impr": 2649.0,
    "meta_conv": 2.0,
    "meta_ic": 4.0,
    "meta_atc": 14.0,
@@ -39992,22 +40049,45 @@
    "google_impr": 2456.0
   },
   "2026-11-17": {
+   "orders": 3.0,
+   "gross": 294.8,
+   "tax": 54.7627,
+   "shipping_charged": 11.8,
+   "discounts": 0.0,
+   "refunds": 0.0,
+   "cogs": 128.24,
+   "repeat_orders": 1.0,
+   "shopify_payments_amount": 294.8,
+   "shopify_payments_orders": 3.0,
+   "sp_fees": 7.09,
+   "meta_spend": 13.99,
+   "meta_clicks": 126.0,
+   "meta_impr": 2963.0,
+   "meta_ic": 3.0,
+   "meta_atc": 4.0,
+   "meta_vc": 123.0,
+   "google_spend": 3.88,
+   "google_clicks": 26.0,
+   "google_conv": 0.0,
+   "google_value": 0.0,
+   "google_impr": 1849.0
+  },
+  "2026-11-18": {
    "orders": 0.0,
    "gross": 0.0,
    "shipping_charged": 0.0,
    "discounts": 0.0,
    "refunds": 0.0,
    "cogs": 0.0,
-   "meta_spend": 3.43,
-   "meta_clicks": 30.0,
-   "meta_impr": 635.0,
-   "meta_ic": 1.0,
-   "meta_vc": 30.0,
-   "google_spend": 0.04,
+   "meta_spend": 2.53,
+   "meta_clicks": 13.0,
+   "meta_impr": 505.0,
+   "meta_vc": 8.0,
+   "google_spend": 0.15,
    "google_clicks": 1.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 98.0
+   "google_impr": 154.0
   }
  },
  "meta_campaigns": [
@@ -55700,7 +55780,7 @@
   {
    "d": "2026-11-16",
    "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
-   "sp": 8.22,
+   "sp": 8.24,
    "cl": 68,
    "vc": 62,
    "atc": 10,
@@ -55722,10 +55802,10 @@
   {
    "d": "2026-11-17",
    "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
-   "sp": 2.23,
-   "cl": 15,
-   "vc": 17,
-   "atc": 0,
+   "sp": 7.96,
+   "cl": 55,
+   "vc": 54,
+   "atc": 2,
    "ic": 1,
    "cv": 0,
    "val": 0.0
@@ -55733,9 +55813,31 @@
   {
    "d": "2026-11-17",
    "n": "M2_Nov2026_Retargeting_Warm_PanEU",
-   "sp": 1.2,
-   "cl": 15,
-   "vc": 13,
+   "sp": 6.03,
+   "cl": 71,
+   "vc": 69,
+   "atc": 2,
+   "ic": 2,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-18",
+   "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
+   "sp": 1.16,
+   "cl": 7,
+   "vc": 4,
+   "atc": 0,
+   "ic": 0,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-18",
+   "n": "M2_Nov2026_Retargeting_Warm_PanEU",
+   "sp": 1.37,
+   "cl": 6,
+   "vc": 4,
    "atc": 0,
    "ic": 0,
    "cv": 0,
@@ -56266,7 +56368,15 @@
   {
    "d": "2026-11-17",
    "n": "Sales-Shopping-1",
-   "sp": 0.04,
+   "sp": 3.88,
+   "cl": 26,
+   "cv": 0.0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-18",
+   "n": "Sales-Shopping-1",
+   "sp": 0.15,
    "cl": 1,
    "cv": 0.0,
    "val": 0.0
