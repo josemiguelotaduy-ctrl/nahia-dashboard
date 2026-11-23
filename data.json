@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22 16:50",
+ "generated": "2026-11-23 20:11",
  "start": "2022-08-01",
  "orders": [
   {
@@ -20026,6 +20026,40 @@
      1,
      90.0,
      60.14
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-22",
+   "c": "GB",
+   "g": 0.0,
+   "s": 0.0,
+   "k": 6.3,
+   "u": "2ae83590",
+   "r": 1,
+   "i": [
+    [
+     "Plato Llano Costa Nova, Pearl 28cm",
+     1,
+     14.31,
+     6.3
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-22",
+   "c": "FI",
+   "g": 37.4,
+   "s": 5.9,
+   "k": 20.95,
+   "u": "05bdd81c",
+   "r": 0,
+   "i": [
+    [
+     "The Important Flowers Planner 2027 \u2013 Sofia Coppola",
+     1,
+     35.0,
+     20.95
     ]
    ]
   }
@@ -40281,7 +40315,7 @@
    "sp_fees": 5.16,
    "meta_spend": 10.49,
    "meta_clicks": 50.0,
-   "meta_impr": 1641.0,
+   "meta_impr": 1642.0,
    "meta_atc": 8.0,
    "meta_vc": 56.0,
    "google_spend": 45.7,
@@ -40291,27 +40325,44 @@
    "google_impr": 2727.0
   },
   "2026-11-22": {
-   "orders": 1.0,
-   "gross": 86.9,
-   "tax": 14.4833,
-   "shipping_charged": 5.9,
-   "discounts": 9.0,
+   "orders": 3.0,
+   "gross": 124.3,
+   "tax": 21.9633,
+   "shipping_charged": 11.8,
+   "discounts": 26.81,
    "refunds": 0.0,
-   "cogs": 60.14,
-   "repeat_orders": 0.0,
-   "shopify_payments_amount": 86.9,
-   "shopify_payments_orders": 1.0,
-   "sp_fees": 3.08,
-   "meta_spend": 11.76,
-   "meta_clicks": 56.0,
-   "meta_impr": 1755.0,
-   "meta_atc": 2.0,
-   "meta_vc": 44.0,
-   "google_spend": 3.26,
-   "google_clicks": 7.0,
+   "cogs": 87.39,
+   "repeat_orders": 1.0,
+   "shopify_payments_amount": 124.3,
+   "shopify_payments_orders": 3.0,
+   "sp_fees": 4.17,
+   "meta_spend": 16.23,
+   "meta_clicks": 75.0,
+   "meta_impr": 2434.0,
+   "meta_atc": 5.0,
+   "meta_vc": 67.0,
+   "google_spend": 21.61,
+   "google_clicks": 75.0,
+   "google_conv": 2.0,
+   "google_value": 112.5,
+   "google_impr": 5896.0
+  },
+  "2026-11-23": {
+   "orders": 0.0,
+   "gross": 0.0,
+   "shipping_charged": 0.0,
+   "discounts": 0.0,
+   "refunds": 0.0,
+   "cogs": 0.0,
+   "meta_spend": 9.75,
+   "meta_clicks": 39.0,
+   "meta_impr": 1405.0,
+   "meta_vc": 32.0,
+   "google_spend": 1.61,
+   "google_clicks": 3.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 814.0
+   "google_impr": 468.0
   }
  },
  "meta_campaigns": [
@@ -56136,9 +56187,9 @@
   {
    "d": "2026-11-22",
    "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
-   "sp": 6.7,
-   "cl": 39,
-   "vc": 25,
+   "sp": 9.46,
+   "cl": 45,
+   "vc": 36,
    "atc": 2,
    "ic": 0,
    "cv": 0,
@@ -56147,9 +56198,31 @@
   {
    "d": "2026-11-22",
    "n": "M2_Nov2026_Retargeting_Warm_PanEU",
-   "sp": 5.06,
-   "cl": 17,
+   "sp": 6.77,
+   "cl": 30,
+   "vc": 31,
+   "atc": 3,
+   "ic": 0,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-23",
+   "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
+   "sp": 5.36,
+   "cl": 22,
    "vc": 19,
+   "atc": 0,
+   "ic": 0,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-23",
+   "n": "M2_Nov2026_Retargeting_Warm_PanEU",
+   "sp": 4.39,
+   "cl": 17,
+   "vc": 13,
    "atc": 0,
    "ic": 0,
    "cv": 0,
@@ -56728,8 +56801,16 @@
   {
    "d": "2026-11-22",
    "n": "Sales-Shopping-DALE",
-   "sp": 3.26,
-   "cl": 7,
+   "sp": 21.61,
+   "cl": 75,
+   "cv": 2.0,
+   "val": 112.5
+  },
+  {
+   "d": "2026-11-23",
+   "n": "Sales-Shopping-DALE",
+   "sp": 1.61,
+   "cl": 3,
    "cv": 0.0,
    "val": 0.0
   }
