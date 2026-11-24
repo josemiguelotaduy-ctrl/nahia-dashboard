@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23 20:43",
+ "generated": "2026-11-24 19:49",
  "start": "2022-08-01",
  "orders": [
   {
@@ -20060,6 +20060,46 @@
      1,
      35.0,
      20.95
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-24",
+   "c": "GB",
+   "g": 113.37,
+   "s": 20.19,
+   "k": 40.2,
+   "u": "99925790",
+   "r": 0,
+   "i": [
+    [
+     "Cucharilla peque\u00f1a, Pop Ivoire, Sabre Paris",
+     6,
+     93.18,
+     40.2
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-24",
+   "c": "IE",
+   "g": 100.9,
+   "s": 5.9,
+   "k": 41.67,
+   "u": "d892add0",
+   "r": 0,
+   "i": [
+    [
+     "Plato Hondo Costa Nova, Pearl 24cm",
+     4,
+     52.0,
+     23.0
+    ],
+    [
+     "Fuente horno rectangular grande Pearl, Costa Nova",
+     1,
+     43.0,
+     18.67
     ]
    ]
   }
@@ -40271,7 +40311,7 @@
    "google_clicks": 36.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 3062.0
+   "google_impr": 3061.0
   },
   "2026-11-20": {
    "orders": 2.0,
@@ -40354,15 +40394,38 @@
    "discounts": 0.0,
    "refunds": 0.0,
    "cogs": 0.0,
-   "meta_spend": 10.18,
-   "meta_clicks": 42.0,
-   "meta_impr": 1470.0,
-   "meta_vc": 36.0,
-   "google_spend": 1.61,
+   "meta_spend": 12.07,
+   "meta_clicks": 51.0,
+   "meta_impr": 1753.0,
+   "meta_vc": 44.0,
+   "google_spend": 19.74,
+   "google_clicks": 52.0,
+   "google_conv": 0.0,
+   "google_value": 0.0,
+   "google_impr": 4579.0
+  },
+  "2026-11-24": {
+   "orders": 2.0,
+   "gross": 214.27,
+   "tax": 18.8675,
+   "shipping_charged": 26.09,
+   "discounts": 0.0,
+   "refunds": 0.0,
+   "cogs": 81.87,
+   "repeat_orders": 0.0,
+   "shopify_payments_amount": 214.27,
+   "shopify_payments_orders": 2.0,
+   "sp_fees": 8.57,
+   "meta_spend": 9.46,
+   "meta_clicks": 47.0,
+   "meta_impr": 1333.0,
+   "meta_atc": 9.0,
+   "meta_vc": 48.0,
+   "google_spend": 0.29,
    "google_clicks": 3.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 468.0
+   "google_impr": 572.0
   }
  },
  "meta_campaigns": [
@@ -56209,9 +56272,9 @@
   {
    "d": "2026-11-23",
    "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
-   "sp": 5.74,
-   "cl": 25,
-   "vc": 23,
+   "sp": 6.53,
+   "cl": 26,
+   "vc": 24,
    "atc": 0,
    "ic": 0,
    "cv": 0,
@@ -56220,9 +56283,31 @@
   {
    "d": "2026-11-23",
    "n": "M2_Nov2026_Retargeting_Warm_PanEU",
-   "sp": 4.44,
-   "cl": 17,
-   "vc": 13,
+   "sp": 5.54,
+   "cl": 25,
+   "vc": 20,
+   "atc": 0,
+   "ic": 0,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-24",
+   "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
+   "sp": 5.57,
+   "cl": 29,
+   "vc": 25,
+   "atc": 0,
+   "ic": 0,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-24",
+   "n": "M2_Nov2026_Retargeting_Warm_PanEU",
+   "sp": 3.89,
+   "cl": 18,
+   "vc": 17,
    "atc": 0,
    "ic": 0,
    "cv": 0,
@@ -56809,7 +56894,15 @@
   {
    "d": "2026-11-23",
    "n": "Sales-Shopping-DALE",
-   "sp": 1.61,
+   "sp": 19.74,
+   "cl": 52,
+   "cv": 0.0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-24",
+   "n": "Sales-Shopping-DALE",
+   "sp": 0.29,
    "cl": 3,
    "cv": 0.0,
    "val": 0.0
