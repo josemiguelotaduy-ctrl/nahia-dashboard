@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24 20:15",
+ "generated": "2026-11-25 18:56",
  "start": "2022-08-01",
  "orders": [
   {
@@ -20100,6 +20100,41 @@
      1,
      43.0,
      18.67
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-25",
+   "c": "BE",
+   "g": 169.0,
+   "s": 0.0,
+   "k": 81.3,
+   "u": "37a6c3e6",
+   "r": 0,
+   "i": [
+    [
+     "Tetera Artesanal, Leaf 1,5L",
+     1,
+     35.0,
+     16.0
+    ],
+    [
+     "Hervidor El\u00e9ctrico de Doble Pared, Leaf 1700 ml",
+     1,
+     89.0,
+     42.8
+    ],
+    [
+     "Taza Artesanal, Leaf 450 ml",
+     1,
+     15.0,
+     7.5
+    ],
+    [
+     "Taza Artesanal, Crema 450 ml",
+     2,
+     30.0,
+     15.0
     ]
    ]
   }
@@ -40263,7 +40298,7 @@
    "google_clicks": 26.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 1849.0
+   "google_impr": 1848.0
   },
   "2026-11-18": {
    "orders": 0.0,
@@ -40385,7 +40420,7 @@
    "google_clicks": 75.0,
    "google_conv": 2.0,
    "google_value": 112.5,
-   "google_impr": 5896.0
+   "google_impr": 5895.0
   },
   "2026-11-23": {
    "orders": 0.0,
@@ -40396,7 +40431,7 @@
    "cogs": 0.0,
    "meta_spend": 12.07,
    "meta_clicks": 51.0,
-   "meta_impr": 1753.0,
+   "meta_impr": 1754.0,
    "meta_vc": 44.0,
    "google_spend": 19.74,
    "google_clicks": 52.0,
@@ -40416,16 +40451,42 @@
    "shopify_payments_amount": 214.27,
    "shopify_payments_orders": 2.0,
    "sp_fees": 8.57,
-   "meta_spend": 9.73,
-   "meta_clicks": 49.0,
-   "meta_impr": 1382.0,
+   "meta_spend": 11.54,
+   "meta_clicks": 61.0,
+   "meta_impr": 1728.0,
    "meta_atc": 9.0,
-   "meta_vc": 48.0,
-   "google_spend": 0.29,
-   "google_clicks": 3.0,
+   "meta_vc": 60.0,
+   "google_spend": 41.74,
+   "google_clicks": 57.0,
+   "google_conv": 2.0,
+   "google_value": 188.2179,
+   "google_impr": 4111.0
+  },
+  "2026-11-25": {
+   "orders": 1.0,
+   "gross": 169.0,
+   "tax": 29.3306,
+   "shipping_charged": 0.0,
+   "discounts": 0.0,
+   "refunds": 0.0,
+   "cogs": 81.3,
+   "repeat_orders": 0.0,
+   "shopify_payments_amount": 169.0,
+   "shopify_payments_orders": 1.0,
+   "sp_fees": 4.31,
+   "meta_spend": 9.31,
+   "meta_clicks": 47.0,
+   "meta_impr": 1463.0,
+   "meta_conv": 1.0,
+   "meta_ic": 2.0,
+   "meta_atc": 1.0,
+   "meta_vc": 53.0,
+   "meta_value": 169.0,
+   "google_spend": 0.17,
+   "google_clicks": 1.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 572.0
+   "google_impr": 175.0
   }
  },
  "meta_campaigns": [
@@ -56294,9 +56355,9 @@
   {
    "d": "2026-11-24",
    "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
-   "sp": 5.71,
-   "cl": 29,
-   "vc": 31,
+   "sp": 6.68,
+   "cl": 36,
+   "vc": 40,
    "atc": 9,
    "ic": 0,
    "cv": 0,
@@ -56305,9 +56366,31 @@
   {
    "d": "2026-11-24",
    "n": "M2_Nov2026_Retargeting_Warm_PanEU",
-   "sp": 4.02,
-   "cl": 20,
-   "vc": 17,
+   "sp": 4.86,
+   "cl": 25,
+   "vc": 20,
+   "atc": 0,
+   "ic": 0,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-25",
+   "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
+   "sp": 5.5,
+   "cl": 21,
+   "vc": 19,
+   "atc": 1,
+   "ic": 2,
+   "cv": 1,
+   "val": 169.0
+  },
+  {
+   "d": "2026-11-25",
+   "n": "M2_Nov2026_Retargeting_Warm_PanEU",
+   "sp": 3.81,
+   "cl": 26,
+   "vc": 34,
    "atc": 0,
    "ic": 0,
    "cv": 0,
@@ -56901,9 +56984,25 @@
   },
   {
    "d": "2026-11-24",
+   "n": "Sales-Shopping-1",
+   "sp": 22.15,
+   "cl": 25,
+   "cv": 1.0,
+   "val": 95.0
+  },
+  {
+   "d": "2026-11-24",
    "n": "Sales-Shopping-DALE",
-   "sp": 0.29,
-   "cl": 3,
+   "sp": 19.59,
+   "cl": 32,
+   "cv": 1.0,
+   "val": 93.22
+  },
+  {
+   "d": "2026-11-25",
+   "n": "Sales-Shopping-1",
+   "sp": 0.17,
+   "cl": 1,
    "cv": 0.0,
    "val": 0.0
   }
