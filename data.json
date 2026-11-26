@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25 19:19",
+ "generated": "2026-11-26 18:40",
  "start": "2022-08-01",
  "orders": [
   {
@@ -20135,6 +20135,92 @@
      2,
      30.0,
      15.0
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-25",
+   "c": "PT",
+   "g": 73.4,
+   "s": 5.9,
+   "k": 31.25,
+   "u": "20c8f6d5",
+   "r": 0,
+   "i": [
+    [
+     "Hielera de cer\u00e1mica Wish Me Luck, Casa L\u00f3pez (Paris)",
+     1,
+     75.0,
+     31.25
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-26",
+   "c": "GB",
+   "g": 56.03,
+   "s": 20.19,
+   "k": 16.0,
+   "u": "50068625",
+   "r": 0,
+   "i": [
+    [
+     "Tetera Artesanal, Leaf 1,5L",
+     1,
+     35.84,
+     16.0
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-26",
+   "c": "ES",
+   "g": 156.0,
+   "s": 0.0,
+   "k": 69.6,
+   "u": "d9ed550a",
+   "r": 0,
+   "i": [
+    [
+     "Botella Poisson, C\u00f4t\u00e9 Table, 1,1 L",
+     1,
+     20.0,
+     6.7
+    ],
+    [
+     "Taza de cer\u00e1mica \"Abeille\", 52 cl",
+     1,
+     21.0,
+     9.45
+    ],
+    [
+     "Jarra de cristal \"Abeille\", 1 L",
+     2,
+     50.0,
+     23.3
+    ],
+    [
+     "Jarra de vidrio soplado \"Abeille\", 1 L",
+     1,
+     65.0,
+     30.15
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-26",
+   "c": "ES",
+   "g": 26.9,
+   "s": 5.9,
+   "k": 9.45,
+   "u": "c193f435",
+   "r": 0,
+   "i": [
+    [
+     "Taza de cer\u00e1mica \"Abeille\", 52 cl",
+     1,
+     21.0,
+     9.45
     ]
    ]
   }
@@ -40344,8 +40430,8 @@
    "meta_value": 19.4,
    "google_spend": 12.04,
    "google_clicks": 36.0,
-   "google_conv": 0.0,
-   "google_value": 0.0,
+   "google_conv": 1.0,
+   "google_value": 67.5,
    "google_impr": 3061.0
   },
   "2026-11-20": {
@@ -40463,30 +40549,56 @@
    "google_impr": 4111.0
   },
   "2026-11-25": {
-   "orders": 1.0,
-   "gross": 169.0,
-   "tax": 29.3306,
-   "shipping_charged": 0.0,
-   "discounts": 0.0,
+   "orders": 2.0,
+   "gross": 242.4,
+   "tax": 43.0558,
+   "shipping_charged": 5.9,
+   "discounts": 7.5,
    "refunds": 0.0,
-   "cogs": 81.3,
+   "cogs": 112.55,
    "repeat_orders": 0.0,
-   "shopify_payments_amount": 169.0,
-   "shopify_payments_orders": 1.0,
-   "sp_fees": 4.31,
-   "meta_spend": 9.48,
-   "meta_clicks": 48.0,
-   "meta_impr": 1509.0,
+   "shopify_payments_amount": 242.4,
+   "shopify_payments_orders": 2.0,
+   "sp_fees": 6.15,
+   "meta_spend": 12.53,
+   "meta_clicks": 70.0,
+   "meta_impr": 1963.0,
    "meta_conv": 1.0,
    "meta_ic": 2.0,
    "meta_atc": 1.0,
-   "meta_vc": 53.0,
+   "meta_vc": 77.0,
    "meta_value": 169.0,
-   "google_spend": 0.17,
-   "google_clicks": 1.0,
+   "google_spend": 21.73,
+   "google_clicks": 47.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 175.0
+   "google_impr": 4224.0
+  },
+  "2026-11-26": {
+   "orders": 3.0,
+   "gross": 238.93,
+   "tax": 31.743,
+   "shipping_charged": 26.09,
+   "discounts": 0.0,
+   "refunds": 0.0,
+   "cogs": 95.05,
+   "repeat_orders": 0.0,
+   "shopify_payments_amount": 238.93,
+   "shopify_payments_orders": 3.0,
+   "sp_fees": 9.34,
+   "meta_spend": 8.46,
+   "meta_clicks": 40.0,
+   "meta_impr": 1226.0,
+   "meta_conv": 1.0,
+   "meta_ic": 2.0,
+   "meta_atc": 9.0,
+   "meta_vc": 48.0,
+   "meta_value": 156.0,
+   "google_spend": 2.66,
+   "google_clicks": 5.0,
+   "google_conv": 0.0,
+   "google_value": 0.0,
+   "google_impr": 487.0
   }
  },
  "meta_campaigns": [
@@ -56377,9 +56489,9 @@
   {
    "d": "2026-11-25",
    "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
-   "sp": 5.6,
-   "cl": 21,
-   "vc": 19,
+   "sp": 6.75,
+   "cl": 28,
+   "vc": 26,
    "atc": 1,
    "ic": 2,
    "cv": 1,
@@ -56388,13 +56500,35 @@
   {
    "d": "2026-11-25",
    "n": "M2_Nov2026_Retargeting_Warm_PanEU",
-   "sp": 3.88,
-   "cl": 27,
-   "vc": 34,
+   "sp": 5.78,
+   "cl": 42,
+   "vc": 51,
    "atc": 0,
    "ic": 0,
    "cv": 0,
    "val": 0.0
+  },
+  {
+   "d": "2026-11-26",
+   "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
+   "sp": 4.58,
+   "cl": 21,
+   "vc": 18,
+   "atc": 0,
+   "ic": 0,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-26",
+   "n": "M2_Nov2026_Retargeting_Warm_PanEU",
+   "sp": 3.88,
+   "cl": 19,
+   "vc": 30,
+   "atc": 9,
+   "ic": 2,
+   "cv": 1,
+   "val": 156.0
   }
  ],
  "google_campaigns": [
@@ -56939,8 +57073,8 @@
    "n": "Sales-Shopping-1",
    "sp": 12.04,
    "cl": 36,
-   "cv": 0.0,
-   "val": 0.0
+   "cv": 1.0,
+   "val": 67.5
   },
   {
    "d": "2026-11-20",
@@ -57001,8 +57135,16 @@
   {
    "d": "2026-11-25",
    "n": "Sales-Shopping-1",
-   "sp": 0.17,
-   "cl": 1,
+   "sp": 21.73,
+   "cl": 47,
+   "cv": 0.0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-26",
+   "n": "Sales-Shopping-1",
+   "sp": 2.66,
+   "cl": 5,
    "cv": 0.0,
    "val": 0.0
   }
