@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-26 19:00",
+ "generated": "2026-11-27 18:24",
  "start": "2022-08-01",
  "orders": [
   {
@@ -20223,6 +20223,46 @@
      9.45
     ]
    ]
+  },
+  {
+   "d": "2026-11-27",
+   "c": "GB",
+   "g": 39.63,
+   "s": 20.24,
+   "k": 6.7,
+   "u": "f90b43c9",
+   "r": 0,
+   "i": [
+    [
+     "Botella Poisson, C\u00f4t\u00e9 Table, 1,1 L",
+     1,
+     21.55,
+     6.7
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-27",
+   "c": "GB",
+   "g": 102.38,
+   "s": 0.0,
+   "k": 53.4,
+   "u": "266c9145",
+   "r": 0,
+   "i": [
+    [
+     "Cubiertos de Servicio, C\u00f4t\u00e9 Table, Palmier Vert (2 Piezas)",
+     1,
+     22.75,
+     10.6
+    ],
+    [
+     "Hervidor El\u00e9ctrico de Doble Pared, 1700 ml",
+     1,
+     91.0,
+     42.8
+    ]
+   ]
   }
  ],
  "days": {
@@ -40144,8 +40184,8 @@
    "meta_vc": 78.0,
    "google_spend": 29.5,
    "google_clicks": 75.0,
-   "google_conv": 0.6667,
-   "google_value": 28.5882,
+   "google_conv": 1.6667,
+   "google_value": 49.5882,
    "google_impr": 8878.0
   },
   "2026-11-08": {
@@ -40430,8 +40470,8 @@
    "meta_value": 19.4,
    "google_spend": 12.04,
    "google_clicks": 36.0,
-   "google_conv": 1.0,
-   "google_value": 67.5,
+   "google_conv": 2.0,
+   "google_value": 103.3378,
    "google_impr": 3061.0
   },
   "2026-11-20": {
@@ -40460,7 +40500,7 @@
    "google_clicks": 36.0,
    "google_conv": 1.0,
    "google_value": 64.515,
-   "google_impr": 3464.0
+   "google_impr": 3460.0
   },
   "2026-11-21": {
    "orders": 2.0,
@@ -40506,7 +40546,7 @@
    "google_clicks": 75.0,
    "google_conv": 2.0,
    "google_value": 112.5,
-   "google_impr": 5895.0
+   "google_impr": 5894.0
   },
   "2026-11-23": {
    "orders": 0.0,
@@ -40546,7 +40586,7 @@
    "google_clicks": 57.0,
    "google_conv": 2.0,
    "google_value": 188.2179,
-   "google_impr": 4111.0
+   "google_impr": 4107.0
   },
   "2026-11-25": {
    "orders": 2.0,
@@ -40586,19 +40626,43 @@
    "shopify_payments_amount": 238.93,
    "shopify_payments_orders": 3.0,
    "sp_fees": 9.34,
-   "meta_spend": 8.6,
-   "meta_clicks": 41.0,
-   "meta_impr": 1257.0,
+   "meta_spend": 12.99,
+   "meta_clicks": 61.0,
+   "meta_impr": 1706.0,
    "meta_conv": 1.0,
    "meta_ic": 2.0,
-   "meta_atc": 9.0,
-   "meta_vc": 50.0,
+   "meta_atc": 11.0,
+   "meta_vc": 67.0,
    "meta_value": 156.0,
-   "google_spend": 2.66,
-   "google_clicks": 5.0,
+   "google_spend": 22.79,
+   "google_clicks": 32.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 487.0
+   "google_impr": 4157.0
+  },
+  "2026-11-27": {
+   "orders": 2.0,
+   "gross": 142.01,
+   "tax": 0.0,
+   "shipping_charged": 20.24,
+   "discounts": 13.53,
+   "refunds": 0.0,
+   "cogs": 60.1,
+   "repeat_orders": 0.0,
+   "shopify_payments_amount": 142.01,
+   "shopify_payments_orders": 2.0,
+   "sp_fees": 7.94,
+   "meta_spend": 9.2,
+   "meta_clicks": 26.0,
+   "meta_impr": 954.0,
+   "meta_ic": 1.0,
+   "meta_atc": 3.0,
+   "meta_vc": 26.0,
+   "google_spend": 2.91,
+   "google_clicks": 3.0,
+   "google_conv": 0.0,
+   "google_value": 0.0,
+   "google_impr": 190.0
   }
  },
  "meta_campaigns": [
@@ -56511,10 +56575,10 @@
   {
    "d": "2026-11-26",
    "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
-   "sp": 4.63,
-   "cl": 22,
-   "vc": 19,
-   "atc": 0,
+   "sp": 7.25,
+   "cl": 34,
+   "vc": 31,
+   "atc": 2,
    "ic": 0,
    "cv": 0,
    "val": 0.0
@@ -56522,13 +56586,35 @@
   {
    "d": "2026-11-26",
    "n": "M2_Nov2026_Retargeting_Warm_PanEU",
-   "sp": 3.97,
-   "cl": 19,
-   "vc": 31,
+   "sp": 5.74,
+   "cl": 27,
+   "vc": 36,
    "atc": 9,
    "ic": 2,
    "cv": 1,
    "val": 156.0
+  },
+  {
+   "d": "2026-11-27",
+   "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
+   "sp": 4.68,
+   "cl": 17,
+   "vc": 20,
+   "atc": 3,
+   "ic": 1,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-27",
+   "n": "M2_Nov2026_Retargeting_Warm_PanEU",
+   "sp": 4.52,
+   "cl": 9,
+   "vc": 6,
+   "atc": 0,
+   "ic": 0,
+   "cv": 0,
+   "val": 0.0
   }
  ],
  "google_campaigns": [
@@ -56953,8 +57039,8 @@
    "n": "Sales-Shopping-1",
    "sp": 20.3,
    "cl": 51,
-   "cv": 0.67,
-   "val": 28.59
+   "cv": 1.17,
+   "val": 39.09
   },
   {
    "d": "2026-11-07",
@@ -56969,8 +57055,8 @@
    "n": "G1_Nov2026_Shopping_MaxConvValue_ArmB",
    "sp": 5.19,
    "cl": 14,
-   "cv": 0.0,
-   "val": 0.0
+   "cv": 0.5,
+   "val": 10.5
   },
   {
    "d": "2026-11-07",
@@ -57073,8 +57159,8 @@
    "n": "Sales-Shopping-1",
    "sp": 12.04,
    "cl": 36,
-   "cv": 1.0,
-   "val": 67.5
+   "cv": 2.0,
+   "val": 103.34
   },
   {
    "d": "2026-11-20",
@@ -57143,8 +57229,16 @@
   {
    "d": "2026-11-26",
    "n": "Sales-Shopping-1",
-   "sp": 2.66,
-   "cl": 5,
+   "sp": 22.79,
+   "cl": 32,
+   "cv": 0.0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-27",
+   "n": "Sales-Shopping-1",
+   "sp": 2.91,
+   "cl": 3,
    "cv": 0.0,
    "val": 0.0
   }
