@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-27 18:24",
+ "generated": "2026-11-27 18:46",
  "start": "2022-08-01",
  "orders": [
   {
@@ -40652,9 +40652,9 @@
    "shopify_payments_amount": 142.01,
    "shopify_payments_orders": 2.0,
    "sp_fees": 7.94,
-   "meta_spend": 9.2,
+   "meta_spend": 9.45,
    "meta_clicks": 26.0,
-   "meta_impr": 954.0,
+   "meta_impr": 981.0,
    "meta_ic": 1.0,
    "meta_atc": 3.0,
    "meta_vc": 26.0,
@@ -56597,7 +56597,7 @@
   {
    "d": "2026-11-27",
    "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
-   "sp": 4.68,
+   "sp": 4.87,
    "cl": 17,
    "vc": 20,
    "atc": 3,
@@ -56608,7 +56608,7 @@
   {
    "d": "2026-11-27",
    "n": "M2_Nov2026_Retargeting_Warm_PanEU",
-   "sp": 4.52,
+   "sp": 4.58,
    "cl": 9,
    "vc": 6,
    "atc": 0,
