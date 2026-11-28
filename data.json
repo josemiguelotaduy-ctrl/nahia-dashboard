@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-27 18:46",
+ "generated": "2026-11-28 17:07",
  "start": "2022-08-01",
  "orders": [
   {
@@ -20261,6 +20261,57 @@
      1,
      91.0,
      42.8
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-28",
+   "c": "GR",
+   "g": 65.9,
+   "s": 5.9,
+   "k": 28.0,
+   "u": "1d2c64ec",
+   "r": 0,
+   "i": [
+    [
+     "Taza de t\u00e9 c/plato, ROYAL ALBERT, OLD COUNTRY ROSES",
+     1,
+     60.0,
+     28.0
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-28",
+   "c": "BE",
+   "g": 38.4,
+   "s": 5.9,
+   "k": 12.9,
+   "u": "dd1b831c",
+   "r": 1,
+   "i": [
+    [
+     "Hada Ratoncito P\u00e9rez, hermana peque\u00f1a en caja de cerillas, Maileg.",
+     1,
+     32.5,
+     12.9
+    ]
+   ]
+  },
+  {
+   "d": "2026-11-28",
+   "c": "ES",
+   "g": 25.9,
+   "s": 5.9,
+   "k": 9.05,
+   "u": "4f706987",
+   "r": 0,
+   "i": [
+    [
+     "Cuaderno de lino Rose Dust, Tinne+Mia",
+     1,
+     20.0,
+     9.05
     ]
    ]
   }
@@ -40628,7 +40679,7 @@
    "sp_fees": 9.34,
    "meta_spend": 12.99,
    "meta_clicks": 61.0,
-   "meta_impr": 1706.0,
+   "meta_impr": 1707.0,
    "meta_conv": 1.0,
    "meta_ic": 2.0,
    "meta_atc": 11.0,
@@ -40652,17 +40703,43 @@
    "shopify_payments_amount": 142.01,
    "shopify_payments_orders": 2.0,
    "sp_fees": 7.94,
-   "meta_spend": 9.45,
-   "meta_clicks": 26.0,
-   "meta_impr": 981.0,
+   "meta_spend": 12.18,
+   "meta_clicks": 46.0,
+   "meta_impr": 1403.0,
    "meta_ic": 1.0,
    "meta_atc": 3.0,
-   "meta_vc": 26.0,
-   "google_spend": 2.91,
-   "google_clicks": 3.0,
+   "meta_vc": 45.0,
+   "google_spend": 21.97,
+   "google_clicks": 31.0,
+   "google_conv": 1.0,
+   "google_value": 19.3529,
+   "google_impr": 2473.0
+  },
+  "2026-11-28": {
+   "orders": 3.0,
+   "gross": 130.2,
+   "tax": 23.9143,
+   "shipping_charged": 17.7,
+   "discounts": 0.0,
+   "refunds": 0.0,
+   "cogs": 49.95,
+   "repeat_orders": 1.0,
+   "shopify_payments_amount": 104.3,
+   "shopify_payments_orders": 2.0,
+   "paypal_amount": 25.9,
+   "paypal_orders": 1.0,
+   "sp_fees": 2.85,
+   "meta_spend": 8.4,
+   "meta_clicks": 46.0,
+   "meta_impr": 1010.0,
+   "meta_ic": 2.0,
+   "meta_atc": 27.0,
+   "meta_vc": 62.0,
+   "google_spend": 0.48,
+   "google_clicks": 2.0,
    "google_conv": 0.0,
    "google_value": 0.0,
-   "google_impr": 190.0
+   "google_impr": 363.0
   }
  },
  "meta_campaigns": [
@@ -56597,9 +56674,9 @@
   {
    "d": "2026-11-27",
    "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
-   "sp": 4.87,
-   "cl": 17,
-   "vc": 20,
+   "sp": 6.42,
+   "cl": 28,
+   "vc": 34,
    "atc": 3,
    "ic": 1,
    "cv": 0,
@@ -56608,11 +56685,33 @@
   {
    "d": "2026-11-27",
    "n": "M2_Nov2026_Retargeting_Warm_PanEU",
-   "sp": 4.58,
-   "cl": 9,
-   "vc": 6,
+   "sp": 5.76,
+   "cl": 18,
+   "vc": 11,
    "atc": 0,
    "ic": 0,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-28",
+   "n": "M1_Nov2026_Prospecting_Tier1EU_Test",
+   "sp": 5.29,
+   "cl": 34,
+   "vc": 38,
+   "atc": 2,
+   "ic": 1,
+   "cv": 0,
+   "val": 0.0
+  },
+  {
+   "d": "2026-11-28",
+   "n": "M2_Nov2026_Retargeting_Warm_PanEU",
+   "sp": 3.11,
+   "cl": 12,
+   "vc": 24,
+   "atc": 25,
+   "ic": 1,
    "cv": 0,
    "val": 0.0
   }
@@ -57237,8 +57336,16 @@
   {
    "d": "2026-11-27",
    "n": "Sales-Shopping-1",
-   "sp": 2.91,
-   "cl": 3,
+   "sp": 21.97,
+   "cl": 31,
+   "cv": 1.0,
+   "val": 19.35
+  },
+  {
+   "d": "2026-11-28",
+   "n": "Sales-Shopping-1",
+   "sp": 0.48,
+   "cl": 2,
    "cv": 0.0,
    "val": 0.0
   }
